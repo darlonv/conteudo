@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run --name myst-server -v $(pwd):/data -w /data -it -p 3000:3000 darlon/myst ./start_server.sh
