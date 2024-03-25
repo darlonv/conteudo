@@ -114,7 +114,7 @@ else
       if codigo_estado == 43: #<- Verifica se o estado é Rio Grande do Sul
           print("Estado: Rio Grande do Sul - Sigla: RS - Código: 43 - Região: Sul")
       else: #<- Não restou outra opção
-          escreva("Estado ainda não cadastrado no sistema.")
+          print("Estado ainda não cadastrado no sistema.")
 ```
 :::
 
@@ -228,16 +228,26 @@ Utilizando essa estrutura, poderíamos resolver o problema da seguinte forma:
 :::{tab-item} Pseudocódigo
 :sync: pseudocodigo
 ```c
-escolha <variável> //<- variável a ser observada
-  caso X: // caso o valor da variável seja X
-    //código caso X
-  caso Y: // caso o valor da variável seja Y
-    //código caso Y
-  caso Z: // caso o valor da variável seja Z
-    //código caso Z
-  caso contrário: //demais casos
-    //código demais casos 
-fimescolha;
+inicio
+  //Variáveis
+  inteiro codigo_estado;
+
+  //Entrada
+  escreva("Entre com o código do estado: ");
+  leia(codigo_estado)
+
+  //Processamento e saída
+  escolha codigo_estado
+    caso 41:
+      escreva("Estado: Paraná - Sigla: PR - Código: 41 - Região: Sul");
+    caso 42:
+      escreva("Estado: Santa Catarina - Sigla: SC - Código: 2 - Região: Sul");
+    caso 43:
+      escreva("Estado: Rio Grande do Sul - Sigla: RS - Código: 43 - Região: Sul");
+    caso contrário:
+      escreva("Estado ainda não cadastrado no sistema.");
+  fimescolha;
+fim.
 ```
 
 :::
@@ -245,18 +255,29 @@ fimescolha;
 :::{tab-item} Java
 :sync: java
 ```java
-switch(<variável>){ //Variável a ser observada
-  case X: //Caso o valor da variável seja X
-    //Código caso X
+//Variáveis
+int codigo_estado;
+Scanner entrada;
+
+//Entrada
+System.out.println("Entre com o código do estado: ");
+entrada = new Scanner(System.in);
+codigo_estado = entrada.nextInt();
+entrada.close();
+
+//Processamento e saída
+switch(codigo_estado){
+  case 41:
+    System.out.println("Estado: Paraná - Sigla: PR - Código: 41 - Região: Sul");
     break;
-  case Y: //Caso o valor da variável seja Y
-    //Código caso Y
+  case 42:
+    System.out.println("Estado: Santa Catarina - Sigla: SC - Código: 2 - Região: Sul");
     break;
-  case Z: //Caso o valor da variável seja Z
-    //Código caso Z
+  case 43:
+    System.out.println("Estado: Rio Grande do Sul - Sigla: RS - Código: 43 - Região: Sul");
     break;
-  default: //demais casos
-    //Código demais casos
+  default:
+    System.out.println("Estado ainda não cadastrado no sistema.");
 }
 ```
 
@@ -265,16 +286,19 @@ switch(<variável>){ //Variável a ser observada
 :::{tab-item} Python
 :sync: python
 ```python
-match <variável> : #Variável a ser observada
-  #Código caso X
-  case X: #Verifica se a variável possui valor X
-    #Código caso X
-  case Y: #Verifica se a variável possui valor Y
-  #Código caso Y
-  case X: #Verifica se a variável possui valor Z
-    #Código caso Z
-  case _: #demais casos
-    #Código demais casos
+#Variáveis e entrada
+codigo_estado = int(input("Entre com a sigla do estado: "))
+
+#Processamento e saída
+match codigo_estado :
+  case 41: 
+    print("Estado: Paraná - Sigla: PR - Código: 41 - Região: Sul")
+  case 42: 
+    print("Estado: Santa Catarina - Sigla: Sc - Código: 42 - Região: Sul")
+  case 43: 
+    print("Estado: Rio Grande do Sul - Sigla: RS - Código: 43 - Região: Sul")
+  case _: 
+    print("Estado ainda não cadastrado no sistema.")
 ```
 
 :::
@@ -282,7 +306,27 @@ match <variável> : #Variável a ser observada
 :::{tab-item} C
 :sync: c
 ```c
+//Variáveis
+int codigo_estado;
 
+//Entrada
+printf("Entre com o código do estado: \n");
+scanf("%d", &codigo_estado);
+
+//Processamento e saída
+switch(codigo_estado){
+  case 41:
+    printf("Estado: Paraná - Sigla: PR - Código: 41 - Região: Sul\n");
+    break;
+  case 42:
+    printf("Estado: Santa Catarina - Sigla: SC - Código: 2 - Região: Sul\n");
+    break;
+  case 43:
+    printf("Estado: Rio Grande do Sul - Sigla: RS - Código: 43 - Região: Sul\n");
+    break;
+  default:
+    printf("Estado ainda não cadastrado no sistema.\n");
+}
 ```
 
 :::
