@@ -1,4 +1,4 @@
-# Exercícios Seleção
+# Seleção
 
 :::warning Triângulo
   Para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados.
