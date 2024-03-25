@@ -1,0 +1,61 @@
+version: '3'
+services:
+  #Materiais
+  init:
+    image: node:19-slim
+    container_name: materiais_init
+    profiles: [ 'init', 'all' ]
+    volumes:
+      - ./:/src
+    working_dir: /src
+    command: npm install
+
+  serve:
+    image: node:19-slim
+    container_name: materiais
+    profiles: [ 'serve' ]
+    volumes:
+      - ./:/src
+    ports:
+      - "3002:3000"
+    working_dir: /src
+    command: npx docusaurus start --host 0.0.0.0
+    restart: always
+
+  build:
+    image: node:19-slim
+    container_name: materiais-build
+    profiles: [ 'build' ]
+    volumes:
+      - ./:/src
+    working_dir: /src
+    command: npx docusaurus build
+
+  deploy:
+    image: node:19
+    container_name: materiais_deploy
+    profiles: [ 'deploy', 'all' ]
+    environment:
+      - GIT_USER=$GIT_USER
+      - GIT_PASS=$GIT_PASS
+      - GIT_NAME=$GIT_NAME
+      - GIT_MAIL=$GIT_MAIL
+      - USE_SSH=$USE_SSH
+      - CURRENT_BRANCH=$CURRENT_BRANCH
+    volumes:
+      - ./:/src
+    working_dir: /src
+    command: bash -c "git config --global user.email $GIT_MAIL && git config --global user.name $GIT_NAME && yarn deploy"
+
+  bash:
+    image: node:20
+    container_name: myst_bash
+    profiles: [ 'bash' ]
+    stdin_open: true #docker run -i
+    tty: true #docker run -t
+    volumes:
+      - ./:/data
+    working_dir: /data
+    ports:
+      - "3000:3000"
+    command: /bin/bash

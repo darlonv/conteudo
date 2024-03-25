@@ -1,0 +1,37 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b92261d1-fb0c-4571-8803-1b5789f52ba8
+  title: Algoritmos e Estruturas de Dados
+  # description:
+  # keywords: []
+  authors:
+    - name: Darlon Vasata
+  # github: https://github.com/executablebooks/mystmd-quickstart
+  bibliography: references.bib
+  exports:
+    - format: pdf
+      template: plain_latex
+      output: exports/java.pdf
+      articles:
+        # - README.md
+        - docs/java/02-Selecao.md.Java.md
+    # - format: pdf
+    #   template: plain_latex
+    #   output: exports/java.pdf
+    #   articles:
+    #     # - README.md
+    #     - docs/java/02-Selecao.md.Java.md
+    #     # - docs/Ex/02-Selecao_ex.md
+    
+
+site:
+  template: book-theme
+  title: Algoritmos
+  # options:
+  #   logo: site_logo.png
+  # nav: []
+  actions:
+    - title: Myst
+      url: https://mystmd.org/guide
+  domains: []
