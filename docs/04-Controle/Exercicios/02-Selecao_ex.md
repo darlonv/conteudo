@@ -182,13 +182,13 @@ Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustív
 1. [Beecrowd 1041 - Coordenadas de um Ponto](https://www.beecrowd.com.br/judge/pt/problems/view/1041)  
 
 
-:::{caution} Atenção
+```{caution} Atenção
 Muitos *websites* de solução de problemas realizam a correção comparando a saída do algoritmo com a saída esperada como solução. Com isto, **toda** a saída do algoritmo deve ser exatamente igual à solução esperada.
-:::
+```
 
-:::{tip} Dica
+```{tip} Dica
 Alguns exercícios possuem a entrada de diversos valores de uma única vez. Estes valores estão em uma mesma linha, separados por espaços. Nestes casos, é necessário separar cada valor da entrada.
-:::
+```
 
 Exemplos de leitura de 2 valores inteiros a partir de uma única linha
 
