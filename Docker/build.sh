@@ -2,3 +2,4 @@
 
 docker build -t darlon/myst .
 
+docker push darlon/myst
