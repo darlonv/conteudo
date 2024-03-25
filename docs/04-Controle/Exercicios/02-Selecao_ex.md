@@ -49,7 +49,7 @@ Desenvolva um algoritmo que possui como entrada 3 valores (A, B e C), que repres
   1. Resolva o problema utilizando a estrutura **se** apenas uma vez no algoritmo.  
 ```
 
-::: warning Triângulo
+:::{tip} Triângulo
   Para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados.
 :::
 
@@ -138,7 +138,7 @@ Faça um programa para um caixa eletrônico. O programa deverá perguntar ao usu
     - 4 notas de R\$ 1,00
 ```
 
-:::note Observe
+:::{note} Observe
 1.  São informadas apenas as notas que serão fornecidas.  
 1.  A saída apresenta a palavra *"nota"* com flexão de número (singular e plural).  
 
@@ -170,6 +170,7 @@ Um posto está vendendo combustíveis com a seguinte tabela de descontos:
 ```{exercise}
 Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: E-etanol, G-gasolina). Calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R\$ 4,50 o preço do litro do etano é R\$ 3,15.   
 (Adaptado de [EstruturaDeDecisao - PythonBrasil](https://wiki.python.org.br/EstruturaDeDecisao))
+```
 
 ## Externos
 
@@ -185,21 +186,29 @@ Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustív
 Muitos *websites* de solução de problemas realizam a correção comparando a saída do algoritmo com a saída esperada como solução. Com isto, **toda** a saída do algoritmo deve ser exatamente igual à solução esperada.
 :::
 
-:::{tip}
-
+:::{tip} Dica
 Alguns exercícios possuem a entrada de diversos valores de uma única vez. Estes valores estão em uma mesma linha, separados por espaços. Nestes casos, é necessário separar cada valor da entrada.
-
 :::
 
-Exemplos de leitura de 2 valores inteiros a partir de uma única linha:
+Exemplos de leitura de 2 valores inteiros a partir de uma única linha
 
 ::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+```c
+//Variáveis
+inteiro a, b;
+//Leitura dos dados
+ler(a,b);
+```
+
+:::
 :::{tab-item} Java
 :sync: java
 
 Em Java, a leitura pode ocorrer de maneira normal utilizando a classe `Scanner`.
 
-
+```java
 //variáveis
 int a, b;
 Scanner entrada;
@@ -207,14 +216,13 @@ Scanner entrada;
 //Leitura dos dados
 a = entrada.nextInt();
 b = entrada.nextInt();
-
+```
 
 :::
 :::{tab-item} Python
 :sync: python
 
 Em Python, é necessário dividir a entrada em diversas partes, com o método `.split()`, e após realizar a leitura, converter para o tipo esperado.
-
 ```python
 #variáveis e entrada
 a, b = input().split()
@@ -222,8 +230,16 @@ a, b = input().split()
 a = int(a) 
 b = int(b)
 ```
+:::
+:::{tab-item} C
+:sync: c
+```c
+//Variáveis
+int a, b;
 
+//Leitura dos dados
+scanf("%d %d", &a, &b);
+```
 :::
 ::::
-
 
