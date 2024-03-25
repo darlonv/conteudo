@@ -25,6 +25,6 @@ chapters:
       - title: Exercicios
         sections:
           - file: docs/04-Controle/Exercicios/02-Selecao_ex.md
-  - title: Equações
+  - title: Anexos
     sections:
-      - file: docs/Equacoes/Equacoes.md
+      - file: docs/Anexos/Equacoes.md
