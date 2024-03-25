@@ -1,12 +1,13 @@
 # Múltipla escolha
 
+
 Em situações em que precisamos testar diversos valores pontuais, poderíamos utilizar diversas expressões `se` encadeadas, formando uma seleção encadeada do tipo `se-senão-se`, e testar os possíveis valores.
 
 **Exemplo** 
 - A região Sul do Brasil possui três estados. De acordo com o IBGE, cada estado possui uma sigla e um código. Peça ao usuário que digite o código do estado, e então apresente na tela o nome do estado, a sigla do estado e em que região do país se encontra. Caso a siga do estado entrada pelo usuário não esteja cadastrada, mostre a mensagem *"Estado ainda não cadastrado no sistema."*.  
 
 
-:::{note} Códigos de estados brasileiros
+:::{note} Códigos dos estados brasileiros da região Sul
 
 |Sigla do Estado|Código|Estado            |Região|
 |---------------|------|------------------|------|
