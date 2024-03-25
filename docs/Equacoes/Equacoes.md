@@ -37,7 +37,7 @@ onde
 
 Com os valores de $\Delta$, pode-se obter as seguintes informações:
 - $\Delta = 0 $: As raízes são iguais.
-- $\Delta < 0 $: As raízes são difernetes e não pertencem aos números reais.
+- $\Delta < 0 $: As raízes são diferentes e não pertencem aos números reais.
 - $\Delta > 0 $: As raízes são diferentes.
 
 ```
