@@ -15,7 +15,7 @@ project:
       output: exports/java.pdf
       articles:
         # - README.md
-        - docs/java/02-Selecao.md.Java.md
+        - docs/04-Controle/java/02-Selecao.md.Java.md
     # - format: pdf
     #   template: plain_latex
     #   output: exports/java.pdf
