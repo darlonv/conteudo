@@ -174,9 +174,17 @@ Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustív
 
 ## Matemática
 
+
+
+
 ```{exercise}
 :label: ex:selecao-bhaskara
-Informe se uma equação de segundo grau possui raízes reais, utilizando a fórmula de [Bhaskara](https://pt.wikipedia.org/wiki/Bhaskara_II).
+Informe se uma equação de segundo grau possui ou não raízes reais, utilizando o $\Delta$ da fórmula de Bháskara. Veja equação {eq}`eq:bhaskara-delta`.
+```
+
+```{exercise}
+:label: ex:selecao_raizes_segundo_grau
+Elaborar uma **função** para calcular as raízes de uma equação de segundo grau. Caso não existam raízes reais, o programa deve apresentar uma mensagem informando esta situação.
 ```
 
 ## Externos
