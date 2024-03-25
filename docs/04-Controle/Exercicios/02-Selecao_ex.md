@@ -172,6 +172,13 @@ Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustív
 (Adaptado de [EstruturaDeDecisao - PythonBrasil](https://wiki.python.org.br/EstruturaDeDecisao))
 ```
 
+## Matemática
+
+```{exercise}
+:label: ex:selecao-bhaskara
+Informe se uma equação de segundo grau possui raízes reais, utilizando a fórmula de [Bhaskara](https://pt.wikipedia.org/wiki/Bhaskara_II).
+```
+
 ## Externos
 
 ### Beecrowd
