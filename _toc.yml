@@ -22,6 +22,7 @@ chapters:
     sections:
       - file: docs/04-Controle/02-Selecao.md
       - file: docs/04-Controle/03-Multipla.md
+      - file: docs/04-Controle/04-Repeticao.md
       - title: Exercicios
         sections:
           - file: docs/04-Controle/Exercicios/02-Selecao_ex.md

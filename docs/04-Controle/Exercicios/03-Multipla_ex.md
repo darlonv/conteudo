@@ -27,6 +27,6 @@ Desenvolva um algoritmo que tem como entrada um número de 0 a 999. Em seguida, 
 
 ::::{exercise}
 :label: ex:escolha-numeros_ordinais
-Desenvolva um algoritmo que tem como entrada um número de 0 a 999. Em seguida, o programa apresenta o número ordinal correspondente em sua forma por extenso. Veja a definição de {numref}`def:numeros_ordinais`
+Desenvolva um algoritmo que tem como entrada um número de 0 a 999. Em seguida, o programa apresenta o número ordinal correspondente em sua forma por extenso. Veja a definição de {numref}`def:numeros_ordinais`.
 ::::
 

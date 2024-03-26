@@ -1,14 +1,12 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Repetição
 
 Considere que é necessário desenvolver um programa que mostre na tela uma sequência com os números de $0$ a $5$. Como poderia ser feito?
 
 Uma das formas seria:
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
   ```c
   escreva(0);
@@ -19,8 +17,9 @@ Uma das formas seria:
   escreva(5);
   ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+:::
+:::{tab-item} Java
+:sync: java
 
   ```javascript
   System.out.println(0);
@@ -31,8 +30,9 @@ Uma das formas seria:
   System.out.println(5);
   ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+:::
+:::{tab-item} Python
+:sync: python
 
   ```python
   println(0)
@@ -43,9 +43,9 @@ Uma das formas seria:
   println(5)
   ```
 
-  </TabItem>
-
-  <TabItem value="c" label="C">
+:::
+:::{tab-item} C
+:sync: c
 
   ```c
   printf("0\n");
@@ -56,16 +56,16 @@ Uma das formas seria:
   printf("5\n");
   ```
 
-  </TabItem>
-
-</Tabs>
+:::
+::::
 
 
 
 Uma outra forma seria colocando cada valor em uma variável, que chamaremos de **variável de controle**. Teríamos então:
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
   ```c
   //variáveis
@@ -86,8 +86,9 @@ Uma outra forma seria colocando cada valor em uma variável, que chamaremos de *
   escreva(valor);
   ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+:::
+:::{tab-item} Java
+:sync: java
 
   ```javascript
   //variáveis
@@ -108,8 +109,9 @@ Uma outra forma seria colocando cada valor em uma variável, que chamaremos de *
   System.out.println(valor);
   ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+:::
+:::{tab-item} Python
+:sync: python
 
   ```python
   valor=0
@@ -126,9 +128,9 @@ Uma outra forma seria colocando cada valor em uma variável, que chamaremos de *
   printf("%d\n", valor)
   ```
 
-  </TabItem>
-
-  <TabItem value="c" label="C">
+:::
+:::{tab-item} C
+:sync: c
 
   ```c
   //variáveis
@@ -149,9 +151,8 @@ Uma outra forma seria colocando cada valor em uma variável, que chamaremos de *
   printf("%d\n",valor);
   ```
 
-  </TabItem>
-
-</Tabs>
+:::
+::::
 
 Ao observar o último exemplo, percebemos que há um padrão que se repete. A variável `var` recebe o valor que será apresentado e o `escreva` mostra na tela o valor da variável.
 
@@ -162,8 +163,9 @@ Reconhecendo que a estrutura segue um padrão, pode-se aplicar uma **estrutura d
 A estrutura de repetição `enquanto` consiste em repetir um bloco *enquanto* uma determinada condição for verdadeira.
 
 A estrutura sintática do `enquanto` segue a seguinte forma:
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
   ```c
   enquanto(<condição>) faça
@@ -171,8 +173,9 @@ A estrutura sintática do `enquanto` segue a seguinte forma:
   fimenquanto;
   ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+:::
+:::{tab-item} Java
+:sync: java
 
   ```js
   while(<condição>){
@@ -182,8 +185,9 @@ A estrutura sintática do `enquanto` segue a seguinte forma:
   }
   ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+:::
+:::{tab-item} Python
+:sync: python
 
   ```python
   while <condição> :
@@ -192,8 +196,9 @@ A estrutura sintática do `enquanto` segue a seguinte forma:
     ...
   ```
 
-  </TabItem>
-  <TabItem value="c" label="C">
+:::
+:::{tab-item} C
+:sync: c
 
   ```c
   while(<condição>){
@@ -203,14 +208,15 @@ A estrutura sintática do `enquanto` segue a seguinte forma:
   }
   ```
 
-  </TabItem>
-</Tabs>
+:::
+::::
 
 
 Poderíamos reescrever o exemplo anterior utilizando esta estrutura. 
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
   ```c
   inteiro: valor;
@@ -221,8 +227,10 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
   fimenquanto;
   ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+:::
+
+:::{tab-item} Java
+:sync: java
 
   ```javascript
   //variáveis
@@ -236,8 +244,10 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
   }
   ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+:::
+
+:::{tab-item} Python
+:sync: python
 
   ```python
   valor = 0
@@ -246,8 +256,10 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
     valor = valor +1
   ```
 
-  </TabItem>
-  <TabItem value="c" label="C">
+:::
+
+:::{tab-item} C
+:sync: c
 
   ```js
   //variáveis
@@ -261,31 +273,24 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
   }
   ```
 
-  </TabItem>
-</Tabs>
-
+:::
+::::
 
 Observe que a estrutura executada diversas vezes, e a quantidade de vezes a ser executada dependerá do resultado da condição.
 
-:::caution Cuidado
+:::{caution} Cuidado
 Observe que antes de adentrar na estrutura, é necessário inicializar a variável, e a variável deve ter seu valor modificado durante a execução do laço de repetição. Caso a variável não se altere, ocorre o risco de gerar um laço que é executado infinitamente, um *loop* infinito.
 :::
 
-**Exercícios**  
+**Atividades**  
 - Desenvolva um algoritmo que realiza uma contagem regressiva para o lançamento de um foguete. Seu programa deve apresentar na tela uma sequência de valores, iniciando de 10 e finalizando em 0.  
 - Peça ao usuário que digite diversos números inteiros, parando quando o número 0 for digitado. Para cada número digitado, informe se este é par ou ímpar.
 - Peça ao usuário que digite um número inteiro. Em seguida, apresente a tabuada desse número, de 1 a 10.  
 - Peça ao usuário que digite 5 números positivos. Em seguida, mostre o menor valor entre os números digitados.  
 - Atualize o exercício anterior, informando também o maior valor digitado.  
-- Desenvolva um algoritmo que calcula o MDC entre dois números inteiros positivos.  
-:::info MDC
-O MDC (Máximo Divisor Comum) é o maior valor que divide simultaneamente dois números.
-:::
+- Desenvolva um algoritmo que calcula o MDC entre dois números inteiros positivos. Veja a definição de {numref}`def:mdc`.  
+- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números inteiros positivos. Veja a definição de {numref}`def:mmc`.
 
-- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números inteiros positivos.
-:::info MMC
-O MMC (Mínimo múltiplo Comum) é o menor valor que é múltiplo de ambos os números.
-:::
 
 
 
@@ -312,8 +317,9 @@ A sequência de Fibonacci é uma sequência de números em que a cada número da
 Podemos utilizar uma outra estrutura, em que a condição é testada ao final. Nesta estrutura, o conteúdo da repetição sempre é executado pelo menos uma vez. A estrutura é repetida enquanto a condição for falsa.
 
 A estrutura sintática do comando `repita` é a seguinte:
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
   ```c
   repita
@@ -323,8 +329,9 @@ A estrutura sintática do comando `repita` é a seguinte:
   até <condição>;
   ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+:::
+:::{tab-item} Java
+:sync: java
 
   ```js
   do{
@@ -334,8 +341,9 @@ A estrutura sintática do comando `repita` é a seguinte:
   }while(<condição>);
   ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+:::
+:::{tab-item} Python
+:sync: python
 
   ```python
   ...código inicial...
@@ -345,8 +353,9 @@ A estrutura sintática do comando `repita` é a seguinte:
     ...
   ```
 
-  </TabItem>
-  <TabItem value="c" label="C">
+:::
+:::{tab-item} C
+:sync: c
 
   ```c
   do{
@@ -356,8 +365,8 @@ A estrutura sintática do comando `repita` é a seguinte:
   }while(<condição>);
   ```
 
-  </TabItem>
-</Tabs>
+:::
+::::
 
 **Exercícios**  
 - Escreva um programa que solicite ao usuário digitar um número maior que 10. O programa deve continuar solicitando o número até que o usuário insira um número válido.  
@@ -369,8 +378,10 @@ A estrutura sintática do comando `repita` é a seguinte:
 A estrutura `para` consiste em uma estrutura de repetição em que há uma **variável de controle**. Esta variável assume valores predeterminados. Ao utilizar a estrutura `para`, de antemão já é sabido a o número de iterações que serão executadas.
 
 A sintaxe da estrutura `para` segue a seguinte forma:
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
   ```c
   para val de vi até vf passo p faça
@@ -381,8 +392,9 @@ A sintaxe da estrutura `para` segue a seguinte forma:
   
   ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+:::
+:::{tab-item} Java
+:sync: java
 
   ```js
   //variáveis
@@ -403,8 +415,9 @@ A sintaxe da estrutura `para` segue a seguinte forma:
   - incremento: código a ser executado ao final de cada iteração.  
   
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+:::
+:::{tab-item} Python
+:sync: python
 
   ```python
   for val in range(vi, vf):
@@ -413,8 +426,9 @@ A sintaxe da estrutura `para` segue a seguinte forma:
     ...
   ```
 
-  </TabItem>
-  <TabItem value="c" label="C">
+:::
+:::{tab-item} C
+:sync: c
 
   ```c
   //variáveis
@@ -435,8 +449,8 @@ A sintaxe da estrutura `para` segue a seguinte forma:
   - incremento: código a ser executado ao final de cada iteração.  
   
 
-  </TabItem>
-</Tabs>
+:::
+::::
 
 
 
