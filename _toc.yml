@@ -27,6 +27,7 @@ chapters:
         sections:
           - file: docs/04-Controle/Exercicios/02-Selecao_ex.md
           - file: docs/04-Controle/Exercicios/03-Multipla_ex.md
+          - file: docs/04-Controle/Exercicios/04-Repeticao_ex.md
   - title: Anexos
     sections:
       - file: docs/Anexos/Equacoes.md

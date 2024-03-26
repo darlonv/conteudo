@@ -302,14 +302,10 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 ### Acumuladores
 
 - Escreva um algoritmo que solicita um número inteiro positivo ao usuário, e em seguida calcula a soma de todos os números pares de 0 até o número informado.
-- Peça ao usuário que digite dois números, b e p (base e potência). Em seguida, calcule o valor de $b^p$ e apresente o resultado na tela.
-
+- Peça ao usuário que digite dois números, $b$ e $p$ (base e potência). Em seguida, calcule o valor de $b^p$ e apresente o resultado na tela.
 - Peça ao usuário que digite diversos números inteiros, parando quando um valor negativo for digitado. Mostre a média entre todos os valores digitados.
+- Desenvolva um algorimo solicite ao usuário um número e exiba a sequência de Fibonacci até o valor fornecido. Veja a definição de {numref}`def:fibonacci`.
 
-- Desenvolva um algorimo solicite ao usuário um número e exiba a sequência de Fibonacci até o valor fornecido.
-:::info Fibonacci
-A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números na sequência são 1 e 1. Os primeiros números da sequência são 1, 1, 2, 3, 5, 8, 13, 21, 33, ...
-::: 
 
 
 ## repita
@@ -447,28 +443,7 @@ A sintaxe da estrutura `para` segue a seguinte forma:
   - vi: valor inicial;
   - condição: condição a ser testada no início de cada iteração;
   - incremento: código a ser executado ao final de cada iteração.  
-  
 
 :::
 ::::
 
-
-
-
-
-
-## Referências
-
-[FORBELLONE, A. L. V.; EBERSPÄCHER, H. F. Lógica de programação a construção de algoritmos e estruturas de dados. 3. ed. -. São Paulo: Prentice Hall, 2005. ISBN 9788576050247.](https://plataforma.bvirtual.com.br/Leitor/Publicacao/323/pdf/11?code=DUT9ceW6cevP76Zo+EZuhLshlFiipf6bm1qH+Er9IE2FR2aabpwRBUFHWBQY+ppEDI1u1phvX3Bo9xII7UTG/g==)  
-
-[ASCENCIO, A. F. G.; CAMPOS, E. A. V. Fundamentos da programação de computadores algoritmos, Pascal e C/C++. São Paulo: Prentice Hall, 2002. ISBN 9788587918369.](https://plataforma.bvirtual.com.br/Leitor/Publicacao/474/pdf/17?code=5aKNgQDVA1oGkIID/Mxq/5biXE3mV+4408hOmSg69vmeXo0W9VHrtyzrwyezUND1EQo7jhOxxg2X7UCNFBYZHg==)  
-
-MATTHES, E. Curso intensivo de Python: uma introdução à prática e baseada em projetos à programação. São Paulo: Novatec, 2015.  
-
-MENEZES, N. N. C. Introdução à programação com Python: algoritmos e lógica de programação para iniciantes. 3.ed. São Paulo: Novatec, 2019.  
-
-
-
-### Outros materiais
-
-[Python. ForLoop - Python Wiki.](https://wiki.python.org/moin/ForLoop)  
