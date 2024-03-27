@@ -11,7 +11,6 @@ ax^2 + bx +c = 0
 
 
 ::::{note} Fórmula de Bháskara
-:label: eq:selecao:bhaskara
 As raízes de uma equação de segundo grau podem ser obtidas utilizando a fórmula de Bháskara:
 :::{math}
 :label: eq:bhaskara
