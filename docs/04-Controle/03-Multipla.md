@@ -1,6 +1,5 @@
 # Múltipla escolha
 
-
 Em situações em que precisamos testar diversos valores pontuais, poderíamos utilizar diversas expressões `se` encadeadas, formando uma seleção encadeada do tipo `se-senão-se`, e testar os possíveis valores.
 
 **Exemplo** 
