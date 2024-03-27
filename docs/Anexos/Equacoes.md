@@ -21,7 +21,7 @@ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 ::::
 
 ```{note} Equação de Bháskara - Delta
-:label: eq:selecao:bhaskara
+:label: eq:equacao-bhaskara-delta
 A equação de Bháskara também pode ser apresentada da seguinte forma:
 
 
