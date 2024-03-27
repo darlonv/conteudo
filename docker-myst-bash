@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-docker run --rm --name myst-bash -v $(pwd):/data -w /data -it darlon/myst /bin/bash
+docker run --rm -v $(pwd):/data -w /data -it darlon/myst /bin/bash
