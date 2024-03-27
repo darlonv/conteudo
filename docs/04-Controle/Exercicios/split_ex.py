@@ -1,8 +1,14 @@
-#!/data/env/bin/python
-DIR_OUTPUT = "base_ex"
+#!/env/bin/python3
+
+import sys
+
+FILENAME_INPUT = "base_ex.md"  # default
+DIR_OUTPUT = "base_ex"  # default
 
 
 def splitExercicios(doc):
+    global DIR_OUTPUT
+
     file = None
     token = None
     file_open = False
@@ -31,8 +37,14 @@ def splitExercicios(doc):
 
 
 def main():
-    FILENAME = "base_ex.md"
-    with open(FILENAME, 'r') as file:
+    global DIR_OUTPUT
+
+    if len(sys.argv) > 1:
+        FILENAME_INPUT = sys.argv[1]
+    if len(sys.argv) > 2:
+        DIR_OUTPUT = sys.argv[2]
+
+    with open(FILENAME_INPUT, 'r') as file:
         doc = file.read()
 
     splitExercicios(doc)

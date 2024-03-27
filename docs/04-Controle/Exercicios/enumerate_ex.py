@@ -1,5 +1,6 @@
-
+#!/env/bin/python3
 import sys
+
 
 def enumerateEx(doc):
     counter = 1
@@ -9,26 +10,30 @@ def enumerateEx(doc):
         # print(line_new)
         if line_new.startswith(':::') and line_new.endswith("{exercise}"):
             # print('+')
-            doc_new+= f'- {counter}.  \n'
-            counter+=1
+            doc_new += f'- {counter}.  \n'
+            counter += 1
         else:
             # print('-')
-            doc_new+=line_new + '\n'
+            doc_new += line_new + '\n'
     return doc_new
-             
+
 
 def main():
-    FILENAME = "base_ex.md"
+    FILENAME_INPUT = "base_ex.md"
     doc = ''
 
     if len(sys.argv) > 1:
-        FILENAME = sys.argv[1]
+        FILENAME_INPUT = sys.argv[1]
+        FILENAME_OUTPUT = f'{FILENAME_INPUT}.tmp.md'
 
-    with open(FILENAME, 'r') as file:
+    if len(sys.argv) > 2:
+        FILENAME_OUTPUT = sys.argv[2]
+
+    with open(FILENAME_INPUT, 'r') as file:
         doc = file.read()
 
     doc_new = enumerateEx(doc)
-    with open(f'{FILENAME}.tmp.md', 'w' ) as file:
+    with open(FILENAME_OUTPUT, 'w') as file:
         file.write(doc_new)
 
 
