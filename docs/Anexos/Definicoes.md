@@ -28,7 +28,9 @@ $$
 **Exemplos**
 
 :::{math}
-5! = 5\times4\times3\times2\times1 = 120\\
+5! = 5\times4\times3\times2\times1 = 120
+:::
+:::{math}
 4! = 4\times3\times2\times1 = 24
 :::
 
