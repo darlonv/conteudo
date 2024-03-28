@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for FILE in [0-9][0-9]*.md
+do
+    echo $FILE
+    for LANG in java
+    do
+        mkdir -p $LANG
+        /data/bin/filter_lang $FILE $LANG
+        mv -v ${FILE}.${LANG}.md ${LANG}/
+    done
+
+done
