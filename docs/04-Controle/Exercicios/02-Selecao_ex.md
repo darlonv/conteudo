@@ -1,137 +1,138 @@
+
 # Seleção
 
 ## Fixação
 
 :::::{exercise}
 :label: ex:selecao-senha_valida
-:::{include} base_ex/ex-selecao-senha_valida.md
+:::{include} ex_selecao/ex-selecao-senha_valida.md
 :::::
 
 :::::{exercise}
 :label: ex:3_numeros_menor_maior
-:::{include} base_ex/ex-3_numeros_menor_maior.md
+:::{include} ex_selecao/ex-3_numeros_menor_maior.md
 :::::
 
 :::::{exercise}
 :label: ex:3_numeros_menor_maior_ordem
-:::{include} base_ex/ex-3_numeros_menor_maior_ordem.md
+:::{include} ex_selecao/ex-3_numeros_menor_maior_ordem.md
 :::::
 
 :::::{exercise}
 :label: ex:5_numeros_menor_maior_ordem
-:::{include} base_ex/ex-5_numeros_menor_maior_ordem.md
+:::{include} ex_selecao/ex-5_numeros_menor_maior_ordem.md
 :::::
 
 :::::{exercise}
 :label: ex:divisivel_10_5_2
-:::{include} base_ex/ex-divisivel_10_5_2.md
+:::{include} ex_selecao/ex-divisivel_10_5_2.md
 :::::
 
 :::::{exercise}
 :label: ex:valor_total_compra_macas
-:::{include} base_ex/ex-valor_total_compra_macas.md
+:::{include} ex_selecao/ex-valor_total_compra_macas.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-peso_ideal
-:::{include} base_ex/ex-selecao-peso_ideal.md
+:::{include} ex_selecao/ex-selecao-peso_ideal.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-calculadora
-:::{include} base_ex/ex-selecao-calculadora.md
+:::{include} ex_selecao/ex-selecao-calculadora.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-triangulo_existe
-:::{include} base_ex/ex-selecao-triangulo_existe.md
+:::{include} ex_selecao/ex-selecao-triangulo_existe.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-poligono_regular
-:::{include} base_ex/ex-selecao-poligono_regular.md
+:::{include} ex_selecao/ex-selecao-poligono_regular.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-par_impar
-:::{include} base_ex/ex-selecao-par_impar.md
+:::{include} ex_selecao/ex-selecao-par_impar.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-par_e_positivo
-:::{include} base_ex/ex-selecao-par_e_positivo.md
+:::{include} ex_selecao/ex-selecao-par_e_positivo.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-natacao_categorias
-:::{include} base_ex/ex-selecao-natacao_categorias.md
+:::{include} ex_selecao/ex-selecao-natacao_categorias.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-credito_funcionarios
-:::{include} base_ex/ex-selecao-credito_funcionarios.md
+:::{include} ex_selecao/ex-selecao-credito_funcionarios.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-porcentagem_lucro
-:::{include} base_ex/ex-selecao-porcentagem_lucro.md
+:::{include} ex_selecao/ex-selecao-porcentagem_lucro.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-doadora_sangue
-:::{include} base_ex/ex-selecao-doadora_sangue.md
+:::{include} ex_selecao/ex-selecao-doadora_sangue.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-nota_aprovado_reprovado
-:::{include} base_ex/ex-selecao-nota_aprovado_reprovado.md
+:::{include} ex_selecao/ex-selecao-nota_aprovado_reprovado.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-desconto_salario
-:::{include} base_ex/ex-selecao-desconto_salario.md
+:::{include} ex_selecao/ex-selecao-desconto_salario.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-reprovado_faltas
-:::{include} base_ex/ex-selecao-reprovado_faltas.md
+:::{include} ex_selecao/ex-selecao-reprovado_faltas.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-comerciante_lucro
-:::{include} base_ex/ex-selecao-comerciante_lucro.md
+:::{include} ex_selecao/ex-selecao-comerciante_lucro.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-ano_bissexto
-:::{include} base_ex/ex-selecao-ano_bissexto.md
+:::{include} ex_selecao/ex-selecao-ano_bissexto.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-notas_caixa_eletronico
-:::{include} base_ex/ex-selecao-notas_caixa_eletronico.md
+:::{include} ex_selecao/ex-selecao-notas_caixa_eletronico.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-perguntas_crime
-:::{include} base_ex/ex-selecao-perguntas_crime.md
+:::{include} ex_selecao/ex-selecao-perguntas_crime.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao-tabela_combustiveis
-:::{include} base_ex/ex-selecao-tabela_combustiveis.md
+:::{include} ex_selecao/ex-selecao-tabela_combustiveis.md
 :::::
 
 ## Matemática
 
 :::::{exercise}
 :label: ex:selecao_existem_raizes_segundo_grau
-:::{include} base_ex/ex-selecao_existem_raizes_segundo_grau.md
+:::{include} ex_selecao/ex-selecao_existem_raizes_segundo_grau.md
 :::::
 
 :::::{exercise}
 :label: ex:selecao_valores_raizes_segundo_grau
-:::{include} base_ex/ex-selecao_valores_raizes_segundo_grau.md
+:::{include} ex_selecao/ex-selecao_valores_raizes_segundo_grau.md
 :::::
 
 ## Externos
