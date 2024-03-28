@@ -52,7 +52,7 @@ Pergunte um número $x$ ao usuário, e então mostre todos os números de $1$ a 
 ::::
 
 ::::{exercise}
-:label: ex:repeticao-tabuada
+:label: ex:repeticao-fatorial
 Calcule o fatorial $f$ de um número $x$, tal que $x$ é digitado pelo usuário. Veja a definição de {numref}`def:fatorial`.
 ::::
 
@@ -93,9 +93,12 @@ Divisores:
 
 ::::{exercise}
 :label: ex:escolha-soma_e_media
-Calcula a soma $s$ e a média $m$ de todos os números inteiros no intervalo $[a,b]$, de forma que $a$ e $b$ são digitados pelo usuário. De forma matemática:  
+Calcule a soma $s$ e a média $m$ de todos os números inteiros no intervalo $[a,b]$, de forma que $a$ e $b$ são digitados pelo usuário. De forma matemática:  
 $$
-s = \sum_{i=a}^{b}i \\
+s = \sum_{i=a}^{b}i
+$$
+
+$$
 m = \frac{\sum_{i=a}^{b}i}{b-a} = \frac{s}{b-a}
 $$ 
 ::::
@@ -110,7 +113,9 @@ $$
 Calcule a soma $s$ e a média $m$ dos primeiros $n$ números, começando por $1$, de forma que $n$ é digitado pelo usuário.  
 Matematicamente, isto é equivalente a:
 $$
-s = \sum_{i=1}^ni \\
+s = \sum_{i=1}^ni
+$$
+$$
 m = \frac{\sum_{i=1}^ni}{n} = \frac{s}{n}
 $$ 
 ::::
@@ -148,9 +153,13 @@ Pergunte ao usuário dois números, $x$ e $y$, e mostre todos os números perfei
 :label: ex:repeticao-fibonacci
 Calcule e mostre a sequência de Fibonacci $F$, de $1$ até $n$.  Considere:
 $$
-F(1)=1\\
-F(2)=1\\
-F(n) = F(n-1)+F(n-2)\\
+F(1)=1
+$$
+$$
+F(2)=1
+$$
+$$
+F(n) = F(n-1)+F(n-2)
 $$
 
 :::note Exemplo
