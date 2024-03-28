@@ -10,7 +10,7 @@ def enumerateEx(doc):
         # print(line_new)
         if line_new.startswith(':::') and line_new.endswith("{exercise}"):
             # print('+')
-            doc_new += f'- {counter}.  \n'
+            doc_new += f'\n**Exercício {counter}**\n'
             counter += 1
         else:
             # print('-')
