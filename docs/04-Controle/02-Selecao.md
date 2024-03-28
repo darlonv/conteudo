@@ -600,7 +600,7 @@ Voltemos ao nosso exemplo dos números positivos, negativos e nulos.
 
 Neste caso, todas as condições são testadas. Isto pode ser melhorado aninhando estruturas `se`. 
 
-Utilizando estruturas de seleção encadeadas, apenas duas das condições são executas.
+Utilizando estruturas de seleção encadeadas, apenas duas das condições são executadas.
 
 ::::{tab-set}
 :::{tab-item} Pseudocódigo
