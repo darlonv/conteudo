@@ -12,10 +12,16 @@ project:
   exports:
     - format: pdf
       template: plain_latex
-      output: exports/java.pdf
+      output: exports/selecao_java.pdf
       articles:
-        # - README.md
-        - docs/04-Controle/java/02-Selecao.md.Java.md
+        - docs/04-Controle/java/02-Selecao.md.java.md
+        - docs/04-Controle/Exercicios/02-Selecao_ex_teste.md
+        - docs/Anexos/Equacoes.md
+    - format: pdf
+      template: plain_latex
+      output: exports/selecao_python.pdf
+      articles:
+        - docs/04-Controle/python/02-Selecao.md.python.md
     # - format: pdf
     #   template: plain_latex
     #   output: exports/java.pdf
