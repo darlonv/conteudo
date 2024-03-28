@@ -11,7 +11,7 @@ project:
   bibliography: /data/references.bib
   exports:
     - format: pdf
-      template: plain_latex_book
+      template: plain_latex
       title: Seleção
       output: exports/selecao_java.pdf
       articles:
