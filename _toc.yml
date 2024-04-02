@@ -32,6 +32,6 @@ chapters:
     sections:
       - file: docs/Anexos/Equacoes.md
       - file: docs/Anexos/Definicoes.md
-  - title: Trabalhos
+  - title: Algoritmos e Estruturas de dados
     sections:
       - file: docs/trabalhos/AED-2024-1B.md
