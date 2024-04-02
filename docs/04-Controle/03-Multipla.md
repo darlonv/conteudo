@@ -65,7 +65,7 @@ fim.
 :sync: java
 ```java
 //Variáveis
-String codigo_estado;
+int codigo_estado;
 Scanner entrada;
 
 //Entrada
@@ -121,7 +121,34 @@ else
 :::{tab-item} C
 :sync: c
 ```c
-printf("Hello world!\n");
+//Variáveis
+int codigo_estado;
+
+//Entrada
+printf("Entre com o código do estado: ");
+scanf("%d", &codigo_estado);
+
+//Processamento e saída
+if (codigo_estado == 41 ) //<- Verifica se o estado é Paraná
+{
+  printf("Estado: Paraná - Sigla: PR - Código: 41 - Região: Sul");
+}
+else
+{
+  if (codigo_estado == 42) //<- Verifica se o estado é Santa Catarina
+  {
+    printf("Estado: Santa Catarina - Sigla: SC - Código: 2 - Região: Sul");
+  }
+  else
+    if (codigo_estado == 43) //<- Verifica se o estado é Paraná
+    {
+      printf("Estado: Rio Grande do Sul - Sigla: RS - Código: 43 - Região: Sul");
+    }
+    else //<- Não restou outra opção
+    {
+      printf("Estado ainda não cadastrado no sistema.");
+    }
+}
 ```
 :::
 
