@@ -140,7 +140,7 @@ Faça um Programa que peça um número correspondente a um determinado ano e em 
 
 :::::{exercise}
 :label: ex:selecao-notas_caixa_eletronico
-Faça um programa para um caixa eletrônico. O programa deverá perguntar ao usuário a valor que deeja sacar e em seguida informar quantas notas de cada valor serão fornecidas, apresentando o maior número possível de notas de maior valor. As notas disponíveis são de 1, 5, 10, 50 e 100 Reais. O valor mínimo é de R\$ 1,00 real e o máximo de R\$ 600,00. O programa não deve se preocupar com a quantidade de notas existentes na máquina. 
+Faça um programa para um caixa eletrônico. O programa deverá perguntar ao usuário a valor que deseja sacar e em seguida informar quantas notas de cada valor serão fornecidas, apresentando o maior número possível de notas de maior valor. As notas disponíveis são de 1, 5, 10, 50 e 100 Reais. O valor mínimo é de R\$ 1,00 real e o máximo de R\$ 600,00. O programa não deve se preocupar com a quantidade de notas existentes na máquina. 
 
 **Exemplos**
 
@@ -193,7 +193,7 @@ Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustív
 
 :::::{exercise}
 :label: ex:selecao_existem_raizes_segundo_grau
-Informe se uma equação de segundo grau possui ou não raízes reais, utilizando o $\Delta$ da fórmula de Bháskara. Veja equação {eq}`eq:bhaskara-delta`.
+Informe se uma equação de segundo grau possui ou não raízes reais, utilizando o $\Delta$ da fórmula de Bháskara. Veja equação {eq}`eq:bhaskara-delta` ou {numref}`Equação %s <eq:bhaskara-delta>`.
 :::::
 
 :::::{exercise}
