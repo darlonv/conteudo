@@ -5,7 +5,7 @@
 ::::{note} Equação de segundo grau
 :::{math}
 :label: eq:segundo-grau
-ax^2 + bx +c = 0
+ax^2 + bx + c = 0
 :::
 ::::
 
@@ -19,8 +19,8 @@ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 
 ::::
 
-```{note} Equação de Bháskara - Delta
-A equação de Bháskara também pode ser apresentada da seguinte forma:
+```{note} Fórmula de Bháskara - Delta
+A fórmula de Bháskara também pode ser apresentada da seguinte forma:
 
 
 :::{math}
@@ -35,8 +35,8 @@ onde
 :::
 
 Com os valores de $\Delta$, pode-se obter as seguintes informações:
-- $\Delta = 0 $: As raízes são iguais.
-- $\Delta < 0 $: As raízes são diferentes e não pertencem aos números reais.
-- $\Delta > 0 $: As raízes são diferentes.
+- $\Delta = 0 $: As raízes são iguais e pertencem aos números reais.
+- $\Delta < 0 $: As raízes não pertencem aos números reais.
+- $\Delta > 0 $: As raízes são diferentes e pertencem aos números reais.
 
 ```
