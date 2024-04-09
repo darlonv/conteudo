@@ -14,11 +14,11 @@ project:
       template: plain_latex
       title: Seleção
       output: exports/selecao_java.pdf
-      articles:
-        - file: docs/04-Controle/lang/02-Selecao.md.java.md
-        - title: Exercícios
-        - file: docs/04-Controle/Exercicios/02-Selecao_ex_teste.md
-        - file: docs/Anexos/Equacoes.md
+      # articles:
+      #   - file: docs/04-Controle/lang/02-Selecao.md.java.md
+      #   - title: Exercícios
+      #   - file: docs/04-Controle/Exercicios/02-Selecao_ex_teste.md
+      #   - file: docs/Anexos/Equacoes.md
     # - format: pdf
     #   template: plain_latex
     #   output: exports/selecao_python.pdf
