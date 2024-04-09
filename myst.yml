@@ -1,1 +1,59 @@
-myst_parts.yml
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b92261d1-fb0c-4571-8803-1b5789f52ba8
+  title: Algoritmos e Estruturas de Dados
+  # description:
+  # keywords: []
+  authors:
+    - name: Darlon Vasata
+  # github: https://github.com/executablebooks/mystmd-quickstart
+  bibliography: /data/references.bib
+  exports:
+    - format: pdf
+      template: plain_latex
+      title: Seleção
+      output: exports/selecao_java.pdf
+      articles:
+        - file: docs/04-Controle/lang/02-Selecao.md.java.md
+        - title: Exercícios
+        - file: docs/04-Controle/Exercicios/02-Selecao_ex_teste.md
+        - file: docs/Anexos/Equacoes.md
+    # - format: pdf
+    #   template: plain_latex
+    #   output: exports/selecao_python.pdf
+    #   articles:
+    #     - docs/04-Controle/python/02-Selecao.md.python.md
+    # - format: pdf
+    #   template: plain_latex
+    #   output: exports/java.pdf
+    #   articles:
+    #     # - README.md
+    #     - docs/java/02-Selecao.md.Java.md
+    #     # - docs/Ex/02-Selecao_ex.md
+    
+
+site:
+  template: book-theme
+  title: Algoritmos
+  projects:
+    - slug: index
+      path: docs/home
+    - slug: AED
+      path: docs/AED
+    - slug: RC
+      path: docs/RC
+    - slug: CD
+      path: docs/CD
+  # options:
+  #   logo: site_logo.png
+  # nav: []
+  actions:
+    - title: Prof. Darlon
+      url: https://github.com/darlonv
+    - title: AED
+      url: /AED
+    - title: RC
+      url: /RC
+    
+  domains: []

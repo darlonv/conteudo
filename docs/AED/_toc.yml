@@ -1,0 +1,19 @@
+
+format: jb-book
+root: README
+chapters:
+  - title: Controle
+    sections:
+      - file: 04-Controle/02-Selecao.md
+      - file: 04-Controle/03-Multipla.md
+      - file: 04-Controle/04-Repeticao.md
+      - title: Exercicios
+        sections:
+          - file: 04-Controle/Exercicios/02-Selecao_ex.md
+          - file: 04-Controle/Exercicios/03-Multipla_ex.md
+          - file: 04-Controle/Exercicios/04-Repeticao_ex.md
+  - title: Anexos
+    sections:
+      - file: Anexos/Equacoes.md
+      - file: Anexos/Definicoes.md
+  
