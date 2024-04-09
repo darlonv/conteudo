@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker run --name myst-server -v $(pwd):/data -w /data -it -p 3000:3000 -p 3100:3100 darlon/myst ./start_server.sh
+#docker run --name myst-server -v $(pwd):/data -w /data -it -p 3000:3000 -p 3100:3100 darlon/myst ./start_server.sh
+docker run --rm -v $(pwd):/data -w /data -it -p 3000:3000 -p 3100:3100 darlon/myst ./start_server.sh
