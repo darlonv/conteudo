@@ -36,6 +36,14 @@ project:
 site:
   template: book-theme
   title: Algoritmos
+
+  options:
+    hide_footer_links: true
+    hide_toc: false
+    hide_outline: false
+    logo_text: Materiais
+    
+
   projects:
     - slug: index
       path: docs/home
@@ -55,5 +63,6 @@ site:
       url: /AED
     - title: RC
       url: /RC
+  
     
   domains: []
