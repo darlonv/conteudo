@@ -454,7 +454,7 @@ printf("asci %c : int %d\n", c, (int) c);
 
  A tabela ASCII possui limitações, visto sua pequena quantidade de caracteres. Desta forma, o Unicode tenta suprir esta limitação utilizando 2 bytes para cada caractere.
 
- Os valores correspondentes aos caracteres Unicode podem ser consultados em sua documentação oficial, disponível em @unicode2024.
+ Os valores correspondentes aos caracteres Unicode podem ser consultados em sua documentação oficial [@unicode2024].
 
  **Atividade**
 
