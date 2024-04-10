@@ -65,8 +65,7 @@ altura = [1.62, 1.10,  0.23, 1,80, 1,42,1.20, 0.90, 1.40 ];  #armazena a altura 
 porta_aberta = [true, false, false, true];   #armazena informações sobre 4 portas
 ```
 
-:::{prf:observation}
-:nonumber:
+:::{note} Observação
 
 Em Python, abordaremos a estrutura de dados `list` para compreendermos o funcionamento dos vetores. Diferentes dos vetores, as `lists` são dinâmicas e permitem manipulação mais complexas que os vetores. Dado isto, aqui daremos foco às suas características estáticas.
 :::
@@ -82,31 +81,6 @@ printf("Hello world!\n");
 ::::
 :::::
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
-
-  
-
-
-  </TabItem>
-  <TabItem value="java" label="Java">
-
-  
-
-  </TabItem>
-  <TabItem value="python" label="Python">
-
-  
-
-<details>
-<summary>Observação</summary>
-
-
-</details>
-
-  </TabItem>
-</Tabs>
-
 
 ## Acesso a elementos
 
@@ -114,9 +88,8 @@ Nos vetores, cada valor possui o seu **índice**. O índice é uma informação 
 
 Os índices de um vetor são valores de `0` a `n-1`, em que `n` é a quantidade total de elementos no vetor.
 
-::::{prf:observation}
+::::{attention} Atenção
 :class: dropdown
-:nonumber:
 
 Neste material, adotamos como sendo `0` o valor inicial do índice dos elementos de um vetor. abordagem é implementada em grande parte das linguagens de programação. Porém há exceções, como Pascal, p.ex. 
 
@@ -636,15 +609,18 @@ printf("Hello world!\n");
 ::::
 :::::
 
-**Exercícios**
+::::{exercise}
+:nonumber:
 
-- Desenvolva um algoritmo que contabiliza os pontos de um jogo de apostas, realizada por um apostador. Neste jogo, existem 25 valores, dos quais 10 são sorteados.  Leia valores utilizando dois vetores, em que:
-    - O primeiro vetor corresponde aos números sorteados (10 números);
-    - O segundo vetor corresponde aos números apostados pelo jogador, com 5 valores
+Desenvolva um algoritmo que contabiliza os pontos de um jogo de apostas, realizada por um apostador. Neste jogo, existem 25 valores, dos quais 10 são sorteados.  Leia valores utilizando dois vetores, em que:
+- O primeiro vetor corresponde aos números sorteados (10 números);
+- O segundo vetor corresponde aos números apostados pelo jogador, com 5 valores.
+
 Seu programa deve mostrar quantos pontos o jogador acertou. Cada número acertado corresponde a um ponto.
 
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -693,7 +669,12 @@ Seu programa deve mostrar quantos pontos o jogador acertou. Cada número acertad
 
 --------------------
 
-</details>
+:::
+::::
 
 ## Alocação dinâmica
+
+A alocação dinâmica trata da alocação do vetor em tempo de execução. Durante a execução é que é conhecida a **quantidade** de elementos que serão necessários. Após saber a quantidade de elementos o vetor pode ser alocado, solicitando memória ao sistema operacional.
+
+
 
