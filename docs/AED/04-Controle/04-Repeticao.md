@@ -90,7 +90,7 @@ Uma outra forma seria colocando cada valor em uma variável, que chamaremos de *
 :::{tab-item} Java
 :sync: java
 
-  ```javascript
+  ```java
   //variáveis
   int valor;
 
@@ -132,24 +132,24 @@ Uma outra forma seria colocando cada valor em uma variável, que chamaremos de *
 :::{tab-item} C
 :sync: c
 
-  ```c
-  //variáveis
-  int valor;
+```c
+//variáveis
+int valor;
 
-  //processamento
-  valor=0;
-  printf("%d\n",valor);
-  valor=1;
-  printf("%d\n",valor);
-  valor=2;
-  printf("%d\n",valor);
-  valor=3;
-  printf("%d\n",valor);
-  valor=4;
-  printf("%d\n",valor);
-  valor=5;
-  printf("%d\n",valor);
-  ```
+//processamento
+valor=0;
+printf("%d\n",valor);
+valor=1;
+printf("%d\n",valor);
+valor=2;
+printf("%d\n",valor);
+valor=3;
+printf("%d\n",valor);
+valor=4;
+printf("%d\n",valor);
+valor=5;
+printf("%d\n",valor);
+```
 
 :::
 ::::
@@ -219,7 +219,10 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
 :sync: pseudocodigo
 
   ```c
+  //variáveis
   inteiro: valor;
+
+  //processamento e saída
   valor ← 0;
   enquanto( var <= 5 ) faça
     escreva(var);
@@ -232,17 +235,17 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
 :::{tab-item} Java
 :sync: java
 
-  ```javascript
-  //variáveis
-  int valor;
-  valor = 0;
+```java
+//variáveis
+int valor;
+valor = 0;
 
-  //processamento e saída
-  while( valor <= 5 ){
-    System.out.println(valor);
-    valor = valor+1;
-  }
-  ```
+//processamento e saída
+while( valor <= 5 ){
+  System.out.println(valor);
+  valor = valor+1;
+}
+```
 
 :::
 
@@ -261,17 +264,17 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
 :::{tab-item} C
 :sync: c
 
-  ```js
-  //variáveis
-  int valor;
-  valor = 0;
+```c
+//variáveis
+int valor;
+valor = 0;
 
-  //processamento e saída
-  while( valor <= 5 ){
-    printf("%d\n", valor);
-    valor = valor+1;
-  }
-  ```
+//processamento e saída
+while( valor <= 5 ){
+  printf("%d\n", valor);
+  valor = valor+1;
+}
+```
 
 :::
 ::::
