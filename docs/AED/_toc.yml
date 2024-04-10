@@ -12,8 +12,19 @@ chapters:
           - file: 04-Controle/Exercicios/02-Selecao_ex.md
           - file: 04-Controle/Exercicios/03-Multipla_ex.md
           - file: 04-Controle/Exercicios/04-Repeticao_ex.md
+  - title: Caracteres
+    sections:
+      - file: 05-Caracteres/01-Strings.md
+      - file: 05-Caracteres/02-Codificacao.md
+      - file: 05-Caracteres/03-Conversoes.md
+      - title: Exercicios
+        sections:
+          - file: 04-Controle/Exercicios/02-Selecao_ex.md
+          - file: 04-Controle/Exercicios/03-Multipla_ex.md
+          - file: 04-Controle/Exercicios/04-Repeticao_ex.md
   - title: Anexos
     sections:
       - file: Anexos/Equacoes.md
       - file: Anexos/Definicoes.md
+      - file: Anexos/Tabelas.md
   
