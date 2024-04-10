@@ -1,39 +1,64 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Cadeias de caracteres
 
 ## Exercícios de fixação
 
 Resolva os exercícios abaixo sobre cadeias de caracteres. Organize seu código utilizando procedimentos e funções.
 
-1. Pergunte o nome do usuário, e mostre o nome na vertical.
+::::{exercise}
+:label: ex_string-nome_vertical
+Pergunte o nome do usuário, e mostre o nome na vertical.
 
-<details>
-  <summary>Exemplo</summary>
+
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
 ```
-Celso
+Darlon
 ```
 
 - Saída:
 
 ```
-C
-e
+D
+a
+r
 l
-s
 o
+n
 ```
 
-</details>
+---
 
-2. Pergunte ao usuário uma frase, e mostre apenas as vogais presentes na frase.
+- Entrada:
 
-<details>
-  <summary>Exemplos</summary>
+```
+Daniel
+```
+
+- Saída:
+
+```
+D
+a
+n
+i
+e
+l
+```
+
+:::
+::::
+
+
+::::{exercise}
+Pergunte ao usuário uma frase, e mostre apenas as vogais presentes na frase.
+
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -47,7 +72,8 @@ batata e cebola
 aaaeeoa
 ```
 
--------------------
+---
+
 - Entrada:
 
 ```
@@ -59,13 +85,15 @@ Abacaxi E Acerola
 ```
 AaaiEAeoa
 ```
+:::
+::::
 
-</details>
+::::{exercise}
+Digite um nome, e informe quantas letras possuem nesse nome.
 
-3. Digite um nome, e informe quantas letras possuem nesse nome.
-
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -79,7 +107,7 @@ Alessandra
 O nome Alessandra possui 10 letras.
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -93,14 +121,16 @@ Adroaldo dos Santos
 O nome Adroaldo dos Santos possui 17 letras.
 ```
 
-</details>
+:::
+::::
 
 
+::::{exercise}
+Digite uma frase, e mostre essa frase na ordem inversa (de trás para frente).
 
-4. Digite uma frase, e mostre essa frase na ordem inversa (de trás para frente).
-
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -113,11 +143,12 @@ batata e cebola
 ```
 alobec e atatab
 ```
+:::
+::::
 
-</details>
 
-
-5. Utilize o texto abaixo para responder aos questionamentos seguintes.
+::::{exercise}
+Utilize o texto abaixo para responder aos questionamentos seguintes.
 > '*Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrão de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associação com o reptil do mesmo nome.*'  
 > (Texto adaptado de [Wikipedia: Python](https://pt.wikipedia.org/wiki/Python))
 
@@ -150,10 +181,14 @@ texto = 'Python e uma linguagem de programacao de alto nivel, interpretada, de s
   </TabItem>
 </Tabs>
 
-6. Peça ao usuário que digite uma entrada, e verifique se essa entrada forma um palíndromo, ou seja, se os caracteres da entrada forem invertidos, a entrada permanece idêntica. 
+::::
 
-<details>
-  <summary>Exemplos</summary>
+::::{exercise}
+Peça ao usuário que digite uma entrada, e verifique se essa entrada forma um palíndromo, ou seja, se os caracteres da entrada forem invertidos, a entrada permanece idêntica. 
+
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -167,7 +202,7 @@ A mala nada na lama
 A frase "A mala nada na lama" é um palíndromo
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -181,7 +216,7 @@ o breve verbo
 A frase "o breve verbo" é um palíndromo
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -195,7 +230,7 @@ anotaram a data da maratona
 A frase "anotaram a data da maratona é um palíndromo"
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -209,14 +244,19 @@ anotaram as datas da maratona
 A frase "anotaram as datas da maratona não é um palíndromo"
 ```
 
-</details>
+:::
+::::
 
-7. A Cifra de César é uma das mais antigas e conhecidas técnicas de criptografia. Sua técnica consiste na substituição de cada letra do texto por outra, em que a letra é trocada pela letra seguinte no alfabeto com um número fixo.
+
+::::{exercise}
+
+A Cifra de César é uma das mais antigas e conhecidas técnicas de criptografia. Sua técnica consiste na substituição de cada letra do texto por outra, em que a letra é trocada pela letra seguinte no alfabeto com um número fixo.
 
 Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $3$ letras. Pergunte ao usuário qual frase deseja criptografar. Considere que a entrada não possui espaços, números, caracteres acentuados ou especiais.
 
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -231,7 +271,7 @@ sbwkrq
 ```
 **Observe**: p->s,y->b,t->w,h->k,o->r e n->q.
 
---------------------
+---
 
 - Entrada:
 
@@ -245,7 +285,7 @@ java
 mdyd
 ```
 
---------------------
+---
 
 ```
 anotaramadatadamaratona
@@ -257,7 +297,7 @@ anotaramadatadamaratona
 dqrwaudpdgdwdgdpdudwrqd
 ```
 
---------------------
+---
 
 ```
 xadrez
@@ -269,12 +309,17 @@ xadrez
 adguhc
 ```
 
-</details>
+:::
+::::
 
-8. Implemente um algoritmo que descriptografa um texto criptografado com a Cifra de César, cifrado utilizando deslocamento de $3$ letras. A entrada deve ser digitada pelo usuário sem espaços, números, caracteres acentuados ou especiais.
 
-<details>
-  <summary>Exemplos</summary>
+::::{exercise}
+
+Implemente um algoritmo que descriptografa um texto criptografado com a Cifra de César, cifrado utilizando deslocamento de $3$ letras. A entrada deve ser digitada pelo usuário sem espaços, números, caracteres acentuados ou especiais.
+
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -289,7 +334,7 @@ python
 ```
 **Observe**: s->p, b->y, w->t, k->h, r->o e q->n.
 
---------------------
+---
 
 - Entrada:
 
@@ -303,7 +348,7 @@ mdyd
 java
 ```
 
---------------------
+---
 
 ```
 dqrwaudpdgdwdgdpdudwrqd
@@ -315,7 +360,7 @@ dqrwaudpdgdwdgdpdudwrqd
 anotaramadatadamaratona
 ```
 
---------------------
+---
 
 ```
 adguhc
@@ -326,20 +371,34 @@ adguhc
 ```
 xadrez
 ```
+:::
+::::
 
-</details>
+::::{exercise}
 
-9. Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $3$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas.
+Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $3$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas.
 
-10. Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $n$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas. O valor $n$ também deve ser uma entrada definida pelo usuário.
+::::
 
-11. Implemente um algoritmo de criptografia que descritografa textos utilizando a Cifra de César, com deslocamento de $n$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas. O valor $n$ também deve ser uma entrada definida pelo usuário.
+::::{exercise}
 
+Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $n$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas. O valor $n$ também deve ser uma entrada definida pelo usuário.
 
-12. Desenvolva um algoritmo que altera todas as vogais de uma frase para uma mesma vogal. Terá como saída 5 frases, cada uma com uma vogal.
+::::
 
-<details>
-  <summary>Exemplos</summary>
+::::{exercise}
+
+Implemente um algoritmo de criptografia que descritografa textos utilizando a Cifra de César, com deslocamento de $n$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas. O valor $n$ também deve ser uma entrada definida pelo usuário.
+
+::::
+
+::::{exercise}
+
+Desenvolva um algoritmo que altera todas as vogais de uma frase para uma mesma vogal. Terá como saída 5 frases, cada uma com uma vogal.
+
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -356,13 +415,16 @@ i sipi nii livi i pi. nii livi pirqii nii qiir
 o sopo noo lovo o po. noo lovo porqoo noo qoor
 u supu nuu luvu u pu. nuu luvu purquu nuu quur
 ```
+:::
+::::
 
-</details>
+::::{exercise}
 
-13. Desenvolva um programa que verifica se um CPF está no formato válido (11 dígitos, seguindo o formato **xxx.xxx.xxx-xx**). O programa deve observar se apenas números, pontos e hífen foram digitados, observando nos locais corretos. Ao final deve informar "CPF Válido" ou "CPF Inválido".
+Desenvolva um programa que verifica se um CPF está no formato válido (11 dígitos, seguindo o formato **xxx.xxx.xxx-xx**). O programa deve observar se apenas números, pontos e hífen foram digitados, observando nos locais corretos. Ao final deve informar "CPF Válido" ou "CPF Inválido".
 
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 |Entrada   |Saída           |
 |----------|----------------|
@@ -373,7 +435,8 @@ u supu nuu luvu u pu. nuu luvu purquu nuu quur
 |12.3456.789-01|CPF Inválido|
 |123-456.789-01|CPF Inválido|
 
-</details>
+:::
+::::
 
 
 
@@ -389,7 +452,9 @@ para embaralhar uma palavra. Com isto, implemente um jogo que mostra uma palavra
 
 
 
-14. Peça ao usuário que digite uma palavra, e então converta as letras para números utilizando a tabela abaixo, e então mostre o resultado. Converta todas as letras da entrada para maiúsculas.
+::::{exercise}
+
+Peça ao usuário que digite uma palavra, e então converta as letras para números utilizando a tabela abaixo, e então mostre o resultado. Converta todas as letras da entrada para maiúsculas.
 
 |letra|número|
 |----|----|
@@ -404,8 +469,9 @@ para embaralhar uma palavra. Com isto, implemente um jogo que mostra uma palavra
 |X|8|
 |G|9|
 
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -419,7 +485,7 @@ STREAM
 57R3AM
 ```
 
-------------------
+---
 
 - Entrada:
 
@@ -433,7 +499,7 @@ pool
 P00L
 ```
 
-------------------
+---
 
 - Entrada:
 
@@ -447,12 +513,12 @@ algoritmos
 AL90R17M05
 ```
 
-------------------
+:::
+::::
 
+::::{exercise}
 
-</details>
-
-15. O número 153 é igual à soma dos cubos dos algarismos que o compõe.  
+O número 153 é igual à soma dos cubos dos algarismos que o compõe.  
 **Observe:**  
 $$
 1^3+5^3+3^3 = 1 + 125 + 27 = 153
@@ -460,20 +526,24 @@ $$
 
 Entre 100 e 999 também existem outros números que seguem esta propriedade. Quais são?
 
+::::
+
+::::{exercise}
+
+Implemente uma função que pergunte um valor x e uma frase ao usuário. Deve ser mostrado na tela a frase por colunas, como apresentado no exemplo abaixo, para `x=3` e frase ABACATES.
 
 
-16. Implemente uma função que pergunte um valor x e uma frase ao usuário. Deve ser mostrado na tela a frase por colunas, como apresentado no exemplo abaixo, para `x=3` e frase ABACATES.
-
-<details>
-  <summary>Exemplos</summary>
 Observe que:
 ```
 A B A
 C A T
 E S
 ```  
-O resultado deve ser o formato acima lido de cima para baixo, esquerda par a direita.
+O resultado deve ser o formato acima lido de cima para baixo, da esquerda para a direita.
 
+:::{prf:example}
+:class: dropdown
+:nonumber:
 - Entrada:
 ```
 3
@@ -484,7 +554,7 @@ ABACATES
 ACEBASAT
 ```
 
---------------------
+---
 
 - Entrada
 ```
@@ -496,14 +566,17 @@ PARALELO
 ```
 PRLLAAEO
 ```
+:::
+::::
 
-</details>
 
+::::{exercise}
 
-17. Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Chame sua função de `isAnagram`.
+Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Chame sua função de `isAnagram`.
 
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -518,8 +591,7 @@ ACEBASAT
 verdadeiro
 ```
 
---------------------
-
+---
 
 - Entrada:
 
@@ -534,7 +606,7 @@ marifrei
 falso
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -549,7 +621,7 @@ resaf
 verdadeiro
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -564,7 +636,7 @@ batata
 falso
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -579,7 +651,7 @@ cbafed
 verdadeiro
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -594,7 +666,7 @@ ser
 falso
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -609,7 +681,7 @@ aba
 falso
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -624,7 +696,7 @@ Amor
 verdadeiro
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -639,7 +711,7 @@ ovo
 falso
 ```
 
---------------------
+:::
 
 
 <!-- |Entrada|Entrada|Saida| -->
@@ -654,13 +726,16 @@ falso
 <!-- |`Roma`|`Amor`|`True`| -->
 <!-- |`ovni`|`ovo`|`False`| -->
 
-</details>
+::::
 
 
-18. Desenvolva uma função que recebe como entrada uma cadeia de caracteres, que possui diversos caracteres que se repetem em sequência. Sua função deve retornar uma cadeia de caracteres contendo a quantidade de vezes que o caractere se repete e o caractere em si, separados por vírgula.
+::::{exercise}
 
-<details>
-  <summary>Exemplos</summary>
+Desenvolva uma função que recebe como entrada uma cadeia de caracteres, que possui diversos caracteres que se repetem em sequência. Sua função deve retornar uma cadeia de caracteres contendo a quantidade de vezes que o caractere se repete e o caractere em si, separados por vírgula.
+
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -674,7 +749,7 @@ ABB
 1A,2B
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -688,7 +763,7 @@ HHHH
 4H
 ```
 
---------------------
+---
 
 
 - Entrada:
@@ -703,7 +778,7 @@ AAABBCCCC
 3A,2B,4C
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -717,7 +792,7 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 5A,3G,3C,3T,2C,2T,6A,1T,1C,1G
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -731,15 +806,17 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 2.,2,,3a,5A,8-,15!,79,20,6 ,1.
 ```
 
---------------------
+:::
+::::
 
-</details>
 
+::::{exercise}
 
-19. Desenvolva uma função que recebe como entrada uma cadeia de caracteres que é composta por um número inteiro seguido de um caractere, onde número indica a quantidade de vezes que o caractere deve ser repetido. Este padrão pode ocorrer diversas vezes na entrada, separada por vírgulas.
+Desenvolva uma função que recebe como entrada uma cadeia de caracteres que é composta por um número inteiro seguido de um caractere, onde número indica a quantidade de vezes que o caractere deve ser repetido. Este padrão pode ocorrer diversas vezes na entrada, separada por vírgulas.
 
-<details>
-  <summary>Exemplos</summary>
+:::{prf:example}
+:class: dropdown
+:nonumber:
 
 - Entrada:
 
@@ -753,7 +830,7 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 ABB
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -767,7 +844,7 @@ ABB
 HHHH
 ```
 
---------------------
+---
 
 
 - Entrada:
@@ -782,7 +859,7 @@ HHHH
 AAABBCCCC
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -796,7 +873,7 @@ AAABBCCCC
 AAAAAGGGCCCTTTCCTTAAAAAATCG
 ```
 
---------------------
+---
 
 - Entrada:
 
@@ -810,9 +887,8 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 ..,,aaaAAAAA--------!!!!!!!!!!!!!!!999999900      .
 ```
 
---------------------
-
-</details>
+:::
+::::
 
 <!-- 20. Desenvolva diversas funções que realizam a conversão de valores  -->
 

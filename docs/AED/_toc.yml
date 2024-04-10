@@ -19,9 +19,7 @@ chapters:
       - file: 05-Caracteres/03-Conversoes.md
       - title: Exercicios
         sections:
-          - file: 04-Controle/Exercicios/02-Selecao_ex.md
-          - file: 04-Controle/Exercicios/03-Multipla_ex.md
-          - file: 04-Controle/Exercicios/04-Repeticao_ex.md
+          - file: 05-Caracteres/Exercicios/01-Strings_ex.md
   - title: Anexos
     sections:
       - file: Anexos/Equacoes.md
