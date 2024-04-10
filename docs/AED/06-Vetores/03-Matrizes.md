@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Matrizes
 
 Chamaremos de **matrizes** às variáveis compostas multimensionais com duas dimensões. Os casos de mais dimensões serão abordados mais adiante.
@@ -12,74 +9,99 @@ Diferente dos vetores, que são variáveis compostas unidimensionais, ou seja, p
 **Exemplo**
 - índices em variável composta unidimensional (**vetor**) de 4 posições:
 
-![Matrizes](imagens/vetores.drawio.svg)
+![Matrizes](img/vetores.drawio.svg)
 
 
 **Exemplo**
 - índices em variável composta **bidimensional** (**matriz**) de 4 linhas e 4 colunas:
 
-![Matrizes](imagens/matrizes.drawio.svg)
+![Matrizes](img/matrizes.drawio.svg)
 
 ## Alocação estática
 
 **Sintaxe**
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
-  ```c
-  <tipo> [][]: <nome> = {{<valores>}, .. ,{<valores>}}
-  ```
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+```c
+<tipo> [][]: <nome> = {{<valores>}, .. ,{<valores>}}
+```
 
-  ```javascript
-  <tipo>[][] <nome> = { { <valores> }, .. ,{ <valores> } };
-  ```
+::::
+::::{tab-item} Java
+:sync: java
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+```java
+<tipo>[][] <nome> = { { <valores> }, .. ,{ <valores> } };
+```
 
-  ```python
-  <nome> = [ [ <valores> ], .. ,[ <valores> ] ]
-  ```
+::::
+::::{tab-item} Python
+:sync: python
 
-  </TabItem>
-</Tabs>
+```python
+<nome> = [ [ <valores> ], .. ,[ <valores> ] ]
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
 
 **Exemplo**
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
-  ```c
-  inteiro [][]: idade = {{20, 22, 18, 40},{37, 20, 12, 65}};                  //armazena informações de idade de 2 grupos com 4 pessoas cada grupo
-  real [][]: altura {{1.62, 1.10,  0.23, 1,80} , {1,42, ,1.20, 0.90, 1.40} }; //armazena informações da altura de 2 grupos com 4 pessoas cada grupo
-  logico [][] : porta_aberta = {{verdadeiro, falso}, {falso, verdadeiro}};    //armazena informações sobre portas em 2 andares
-  ```
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+```c
+inteiro [][]: idade = {{20, 22, 18, 40},{37, 20, 12, 65}};                  //armazena informações de idade de 2 grupos com 4 pessoas cada grupo
+real [][]: altura {{1.62, 1.10,  0.23, 1,80} , {1,42, ,1.20, 0.90, 1.40} }; //armazena informações da altura de 2 grupos com 4 pessoas cada grupo
+logico [][] : porta_aberta = {{verdadeiro, falso}, {falso, verdadeiro}};    //armazena informações sobre portas em 2 andares
+```
 
-  ```javascript
-  int[][] idade = { { 1, 2, 3 }, { 4, 5, 6 } };                                 //armazena informações de idade de 2 grupos com 4 pessoas cada grupo
-  float [][] altura = {{1.62, 1.10,  0.23, 1,80} , {1,42, ,1.20, 0.90, 1.40} }; //armazena informações da altura de 2 grupos com 4 pessoas cada grupo
-  boolean [][] porta_aberta = {{true, false}, {false, true}};                   //armazena informações sobre portas em 2 andares
-  ```
+::::
+::::{tab-item} Java
+:sync: java
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+```java
+int[][] idade = { { 1, 2, 3 }, { 4, 5, 6 } };                                 //armazena informações de idade de 2 grupos com 4 pessoas cada grupo
+float [][] altura = {{1.62, 1.10,  0.23, 1,80} , {1,42, ,1.20, 0.90, 1.40} }; //armazena informações da altura de 2 grupos com 4 pessoas cada grupo
+boolean [][] porta_aberta = {{true, false}, {false, true}};                   //armazena informações sobre portas em 2 andares
+```
 
-  ```python
-  idade = [ [ 1, 2, 3 ], [ 4, 5, 6 ] ]                               #armazena informações de idade de 2 grupos com 4 pessoas cada grupo
-  altura = [ [1.62, 1.10,  0.23, 1,80] , [1,42, ,1.20, 0.90, 1.40]]; #armazena informações da altura de 2 grupos com 4 pessoas cada grupo
-  porta_aberta = [ [True, False], [False, True] ];                   #armazena informações sobre portas em 2 andares
-  
-  ```
+::::
+::::{tab-item} Python
+:sync: python
 
-  </TabItem>
-</Tabs>
+```python
+print("Hello world!")
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```python
+idade = [ [ 1, 2, 3 ], [ 4, 5, 6 ] ]                               #armazena informações de idade de 2 grupos com 4 pessoas cada grupo
+altura = [ [1.62, 1.10,  0.23, 1,80] , [1,42, ,1.20, 0.90, 1.40]]; #armazena informações da altura de 2 grupos com 4 pessoas cada grupo
+porta_aberta = [ [True, False], [False, True] ];                   #armazena informações sobre portas em 2 andares
+```
+
+::::
+:::::
 
 ## Acesso a elementos
 
