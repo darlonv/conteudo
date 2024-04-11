@@ -1,7 +1,7 @@
 FROM node:20 as img1
 
 RUN apt update
-RUN apt -y install python3-pip python3-virtualenv
+RUN apt -y install python3-pip python3-virtualenv webp
 RUN mkdir /data
 WORKDIR /data
 
