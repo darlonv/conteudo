@@ -6,7 +6,6 @@
 Escrever um algoritmo que gere a seguinte matriz:
 
 :::{math}
-:nonumber:
 
 \begin{matrix}
 1 & 1 & 1 & 1 & 1 & 1 & 1\\
@@ -28,7 +27,6 @@ Leia uma matriz 4x4. Em seguida, mostre a quantidade de valores menores que 10 e
 Considere a seguinte matriz $M$:
 
 :::{math}
-:nonumber:
 
 \begin{matrix}
 90 & 65 & 95 & 66 & 12 & 3.45 & 1\\

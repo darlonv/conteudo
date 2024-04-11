@@ -69,6 +69,28 @@ chapters:
         sections:
           - file: 10-Arvores/Exercicios/01-Arvores_ex.md
           - file: 10-Arvores/Exercicios/02-Binaria_ex.md
+  - title: Ordenacao
+    sections:
+      - file: 11-Ordenacao/00-Ordenacao.md
+      - file: 11-Ordenacao/01-BubbleSort.md
+      - file: 11-Ordenacao/02-InsertionSort.md
+      - file: 11-Ordenacao/03-SelectionSort.md
+      - file: 11-Ordenacao/04-MergeSort.md
+      - file: 11-Ordenacao/05-QuickSort.md
+      - file: 11-Ordenacao/06-CountingSort.md
+      - file: 11-Ordenacao/07-RadixSort.md
+      - file: 11-Ordenacao/08-Comparacoes.md
+      - title: Exercicios
+        sections:
+          - file: 11-Ordenacao/Exercicios/00-Ordenacao_ex.md
+          - file: 11-Ordenacao/Exercicios/01-BubbleSort_ex.md
+          - file: 11-Ordenacao/Exercicios/02-InsertionSort_ex.md
+          - file: 11-Ordenacao/Exercicios/03-SelectionSort_ex.md
+          - file: 11-Ordenacao/Exercicios/04-MergeSort_ex.md
+          - file: 11-Ordenacao/Exercicios/05-QuickSort_ex.md
+          - file: 11-Ordenacao/Exercicios/06-CountingSort_ex.md
+          - file: 11-Ordenacao/Exercicios/07-RadixSort_ex.md
+          - file: 11-Ordenacao/Exercicios/08-Comparacoes_ex.md
   - title: Anexos
     sections:
       - file: Anexos/Equacoes.md
