@@ -2,8 +2,10 @@
 
 PLATFORM="linux/amd64"
 ARCHNAME="amd64"
-docker build -t darlon/myst-${ARCHNAME}:latest --platform ${PLATFORM} --target img1 .
-docker build -t darlon/myst-${ARCHNAME}:full   --platform ${PLATFORM} --target img2 .
+
+#build base images
+docker build -f Dockerfile_base -t darlon/myst-${ARCHNAME}:latest --platform ${PLATFORM} --target myst_server .
+docker build -f Dockerfile_base -t darlon/myst-latex-${ARCHNAME}:latest   --platform ${PLATFORM} --target myst_latex .
 
 docker push darlon/myst-${ARCHNAME}:latest
-docker push darlon/myst-${ARCHNAME}:full
+docker push darlon/myst-latex-${ARCHNAME}:latest

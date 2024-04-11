@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-docker run --rm -v $(pwd):/data -w /data -it darlon/myst:full /bin/bash
+docker run --rm -v $(pwd):/data -w /data -it darlon/myst-latex /bin/bash

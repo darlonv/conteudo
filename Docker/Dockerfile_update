@@ -1,0 +1,9 @@
+FROM darlon/myst:latest as myst_server
+RUN pip3 install -U mystmd
+WORKDIR /data
+
+FROM darlon/myst-latex:latest AS myst_latex
+RUN pip3 install -U mystmd
+WORKDIR /data
+
+
