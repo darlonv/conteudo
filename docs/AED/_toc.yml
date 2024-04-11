@@ -43,6 +43,32 @@ chapters:
           - file: 07-Arquivos/Exercicios/02-Texto_ex.md
           - file: 07-Arquivos/Exercicios/03-Binario_ex.md
           - file: 07-Arquivos/Exercicios/04-Registro_ex.md
+  - title: Busca
+    sections:
+      - file: 08-Busca/01-Sequencial.md
+      - file: 08-Busca/02-Binaria.md
+  - title: Listas, Filas e Pilhas
+    sections:
+      - file: 09-LFP/01-Fila.md
+      - file: 09-LFP/02-Pilha.md
+      - file: 09-LFP/03-Lista.md
+      - file: 09-LFP/04-Tabela_dispersao.md
+      - file: 09-LFP/05-Conjuntos.md
+      - title: Exercicios
+        sections:
+          - file: 09-LFP/Exercicios/01-Fila_ex.md
+          - file: 09-LFP/Exercicios/02-Pilha_ex.md
+          - file: 09-LFP/Exercicios/03-Lista_ex.md
+          - file: 09-LFP/Exercicios/04-Tabela_dispersao_ex.md
+          - file: 09-LFP/Exercicios/05-Conjuntos_ex.md
+  - title: Arvores
+    sections:
+      - file: 10-Arvores/01-Arvores.md
+      - file: 10-Arvores/02-Binaria.md
+      - title: Exercicios
+        sections:
+          - file: 10-Arvores/Exercicios/01-Arvores_ex.md
+          - file: 10-Arvores/Exercicios/02-Binaria_ex.md
   - title: Anexos
     sections:
       - file: Anexos/Equacoes.md

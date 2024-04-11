@@ -1,7 +1,4 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-# Pilhas
+# Pilha
 
 
 ## Expressões utilizando notação pós-fixa

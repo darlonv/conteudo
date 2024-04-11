@@ -1,7 +1,4 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-# Listas
+# Lista
 
 Chamamos de **listas** às estrutura de dados dinâmicas que permitem adicionar, remover e alterar seus elementos. 
 
