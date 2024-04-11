@@ -1,6 +1,6 @@
 # Merge Sort
 
-O algoritmo ***Merge Sort***, também chamado de **ordenação por intercalação** é um algoritmo do tipo divisão e conquista, ou seja, divide o problema em sub-problemas e resolve um sub-problema por vez até que o problema completo seja resolvido.
+O algoritmo ***Merge Sort***, também chamado de **ordenação por intercalação** é um algoritmo do tipo divisão e conquista, ou seja, divide o problema em sub-problemas e resolve um sub-problema por vez até que o problema completo seja resolvido [@brunet2019:merge-sort].
 
 Como a maioria dos algoritmos de divisão e conquista, o Merge Sort pode ser implementado de maneira recursiva.
 
@@ -18,25 +18,55 @@ Considere como entrada para a fase dois vetores $va$ e $vb$:
 
 ![merge_sort_p1](img/merge_sort_p1.png)
 
+::::{figure} img/merge_sort_p1.png
+:name: fig:ordenacao-merge
+
+::::
+
 É necessário que exista um outro vetor para que os valores ordenados sejam guardados. Alocamos um vetor resultado $vr$. Também é necessário acompanhar quais valores observar (índices $i$ e $j$) e onde os valores deverão ser armazenados em $vr$ (índice $k$). Todos os índices iniciam nas posições 0 de cada vetor.
 
 ![merge_sort_p2](img/merge_sort_p2.png)
+
+::::{figure} img/merge_sort_p2.png
+:name: fig:ordenacao-merge
+
+::::
 
 Como os vetores $va$ e $vb$ estão ordenados, naturalmente a primeira posição possui os menores valores. Então precisamos observar os valores em $va$ e $vb$ que estão armazenados nas posições $i$ e $j$. O menor deles deve ser armazenado em $vr$ na posição $k$.
 
 ![merge_sort_p3](img/merge_sort_p3.png)
 
+::::{figure} img/merge_sort_p3.png
+:name: fig:ordenacao-merge
+
+::::
+
 Após armazenar o menor dos valores apontados por $i$ ou $j$ em $k$, os índices devem ser incrementados. Como o menor dos dois elementos era aquele apontado por $i$, $i$ foi incrementado para que o próximo valor possa ser comparadado. $k$ deve ser incrementado também, dado que agora o próximo menor valor deve ser armazenado na próxima posição.
 
 ![merge_sort_p4](img/merge_sort_p4.png)
+
+::::{figure} img/merge_sort_p4.png
+:name: fig:ordenacao-merge
+
+::::
 
 Este processo é repetido novamente, enquanto os índices $i$ e $j$ estejam indicando posições válidas dentro dos vetores $va$ e $vb$. Observe que neste caso o menor valor é aquele apontado por $j$..
 
 ![merge_sort_p5](img/merge_sort_p5.png)
 
+::::{figure} img/merge_sort_p5.png
+:name: fig:ordenacao-merge
+
+::::
+
 O menor valor é copiado e os índices novamente são incrementados.
 
 ![merge_sort_p6](img/merge_sort_p6.png)
+
+::::{figure} img/merge_sort_p6.png
+:name: fig:ordenacao-merge
+
+::::
 
 Observe que o processo que se repete aqui é este:
 
@@ -97,9 +127,19 @@ while j < len(vb):
 
 ![merge_sort_p7](img/merge_sort_p7.png)
 
+::::{figure} img/merge_sort_p7.png
+:name: fig:ordenacao-merge
+
+::::
+
 quando ambos os índices $i$ e $j$ já estiverem fora dos vetores $va$ e $vb$, indica que todos os valores de ambos os vetores já foram copiados para $vr$. Quando este ponto for atingido, todos os valores já estarão ordenados em $vr$ e este processo é finalizado.
 
 ![merge_sort_p8](img/merge_sort_p8.png)
+
+::::{figure} img/merge_sort_p8.png
+:name: fig:ordenacao-merge
+
+::::
 
 
 algoritmo completo da intercalação:
@@ -183,20 +223,40 @@ Tome como exemplo a seguinte entrada, com o vetor $v$:
 
 ![merge_sort_dividir_p1](img/merge_sort_dividir_p1.png)
 
+::::{figure} img/merge_sort_dividir_p1.png
+:name: fig:ordenacao-merge
+
+::::
+
 a ideia é que a entrada seja dividida em dois novos vetores: *vetor da esquerda* ($ve$) e *vetor da direita* ($vd$).
 
 
 ![merge_sort_dividir_p2](img/merge_sort_dividir_p2.png)
+
+::::{figure} img/merge_sort_dividir_p2.png
+:name: fig:ordenacao-merge
+
+::::
 
 o processo de divisão desse vetor consiste em alocar dois novos vetores e copiar os elementos um a um. Obtemos o valor de $meio$, e para o vetor $ve$ copiamos os elementos de 0 a $meio-1$
 
 
 ![merge_sort_dividir_p3](img/merge_sort_dividir_p3.png)
 
+::::{figure} img/merge_sort_dividir_p3.png
+:name: fig:ordenacao-merge
+
+::::
+
 e para o vetor $vd$ realizamos o mesmo processo, porém copiando os elementos da posição $meio$ até $n-1$.
 
 
 ![merge_sort_dividir_p4](img/merge_sort_dividir_p4.png)
+
+::::{figure} img/merge_sort_dividir_p4.png
+:name: fig:ordenacao-merge
+
+::::
 
 Com isto, o algoritmo para o processo de divisão trata de obter dois subvetores, $ve$ com os elementos de $v$ da posição 0 até $meio$ e $vd$ com elementos de $v$ outro das posições $meio$ a $n$.
 
@@ -248,11 +308,23 @@ O algoritmo do Merge Sort pode ser executado recursivamente. Para tal, a entrada
 
 ![merge_sort_recursao_p1](img/merge_sort_recursao_p1.png)
 
+::::{figure} img/merge_sort_recursao_p1.png
+:name: fig:ordenacao-merge
+
+::::
+
 Após as divisões, a fase de intercalação tem início, finalizando as chamadas recursivas da fase de divisão.
 
 ![merge_sort_recursao_p2](img/merge_sort_recursao_p2.png)
 
+::::{figure} img/merge_sort_recursao_p2.png
+:name: fig:ordenacao-merge
+
+::::
+
 Observe que os retornos das chamadas à função `mergeSort` é utilizado como entrada para a função `mergeSort_intercalar`. 
+
+## Implementação
 
 De forma completa, o algoritmo recursivo do Merge Sort pode ser definido da seguinte maneira:
 
@@ -435,6 +507,11 @@ Considere a seguinte entrada, com $n=10$:
 ![merge_sort_iterativo_p1](img/merge_sort_iterativo_p1.png)
 <!-- ![merge_sort_iterativo_p1](img/merge_sort_iterativo_p1_v2.svg) -->
 
+::::{figure} img/merge_sort_iterativo_p1.png
+:name: fig:ordenacao-merge
+
+::::
+
 inicialmente temos a variável $passo=1$, ou seja o algoritmo de intercalação obém o tamanho da entradas como tendo $1$ elemento. A variável $ini$ também é inicializada com 0.
 
 Podemos calcular os demais valores e chamar a função de intercalação com:
@@ -455,6 +532,11 @@ mergeSort_intercalacao_aux(v, ini, meio, fim, aux)
 
 ![merge_sort_iterativo_p2](img/merge_sort_iterativo_p2_v2.png)
 
+::::{figure} img/merge_sort_iterativo_p2_v2.png
+:name: fig:ordenacao-merge
+
+::::
+
 E o processo se repete, onde $ini$ agora deve apontar para o próximo valor da entrada que ainda não foi processado. Então temos:
 
 ```javascript
@@ -472,6 +554,11 @@ mergeSort_intercalacao_aux(v, ini, meio, fim, aux)
 ```
 
 ![merge_sort_iterativo_p3](img/merge_sort_iterativo_p3_v2.png)
+
+::::{figure} img/merge_sort_iterativo_p3_v2.png
+:name: fig:ordenacao-merge
+
+::::
 
 E este processo pode ser repetido, até que o valor de $ini$ percorra todos os elementos da entrada. Até agora, chegamos então ao seguinte código:
 
@@ -496,23 +583,58 @@ que aplicado à entrada temos:
 
 ![merge_sort_iterativo_p4](img/merge_sort_iterativo_p4_v2.png)
 
+::::{figure} img/merge_sort_iterativo_p4_v2.png
+:name: fig:ordenacao-merge
+
+::::
+
 que ao chegar ao final, duplicamos o valor de passo e repetimos este processo até que $passo$ abranja todos os elementos da entrada. Temos então:
 
 ![merge_sort_iterativo_p5](img/merge_sort_iterativo_p5_v2.png)
 
+::::{figure} img/merge_sort_iterativo_p5_v2.png
+:name: fig:ordenacao-merge
+
+::::
+
 ![merge_sort_iterativo_p6](img/merge_sort_iterativo_p6_v2.png)
 
+::::{figure} img/merge_sort_iterativo_p6_v2.png
+:name: fig:ordenacao-merge
+
+::::
+
 ![merge_sort_iterativo_p7](img/merge_sort_iterativo_p7_v2.png)
+
+::::{figure} img/merge_sort_iterativo_p7_v2.png
+:name: fig:ordenacao-merge
+
+::::
 
 Após os elementos serem percorridos com passo $2$, este valor é duplicado novamente ($4$), e os elementos são percorridos outra vez.
 
 ![merge_sort_iterativo_p8](img/merge_sort_iterativo_p8_v2.png)
 
+::::{figure} img/merge_sort_iterativo_p8_v2.png
+:name: fig:ordenacao-merge
+
+::::
+
 ![merge_sort_iterativo_p9](img/merge_sort_iterativo_p9_v2.png)
+
+::::{figure} img/merge_sort_iterativo_p9_v2.png
+:name: fig:ordenacao-merge
+
+::::
 
 E novamente, passo é duplicado. Agora, $8$.
 
 ![merge_sort_iterativo_p10](img/merge_sort_iterativo_p10_v2.png)
+
+::::{figure} img/merge_sort_iterativo_p10_v2.png
+:name: fig:ordenacao-merge
+
+::::
 
 Desta forma, chegamos ao seguinte algoritmo:
 
@@ -561,10 +683,3 @@ def mergesort_iter_aux(v, aux):
 ```
 
 ## Análise
-
-
-
-
-## Referências
-
-[BRUNET, J.A. Estruturas de dados e Algoritmos: Ordenação por Comparação: Merge Sort. Notas de aula. Universidade Federal de Campina Grande. Campina Grande, 2019. ](https://joaoarthurbm.github.io/eda/posts/merge-sort/)
