@@ -31,6 +31,18 @@ chapters:
           - file: 06-Vetores/Exercicios/02-Vetores_ex.md
           - file: 06-Vetores/Exercicios/03-Matrizes_ex.md
           - file: 06-Vetores/Exercicios/04-Registros_ex.md
+  - title: Arquivos
+    sections:
+      - file: 07-Arquivos/01-Arquivos.md
+      - file: 07-Arquivos/02-Texto.md
+      - file: 07-Arquivos/03-Binario.md
+      - file: 07-Arquivos/04-Registro.md
+      - title: Exercicios
+        sections:
+          - file: 07-Arquivos/Exercicios/01-Arquivos_ex.md
+          - file: 07-Arquivos/Exercicios/02-Texto_ex.md
+          - file: 07-Arquivos/Exercicios/03-Binario_ex.md
+          - file: 07-Arquivos/Exercicios/04-Registro_ex.md
   - title: Anexos
     sections:
       - file: Anexos/Equacoes.md
