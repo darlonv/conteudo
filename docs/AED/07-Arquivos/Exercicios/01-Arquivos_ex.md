@@ -1,15 +1,6 @@
-import Bib from '@site/src/components/Bib';
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Arquivos
 
 ## Exercícios de fixação 
-
-1. 
-
-1. 
 
 1. 
 
@@ -17,24 +8,6 @@ import TabItem from '@theme/TabItem';
 ## Procedimentos e funções
 
 Desenvolva os exercícios a seguir utilizando um linguagem de programação, organizando todas as funções e procedimentos em um mesmo arquivo. O nome do arquivo deve ser definido de acordo com a linguagem de programação utilizada.
-
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
-
-  Nome do arquivo: `.pc`
-
-  </TabItem>
-  <TabItem value="java" label="Java">
-
-  Nome do arquivo: `.java`
-
-  </TabItem>
-  <TabItem value="python" label="Python">
-
- Nome do arquivo: `.py`
-
-  </TabItem>
-</Tabs>
 
 ### Entrada e saída
 
