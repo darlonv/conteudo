@@ -74,22 +74,41 @@ Dizemos que um algoritmo de ordenação é **estável** se ele preserva a ordem 
 
 **Exemplo**
 
-Considere dois exemplos de algoritmos abaixo, um estável e um não estável. Observe que na entrada o valor $5$ aparece duas vezes, e para diferenciar, estes estão sinalizados como $\overline{5}$ e $\underline{5}$
+Considere a utilização de dois exemplos de algoritmos distintos que ordenam a entrada apontada em [](#fig:ordenacao-estavel_entrada). Observe que na entrada o valor $5$ aparece duas vezes, e para diferenciar, estes estão sinalizados como $\overline{5}$ e $\underline{5}$
 
-- Entrada
+<!-- ![ordenacao_estavel-entrada](img/ordenacao_estavel_01-entrada.png) -->
 
-![ordenacao_estavel-entrada](img/ordenacao_estavel_01-entrada.png)
+::::{figure} ./img/ordenacao_estavel_01-entrada.png
+:name: fig:ordenacao-estavel_entrada
 
-- Algoritmo estável
-A saída do algoritmo de ordenação estável preserva a ordem sempre, independente da posição em que os elementos elementos de mesmo valor estão. A Figura a seguir ilustra a saída de um algoritmo de ordenação estável.
+Exemplo de conjunto com dados repetidos
 
-![ordenacao_estavel-estavel](img/ordenacao_estavel_02-estavel.png)
+::::
 
-- Algoritmo não estável
-Podem ocorrer situações em que um algoritmo de ordenação estável não preserve a ordem de elementos igual, como indicado na Figura abaixo. Os dados estão ordenados, porém a estabilidade trata de como **elementos de mesmo valor** estão organizados.
+### Algoritmo estável
 
-![ordenacao_estavel-estavel](img/ordenacao_estavel_03-nao_estavel.png)
+A saída do algoritmo de ordenação estável preserva a ordem sempre, independente da posição em que os elementos de mesmo valor estão. A [](#fig:ordenacao-estavel) a seguir ilustra a saída de um algoritmo de ordenação estável.
 
-## *in place* e *out of place*
+<!-- ![ordenacao_estavel-estavel](img/ordenacao_estavel_02-estavel.png) -->
 
-Os algoritmos de ordenação também podem ser diferenciados pela necessidade de utilização de espaço adicional para ordenação. Algoritmos que permitem ordenar os dados diretamente na mesma estrutura de entrada são definidos como algoritmos *in place* (no lugar), e os que requerem uma estrutura adicional como *out of place* (fora do lugar).
+::::{figure} ./img/ordenacao_estavel_02-estavel.png
+:name: fig:ordenacao-estavel
+
+Ordenação estável
+::::
+
+### Algoritmo não estável
+
+Podem ocorrer situações em que um algoritmo de ordenação estável não preserve a ordem de elementos iguais, como indicado na [](#fig:ordenacao-nao_estavel). Os dados estão ordenados, porém a estabilidade trata de como **elementos de mesmo valor** estão organizados.
+
+<!-- ![ordenacao_estavel-estavel](img/ordenacao_estavel_03-nao_estavel.png) -->
+
+::::{figure} ./img/ordenacao_estavel_03-nao_estavel.png
+:name: fig:ordenacao-nao_estavel
+
+Ordenação não estável
+::::
+
+## Ordenações no lugar fora do lugar
+
+Os algoritmos de ordenação também podem ser diferenciados pela necessidade de utilização de espaço adicional para ordenação. Algoritmos que permitem ordenar os dados diretamente na mesma estrutura de entrada são definidos como algoritmos **no lugar** (*in place*), e os que requerem uma estrutura adicional como **fora do lugar** (*out of place*).
