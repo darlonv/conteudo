@@ -1,8 +1,3 @@
-import Bib from '@site/src/components/Bib';
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Registro
 
 ## Exercícios de fixação 

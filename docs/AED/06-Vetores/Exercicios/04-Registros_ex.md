@@ -1,27 +1,31 @@
-import Bib from '@site/src/components/Bib';
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Registros
 
 ## Exercícios de fixação
 
+::::{exercise}
 1. Implemente um programa que leia o nome, a data de nascimento e o e-mail de uma pessoa e armazene os dados em um registro.
   1. Inclua um campo adicional para armazenar dados de endereço, que consiste em um registro com os campos rua, número, CEP, cidade, estado e país.
   1. Utilizando este registro, desenvolva um programa que permite armazenar uma lista telefônica com dados de 10 pessoas.
+::::
 
+::::{exercise}
 1. Programe um registro que armazena as informações de um cartão de crédito.
   1. Desenvolva uma função chamada `registroCartaoParaString`, que recebe como entrada o registro desenvolvido e retorna uma cadeia de caracteres, com o nome e os 4 últimos dígitos do cartão.
+::::
 
+::::{exercise}
 1. Elabore um registro que represente um compromisso de agenda e possui os seguintes campos:
     - Compromisso (caractere);
     - Horário (registro, com hora, minuto e segundo);
     - Data (registro, com dia, mês e ano);
+::::
 
+::::{exercise}
 1. Desenvolva um registro que armazena informações sobre o cadastro de uma pessoa. Deve armazenar nome, data de nascimento, sexo, país e cidade de nascimento.
     - Inclua no registro um campo adicional que corresponde a outro registro. Este campo deve permitir registrar se a pessoa possui como dependentes os pais, o cônjuge ou filhos.
+::::
 
+::::{exercise}
 1. Uma concessionária de automóveis usados está desenvolvendo um sistema para controle dos seus veículos. Desenvolva um registro que armazene as informações dos automóveis. O registro deve permitir armazenar os seguintes dados:
     - Ano do veículo
     - Cor
@@ -33,23 +37,32 @@ import TabItem from '@theme/TabItem';
     - Vendido (se já foi vendido ou se ainda está na concessionária)
     - Data em que foi vendido (vazio caso não tenha sido vendido)
     1. Desenvolva uma função chamada `registroVeiculoParaString`, que recebe como entrada o registro desenvolvido e tenha como saída uma cadeia de caracteres com o modelo e ano do veículo.
+::::
 
+::::{exercise}
 1. Crie uma estrutura representando os alunos de um determinado curso. A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova. Desenvolva um sistema que utiliza esta estrutura, de forma que o sistema permita cadastrar dados referentes a $5$ alunos, e após realizado o cadastro o sistema apresente:
     - Qual foi o/a aluno/a com maior nota da primeira prova.
     - Qual aluno/a possui a maior média geral.
     - Qual aluno/a possui a menor média geral.
     - Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 7 para aprovação.
+::::
 
+::::{exercise}
 1. Crie uma estrutura representando os alunos de um determinado curso. A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova.
     - Permita ao usuário entrar com os dados de 5 alunos.
     - Encontre o aluno com maior nota da primeira prova.
     - Encontre o aluno com maior media geral.
     - Encontre o aluno com menor media geral.
     - Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 7 para aprovação.
+::::
 
+::::{exercise}
 1. Elabore um programa que leia um vetor com os dados de $5$ carros: marca (máximo 15 letras), ano e preço. Leia um valor $p$ e mostre as informações de todos os carros com preço menor que $p$. Repita este processo até que seja lido um valor $p = 0$.
+::::
 
+::::{exercise}
 1. Desenvolva uma função que recebe como entrada um vetor de inteiros. A função deve retornar o maior **e** o menor valor presente no vetor.
+::::
 
 ## Procedimentos e funções
 
@@ -73,6 +86,7 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
   </TabItem>
 </Tabs>
 
+::::{exercise}
 1. Elabore um registro chamado `Tempo`, possuindo dois campos: `data` e `horario`. O campo `data` é um registro, que possui dia, mês e ano, e `horario` é um outro registro, que por sua vez possui os campos `hora`, `minuto` e `segundo`. Elabore também as seguintes funções:
     - `tempoNovo`, que retorna uma novo registro de tempo;
     - `tempoDefinirData`, que define a data em um registro;
@@ -84,15 +98,16 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
     - `tempoIgual`, que recebe como parâmetros de entrada dois registros do tipo `Tempo`. A função deve retornar verdadeiro caso o tempo nos dois registros seja igual, e falso caso não sejam.
     - `tempoEntre`, que recebe como parâmetros três registros do tipo `Tempo`: `inicio`, `fim` e `evento`. A função deve retornar verdadeiro caso `evento` esteja no intervalo de tempo entre `inicio` e `fim`, e falso caso não esteja. 
     - Para calcular as diferenças de tempo, pesquise sobre as bibliotecas de manipulação de data e tempo (Java: `Date` e `SimpleDateFormat`, Python: `date` e `datetime`).
-
+::::
 
 ### Operações matemáticas
 
+::::{exercise}
 1. Desenvolva um registro chamado de `PontoR2`, que representa um ponto em duas dimensões no plano cartesiano ($x$ e $y$).
     - Implemente uma função chamada `pontosDistancia`, que recebe como parâmetros de entrada dois pontos do tipo PontoR2. A função deve calcular e retornar a distância entre esses dois pontos;
     - Implemente uma função que recebe como entrada dois pontos e retorna o ponto médio entre esses dois pontos. Chame a função de `pontosPontoMedio`;
     - De forma semelhante, desenvolva o registro `PontoR3` e as funções `pontosDistanciaR3` e `pontosPontoMedioR3`. Nestes, deve ser incluída também a dimensão $z$.
-
+::::
 
 
  ### Testes
@@ -101,6 +116,7 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
 
 ## Desafios
 
+::::{exercise}
 1. Os lugares de um teatro costumam ser identificados através de filas e colunas. O serviço de reserva mantém um mapa que indica os lugares reservados e os ainda livres. Como lugares reservados entende-se como pedidos de reservas (com pagamento ainda não efetuado) e lugares comprados (com pagamento já efetuado). Neste contexto, se um pedido de reservas não for confirmado (pagamento efetuado), este poderá ser vendido a outra pessoa. Como exemplo, vamos considerar um teatro com $M = 15$ filas, numeradas de $0$ à $14$, cada fila com $N = 10$ cadeiras, conforme ilustrado a seguir.
 
   ```
@@ -142,6 +158,7 @@ Desenvolva os exercícios a seguir utilizando um linguagem de programação, org
       - visualizar o mapa de assentos;
       - realizar e cancelar reservas. Ao reservar deve ser informado se o cliente é estudante (estudante paga metade do valor do ingresso);
       - com uma reserva realizada, "receber" o pagamento e confirmar a reserva, marcando o assento como ocupado.
+::::
 
 ## Exercícios externos
 
