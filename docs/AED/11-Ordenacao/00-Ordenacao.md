@@ -8,6 +8,14 @@ Alguns princípios
 
 $n$ é o número total de elementos no vetor.
 
+## Troca de elementos
+::::::{prf:algorithm} Troca de elementos
+:name: alg:troca
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
 ```c
 função troca(vetor de inteiro v, inteiro i, inteiro j)
 inicio
@@ -18,13 +26,22 @@ inicio
 fim;
 ```
 
-```javascript
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static void troca(int[] v, int i, int j){
     int tmp = v[i];
     v[i] = v[j];
     v[j] = tmp;
 }
 ```
+
+::::
+::::{tab-item} Python
+:sync: python
+
 
 
 ```python
@@ -33,6 +50,19 @@ def troca(v, i, j){
 }
 ```
 
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+## Funções de comparação
 
 ## Estabilidade
 
