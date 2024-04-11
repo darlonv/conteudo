@@ -46,3 +46,12 @@ printf("Hello world!\n");
 Definição aqui
 
 ::::
+
+
+# Figuras
+
+::::{figure} <url>
+:name: fig:<tag>
+
+<legenda>
+::::
