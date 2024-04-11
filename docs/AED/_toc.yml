@@ -20,7 +20,7 @@ chapters:
       - title: Exercicios
         sections:
           - file: 05-Caracteres/Exercicios/01-Strings_ex.md
-  - title: Vetores e Registros
+  - title: Variáveis compostas
     sections:
       - file: 06-Vetores/01-Variaveis_compostas.md
       - file: 06-Vetores/02-Vetores.md
