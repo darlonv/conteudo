@@ -11,6 +11,10 @@ $n$ é o número total de elementos no vetor.
 ## Troca de elementos
 ::::::{prf:algorithm} Troca de elementos
 :name: alg:troca
+
+- **Entrada:** Vetor com valores, posição $i$, posição $j$
+- **Saída:** Sem retorno. Realiza a troca no próprio vetor.
+
 <!-- TABSET -->
 :::::{tab-set}
 ::::{tab-item} Pseudocódigo

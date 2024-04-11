@@ -57,6 +57,10 @@ Este processo deve ser repetido $n$ vezes, porém como o último elemento já es
 ## Implementação
 
 ::::::{prf:algorithm} Bubble Sort
+
+**Entrada:** Vetor a ser ordenado.  
+**Saída:** Sem retorno. Atualiza no próprio vetor de entrada.
+
 <!-- TABSET -->
 :::::{tab-set}
 ::::{tab-item} Pseudocódigo
@@ -108,7 +112,7 @@ printf("Hello world!\n");
 ::::
 :::::
 
-Funções:
+Funções utilizadas:
 - [{name}](#alg:troca)
 
 ::::::
@@ -178,6 +182,10 @@ printf("Hello world!\n");
 
 ::::
 :::::
+
+Funções utilizadas:
+- [{name}](#alg:troca)
+
 ::::::
 
 <!-- ## Análise -->
