@@ -218,17 +218,17 @@ Poderíamos reescrever o exemplo anterior utilizando esta estrutura.
 :::{tab-item} Pseudocódigo
 :sync: pseudocodigo
 
-  ```c
-  //variáveis
-  inteiro: valor;
+```c
+//variáveis
+inteiro: valor;
 
-  //processamento e saída
-  valor ← 0;
-  enquanto( var <= 5 ) faça
-    escreva(var);
-    valor ← valor+1 ; 
-  fimenquanto;
-  ```
+//processamento e saída
+valor ← 0;
+enquanto( var <= 5 ) faça
+  escreva(var);
+  valor ← valor+1 ; 
+fimenquanto;
+```
 
 :::
 
@@ -291,8 +291,8 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 - Peça ao usuário que digite um número inteiro. Em seguida, apresente a tabuada desse número, de 1 a 10.  
 - Peça ao usuário que digite 5 números positivos. Em seguida, mostre o menor valor entre os números digitados.  
 - Atualize o exercício anterior, informando também o maior valor digitado.  
-- Desenvolva um algoritmo que calcula o MDC entre dois números inteiros positivos. Veja a definição de {numref}`def:mdc`.  
-- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números inteiros positivos. Veja a definição de {numref}`def:mmc`.
+- Desenvolva um algoritmo que calcula o MDC entre dois números inteiros positivos. Veja a definição de [{name}](#def:mat-mdc).  
+- Desenvolva um algoritmo que calcula e mostra o MMC entre dois números inteiros positivos. Veja a definição de [{ame}](#def:mat-mmc).
 
 
 
@@ -307,7 +307,7 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 - Escreva um algoritmo que solicita um número inteiro positivo ao usuário, e em seguida calcula a soma de todos os números pares de 0 até o número informado.
 - Peça ao usuário que digite dois números, $b$ e $p$ (base e potência). Em seguida, calcule o valor de $b^p$ e apresente o resultado na tela.
 - Peça ao usuário que digite diversos números inteiros, parando quando um valor negativo for digitado. Mostre a média entre todos os valores digitados.
-- Desenvolva um algorimo solicite ao usuário um número e exiba a sequência de Fibonacci até o valor fornecido. Veja a definição de {numref}`def:fibonacci`.
+- Desenvolva um algorimo solicite ao usuário um número e exiba a sequência de Fibonacci até o valor fornecido. Veja a definição de [{name}](#def:mat-fibonacci).
 
 
 

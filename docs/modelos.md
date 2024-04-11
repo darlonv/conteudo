@@ -34,3 +34,15 @@ printf("Hello world!\n");
 
 ::::
 :::::
+
+
+
+
+# Definições
+
+::::{prf:definition} Nome
+:label: label_aqui
+
+Definição aqui
+
+::::

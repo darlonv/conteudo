@@ -53,7 +53,7 @@ Pergunte um número $x$ ao usuário, e então mostre todos os números de $1$ a 
 
 ::::{exercise}
 :label: ex:repeticao-fatorial
-Calcule o fatorial $f$ de um número $x$, tal que $x$ é digitado pelo usuário. Veja a definição de {numref}`def:fatorial`.
+Calcule o fatorial $f$ de um número $x$, tal que $x$ é digitado pelo usuário. Veja a definição de [{name}](#def:mat-fatorial).
 ::::
 
 ::::{exercise}
@@ -151,16 +151,7 @@ Pergunte ao usuário dois números, $x$ e $y$, e mostre todos os números perfei
 
 ::::{exercise}
 :label: ex:repeticao-fibonacci
-Calcule e mostre a sequência de Fibonacci $F$, de $1$ até $n$.  Considere:
-$$
-F(1)=1
-$$
-$$
-F(2)=1
-$$
-$$
-F(n) = F(n-1)+F(n-2)
-$$
+Calcule e mostre a sequência de Fibonacci $F$, de $1$ até $n$, tal que $n$ é digitado pelo usuário. Observe a definição de [{name}](#def:mat-fibonacci).
 
 :::note Exemplo
 
