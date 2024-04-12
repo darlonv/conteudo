@@ -2,6 +2,23 @@
 format: jb-book
 root: README
 chapters:
+  - title: Introdução
+    sections:
+      - file: 01-Introducao/01-Introducao.md
+      - file: 01-Introducao/02-Logica_de_programacao.md
+      - file: 01-Introducao/03-Linguagem_de_programacao.md
+  - title: Elementos Básicos
+    sections:
+      - file: 02-Basicos/01-Estrutura_basica.md
+      - file: 02-Basicos/02-Modelo_caixa_fechada.md
+      - file: 02-Basicos/03-Entrada_saida.md
+      - file: 02-Basicos/04-Variaveis_tipos_de_dados.md
+      - file: 02-Basicos/05-Expressoes.md
+      - file: 02-Basicos/06-Tipos_tamanhos.md
+      - file: 02-Basicos/07-Blocos.md
+      - title: Exercicios
+        sections:
+          - file: 02-Basicos/Exercicios/05-Expressoes_ex.md
   - title: Controle
     sections:
       - file: 04-Controle/02-Selecao.md

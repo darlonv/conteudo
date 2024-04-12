@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Tipos, tamanhos e literais
 
 
@@ -213,7 +210,7 @@ printf("Olá Mundo")
 
 </Tabs>
 
-Um simulador do armazenamento de variáveis pode ser conferido na em [@schmidt2024]. [Link:](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+Um simulador do armazenamento de variáveis pode ser conferido em [@schmidt2024]. [Link:](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
 ## Overflow
 

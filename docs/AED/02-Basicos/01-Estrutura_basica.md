@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Estrutura básica
 
 A estrutura básica de um algoritmo consiste na delimitação inicial para que um **código** seja executado. Este espaço é importante para para delimitar e informar ao computador qual código deve ser executado inicialmente.
