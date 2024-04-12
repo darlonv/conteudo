@@ -4,7 +4,7 @@ Para que exista a interação do algoritmo desenvolvido com agentes externos a e
 
 <!-- marp --- -->
 
-Algoritmos tratam da transformação da informação. Podemos entender um algoritmo como uma [caixa preta](https://pt.wikipedia.org/wiki/Caixa_preta_(teoria_dos_sistemas)), ou seja, um sistema que recebe dados de **entrada** e apresenta dados de **saída** sem que possamos conhecer o que está ocorrendo internamente na caixa.
+Algoritmos tratam da transformação da informação. Podemos entender um algoritmo como uma **caixa fechada** [@wiki:CaixaPreta], ou seja, um sistema que recebe dados de **entrada** e apresenta dados de **saída** sem que possamos conhecer o que está ocorrendo internamente na caixa.
 
 ![Algoritmo_caixa_preta](./img/entrada_saida.png)
 
@@ -20,9 +20,4 @@ A entrada de dados consiste nas informações a serem trabalhadas, e a saída co
 
 <!-- marp --- -->
 
-## Referências
-
-[WIKIPEDIA. Caixa-preta (teoria dos sistemas)](https://pt.wikipedia.org/wiki/Caixa_preta_(teoria_dos_sistemas))
-
-### Outros materiais
 
