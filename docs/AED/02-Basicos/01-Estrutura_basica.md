@@ -4,171 +4,183 @@ A estrutura básica de um algoritmo consiste na delimitação inicial para que u
 
 <!-- marp --- -->
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  início
+```c
+início
 
-    módulo Principal
-    //o código deverá ser inserido após início e antes de fim.
-    //linhas que se iniciam 
-  
-    //  com // são consideradas comentários, e 
-    //  não são executadas
-    fimmódulo;
+  módulo Principal
+  //o código deverá ser inserido após início e antes de fim.
+  //linhas que se iniciam 
 
-  fim.
-  ```
+  //  com // são consideradas comentários, e 
+  //  não são executadas
+  fimmódulo;
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+fim.
+```
 
-  ```javascript
-  public class Main{
+::::
+::::{tab-item} Java
+:sync: java
 
-    public static void main(String[] args){
+```java
+public class Main{
 
-        //o código deverá ser inserido após { e antes de }.
-        //linhas que se iniciam 
+  public static void main(String[] args){
 
-        //  com // são consideradas comentários, e 
-        //  não são executadas
-    }
+      //o código deverá ser inserido após { e antes de }.
+      //linhas que se iniciam 
 
+      //  com // são consideradas comentários, e 
+      //  não são executadas
   }
-  ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+}
+```
 
-  ```python
-  if __name__ == "main":
-    #o código deverá ser inserido com uma tabulação
-    # após a linha com "if __name__ == "main":"
+::::
+::::{tab-item} Python
+:sync: python
 
-    #linhas que se iniciam 
-    #  com # são consideradas comentários, e 
-    #  não são executadas
-  ```
+```python
+if __name__ == "main":
+  #o código deverá ser inserido com uma tabulação
+  # após a linha com "if __name__ == "main":"
 
-  </TabItem>
-  <TabItem value="c" label="C">
+  #linhas que se iniciam 
+  #  com # são consideradas comentários, e 
+  #  não são executadas
+```
 
-  ```c
-  #include<stdio.h>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+#include<stdio.h>
+
+int main(void){
+
+  //o código deverá ser inserido após { e antes de }.
+  //linhas que se iniciam 
+  //  com // são consideradas comentários, e 
+  //  não são executadas
+
+  return 0;
+}
+```
+
+::::
+:::::
+
   
-  int main(void){
-
-    //o código deverá ser inserido após { e antes de }.
-    //linhas que se iniciam 
-    //  com // são consideradas comentários, e 
-    //  não são executadas
-
-    return 0;
-  }
-  ```
-
-  </TabItem>
-</Tabs>
-
 ## Ambiente de desenvolvimento e execução
 
 A maneira para executar um código que foi desenvolvido utilizando uma linguagem de programação específica, depende das ferramentas utilizadas e do ambiente de desenvolvimento. Neste material, levaremos em conta que o ambiente de desenvolvimento e execução é o Sistema Operacional Linux (Ubuntu) e ambiente de desenvolvimento VSCode com as extensões específicas para a linguagem.
 
-<!-- marp --- -->
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
-
-  Extensões VSCode necessárias:
-  <ul>
-    <li><a>Não são necessárias extensões.</a></li>
-  </ul>
+Extensões VSCode necessárias:
+- Não são necessárias extensões.
 
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  - Ferramentas necessárias:
-    - Compilador Java
-    - JVM
-  - Extensões VSCode necessárias:
-    - [Extension Pack for Java (vscjava.vscode-java-pack)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
-  - Para compilar e executar:
+- Ferramentas necessárias:
+  - Compilador Java
+  - JVM
+- Extensões VSCode necessárias:
+  - [Extension Pack for Java (vscjava.vscode-java-pack)](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+- Para compilar e executar:
 
-  ```bash
-  javac <nome do arquivo, com .java> #para compilar
-  java <nome do arquivo, sem .java> #para executar
-  ```
-
+```bash
+javac <nome do arquivo, com .java> #para compilar
+java <nome do arquivo, sem .java> #para executar
+```
 
 **Exemplo**
 
-- Compilando e executando o arquivo `Hello.java`
+:::{prf:example}
+:nonumber:
+
+Compilando e executando o arquivo `Hello.java`
 
 ```bash
 javac Hello.java
 java Hello
 ```
 
+:::
+
+::::
+::::{tab-item} Python
+:sync: python
+
+- Ferramentas necessárias:
+  - Python 3
+- Extensões VSCode necessárias:
+  - [Python (ms-python.python)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+- Para executar:
+
+```bash
+python3 <nome do arquivo, com .py>
+```
+
+:::{prf:example}
+:nonumber:
+
+Executando o arquivo `hello.py`  
+
+```bash
+python3 hello.py
+```
+:::
 
 
-  </TabItem>
-  <TabItem value="python" label="Python">
 
-  - Ferramentas necessárias:
-    - Python 3
-  - Extensões VSCode necessárias:
-    - [Python (ms-python.python)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+::::
+::::{tab-item} C
+:sync: c
 
-  - Para executar:
+- Ferramentas necessárias:
+  - Compilador GCC
+- Extensões VSCode necessárias:
+<ul>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++ (ms-vscode.cpptools)</a></li>
+</ul>
 
-  ```bash
-  python3 <nome do arquivo, com .py>
-  ```
+- Para compilar e executar:
 
-    **Exemplo**
-    - Executando o arquivo `hello.py`  
-    
-    ```bash
-    python3 hello.py
-    ```
+```bash
+gcc <nome do arquivo, com .c> -o <nome do executável> #para compilar
+./<nome do executável> #para executar
+```
 
+::::{prf:example}
+:nonumber:
 
+Compilando e executando o arquivo `hello.c`  
 
+```bash
+gcc hello.c -o hello
+./hello
+```
+::::
 
-  </TabItem>
+::::
+:::::
 
-  <TabItem value="c" label="C">
-
-  - Ferramentas necessárias:
-    - Compilador GCC
-  - Extensões VSCode necessárias:
-  <ul>
-    <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++ (ms-vscode.cpptools)</a></li>
-  </ul>
-
-  - Para compilar e executar:
-
-  ```bash
-  gcc <nome do arquivo, com .c> -o <nome do executável> #para compilar
-  ./<nome do executável> #para executar
-  ```
-
-    **Exemplo**
-    - Compilando e executando o arquivo `hello.c`  
-    
-    ```bash
-    gcc hello.c -o hello
-    ./hello
-    ```
-
-
-  </TabItem>
-
-</Tabs>
-
+<!-- 
 ## Referências
 
 ### Outros materiais
@@ -176,4 +188,6 @@ java Hello
 - [Ubuntu](https://ubuntu.com/download)
 - [VSCode Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 - [VSCode Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [VSCode C/C++ Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+- [VSCode C/C++ Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) 
+
+-->
