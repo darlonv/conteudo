@@ -138,7 +138,7 @@ idade[30] = 26; //ERRO
 ::::{tab-item} Java
 :sync: java
 
-```javas
+```java
 <nome>[<índice>]
 ```
 
