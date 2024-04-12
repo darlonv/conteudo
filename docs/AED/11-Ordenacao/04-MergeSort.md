@@ -14,63 +14,88 @@ Inicialmente abordaremos a segunda fase do algoritmo, a intercalação. Esta fas
 
 **Exemplo**
 
-Considere como entrada para a fase dois vetores $va$ e $vb$:
+Considere como entrada para a fase de intercalação dois vetores $va$ e $vb$, como indicado na [](#fig:ordenacao-merge_sort_p1).
 
-![merge_sort_p1](img/merge_sort_p1.png)
+<!-- ![merge_sort_p1](img/merge_sort_p1.png) -->
 
 ::::{figure} img/merge_sort_p1.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_p1
 
+Vetores de entrada para fase de intercalação
 ::::
 
-É necessário que exista um outro vetor para que os valores ordenados sejam guardados. Alocamos um vetor resultado $vr$. Também é necessário acompanhar quais valores observar (índices $i$ e $j$) e onde os valores deverão ser armazenados em $vr$ (índice $k$). Todos os índices iniciam nas posições 0 de cada vetor.
+É necessário que exista um outro vetor para que os valores ordenados sejam guardados. Alocamos um vetor resultado $vr$. Também é necessário acompanhar quais valores observar (índices $i$ e $j$) e onde os valores deverão ser armazenados em $vr$ (índice $k$), como na [](#fig:ordenacao-merge_sort_p2). Todos os índices iniciam nas posições 0 de cada vetor.
 
-![merge_sort_p2](img/merge_sort_p2.png)
+<!-- ![merge_sort_p2](img/merge_sort_p2.png) -->
 
 ::::{figure} img/merge_sort_p2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_p2
 
+Vetor resultado e índices inicializado em $0$
 ::::
 
-Como os vetores $va$ e $vb$ estão ordenados, naturalmente a primeira posição possui os menores valores. Então precisamos observar os valores em $va$ e $vb$ que estão armazenados nas posições $i$ e $j$. O menor deles deve ser armazenado em $vr$ na posição $k$.
+Como os vetores $va$ e $vb$ estão ordenados, naturalmente a primeira posição possui os menores valores. Então precisamos observar os valores em $va$ e $vb$ que estão armazenados nas posições $i$ e $j$. O menor deles deve ser armazenado em $vr$ na posição $k$ ([](#fig:ordenacao-merge_sort_p3)).
 
-![merge_sort_p3](img/merge_sort_p3.png)
+<!-- ![merge_sort_p3](img/merge_sort_p3.png) -->
 
 ::::{figure} img/merge_sort_p3.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_p3
 
+Comparação de valores nos vetores de entrada nas posições dos índices $i$ e $j$
 ::::
 
-Após armazenar o menor dos valores apontados por $i$ ou $j$ em $k$, os índices devem ser incrementados. Como o menor dos dois elementos era aquele apontado por $i$, $i$ foi incrementado para que o próximo valor possa ser comparadado. $k$ deve ser incrementado também, dado que agora o próximo menor valor deve ser armazenado na próxima posição.
+Após armazenar o menor dos valores apontados por $i$ ou $j$ em $k$, os índices devem ser incrementados. Como o menor dos dois elementos era aquele apontado por $i$, $i$ foi incrementado para que o próximo valor possa ser comparadado. $k$ deve ser incrementado também, dado que agora o próximo menor valor deve ser armazenado na próxima posição ([](#fig:ordenacao-merge_sort_p4)).
 
-![merge_sort_p4](img/merge_sort_p4.png)
+<!-- ![merge_sort_p4](img/merge_sort_p4.png) -->
 
 ::::{figure} img/merge_sort_p4.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_p4
 
+Cópia do menor valor, incremento do índice que possuía o menor valor e incremento do índice $k$
 ::::
 
-Este processo é repetido novamente, enquanto os índices $i$ e $j$ estejam indicando posições válidas dentro dos vetores $va$ e $vb$. Observe que neste caso o menor valor é aquele apontado por $j$..
+Este processo é repetido novamente, enquanto os índices $i$ e $j$ estejam indicando posições válidas dentro dos vetores $va$ e $vb$. Observe que neste caso o menor valor é aquele apontado por $j$ ([](#fig:ordenacao-merge_sort_p5)).
 
-![merge_sort_p5](img/merge_sort_p5.png)
+<!-- ![merge_sort_p5](img/merge_sort_p5.png) -->
 
 ::::{figure} img/merge_sort_p5.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_p5
 
+Comparação de valores nos vetores de entrada nas posições dos índices $i$ e $j$
 ::::
 
-O menor valor é copiado e os índices novamente são incrementados.
+O menor valor é copiado e os índices novamente são incrementados ([](#fig:ordenacao-merge)).
 
-![merge_sort_p6](img/merge_sort_p6.png)
+<!-- ![merge_sort_p6](img/merge_sort_p6.png) -->
 
 ::::{figure} img/merge_sort_p6.png
 :name: fig:ordenacao-merge
 
+Cópia do menor valor, incremento do índice que possuía o menor valor e incremento do índice $k$
 ::::
 
-Observe que o processo que se repete aqui é este:
+O [](#alg:ordenacao_mergesort-percorrer_entradas) realiza esse processo.
 
-```javascript
+::::::{prf:algorithm} Percorre entradas copiando para auxiliar
+:name: alg:ordenacao_mergesort-percorrer_entradas
+
+**Entrada:** Vetores $va$ e $vb$  
+**Saída:** Sem retorno. Dados no vetor $vr$
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 while( i < va.length && j < vb.length){
     if(va[i]<=vb[j]){
         vr[k] = va[i];
@@ -82,6 +107,10 @@ while( i < va.length && j < vb.length){
     k++;
 }
 ```
+
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
 while i < len(va) and j < len(vb):
@@ -95,11 +124,41 @@ while i < len(va) and j < len(vb):
 
 ```
 
-a repetição ocorre enquanto ambos os índices $i$ e $j$ estejam apontando dentro de seus respectivos vetores. 
+::::
+::::{tab-item} C
+:sync: c
 
-No exemplo, neste ponto $vb$ já possui todos os seus valores em $vr$, dado que $j$ indica uma posição fora de $vb$. Aqui resta incluir os demais elementos de $va$ em $vr$. Aqui, como um dos índices já está fora do vetor, repetição é finalizada. Então é necessário testar individualmente cada índice, e se ainda houverem valores não incluídos, incluí-los.
+```c
+printf("Hello world!\n");
+```
 
-```javascript
+::::
+:::::
+::::::
+
+
+a repetição ocorre enquanto ambos os índices $i$ e $j$ estejam apontando dentro de seus respectivos vetores, executando como definido no [](#alg:ordenacao_mergesort-incrementa_indices_copiando). 
+
+::::::{prf:algorithm} Incrementa índices copiando valores
+:name: alg:ordenacao_mergesort-incrementa_indices_copiando
+
+**Entrada:** Vetores $va$ e $vb$, já ordenados.  
+**Saída:** Sem retorno. Valores copiados para o vetor $vr$.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 while(i<va.length){
     vr[k] = va[i];
     i++;
@@ -113,6 +172,10 @@ while(j<vb.length){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 while i < len(va):
     vr[k] = va[i]
@@ -125,26 +188,62 @@ while j < len(vb):
     k+=1
 ```
 
-![merge_sort_p7](img/merge_sort_p7.png)
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+No exemplo, neste ponto $vb$ já possui todos os seus valores em $vr$, dado que $j$ indica uma posição fora de $vb$. Aqui resta incluir os demais elementos de $va$ em $vr$. Aqui, como um dos índices já está fora do vetor, repetição é finalizada. Então é necessário testar individualmente cada índice, e se ainda houverem valores não incluídos, incluí-los ([](#fig:ordenacao-merge_sort_p7)).
+
+
+<!-- ![merge_sort_p7](img/merge_sort_p7.png) -->
 
 ::::{figure} img/merge_sort_p7.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_p7
 
+Cópia de valores restantes
 ::::
 
-quando ambos os índices $i$ e $j$ já estiverem fora dos vetores $va$ e $vb$, indica que todos os valores de ambos os vetores já foram copiados para $vr$. Quando este ponto for atingido, todos os valores já estarão ordenados em $vr$ e este processo é finalizado.
+quando ambos os índices $i$ e $j$ já estiverem fora dos vetores $va$ e $vb$, indica que todos os valores de ambos os vetores já foram copiados para $vr$. Quando este ponto for atingido, todos os valores já estarão ordenados em $vr$ e este processo é finalizado ([](#fig:ordenacao-merge_sort_p8)).
 
-![merge_sort_p8](img/merge_sort_p8.png)
+<!-- ![merge_sort_p8](img/merge_sort_p8.png) -->
 
 ::::{figure} img/merge_sort_p8.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_p8
 
+Fim da intercalação
 ::::
 
 
-algoritmo completo da intercalação:
+O [](#alg:mergesort-intercalacao) apresenta a processo completo da fase de intercalação.
 
-```javascript
+::::::{prf:algorithm} Intercalação
+:name: alg:mergesort-intercalacao
+
+**Entrada:** Vetores ordenados $va$ e $vb$  
+**Saída:** Vetor único ordenado, com os valores de $va$ e $vb$ 
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static int[] mergeSort_intercalar(int[] va, int[] vb){
     int i=0, j=0, k=0;
     int[] vr = new int[va.length + vb.length];
@@ -178,6 +277,10 @@ public static int[] mergeSort_intercalar(int[] va, int[] vb){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 import numpy as np
 def mergeSort_intercalar(va, vb):
@@ -209,6 +312,20 @@ def mergeSort_intercalar(va, vb):
     return vr
 ```
 
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+
+
 **Atividade**
 -  É realmente necessária a variável com o índice $k$?
     - como seria possível calcular o valor de $k$ sempre que necessário, sem alocar a variável?
@@ -219,48 +336,71 @@ A fase de divisão consiste em separar a entrada em duas partes (como seu nome j
 
 **Exemplo**
 
-Tome como exemplo a seguinte entrada, com o vetor $v$:
+Tomemos como exemplo de entrada um vetor $v$a, como indicado na [](#fig:ordenacao-merge_sort_dividir_p1).
 
-![merge_sort_dividir_p1](img/merge_sort_dividir_p1.png)
+<!-- ![merge_sort_dividir_p1](img/merge_sort_dividir_p1.png) -->
 
 ::::{figure} img/merge_sort_dividir_p1.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_dividir_p1
 
+Entrada de exemplo
 ::::
 
-a ideia é que a entrada seja dividida em dois novos vetores: *vetor da esquerda* ($ve$) e *vetor da direita* ($vd$).
+a ideia é que a entrada seja dividida em dois novos vetores: *vetor da esquerda* ($ve$) e *vetor da direita* ($vd$), como apresentado em [](#fig:ordenacao-merge_sort_dividir_p2).
 
 
-![merge_sort_dividir_p2](img/merge_sort_dividir_p2.png)
+<!-- ![merge_sort_dividir_p2](img/merge_sort_dividir_p2.png) -->
 
 ::::{figure} img/merge_sort_dividir_p2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_dividir_p2
 
+Entrada dividida em dois vetores, vetor esquerda e vetor direita
 ::::
 
-o processo de divisão desse vetor consiste em alocar dois novos vetores e copiar os elementos um a um. Obtemos o valor de $meio$, e para o vetor $ve$ copiamos os elementos de 0 a $meio-1$
+o processo de divisão desse vetor consiste em alocar dois novos vetores e copiar os elementos um a um. Obtemos o valor de $meio$, e para o vetor $ve$ copiamos os elementos de 0 a $meio-1$ ([](#fig:ordenacao-merge_sort_dividir_p3)).
 
 
-![merge_sort_dividir_p3](img/merge_sort_dividir_p3.png)
+<!-- ![merge_sort_dividir_p3](img/merge_sort_dividir_p3.png) -->
 
 ::::{figure} img/merge_sort_dividir_p3.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_dividir_p3
 
+Cópia dos valores para o vetor esquerda
 ::::
 
-e para o vetor $vd$ realizamos o mesmo processo, porém copiando os elementos da posição $meio$ até $n-1$.
+e para o vetor $vd$ realizamos o mesmo processo, porém copiando os elementos da posição $meio$ até $n-1$ ([](#fig:ordenacao-merge_sort_dividir_p4)).
 
 
-![merge_sort_dividir_p4](img/merge_sort_dividir_p4.png)
+<!-- ![merge_sort_dividir_p4](img/merge_sort_dividir_p4.png) -->
 
 ::::{figure} img/merge_sort_dividir_p4.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_dividir_p4
 
+Cópia dos valores para o vetor direita
 ::::
 
-Com isto, o algoritmo para o processo de divisão trata de obter dois subvetores, $ve$ com os elementos de $v$ da posição 0 até $meio$ e $vd$ com elementos de $v$ outro das posições $meio$ a $n$.
+Com isto, os passos para a divisão tratam de obter dois subvetores, $ve$ com os elementos de $v$ da posição 0 até $meio$ e $vd$ com elementos de $v$ outro das posições $meio$ a $n$ ([](#alg:mergesort-divisao)).
 
-```javascript
+::::::{prf:algorithm} Divisão
+:name: alg:mergesort-divisao
+
+**Entrada:** Vetor a ser dividido em dois novos vetores.  
+**Saída:** Sem retorno. Valores são copiados para os vetores $ve$ e $vd$.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static int[] vetorSubVetor_copia(int []v, int ini, int fim){
     int i, k=0;
     int[] sub_vetor = new int[fim - ini];
@@ -282,6 +422,10 @@ public static void divisao(int[] v){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 import numpy as np
 def vetorSubVetor_copia(v, ini, fim){
@@ -298,28 +442,41 @@ def divisao(int[] v){
     ve = vetorSubVetor_copia(v, 0, meio); #do início até a posição meio-1
     vd = vetorSubVetor_copia(v, meio, len(v)); #de meio até tamanho-1
 }
-
 ```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
 
 
 ### Recursão
 
-O algoritmo do Merge Sort pode ser executado recursivamente. Para tal, a entrada deve ser dividida recursivamente, chamando o próprio algoritmo de ordenação, até que possua um único elemento. Lembre-se: uma entrada que possui um único elemento já é uma entrada que está ordenada.
+O algoritmo do Merge Sort pode ser executado recursivamente. Para tal, a entrada deve ser dividida recursivamente, chamando o próprio algoritmo de ordenação, até que possua um único elemento ([](#fig:ordenacao-merge_sort_recursao_p1)). Lembre-se: uma entrada que possui um único elemento já é uma entrada que está ordenada.
 
-![merge_sort_recursao_p1](img/merge_sort_recursao_p1.png)
+<!-- ![merge_sort_recursao_p1](img/merge_sort_recursao_p1.png) -->
 
 ::::{figure} img/merge_sort_recursao_p1.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_recursao_p1
 
+Execução recursiva da fase de divisão
 ::::
 
-Após as divisões, a fase de intercalação tem início, finalizando as chamadas recursivas da fase de divisão.
+Após as divisões, a fase de intercalação tem início, finalizando as chamadas recursivas da fase de divisão ([](#fig:ordenacao-merge_sort_recursao_p2)).
 
-![merge_sort_recursao_p2](img/merge_sort_recursao_p2.png)
+<!-- ![merge_sort_recursao_p2](img/merge_sort_recursao_p2.png) -->
 
 ::::{figure} img/merge_sort_recursao_p2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_recursao_p2
 
+Execução recursiva das fases de divisão e intercalação
 ::::
 
 Observe que os retornos das chamadas à função `mergeSort` é utilizado como entrada para a função `mergeSort_intercalar`. 
@@ -328,7 +485,25 @@ Observe que os retornos das chamadas à função `mergeSort` é utilizado como e
 
 De forma completa, o algoritmo recursivo do Merge Sort pode ser definido da seguinte maneira:
 
-```javascript
+::::::{prf:algorithm} Merge Sort Recursivo
+
+**Entrada:** Vetor a ser ordenado.  
+**Saída:** Vetor com dados ordenados.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static int[] mergeSort_rec(int[] v){
     int[] vr, ve_ordenado, vd_ordenado;
     if(v.length <=1){  // <- fim da recursão
@@ -354,6 +529,9 @@ public static int[] mergeSort_rec(int[] v){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
 def mergeSort_rec(v):
@@ -375,6 +553,19 @@ def mergeSort_rec(v):
     return vr
 ```
 
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+
 **Atividade**
 1. Na fase de divisão, quando a entrada possui uma quantidade de elementos de número ímpar, é o vetor $ve$ que fica com um elemento a menor que $vd$. Por que isso acontece?
 
@@ -382,13 +573,31 @@ def mergeSort_rec(v):
 
 ## Otimizações de código
 
-Algumas otimizações de código podem ser aplicadas aqui. Uma delas é retirar a criação dos diversos vetores $ve$, $vd$ e $vr$ a cada chamada da função `mergeSort_intercalar`. A criação de um ou mais vetores no decorrer do código leva a perda de desempenho. Neste caso, um único vetor auxiliar alocado no início do algoritmo pode resolver essa situação.
+Algumas otimizações de código podem ser aplicadas aqui. Uma delas é retirar a criação dos diversos vetores $ve$, $vd$ e $vr$ a cada chamada da função `mergeSort_intercalar`. A criação de um ou mais vetores no decorrer do código ocasiona em perda de desempenho. Neste caso, um único vetor auxiliar alocado no início do algoritmo pode otimizar o processo.
 
 Observando as Figuras na seção [Recursão](#recursão) podemos observar que a operação de intercalação sempre ocorre em valores que estão organizados continuamente no vetor de entrada $v$. Com isto, ao invés de alocarmos um novo vetor para retorná-lo podemos modificar o próprio vetor $v$ da entrada. 
 
 Seguindo esta mesma abordagem, podemos modificar o algoritmo de intercalação, para que ao invés de criar um novo vetor utilize um vetor auxiliar e salve o resultado no próprio vetor $v$. 
 
-```javascript
+::::::{prf:algorithm} Merge Sort: Intercalar - com vetor auxiliar
+
+**Entrada:** Vetor a ser ordenado, posição inicial, posição meio, posição final, vetor auxiliar.  
+**Saída:** Sem retorno. Dados copiados para o vetor auxiliar.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static void mergeSort_intercalar_aux(int[] v, int ini, int meio, int fim, int[] aux){
     int i=ini, j=meio, k=ini;
 
@@ -423,6 +632,10 @@ public static void mergeSort_intercalar_aux(int[] v, int ini, int meio, int fim,
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 def mergeSort_intercalar_aux(v, ini, meio, fim, aux):
     i=ini
@@ -453,13 +666,42 @@ def mergeSort_intercalar_aux(v, ini, meio, fim, aux):
     # é necessário copiá-los de volta ao vetor v
     for k in range(ini, fim):
         v[k] = aux[k]
-
 ```
 
-Esta ideia de usar índices ao invés de criar novos vetores também pode ser aplicada na fase da divisão. Pode-ser observar a variável `meio` indica onde o vetor $vd$ inicia, e consequentemente, `meio-1` é a posição final de $va$.
+::::
+::::{tab-item} C
+:sync: c
 
-```javascript
+```c
+printf("Hello world!\n");
+```
 
+::::
+:::::
+::::::
+
+
+A ideia de usar índices ao invés de criar novos vetores também pode ser aplicada na fase da divisão. Pode-ser observar a variável `meio` indica onde o vetor $vd$ inicia, e consequentemente, `meio-1` é a posição final de $va$.
+
+::::::{prf:algorithm} Merge Sort Recursivo com vetor auxiliar
+
+**Entrada:** Vetor a ser ordenado.  
+**Saída:** Sem retorno. Atualiza no próprio vetor de entrada.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static void mergeSort(int[] v){
     int[] aux = new int[v.length];
     mergeSort_aux(v, 0, v.length, aux);
@@ -478,6 +720,10 @@ public static void mergeSort_aux(int[] v, int ini, int fim, int[] aux){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 import numpy as np
 def mergeSort(v):
@@ -494,28 +740,58 @@ def mergeSort_aux(v, ini, fim, aux):
         mergeSort_intercalar_aux(v, ini, meio, fim, aux)
 ```
 
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+
 ## Iterativo
 
-O algoritmo do Merge Sort também pode ser executado de maneira iterativa, ou seja, sem o uso de recursividade. Para tal, a função mergeSort_intercalar_aux auxilia bastante neste propósito.
+O algoritmo do Merge Sort também pode ser executado de maneira iterativa, ou seja, sem o uso de recursividade. Para tal, a função `mergeSort_intercalar_aux` auxilia bastante neste propósito.
 
 Nesta abordagem, ao invés de dividirmos a entrada devemos observar a entrada de acordo com um valor que aqui chamaremos de $passo$. Este valor é iniciado com $1$, e seu valor é dobrado a cada vez que a entrada completa é percorrida. $passo$ é o tamanho das entradas para a função de intercalar.
 
 **Exemplo**
 
-Considere a seguinte entrada, com $n=10$:
+Considere a entrada da [](#fig:ordenacao-merge_sort_iterativo_p1), com $n=10$:
 
-![merge_sort_iterativo_p1](img/merge_sort_iterativo_p1.png)
+<!-- ![merge_sort_iterativo_p1](img/merge_sort_iterativo_p1.png) -->
 <!-- ![merge_sort_iterativo_p1](img/merge_sort_iterativo_p1_v2.svg) -->
 
 ::::{figure} img/merge_sort_iterativo_p1.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p1
 
+Exemplo de entrada
 ::::
 
-inicialmente temos a variável $passo=1$, ou seja o algoritmo de intercalação obém o tamanho da entradas como tendo $1$ elemento. A variável $ini$ também é inicializada com 0.
+inicialmente temos a variável $passo=1$, ou seja o algoritmo de intercalação obém o tamanho da entradas como tendo $1$ elemento. A variável $ini$ também é inicializada com 0, como apresentado na [](#fig:ordenacao-merge_sort_iterativo_p2).
 
 Podemos calcular os demais valores e chamar a função de intercalação com:
-```javascript
+
+::::::{prf:algorithm} Merge Sort Iterativo: valores iniciais dos índices de acordo com o passo
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 ini = 0
 fim = ini + passo*2
 meio = ini+passo
@@ -523,6 +799,10 @@ meio = ini+passo
 mergeSort_intercalacao_aux(v, ini, meio, fim, aux);
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 ini = 0
 fim = ini + passo*2
@@ -530,21 +810,52 @@ meio = ini + passo
 mergeSort_intercalacao_aux(v, ini, meio, fim, aux)
 ```
 
-![merge_sort_iterativo_p2](img/merge_sort_iterativo_p2_v2.png)
+::::
+::::{tab-item} C
+:sync: c
 
-::::{figure} img/merge_sort_iterativo_p2_v2.png
-:name: fig:ordenacao-merge
+```c
+printf("Hello world!\n");
+```
 
 ::::
+:::::
 
-E o processo se repete, onde $ini$ agora deve apontar para o próximo valor da entrada que ainda não foi processado. Então temos:
 
-```javascript
+<!-- ![merge_sort_iterativo_p2](img/merge_sort_iterativo_p2_v2.png) -->
+
+::::{figure} img/merge_sort_iterativo_p2_v2.png
+:name: fig:ordenacao-merge_sort_iterativo_p2
+
+Índices de início, meio e fim
+::::
+
+E o processo se repete, onde $ini$ agora deve apontar para o próximo valor da entrada que ainda não foi processado, como mostrado na [](#fig:ordenacao-merge_sort_iterativo_p3). Então temos:
+
+::::::{prf:algorithm} Merge Sort Iterativo: atualização dos índices de acordo com o passo
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 ini = ini + passo*2
 fim = ini + passo*2
 meio = ini + passo
 mergeSort_intercalacao_aux(v, ini, meio, fim, aux);
 ```
+
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
 ini = ini + passo*2
@@ -553,16 +864,46 @@ meio = ini + passo
 mergeSort_intercalacao_aux(v, ini, meio, fim, aux)
 ```
 
-![merge_sort_iterativo_p3](img/merge_sort_iterativo_p3_v2.png)
+::::
+::::{tab-item} C
+:sync: c
 
-::::{figure} img/merge_sort_iterativo_p3_v2.png
-:name: fig:ordenacao-merge
+```c
+printf("Hello world!\n");
+```
 
 ::::
+:::::
+::::::
 
-E este processo pode ser repetido, até que o valor de $ini$ percorra todos os elementos da entrada. Até agora, chegamos então ao seguinte código:
 
-```javascript
+<!-- ![merge_sort_iterativo_p3](img/merge_sort_iterativo_p3_v2.png) -->
+
+::::{figure} img/merge_sort_iterativo_p3_v2.png
+:name: fig:ordenacao-merge_sort_iterativo_p3
+
+Índices de início, meio e fim atualizados com passo $1$
+::::
+
+E este processo pode ser repetido, até que o valor de $ini$ percorra todos os elementos da entrada. Até agora, chegamos então ao seguinte código do [](#alg:mergesort-atualizacao_indices_passo).
+
+::::::{prf:algorithm} Merge Sort Iterativo: atualização dos índices de acordo com o passo
+:name: alg:mergesort-atualizacao_indices_passo
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 ini = 0;
 while( ini + passo < n ){
     fim = ini + passo*2;
@@ -570,6 +911,10 @@ while( ini + passo < n ){
     mergeSort_intercalacao_aux(v, ini, meio, fim, aux);
 }
 ```
+
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
 ini = 0
@@ -579,70 +924,109 @@ while ini + passo < n :
     mergeSort_intercalacao_aux(v, ini, meio, fim, aux)
 ```
 
-que aplicado à entrada temos:
+::::
+::::{tab-item} C
+:sync: c
 
-![merge_sort_iterativo_p4](img/merge_sort_iterativo_p4_v2.png)
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+que aplicado à entrada temos os valores definidos como na [](#fig:ordenacao-merge_sort_iterativo_p4).
+
+<!-- ![merge_sort_iterativo_p4](img/merge_sort_iterativo_p4_v2.png) -->
 
 ::::{figure} img/merge_sort_iterativo_p4_v2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p4
 
+Índices de início, meio e fim atualizados com passo $1$
 ::::
 
-que ao chegar ao final, duplicamos o valor de passo e repetimos este processo até que $passo$ abranja todos os elementos da entrada. Temos então:
+que ao chegar ao final, duplicamos o valor de passo e repetimos este processo até que $passo$ abranja todos os elementos da entrada, como mostrado nas Figuras [](#fig:ordenacao-merge_sort_iterativo_p5), [](#fig:ordenacao-merge_sort_iterativo_p6) e [](#fig:ordenacao-merge_sort_iterativo_p7).
 
-![merge_sort_iterativo_p5](img/merge_sort_iterativo_p5_v2.png)
+<!-- ![merge_sort_iterativo_p5](img/merge_sort_iterativo_p5_v2.png) -->
 
 ::::{figure} img/merge_sort_iterativo_p5_v2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p5
 
+Atualização dos índices de início, meio e fim de acordo com o passo 2
 ::::
 
-![merge_sort_iterativo_p6](img/merge_sort_iterativo_p6_v2.png)
+<!-- ![merge_sort_iterativo_p6](img/merge_sort_iterativo_p6_v2.png) -->
 
 ::::{figure} img/merge_sort_iterativo_p6_v2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p6
 
+Índices de início, meio e fim atualizados com passo $2$
 ::::
 
-![merge_sort_iterativo_p7](img/merge_sort_iterativo_p7_v2.png)
+<!-- ![merge_sort_iterativo_p7](img/merge_sort_iterativo_p7_v2.png) -->
 
 ::::{figure} img/merge_sort_iterativo_p7_v2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p7
 
+Índices de início, meio e fim atualizados com passo $2$, com fim fora do vetor
 ::::
 
-Após os elementos serem percorridos com passo $2$, este valor é duplicado novamente ($4$), e os elementos são percorridos outra vez.
+Após os elementos serem percorridos com passo $2$, este valor é duplicado novamente ($4$), e os elementos são percorridos outra vez, como ilustrado nas Figuras [](#fig:ordenacao-merge_sort_iterativo_p8), [](#fig:ordenacao-merge_sort_iterativo_p9) e [](#fig:ordenacao-merge_sort_iterativo_p10).
 
-![merge_sort_iterativo_p8](img/merge_sort_iterativo_p8_v2.png)
+<!-- ![merge_sort_iterativo_p8](img/merge_sort_iterativo_p8_v2.png) -->
 
 ::::{figure} img/merge_sort_iterativo_p8_v2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p8
 
+Atualização dos índices de início, meio e fim de acordo com o passo $4$
 ::::
 
-![merge_sort_iterativo_p9](img/merge_sort_iterativo_p9_v2.png)
+<!-- ![merge_sort_iterativo_p9](img/merge_sort_iterativo_p9_v2.png) -->
 
 ::::{figure} img/merge_sort_iterativo_p9_v2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p9
 
+Índices de início, meio e fim atualizados com passo $4$, com fim fora do vetor
 ::::
 
 E novamente, passo é duplicado. Agora, $8$.
 
-![merge_sort_iterativo_p10](img/merge_sort_iterativo_p10_v2.png)
+<!-- ![merge_sort_iterativo_p10](img/merge_sort_iterativo_p10_v2.png) -->
 
 ::::{figure} img/merge_sort_iterativo_p10_v2.png
-:name: fig:ordenacao-merge
+:name: fig:ordenacao-merge_sort_iterativo_p10
 
+Atualização dos índices de início, meio e fim de acordo com passo $=8$
 ::::
 
-Desta forma, chegamos ao seguinte algoritmo:
+Desta forma, chegamos finalmente ao [](#alg:mergesort-iterativo)
 
-```javascript
+::::::{prf:algorithm} Merge Sort Iterativo
+:name: alg:mergesort-iterativo
+
+**Entrada:** Vetor a ser ordenado.  
+**Saída:** Sem retorno. Atualiza no próprio vetor de entrada.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static void mergeSort_iter(int[] v){
     int[] aux = new int[v.length];
     mergeSort_iter_aux(v, aux);
 }
+
 public static void mergeSort_iter_aux(int[] v, int[] aux){
     int ini, fim, meio, passo=1, n = v.length;
     while(passo < n){
@@ -660,6 +1044,10 @@ public static void mergeSort_iter_aux(int[] v, int[] aux){
     }
 }
 ```
+
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
 import numpy as np
@@ -681,5 +1069,18 @@ def mergesort_iter_aux(v, aux):
             ini = ini + passo *2
         passo = passo *2
 ```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
 
 ## Análise
