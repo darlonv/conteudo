@@ -7,6 +7,9 @@ chapters:
       - file: 01-Introducao/01-Introducao.md
       - file: 01-Introducao/02-Logica_de_programacao.md
       - file: 01-Introducao/03-Linguagem_de_programacao.md
+      - title: Exercícios
+        sections:
+          - file: 01-Introducao/Exercicios/02-Logica_de_programacao_ex.md
   - title: Elementos Básicos
     sections:
       - file: 02-Basicos/01-Estrutura_basica.md
@@ -16,7 +19,7 @@ chapters:
       - file: 02-Basicos/05-Expressoes.md
       - file: 02-Basicos/06-Tipos_tamanhos.md
       - file: 02-Basicos/07-Blocos.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 02-Basicos/Exercicios/05-Expressoes_ex.md
   - title: Controle
@@ -24,7 +27,7 @@ chapters:
       - file: 04-Controle/02-Selecao.md
       - file: 04-Controle/03-Multipla.md
       - file: 04-Controle/04-Repeticao.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 04-Controle/Exercicios/02-Selecao_ex.md
           - file: 04-Controle/Exercicios/03-Multipla_ex.md
@@ -34,7 +37,7 @@ chapters:
       - file: 05-Caracteres/01-Strings.md
       - file: 05-Caracteres/02-Codificacao.md
       - file: 05-Caracteres/03-Conversoes.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 05-Caracteres/Exercicios/01-Strings_ex.md
   - title: Variáveis compostas
@@ -43,7 +46,7 @@ chapters:
       - file: 06-Vetores/02-Vetores.md
       - file: 06-Vetores/03-Matrizes.md
       - file: 06-Vetores/04-Registros.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 06-Vetores/Exercicios/02-Vetores_ex.md
           - file: 06-Vetores/Exercicios/03-Matrizes_ex.md
@@ -54,7 +57,7 @@ chapters:
       - file: 07-Arquivos/02-Texto.md
       - file: 07-Arquivos/03-Binario.md
       - file: 07-Arquivos/04-Registro.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 07-Arquivos/Exercicios/01-Arquivos_ex.md
           - file: 07-Arquivos/Exercicios/02-Texto_ex.md
@@ -71,7 +74,7 @@ chapters:
       - file: 09-LFP/03-Lista.md
       - file: 09-LFP/04-Tabela_dispersao.md
       - file: 09-LFP/05-Conjuntos.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 09-LFP/Exercicios/01-Fila_ex.md
           - file: 09-LFP/Exercicios/02-Pilha_ex.md
@@ -82,7 +85,7 @@ chapters:
     sections:
       - file: 10-Arvores/01-Arvores.md
       - file: 10-Arvores/02-Binaria.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 10-Arvores/Exercicios/01-Arvores_ex.md
           - file: 10-Arvores/Exercicios/02-Binaria_ex.md
@@ -97,7 +100,7 @@ chapters:
       - file: 11-Ordenacao/06-CountingSort.md
       - file: 11-Ordenacao/07-RadixSort.md
       - file: 11-Ordenacao/08-Comparacoes.md
-      - title: Exercicios
+      - title: Exercícios
         sections:
           - file: 11-Ordenacao/Exercicios/00-Ordenacao_ex.md
           - file: 11-Ordenacao/Exercicios/01-BubbleSort_ex.md
