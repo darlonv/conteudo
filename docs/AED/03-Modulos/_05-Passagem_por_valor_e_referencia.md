@@ -1,2 +1,0 @@
-# Valor e referência
-
