@@ -4,11 +4,21 @@ O algoritmo do Quick Sort pode ser abordado utilizando divisão e conquista, em 
 
 Tomemos como exemplo a seguinte entrada:
 
-![quick_sort_p1](img/quick_sort_p1.png)
+<!-- ![quick_sort_p1](img/quick_sort_p1.png) -->
+::::{figure} img/quick_sort_p1.png
+:name: fig:quicksort-p1
 
-A partir desta entrada, escolheremos um dos elementos para que seja o pivô. Aqui, escolheremos o elemento mais à esquerda da entrada. Feito isso, realizaremos o processo de [particionamento](#particionamento), que consiste em colocar o pivô em sua posição correta.
+Dados de entrada
+::::
 
-![quick_sort_p2](img/quick_sort_p2.png)
+A partir desta entrada, escolheremos um dos elementos para que seja o pivô. Aqui, escolheremos o elemento mais à esquerda da entrada. Feito isso, realizaremos o processo de [particionamento](#par-quicksort-particionamento), que consiste em colocar o pivô em sua posição correta.
+
+<!-- ![quick_sort_p2](img/quick_sort_p2.png) -->
+::::{figure} img/quick_sort_p2.png
+:name: fig:quicksort-p2
+
+Escolha do pivô
+::::
 
 Observe que na imagem acima, todos os elemento à esquerda do pivô são menores que ele e os à direita são maiores.
 
@@ -16,7 +26,26 @@ Com isto, o particionamento deixa o pivô escolhido já está em sua posição c
 
 De maneira geral, temos o seguinte algoritmo recursivo:
 
-```javascript
+::::::{prf:algorithm} Quick Sort: chamadas às funções de particionamento
+:name: alg:quicksort
+
+**Entrada:** Vetor a ser ordenado.  
+**Saída:** Sem retorno. Vetor de entrada modificado, com os dados ordenados.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static void quickSort(int[] v){
     quickSort_(v, 0, v.length-1);
 }
@@ -28,6 +57,10 @@ public static void quickSort_(int[] v, int ini, int fim){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 def quickSort(v):
     quickSort_(v, 0, len(v)-1):
@@ -38,14 +71,30 @@ def quickSort_i(v, ini, fim):
     quickSort_(v, pos_pivot+1, fim) #recursão nos elementos depois do pivô
 ```
 
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+
 Uma execução recursiva completa do exemplo pode ser vista de maneira geral a seguir.
 
-![quick_sort_recursao_p1](img/quick_sort_recursao_p1.png)
+<!-- ![quick_sort_recursao_p1](img/quick_sort_recursao_p1.png) -->
+::::{figure} img/quick_sort_recursao_p1.png
+:name: fig:quicksort-recursao_p1
 
+Particionamento executado recursivamente
+::::
+
+(par-quicksort-particionamento)=
 ## Particionamento
-
-
-
 
 ### Näive
 
@@ -55,52 +104,142 @@ De forma a demonstrar um possível tipo de particionamento simplificado, seria u
 
 Consideremos como entrada os valores presentes no vetor $v$:
 
-###### Figura: Particionamento Näive (1) {#quicksort-naive-1}
-![quick_sort_naive_p01](img/quick_sort_naive_p01.png)
+<!-- ![quick_sort_naive_p01](img/quick_sort_naive_p01.png) -->
+::::{figure} img/quick_sort_naive_p01.png
+:name: fig:quicksort-naive_p01
+
+Entrada de exemplo
+::::
 
 Neste caso, escolheremos como pivô o primeiro elemento. Precisaremos também de um vetor auxiliar $aux$, além dos índices $k$, $i$ e $j$. O índice $k$ indica o elemento a ser comparado com o pivô. Os índices $i$ e $j$ apontam para as extremidades do vetor $aux$, sendo $i$ na primeira e $j$ na última posições.
 
-###### Figura
-![quick_sort_naive_p02](img/quick_sort_naive_p02.png)
+<!-- ![quick_sort_naive_p02](img/quick_sort_naive_p02.png) -->
+::::{figure} img/quick_sort_naive_p02.png
+:name: fig:quicksort-naive_p02
+
+Pivô na primeira posição
+::::
 
 O processo consiste em observar o valor do vetor $aux$ na posição $k$ e compará-lo com o pivô. Caso seja menor ou igual, o valor é copiado para $aux$ na posição $i$, e caso seja maior, para $aux$ na posição $j$.
 
+<!-- ![quick_sort_naive_p03](img/quick_sort_naive_p03.png) -->
+::::{figure} img/quick_sort_naive_p03.png
+:name: fig:quicksort-naive_p03
 
-
-![quick_sort_naive_p03](img/quick_sort_naive_p03.png)
+Decisão de onde copiar o valor apontado pelo pivô
+::::
 
 Após realizar a cópia, o índices $k$ deve ser incrementado. Também deve ser incrementado o índice $i$, indicando que o próximo valor menor que o pivô seja gravado na próxima posição.
 
-![quick_sort_naive_p04](img/quick_sort_naive_p04.png)
+<!-- ![quick_sort_naive_p04](img/quick_sort_naive_p04.png) -->
+::::{figure} img/quick_sort_naive_p04.png
+:name: fig:quicksort-naive_p04
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
 
 Este processo é repetido até que $k$ tenha percorrido todos os elementos da entrada. As figuras a seguir indicam este processo.
 
-![quick_sort_naive_p05](img/quick_sort_naive_p05.png)
-![quick_sort_naive_p06](img/quick_sort_naive_p06.png)
-![quick_sort_naive_p07](img/quick_sort_naive_p07.png)
-![quick_sort_naive_p08](img/quick_sort_naive_p08.png)
-![quick_sort_naive_p09](img/quick_sort_naive_p09.png)
-![quick_sort_naive_p10](img/quick_sort_naive_p10.png)
+<!-- ![quick_sort_naive_p05](img/quick_sort_naive_p05.png) -->
+::::{figure} img/quick_sort_naive_p05.png
+:name: fig:quicksort-naive_p05
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
+
+<!-- ![quick_sort_naive_p06](img/quick_sort_naive_p06.png) -->
+::::{figure} img/quick_sort_naive_p06.png
+:name: fig:quicksort-naive_p06
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
+
+<!-- ![quick_sort_naive_p07](img/quick_sort_naive_p07.png) -->
+::::{figure} img/quick_sort_naive_p07.png
+:name: fig:quicksort-naive_p07
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
+
+<!-- ![quick_sort_naive_p08](img/quick_sort_naive_p08.png) -->
+::::{figure} img/quick_sort_naive_p08.png
+:name: fig:quicksort-naive_p08
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
+
+<!-- ![quick_sort_naive_p09](img/quick_sort_naive_p09.png) -->
+::::{figure} img/quick_sort_naive_p09.png
+:name: fig:quicksort-naive_p09
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
+
+<!-- ![quick_sort_naive_p10](img/quick_sort_naive_p10.png) -->
+::::{figure} img/quick_sort_naive_p10.png
+:name: fig:quicksort-naive_p10
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
 
 
 
-![quick_sort_naive_p11](img/quick_sort_naive_p11.png)
+<!-- ![quick_sort_naive_p11](img/quick_sort_naive_p11.png) -->
+::::{figure} img/quick_sort_naive_p11.png
+:name: fig:quicksort-naive_p11
+
+Atualização de índices e decisão de onde copiar o valor apontado pelo pivô
+::::
 
 Após $k$ percorrer todos os dados da entrada, o valor do pivô é copiado para a posição que falta preencher. Neste momento, tanto $i$ como $j$ apontam para a mesma posição. No exemplo, utilizaremos o índice $i$.
 
-![quick_sort_naive_p12](img/quick_sort_naive_p12.png)
+<!-- ![quick_sort_naive_p12](img/quick_sort_naive_p12.png) -->
+::::{figure} img/quick_sort_naive_p12.png
+:name: fig:quicksort-naive_p12
+
+Quando $i=j$, o elemento apontado pelo pivô é copiado para essa posição
+::::
 
 Neste momento o pivô já está no vetor $aux$ em sua posição correta.
 
-![quick_sort_naive_p13](img/quick_sort_naive_p13.png)
+<!-- ![quick_sort_naive_p13](img/quick_sort_naive_p13.png) -->
+::::{figure} img/quick_sort_naive_p13.png
+:name: fig:quicksort-naive_p13
+
+Pivô na posição correta
+::::
 
 Resta então copiar os elementos do vetor $aux$ para $v$, e o processo de particionamento é finalizado.
 
-![quick_sort_naive_p14](img/quick_sort_naive_p14.png)
+<!-- ![quick_sort_naive_p14](img/quick_sort_naive_p14.png) -->
+::::{figure} img/quick_sort_naive_p14.png
+:name: fig:quicksort-naive_p14
+
+Cópia dos valores do vetor auxiliar para o vetor de entrada
+::::
 
 Esta abordagem poderia ser implementada da seguinte maneira:
 
-```javascript
+::::::{prf:algorithm} Quick Sort: Particionamento Näive
+:name: alg:quicksort-particionamento_naive
+
+**Entrada:** Vetores a ser ordenado, posição inicial, posição final.  
+**Saída:** Posição do pivô.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static void int quickSortPartNaive(int[] v, int ini, int fim){
     int pivot = v[ini]; //primeiro elemento é o pivot
     int[] aux = new int[fim-ini+1]
@@ -129,6 +268,10 @@ public static void int quickSortPartNaive(int[] v, int ini, int fim){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 import numpy as np
 def quickSortPartNaive(v, ini, fim):
@@ -154,26 +297,139 @@ def quickSortPartNaive(v, ini, fim):
     return pos_pivot
 ```
 
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
 ### Lomuto
 
-O particionamento apresentado em Cormen <Bib entrada="cormen2022" tipo="citation"/> é chamado de particionamento de Lomuto.
+O particionamento apresentado em Cormen é chamado de particionamento de Lomuto [@cormen2022].
 
-![quick_sort_cormen_p01](img/quick_sort_cormen_p01.png)
-![quick_sort_cormen_p02](img/quick_sort_cormen_p02.png)
-![quick_sort_cormen_p03](img/quick_sort_cormen_p03.png)
-![quick_sort_cormen_p04](img/quick_sort_cormen_p04.png)
-![quick_sort_cormen_p05](img/quick_sort_cormen_p05.png)
-![quick_sort_cormen_p06](img/quick_sort_cormen_p06.png)
-![quick_sort_cormen_p07](img/quick_sort_cormen_p07.png)
-![quick_sort_cormen_p08](img/quick_sort_cormen_p08.png)
-![quick_sort_cormen_p09](img/quick_sort_cormen_p09.png)
-![quick_sort_cormen_p10](img/quick_sort_cormen_p10.png)
-![quick_sort_cormen_p11](img/quick_sort_cormen_p11.png)
-![quick_sort_cormen_p12](img/quick_sort_cormen_p12.png)
-![quick_sort_cormen_p13](img/quick_sort_cormen_p13.png)
-![quick_sort_cormen_p14](img/quick_sort_cormen_p14.png)
+<!-- ![quick_sort_cormen_p01](img/quick_sort_cormen_p01.png) -->
+::::{figure} img/quick_sort_cormen_p01.png
+:name: fig:quicksort-cormen_p01
 
-```javascript
+Dados de entrada
+::::
+
+<!-- ![quick_sort_cormen_p02](img/quick_sort_cormen_p02.png) -->
+::::{figure} img/quick_sort_cormen_p02.png
+:name: fig:quicksort-cormen_p02
+
+Pivô na última posição, índice de menores em posição fora do vetor (à esquerda)
+::::
+
+<!-- ![quick_sort_cormen_p03](img/quick_sort_cormen_p03.png) -->
+::::{figure} img/quick_sort_cormen_p03.png
+:name: fig:quicksort-cormen_p03
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô
+::::
+
+<!-- ![quick_sort_cormen_p04](img/quick_sort_cormen_p04.png) -->
+::::{figure} img/quick_sort_cormen_p04.png
+:name: fig:quicksort-cormen_p04
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p05](img/quick_sort_cormen_p05.png) -->
+::::{figure} img/quick_sort_cormen_p05.png
+:name: fig:quicksort-cormen_p05
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p06](img/quick_sort_cormen_p06.png) -->
+::::{figure} img/quick_sort_cormen_p06.png
+:name: fig:quicksort-cormen_p06
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p07](img/quick_sort_cormen_p07.png) -->
+::::{figure} img/quick_sort_cormen_p07.png
+:name: fig:quicksort-cormen_p07
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p08](img/quick_sort_cormen_p08.png) -->
+::::{figure} img/quick_sort_cormen_p08.png
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p09](img/quick_sort_cormen_p09.png) -->
+::::{figure} img/quick_sort_cormen_p09.png
+:name: fig:quicksort-cormen_p09
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p10](img/quick_sort_cormen_p10.png) -->
+::::{figure} img/quick_sort_cormen_p10.png
+:name: fig:quicksort-cormen_p10
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p11](img/quick_sort_cormen_p11.png) -->
+::::{figure} img/quick_sort_cormen_p11.png
+:name: fig:quicksort-cormen_p11
+
+Comparação se o valor apontado pelo índice $i$ é menor que o pivô. Caso sim, incrementa o índice de menores e troca o valor nessa posição pelo valor na posição $i$
+::::
+
+<!-- ![quick_sort_cormen_p12](img/quick_sort_cormen_p12.png) -->
+::::{figure} img/quick_sort_cormen_p12.png
+:name: fig:quicksort-cormen_p12
+
+$i$ chegou ao final
+::::
+
+<!-- ![quick_sort_cormen_p13](img/quick_sort_cormen_p13.png) -->
+::::{figure} img/quick_sort_cormen_p13.png
+:name: fig:quicksort-cormen_p13
+
+Incremento da posição de menores, e troca do valor nessa posição pelo pivô
+::::
+
+<!-- ![quick_sort_cormen_p14](img/quick_sort_cormen_p14.png) -->
+::::{figure} img/quick_sort_cormen_p14.png
+:name: fig:quicksort-cormen_p14
+
+Pivô na posição correta, dividindo o conjunto em duas partes. Menores ou iguais à esquerda e maiores à direita do pivô
+::::
+
+::::::{prf:algorithm} Quick Sort: Particionamento de Lomuto
+:name: alg:quicksort-particionamento_lomuto
+
+**Entrada:** Vetores a ser ordenado, posição inicial, posição final.  
+**Saída:** Posição do pivô.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 static int quickSortPartCormen(int[] v, int ini, int fim) {
         int pivot = v[fim]; //<- pivô é o último elemento
         int pos_menores = ini - 1; //<- menores ou iguais que o pivô
@@ -190,6 +446,10 @@ static int quickSortPartCormen(int[] v, int ini, int fim) {
     }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 def quickSortPartCormen(v, ini, fim):
     pivot = v[fim] #<- pivô é o último elemento
@@ -204,17 +464,51 @@ def quickSortPartCormen(v, ini, fim):
     return pos_menores
 ```
 
-Uma ilustração do particionamento de Lomuto pode ser vista no vídeo do Prof. Eduardo Falcão:
+::::
+::::{tab-item} C
+:sync: c
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AuiIZ_zFKP8?si=v_x8LeOIwlbE8P1r&amp;start=956" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+```c
+printf("Hello world!\n");
+```
 
-Fonte: <Bib entrada="falcao2022_video"/>
+::::
+:::::
+::::::
+
+Uma ilustração do particionamento de Lomuto pode ser vista em vídeo, com explicação do Prof. Eduardo Falcão:
+
+:::{iframe} https://www.youtube.com/embed/AuiIZ_zFKP8?si=v_x8LeOIwlbE8P1r&amp;start=956
+:width: 100%
+
+Particionamento de Lomuto [@falcao2022:quicksort]
+:::
 
 ### Hoare
 
-O particionamento de *Hoare* é o particionamento original do Quick Sort. Seu nome deve-se a seu criador, o cientista da computação britânico [Charles Antony Richard Hoare](https://pt.wikipedia.org/wiki/Charles_Antony_Richard_Hoare). O algoritmo consiste em utilizar dois índices, um a partir da esquerda do vetor e outro a partir da direita. O da esquerda é incrementado até que um valor maior que o pivô seja encontrado, e o índice da direita faz o contrário: é decrementado até encontrar um valor menor que o pivô. Quando os dois índices encontram esses valores, os valores são trocados e o processo se repete. Isto é feito até que os dois índices se encontrem. Quando se encontrarem, esta é a posição do pivô.
+O particionamento de *Hoare* é o particionamento original do Quick Sort. Seu nome deve-se a seu criador, o cientista da computação britânico [Charles Antony Richard Hoare](https://pt.wikipedia.org/wiki/Charles_Antony_Richard_Hoare) [@hoare_wikipedia]. O algoritmo consiste em utilizar dois índices, um a partir da esquerda do vetor e outro a partir da direita. O da esquerda é incrementado até que um valor maior que o pivô seja encontrado, e o índice da direita faz o contrário: é decrementado até encontrar um valor menor que o pivô. Quando os dois índices encontram esses valores, os valores são trocados e o processo se repete. Isto é feito até que os dois índices se encontrem. Quando se encontrarem, esta é a posição do pivô.
 
-```javascript
+
+::::::{prf:algorithm} Quick Sort: Particionamento de Hoare
+:name: alg:quicksort-particionamento_hoare
+
+**Entrada:** Vetores a ser ordenado, posição inicial, posição final.  
+**Saída:** Posição do pivô.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
 public static int quickSortPartHoare(int[] v, int ini, int fim){
     pivot = A[ini]
     idx_esq = ini-1;
@@ -235,6 +529,10 @@ public static int quickSortPartHoare(int[] v, int ini, int fim){
 }
 ```
 
+::::
+::::{tab-item} Python
+:sync: python
+
 ```python
 def quickSortPartHoare(v, ini, fim):
     pivot = v[ini]
@@ -252,6 +550,18 @@ def quickSortPartHoare(v, ini, fim):
         else:
             return idx_dir
 ```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
 
 
 ### Pivôs bons e ruins
@@ -272,17 +582,6 @@ Algumas maneiras de encontrar pivôs melhores podem ser:
 
 ## Tipo de dados genéricos
 
-## Iterativo
+<!-- ## Iterativo -->
 
 ## Análise
-
-## Referências
-
-- <Bib entrada="cormen2022" tipo="bibliography"/> 
-- <Bib entrada="demaine2005_video" tipo="bibliography" link={true}/>
-
-
-### Materiais adicionais
-
-- <Bib entrada="falcao2022_video" tipo="bibliography" link={true}/>
-- <Bib entrada="wikipedia_hoare" tipo="bibliography" link={true}/>
