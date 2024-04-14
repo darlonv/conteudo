@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 ARCHNAME_A="amd64"
 ARCHNAME_B="arm64"
 
