@@ -750,7 +750,7 @@ int main(){
 ::::{tab-item} Pseudocódigo
 :sync: pseudocodigo
 
-```c
+```{code} c
 //Identificadores
 caractere nome;
 inteiro idade;
@@ -768,7 +768,7 @@ escreva(nome, " tem ", idade, " anos de idade.");
 <details>
 <summary>Código completo</summary>
 
-```c
+```{code} c
 inicio
 
   //Variáveis
@@ -792,7 +792,7 @@ fim.
 ::::{tab-item} Java
 :sync: java
 
-```javascript
+```{code} java
 //Identificadores
 String nome;
 int idade;
@@ -810,7 +810,7 @@ System.out.prinln(nome + " tem " + idade + " anos de idade.");
 <details>
 <summary>Código completo</summary>
 
-```javascript
+```{code} java
 public class Main{
   public static void main(String args){
     //Variáveis
@@ -837,7 +837,7 @@ public class Main{
 ::::{tab-item} Python
 :sync: python
 
-```python
+```{code} python
 #Entrada
 nome = input("Nome: ")
 idade = input("Idade: ")
@@ -850,22 +850,22 @@ print(f"{nome} tem {idade} anos de idade")
 <details>
   <summary>Código completo</summary>
 
-  ```python
-  if __name__ == "main":
-    #Entrada
-    nome = input("Nome: ")
-    idade = input("Idade: ")
+```{code} python
+if __name__ == "main":
+  #Entrada
+  nome = input("Nome: ")
+  idade = input("Idade: ")
 
-    #Saída
-    print(f"{nome} tem {idade} anos de idade")
-  ```
+  #Saída
+  print(f"{nome} tem {idade} anos de idade")
+```
 </details>
 
 ::::
 ::::{tab-item} C
 :sync: c
 
-```c
+```{code} c
 //Variáveis
 char nome[100];
 int idade;
@@ -882,7 +882,7 @@ printf("%s %s %d %s\n", nome, "tem", idade, "anos de idade")
 <details>
   <summary>Código completo</summary>
 
-```c
+```{code} c
 #include<stdio.h>
 
 int main(void){
