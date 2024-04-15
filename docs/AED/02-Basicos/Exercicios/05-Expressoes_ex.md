@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Expressões
 
 - Faça um programa que pergunta um número ao usuário, e em seguida mostra o antecessor e o sucessor desse número.  
@@ -91,13 +88,19 @@ print(f'O sucessor de {valor} é {sucessor}', )
 
 1. Escreva um programa para ler as dimensões de um retângulo, com o tamanho da base ($b$) e da altura ($h$). Calcule o mostre o perímetro ($p$) e área ($a$) desse retângulo.
 $$
-p = 2(b+h)\\
+p = 2(b+h)
+$$
+
+$$
 a = bh
 $$  
 
 1. Pergunte ao usuário o valor do raio ($r$) de um círculo, e em seguida mostre o perímetro ($p$) e a área ($a$) desse círculo.
 $$
-p = 2\pi r\\
+p = 2\pi r
+$$
+
+$$
 a = \pi r^2
 $$
 

@@ -89,7 +89,7 @@ AaaiEAeoa
 ::::
 
 ::::{exercise}
-Digite um nome, e informe quantas letras possuem nesse nome.
+Digite um nome, e informe quantas letras possui esse nome.
 
 :::{prf:example}
 :class: dropdown
