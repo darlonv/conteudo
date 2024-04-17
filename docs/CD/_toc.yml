@@ -4,4 +4,6 @@ root: README
 chapters:
   - file: materiais.md
   - file: trabalhos.md
+  - file: docs/RNA/01-RNA.md
+  - file: docs/RNA/02-CNN.md
   
