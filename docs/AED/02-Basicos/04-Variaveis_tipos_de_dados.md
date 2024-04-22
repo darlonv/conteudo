@@ -4,7 +4,7 @@ Aqui abordaremos as maneiras de organizar e utilizar a memória internamente ao 
 
 Os dados fazem parte da matéria-prima básica na execução dos sistemas computacionais. Com eles podemos processá-los, transformálos, armazená-los e apresentá-los, ou seja, as tarefas que um computador é capaz de realizar. Com isto, é de fundamental importância compreender seu funcionamento dentro dos algoritmos.
 
-:::info Informação
+:::{seealso} Informação
 **Dado** e **informação** são conceitos distintos. Uma informação é um dado com valor. Por exemplo quando observamos a data 19 de abril, temos um dado. Ao sabermos que este é o dia do índio, temos uma informação.
 :::
 
@@ -12,9 +12,14 @@ Os dados fazem parte da matéria-prima básica na execução dos sistemas comput
 
 Para que um código possa ser executado por um processador, é necessário que ele seja alocado pelo sistema operacional na memória RAM. Um código em momento de execução é chamado de **processo**. A alocação, organização e execução de processos em um sistema computacional é uma das tarefas do sistema operacional.
 
-<!-- marp --- -->
+<!-- ![Memória RAM com demonstração de espaço para código e espaço para variáveis](./img/variaveis_01_processos.png) -->
 
-![Memória RAM com demonstração de espaço para código e espaço para variáveis](./img/variaveis_01_processos.png)
+::::{figure} ./img/variaveis_01_processos.png
+:name: fig:variaveis-ram_processos
+:alt: Memória RAM com demonstração de espaço para código e espaço para variáveis
+
+Processos na memória RAM
+::::
 
 Quando falamos sobre variáveis, começamos a observar que estes são espaços na memória RAM em que os dados serão armazenados. Tanto o código como as variáveis são armazenados na memória RAM para serem executados pelo processador.
 
@@ -22,9 +27,14 @@ Quando falamos sobre variáveis, começamos a observar que estes são espaços n
 
 Podemos imaginar a memória como sendo um grande armário, que possui um grande número de gavetas. Dentro de cada uma das gavetas pode ser armazenado um dado.
 
-![Memória RAM com demonstração de espaço para código e espaço para variáveis](./img/variaveis_02_texto-e-dados.png)
+<!-- ![Memória RAM com demonstração de espaço para código e espaço para variáveis](./img/variaveis_02_texto-e-dados.png) -->
 
-<!-- marp --- -->
+::::{figure} ./img/variaveis_02_texto-e-dados.png
+:name: fig:variaveis-ram_processos_variaveis
+:alt: Memória RAM com demonstração de espaço para código e espaço para variáveis
+
+Analogia das variáveis armazenadas na memória RAM
+::::
 
 No desenvolvimento de algoritmos, há a necessidade de identificar uma característica nos dados. Em específico, se tais dados são **constantes** ou **variáveis** no decorrer da execução do algoritmo. 
 
@@ -34,12 +44,12 @@ Um valor **variável** é aquele que pode ser modificado no decorrer da execuç�
  
 **Exemplos**
 - Valores indicados pelo usuário
-    - Os valores para A e B são 15 e 50
-    - O lado do quadrado
+  - Os valores para A e B são 15 e 50
+  - O lado do quadrado
 - Resultados intermediários de operações matemáticas
 - Estado de alguma operação ou ação
-    - A janela está aberta
-    - A janela está fechada
+  - A janela está aberta
+  - A janela está fechada
 
 ### Identificadores de variáveis
 
@@ -48,7 +58,14 @@ Um **identificador** de uma variável é um nome, que corresponde a um dado a se
 <!-- marp --- -->
 Em nossa analogia de gavetas, podemos imaginar que o identificado é um rótulo em cada gaveta, que descreve o que nela contém.
 
-![Memória RAM com indicação das variáveis e seus identificadores](./img/variaveis_03_identificadores.png)
+<!-- ![Memória RAM com indicação das variáveis e seus identificadores](./img/variaveis_03_identificadores.png) -->
+
+::::{figure} ./img/variaveis_03_identificadores.png
+:name: fig:variaveis-ram_variaveis_identificadores
+:alt: Memória RAM com indicação das variáveis e seus identificadores
+
+Analogia das variáveis e identificadores na memória
+::::
 
 <!-- marp --- -->
 
@@ -122,7 +139,7 @@ Antes de fazer o uso da variável, precisamos declará-la. A declaração da var
 
 Comumente, colocamos a declaração de variáveis no início do algoritmo.
 
-:::info Informação
+:::{seealso} Informação
 Algumas linguagens de programação requerem que a declaração de variáveis seja realizada explicitamente no início do código, ocasionando em erros caso isto não aconteça.
 :::
 
@@ -131,41 +148,44 @@ Na declaração das variáveis é necessário informar qual tipo de dado poderá
 **Exemplo**
 - declaração de uma variável chamada `idade`, que armazenará valores do tipo inteiro.
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  //variáveis
-  inteiro: idade;
-  ```
+```c
+//variáveis
+inteiro: idade;
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  //variáveis
-  int idade;
-  ```
+```java
+//variáveis
+int idade;
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 :::info Informação
-Em Python, a declaração de variáveis antes de sua utilização não é obrigatória. A memória necessária para a variável é solicitada durante a execução do programa.
+Em Python, a declaração de variáveis antes de sua utilização não é obrigatória. A memória necessária para a variável é solicitada durante a execução do programa, quando a variável for utilizada.
 :::
 
-  </TabItem>
+::::
+::::{tab-item} C
+:sync: c
 
-  <TabItem value="c" label="C">
+```c
+//variáveis
+int idade;
+```
 
-  ```c
-  //variáveis
-  int idade;
-  ```
-
-  </TabItem>
-
-</Tabs>
+::::
+:::::
 
 #### Atribuição
 
@@ -173,87 +193,100 @@ Dados podem ser atribuídos a variáveis, bem como utilizados em outras partes d
 
 O operador de atribuição é:
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  ←
-  ```
+```c
+←
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  =
-  ```
+```java
+=
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  =
-  ```
+```python
+=
+```
 
-  </TabItem>
+::::
+::::{tab-item} C
+:sync: c
 
-  <TabItem value="c" label="C">
+```c
+=
+```
 
-  ```c
-  =
-  ```
-
-  </TabItem>
-
-</Tabs>
+::::
+:::::
 
 **Exemplo**
 - Uma variável do tipo inteiro chamada `distancia` é criada, e o valor 2000 é atribuído a ela.
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  //variáveis
-  inteiro: distancia;
+```c
+//variáveis
+inteiro: distancia;
 
-  distancia ← 2000; //lê-se "distancia recebe o valor 20000"
-  ```
+distancia ← 2000; //lê-se "distancia recebe o valor 20000"
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  //variáveis
-  int distancia;
+```java
+//variáveis
+int distancia;
 
-  distancia = 2000; //lê-se "distancia recebe o valor 20000"
-  ```
+distancia = 2000; //lê-se "distancia recebe o valor 20000"
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  distancia = 2000 #lê-se "distancia recebe o valor 20000"
-  ```
+```python
+distancia = 2000 #lê-se "distancia recebe o valor 20000"
+```
 
-  </TabItem>
+::::
+::::{tab-item} C
+:sync: c
 
-  <TabItem value="c" label="C">
+```c
+//variáveis
+int distancia;
 
-  ```c
-  //variáveis
-  int distancia;
+distancia = 2000; //lê-se "distancia recebe o valor 20000"
+```
 
-  distancia = 2000; //lê-se "distancia recebe o valor 20000"
-  ```
-
-  </TabItem>
-
-</Tabs>
+::::
+:::::
 
 Após atribuir o valor à variável, este valor fica armazenado na memória RAM no espaço reservado para a execução da aplicação.
 
-![Memória RAM com a memória preenchida com o valor 2000 no espaço reservado para a variável distancia](./img/variaveis_04_atribuicao.png)
+<!-- ![Memória RAM com a memória preenchida com o valor 2000 no espaço reservado para a variável distancia](./img/variaveis_04_atribuicao.png) -->
+
+::::{figure} ./img/variaveis_04_atribuicao.png
+:name: fig:variaveis-ram_variavel_definida  
+:alt: Memória RAM com a memória preenchida com o valor 2000 no espaço reservado para a variável distancia
+
+Variável com valor definido na memória RAM
+::::
 
 #### Substituições
 
@@ -261,60 +294,64 @@ O valor presente em uma variável sempre será o último valor que for atribuíd
 
 **Exemplo**
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  //variáveis
-  inteiro: distancia;
+```c
+//variáveis
+inteiro: distancia;
 
-  distancia ← 2000; 
-  distancia ← 1500; //o valor anterior (2000) é perdido
+distancia ← 2000; 
+distancia ← 1500; //o valor anterior (2000) é perdido
 
-  escreva("A distância apresentada foi de ", distancia, " metros.");
-  ```
+escreva("A distância apresentada foi de ", distancia, " metros.");
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  //variáveis
-  int distancia;
+```java
+//variáveis
+int distancia;
 
-  distancia = 2000; 
-  distancia = 1500; //o valor anterior (2000) é perdido
+distancia = 2000; 
+distancia = 1500; //o valor anterior (2000) é perdido
 
-  System.out.println("A distância apresentada foi de " + distancia + " metros.");
-  ```
+System.out.println("A distância apresentada foi de " + distancia + " metros.");
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  #variáveis
-  distancia = 2000
-  distancia = 1500 #o valor anterior (2000) é perdido
+```python
+#variáveis
+distancia = 2000
+distancia = 1500 #o valor anterior (2000) é perdido
 
-  print(f"A distância apresentada foi de {distancia} metros.")
-  ```
+print(f"A distância apresentada foi de {distancia} metros.")
+```
 
-  </TabItem>
+::::
+::::{tab-item} C
+:sync: c
 
-  <TabItem value="c" label="C">
+```c
+//variáveis
+int distancia;
 
-  ```c
-  //variáveis
-  int distancia;
+distancia = 2000; 
+distancia = 1500; //o valor anterior (2000) é perdido
 
-  distancia = 2000; 
-  distancia = 1500; //o valor anterior (2000) é perdido
+printf("%s %d %s\n", "A distância apresentada foi de", distancia, "metros.");
+```
 
-  printf("%s %d %s\n", "A distância apresentada foi de", distancia, "metros.");
-  ```
+::::
+:::::
 
-  </TabItem>
-
-</Tabs>
 
 Saída na tela:
 ```
@@ -324,64 +361,67 @@ Saída na tela:
 **Exercício**
 - Observe o código abaixo, e diga qual será a saída apresentada pelo algoritmo.
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  //variáveis
-  inteiro: distancia;
+```c
+//variáveis
+inteiro: distancia;
 
-  distancia ← 2000; 
-  escreva("A distância inicial foi de ", distancia, " metros.");
+distancia ← 2000; 
+escreva("A distância inicial foi de ", distancia, " metros.");
 
-  distancia ← 1500; 
-  escreva("A distância final foi de ", distancia, " metros.");
-  ```
+distancia ← 1500; 
+escreva("A distância final foi de ", distancia, " metros.");
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  //variáveis
-  int distancia;
+```java
+//variáveis
+int distancia;
 
-  distancia = 2000; 
-  System.out.println("A distância inicial foi de " + distancia + " metros.");
+distancia = 2000; 
+System.out.println("A distância inicial foi de " + distancia + " metros.");
 
-  distancia = 1500; 
-  System.out.println("A distância final foi de " + distancia + " metros.");
-  ```
+distancia = 1500; 
+System.out.println("A distância final foi de " + distancia + " metros.");
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  #variáveis
-  distancia = 2000
-  print(f"A distância inicial foi de {distancia} metros.")
+```python
+#variáveis
+distancia = 2000
+print(f"A distância inicial foi de {distancia} metros.")
 
-  distancia = 1500 
-  print(f"A distância final foi de {distancia} metros.")
-  ```
+distancia = 1500 
+print(f"A distância final foi de {distancia} metros.")
+```
 
-  </TabItem>
+::::
+::::{tab-item} C
+:sync: c
 
-  <TabItem value="c" label="C">
+```c
+//variáveis
+int distancia;
 
-  ```c
-  //variáveis
-  int distancia;
+distancia = 2000; 
+printf("%s %d %s\n", "A distância inicial foi de", distancia, "metros.");
 
-  distancia = 2000; 
-  printf("%s %d %s\n", "A distância inicial foi de", distancia, "metros.");
+distancia = 1500;
+printf("%s %d %s\n", "A distância final foi de", distancia, "metros.");
+```
 
-  distancia = 1500;
-  printf("%s %d %s\n", "A distância final foi de", distancia, "metros.");
-  ```
-
-  </TabItem>
-
-</Tabs>
+::::
+:::::
 
 
 ## Tipos de dados
@@ -399,94 +439,92 @@ Um **inteiro** é uma informação numérica, que compreende valores que corresp
 
 #### Declaração de uma variável do tipo de dado inteiro
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  inteiro: <identificador>;
-  ```
+```c
+inteiro: <identificador>;
+```
 
-  **Exemplo**
+**Exemplo**
 
-  ```c
-  //variáveis
-  inteiro: quantidade_de_caixas;
-  inteiro: numero_de_itens_por_caixa;
+```c
+//variáveis
+inteiro: quantidade_de_caixas;
+inteiro: numero_de_itens_por_caixa;
 
-  leia(quantidade_de_caixas); //recebe dados da entrada padrão
-  numero_de_itens_por_caixa ← 50; //atribuição
+leia(quantidade_de_caixas); //recebe dados da entrada padrão
+numero_de_itens_por_caixa ← 50; //atribuição
 
-  escreva("Existem ", quantidade_de_caixas, " com ", numero_de_itens_por_caixa, " itens em cada uma."); //envia dados à saída padrão
-  ```
+escreva("Existem ", quantidade_de_caixas, " com ", numero_de_itens_por_caixa, " itens em cada uma."); //envia dados à saída padrão
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  int <identificador>;
-  ```
+```java
+int <identificador>;
+```
 
-  **Exemplo**
+**Exemplo**
 
-  ```javascript
-  //variáveis
-  int quantidade_de_caixas;
-  int numero_de_itens_por_caixa;
-  Scanner entrada;
+```java
+//variáveis
+int quantidade_de_caixas;
+int numero_de_itens_por_caixa;
+Scanner entrada;
 
-  entrada = new Scanner(System.in);
+entrada = new Scanner(System.in);
 
-  quantidade_de_caixas = entrada.nextInt(); //recebe dados da entrada padrão
-  numero_de_itens_por_caixa = 50; //atribuição
+quantidade_de_caixas = entrada.nextInt(); //recebe dados da entrada padrão
+numero_de_itens_por_caixa = 50; //atribuição
 
-  System.out.println("Existem " + quantidade_de_caixas + " com " + numero_de_itens_por_caixa + " itens em cada uma."); //envia dados à saída padrão
-  ```
-  
+System.out.println("Existem " + quantidade_de_caixas + " com " + numero_de_itens_por_caixa + " itens em cada uma."); //envia dados à saída padrão
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  <identificador> = <valor inteiro>
-  ```
+**Exemplo**
 
-  **Exemplo**
+```python
+quantidade_de_caixas = (int) input() #recebe dados da entrada padrão
+numero_de_itens_por_caixa = 50 #atribuição
 
-  ```python
-  quantidade_de_caixas = (int) input() #recebe dados da entrada padrão
-  numero_de_itens_por_caixa = 50 #atribuição
+print("Existem {quantidade_de_caixas}  com {numero_de_itens_por_caixa} itens em cada uma.") #envia dados à saída padrão
+```
 
-  print("Existem {quantidade_de_caixas}  com {numero_de_itens_por_caixa} itens em cada uma.") #envia dados à saída padrão
-  ```
+::::
+::::{tab-item} C
+:sync: c
 
-  </TabItem>
+```c
+int <identificador>;
+```
 
-  <TabItem value="c" label="C">
+**Exemplo**
 
-  ```c
-  int <identificador>;
-  ```
+```c
+//variáveis
+int quantidade_de_caixas;
+int numero_de_itens_por_caixa;
 
-  **Exemplo**
+scanf("%d", &quantidade_de_caixas); //recebe dados da entrada padrão. Observe o uso do &
+numero_de_itens_por_caixa = 50; //atribuição
 
-  ```c
-  //variáveis
-  int quantidade_de_caixas;
-  int numero_de_itens_por_caixa;
-
-  scanf("%d", &quantidade_de_caixas); //recebe dados da entrada padrão. Observe o uso do &
-  numero_de_itens_por_caixa = 50; //atribuição
-
-  printf("%s %d %s %d %s\n" , "Existem", quantidade_de_caixas, "com", numero_de_itens_por_caixa, "itens em cada uma.");//envia dados à saída padrão
-  ```
+printf("%s %d %s %d %s\n" , "Existem", quantidade_de_caixas, "com", numero_de_itens_por_caixa, "itens em cada uma.");//envia dados à saída padrão
+```
 
 :::note Observação
 Nas funções `scanf` e `printf` um valor inteiro é reconhecido utilizando `%d` na cadeia de formatação.
 :::
 
-  </TabItem>
-
-</Tabs>
+::::
+:::::
 
 ### Real
 
@@ -499,93 +537,96 @@ O tipo de dado **real** é aquele que possui um valor que está compreendido no 
 
 #### Declaração
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  real: <identificador>;
-  ```
+```c
+real: <identificador>;
+```
 
-  **Exemplo**
+**Exemplo**
 
-  ```c
-  //variáveis
-  real: peso_da_caixa;
-  real: custo_da_caixa;
+```c
+//variáveis
+real: peso_da_caixa;
+real: custo_da_caixa;
 
-  leia(peso_da_caixa); //recebe dados da entrada padrão
-  custo_da_caixa ← 10.50; //atribuição
+leia(peso_da_caixa); //recebe dados da entrada padrão
+custo_da_caixa ← 10.50; //atribuição
 
-  escreva("Uma caixa pesa ", peso_da_caixa, " e seu custo é de R$ ", custo_da_caixa, "."); //envia dados à saída padrão
-  ```
+escreva("Uma caixa pesa ", peso_da_caixa, " e seu custo é de R$ ", custo_da_caixa, "."); //envia dados à saída padrão
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  float <identificador>;
-  ```
+```javascript
+float <identificador>;
+```
 
-  **Exemplo**
+**Exemplo**
 
-  ```javascript
-  //variáveis
-  float peso_da_caixa;
-  float custo_da_caixa;
-  Scanner entrada;
+```javascript
+//variáveis
+float peso_da_caixa;
+float custo_da_caixa;
+Scanner entrada;
 
-  entrada = new Scanner(System.in);
+entrada = new Scanner(System.in);
 
-  peso_da_caixa = entrada.nextFloat(); //recebe dados da entrada padrão
-  custo_da_caixa = 10.50; //atribuição
+peso_da_caixa = entrada.nextFloat(); //recebe dados da entrada padrão
+custo_da_caixa = 10.50; //atribuição
 
-  System.out.println("Uma caixa pesa " + peso_da_caixa + " e seu custo é de R$ " + custo_da_caixa + "."); //envia dados à saída padrão
-  ```
+System.out.println("Uma caixa pesa " + peso_da_caixa + " e seu custo é de R$ " + custo_da_caixa + "."); //envia dados à saída padrão
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  <identificador> = <valor real>
-  ```
+```python
+<identificador> = <valor real>
+```
 
-  **Exemplo**
+**Exemplo**
 
-  ```python
-  peso_da_caixa = (float) input(); #recebe dados da entrada padrão
-  custo_da_caixa = 10.50; #atribuição
+```python
+peso_da_caixa = (float) input(); #recebe dados da entrada padrão
+custo_da_caixa = 10.50; #atribuição
 
-  printf(f"Uma caixa pesa {peso_da_caixa} e seu custo é de R$ {custo_da_caixa}."); //envia dados à saída padrão
-  ```
+printf(f"Uma caixa pesa {peso_da_caixa} e seu custo é de R$ {custo_da_caixa}."); //envia dados à saída padrão
+```
 
-  </TabItem>
+::::
+::::{tab-item} C
+:sync: c
 
-  <TabItem value="c" label="C">
+```c
+float <identificador>;
+```
 
-  ```c
-  float <identificador>;
-  ```
+**Exemplo**
 
-  **Exemplo**
+```c
+//variáveis
+float peso_da_caixa;
+float custo_da_caixa;
 
-  ```c
-  //variáveis
-  float peso_da_caixa;
-  float custo_da_caixa;
+scanf("%f", &peso_da_caixa); //recebe dados da entrada padrão. Observe o uso do &
+custo_da_caixa = 10.50; //atribuição
 
-  scanf("%f", &peso_da_caixa); //recebe dados da entrada padrão. Observe o uso do &
-  custo_da_caixa = 10.50; //atribuição
+printf("%s %f %s %f.\n","Uma caixa pesa", peso_da_caixa, "e seu custo é de R$", custo_da_caixa); //envia dados à saída padrão
+```
 
-  printf("%s %f %s %f.\n","Uma caixa pesa", peso_da_caixa, "e seu custo é de R$", custo_da_caixa); //envia dados à saída padrão
-  ```
-
-:::note Observação
+:::{seealso} Observação
 Nas funções `scanf` e `printf` um valor real é reconhecido utilizando `%f` na cadeia de formatação.
 :::
 
-  </TabItem>
-
-</Tabs>
+::::
+:::::
 
 ### Lógico
 
@@ -599,114 +640,119 @@ Um dado do tipo **lógico** é aquele em que dois valores podem ser asssumidos: 
 
 #### Declaração
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  logico: <identificador>;
-  ```
+```c
+logico: <identificador>;
+```
 
-  Os possíveis valores lógicos são `true` (verdadeiro) e `false` (falso).
+Os possíveis valores lógicos são `verdadeiro` e `falso`.
 
-  **Exemplo**
+**Exemplo**
 
-  ```c
-  //variáveis
-  logico: caixa_vazia;
-  logico: caixa_nova;
+```c
+//variáveis
+logico: caixa_vazia;
+logico: caixa_nova;
 
-  leia(caixa_vazia); //recebe dados da entrada padrão
-  caixa_nova ← falso; //atribuição
+leia(caixa_vazia); //recebe dados da entrada padrão
+caixa_nova ← falso; //atribuição
 
-  escreva("A caixa está vazia? ", caixa_vazia); //envia dados à saída padrão
-  escreva("A caixa é nova? ", caixa_nova);  //envia dados à saída padrão
-  ```
+escreva("A caixa está vazia? ", caixa_vazia); //envia dados à saída padrão
+escreva("A caixa é nova? ", caixa_nova);  //envia dados à saída padrão
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  boolean <identificador>;
-  ```
+```java
+boolean <identificador>;
+```
 
-  **Exemplo**
+Os possíveis valores lógicos são `true` (verdadeiro) e `false` (falso).
 
-  ```javascript
-  //variáveis
-  boolean caixa_vazia;
-  boolean caixa_nova;
-  Scanner entrada;
+**Exemplo**
 
-  entrada = new Scanner(System.in);
+```javascript
+//variáveis
+boolean caixa_vazia;
+boolean caixa_nova;
+Scanner entrada;
 
-  caixa_vazia = entrada.nextBoolean(); //recebe dados da entrada padrão
-  caixa_nova = false; //atribuição
+entrada = new Scanner(System.in);
 
-  System.out.println("A caixa está vazia? " + caixa_vazia); //envia dados à saída padrão
-  System.out.println("A caixa é nova? " + caixa_nova);  //envia dados à saída padrão
-  ```
+caixa_vazia = entrada.nextBoolean(); //recebe dados da entrada padrão
+caixa_nova = false; //atribuição
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+System.out.println("A caixa está vazia? " + caixa_vazia); //envia dados à saída padrão
+System.out.println("A caixa é nova? " + caixa_nova);  //envia dados à saída padrão
+```
 
-  ```python
-  <identificador> = <valor lógico>
-  ```
+::::
+::::{tab-item} Python
+:sync: python
 
-  Os possíveis valores lógicos são `True` (verdadeiro) e `False` (falso).
+```python
+<identificador> = <valor lógico>
+```
 
-  **Exemplo**
+Os possíveis valores lógicos são `True` (verdadeiro) e `False` (falso).
 
-  ```python
-  caixa_vazia = (bool) input(); #recebe dados da entrada padrão
-  caixa_nova = False; #atribuição
+**Exemplo**
 
-  print(f"A caixa está vazia? {caixa_vazia}"); #envia dados à saída padrão
-  print(f"A caixa é nova? {caixa_nova}");  #envia dados à saída padrão
-  ```
+```python
+caixa_vazia = (bool) input(); #recebe dados da entrada padrão
+caixa_nova = False; #atribuição
 
-  </TabItem>
+print(f"A caixa está vazia? {caixa_vazia}"); #envia dados à saída padrão
+print(f"A caixa é nova? {caixa_nova}");  #envia dados à saída padrão
+```
 
-  <TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
-:::caution Atenção
+:::{caution} Atenção
 Em C não há um tipo de lógico definido nativamente. Podemos utilizar o tipo `bool` importando a biblioteca `stdbool`.
 :::
 
-  ```c
-  #include <stdbool.h>
+```c
+#include <stdbool.h>
 
-  bool <identificador>;
-  int <identificador>;
-  ```
+bool <identificador>;
+int <identificador>;
+```
 
-  **Exemplo**
-  ```c
-  #include <stdbool.h> //necessário para ter o tipo bool
-  //variáveis
-  bool caixa_vazia; //tipo lógico utilizando bool
-  int caixa_nova;  //tipo lógico utilizando int
+**Exemplo**
+```c
+#include <stdbool.h> //necessário para ter o tipo bool
+//variáveis
+bool caixa_vazia; //tipo lógico utilizando bool
+int caixa_nova;  //tipo lógico utilizando int
 
-  scanf("%d", &caixa_vazia);//recebe dados da entrada padrão. Atenção ao uso do &
-  caixa_nova = 0; //atribuição
+scanf("%d", &caixa_vazia);//recebe dados da entrada padrão. Atenção ao uso do &
+caixa_nova = 0; //atribuição
 
-  printf("%s %d", "A caixa está vazia? ", caixa_vazia); //envia dados à saída padrão
-  printf("%s %d", "A caixa é nova? ", caixa_nova);      //envia dados à saída padrão
-  ```
+printf("%s %d", "A caixa está vazia? ", caixa_vazia); //envia dados à saída padrão
+printf("%s %d", "A caixa é nova? ", caixa_nova);      //envia dados à saída padrão
+```
 
-:::note Observação
+:::{seealso} Observação
 O tipo de dado `bool` opera da mesma maneira que um dado do tipo inteiro em que:
 - o valor 0 é entendido como falso, e
 - qualquer valor diferente de 0 é entendido como verdadeiro.
 :::
 
-:::note Observação
+:::{seealso} Observação
 Como o `bool` funciona como um inteiro, nas funções `scanf` e `printf` seu  é reconhecido utilizando `%d` na cadeia de formatação. Valores falsos serão apresentados como 0 e verdadeiros como 1.
 :::
 
-  </TabItem>
-
-</Tabs>
+::::
+:::::
 
 ### Caractere
 
@@ -719,174 +765,133 @@ Os dado do tipo **caractere** são aqueles que pertencem ao conjunto de valores 
 
 ### Declaração
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  caractere: <identificador>;
-  ```
+```c
+caractere: <identificador>;
+```
 
-  **Exemplo**
+**Exemplo**
 
-  ```c
-  //variáveis
-  caractere: conteudo_caixa;
-  caractere: destino_caixa;
-  caractere: categoria_produto; //A, B, ou C 
-  caractere: tipo_produto; //X, Y ou Z
+```c
+//variáveis
+caractere: conteudo_caixa;
+caractere: destino_caixa;
+caractere: categoria_produto; //A, B, ou C 
+caractere: tipo_produto; //X, Y ou Z
 
-  leia(conteudo); //recebe dados da entrada padrão
-  destino ← "São Paulo"; //atribuição
+leia(conteudo); //recebe dados da entrada padrão
+destino ← "São Paulo"; //atribuição
 
-  escreva("Contéudo da caixa: ", caixa_conteudo); //envia dados à saída padrão
-  escreva("Destino da carga: " , caixa_destino);  //envia dados à saída padrão
+escreva("Contéudo da caixa: ", caixa_conteudo); //envia dados à saída padrão
+escreva("Destino da carga: " , caixa_destino);  //envia dados à saída padrão
 
-  leia(categoria_produto); //recebe dados da entrada padrão
-  tipo_produto ← "Y"; //atribuição
-  ```
+leia(categoria_produto); //recebe dados da entrada padrão
+tipo_produto ← "Y"; //atribuição
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-  String <identificador>;
-  char <identificador>;
-  ```
+```java
+String <identificador>;
+```
 
-  **Exemplo**
+**Exemplo**
 
-  ```javascript
-  //variáveis
-  boolean caixa_vazia;
-  boolean caixa_nova;
-  Scanner entrada;
+```java
+//variáveis
+String conteudo_caixa;
+String destino_caixa;
+String categoria_produto; //A, B, ou C 
+String tipo_produto; //X, Y ou Z
 
-  entrada = new Scanner(System.in);
+entrada = new Scanner(System.in);
 
-  caixa_vazia = entrada.nextBoolean(); //recebe dados da entrada padrão
-  caixa_nova = false; //atribuição
+conteudo = entrada.next(); //recebe dados da entrada padrão
+destino = "São Paulo"; //atribuição
 
-  System.out.println("A caixa está vazia? " + caixa_vazia); //envia dados à saída padrão
-  System.out.println("A caixa é nova? " + caixa_nova);  //envia dados à saída padrão
-  ```
+System.out.println("Contéudo da caixa: " + caixa_conteudo); //envia dados à saída padrão
+System.out.println("Destino da carga: " + caixa_destino);  //envia dados à saída padrão
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+categoria_produto = entrada.next(); //recebe dados da entrada padrão
+tipo_produto = "Y"; //atribuição
+```
 
-  ```python
-  <identificador> = <valor lógico>
-  ```
+::::
+::::{tab-item} Python
+:sync: python
 
-  Os possíveis valores lógicos são `True` (verdadeiro) e `False` (falso).
+```python
+conteudo = input(); #recebe dados da entrada padrão
+destino = "São Paulo" #atribuição
 
-  **Exemplo**
+print("Contéudo da caixa: ", caixa_conteudo); #envia dados à saída padrão
+print("Destino da carga: ", caixa_destino);  #envia dados à saída padrão
 
-  ```python
-  caixa_vazia = (bool) input(); #recebe dados da entrada padrão
-  caixa_nova = False; #atribuição
+categoria_produto = input() #recebe dados da entrada padrão
+tipo_produto = "Y" #atribuição
+```
 
-  print(f"A caixa está vazia? {caixa_vazia}"); #envia dados à saída padrão
-  print(f"A caixa é nova? {caixa_nova}");  #envia dados à saída padrão
-  ```
+::::
+::::{tab-item} C
+:sync: c
 
-  </TabItem>
+```c
+char <identificador>[];
+```
 
-  <TabItem value="c" label="C">
+**Exemplo**
 
-:::caution Atenção
-Em C não há um tipo de lógico definido nativamente. Podemos utilizar o tipo `bool` importando a biblioteca `stdbool`.
-:::
+```c
+//variáveis
+char conteudo_caixa[100];
+char destino_caixa[100];
+char categoria_produto[100]; //A, B, ou C 
+char tipo_produto[100]; //X, Y ou Z
 
-  ```c
-  #include <stdbool.h>
+fgets(conteudo_caixa, 100, stdin); //recebe dados da entrada padrão
+sprintf(destino, "São Paulo"); //atribuição
 
-  bool <identificador>;
-  int <identificador>;
-  ```
+System.out.println("Contéudo da caixa: " + caixa_conteudo); //envia dados à saída padrão
+System.out.println("Destino da carga: " + caixa_destino);  //envia dados à saída padrão
 
-  **Exemplo**
-  ```c
-  #include <stdbool.h> //necessário para ter o tipo bool
-  //variáveis
-  bool caixa_vazia; //tipo lógico utilizando bool
-  int caixa_nova;  //tipo lógico utilizando int
+fgets(conteudo_caixa, 100, stdin); //recebe dados da entrada padrão
+sprintf(tipo_produto, "Y"); //atribuição
+```
 
-  scanf("%d", &caixa_vazia);//recebe dados da entrada padrão. Atenção ao uso do &
-  caixa_nova = 0; //atribuição
-
-  printf("%s %d", "A caixa está vazia? ", caixa_vazia); //envia dados à saída padrão
-  printf("%s %d", "A caixa é nova? ", caixa_nova);      //envia dados à saída padrão
-  ```
-
-:::note Observação
-O tipo de dado `bool` opera da mesma maneira que um dado do tipo inteiro em que:
-- o valor 0 é entendido como falso, e
-- qualquer valor diferente de 0 é entendido como verdadeiro.
-:::
-
-:::note Observação
-Como o `bool` funciona como um inteiro, nas funções `scanf` e `printf` seu  é reconhecido utilizando `%d` na cadeia de formatação. Valores falsos serão apresentados como 0 e verdadeiros como 1.
-:::
-
-  </TabItem>
-
-</Tabs>
-
-
-<!-- marp hide -->
-
----------
-
-<!-- marp /hide -->
-
+::::
+:::::
 
 
 **Exercício**  
 - Identifique se o tipo de dado de cada variável está correto ou incorreto.
-
-    - inteiro: endereço
-
-    - inteiro: nro_gatos
-
-    - inteiro: qtde_itens
-
-    - real: soma_total
-
-    - inteiro: soma_total
-
-    - caractere: idade
-
-    - lógico: idade
+  - inteiro: endereço
+  - inteiro: nro_gatos
+  - inteiro: qtde_itens
+  - real: soma_total
+  - inteiro: soma_total
+  - caractere: idade
+  - lógico: idade
 
 **Exercício**  
 - Identifique se o tipo de dado de cada variável está correto ou incorreto.
-
-    - inteiro: idade
-
-    - real: nome
-
-    - lógico: janela_aberta
-
-    - real: peso
-
-    - real: tamanho
+  - inteiro: idade
+  - real: nome
+  - lógico: janela_aberta
+  - real: peso
+  - real: tamanho
 
 **Exercícios**  
-Observe qual é o tipo de dado em cada situação ([FORBELLONE, pg. 20](https://plataforma.bvirtual.com.br/Leitor/Publicacao/200078/pdf/44)):
+Observe qual é o tipo de dado em cada situação [@forbellone2022]:
 
 - A placa "Pare!" tinha 2 furos de bala.
-
 - Josefina subiu 5 degraus para pegar uma maçã boa.
-
 - Alberta levou 3,5 horas para chegar ao hospital.
-
 - Astrogilda mandou pintar em um lote de 10 camisetas: "Preserve o meio ambiente", e ficou devendo R\$ 150,00 para a estamparia Pinte e Borde a ser pago em 3 parcelas.
-
 - Felisberto recebeu sua 18ª medalha por ter alcançado a marca de 578,3 segundos nos 100 metros rasos.
-
-
-
-## Referências
-- [FORBELLONE, André Luiz Villar; EBERSPÄTCHER, Henri Frederico. Lógica de programação: A construção de algoritmoss e estruturas de dados com aplicações em Python. 4.ed. São Paulo: Pearson; Porto Alegre: Bookman, 2022](https://plataforma.bvirtual.com.br/Leitor/Publicacao/200078/pdf)
-
 
