@@ -1,5 +1,7 @@
 # Expressões
 
+## Fixação
+
 :::::{exercise}
 :label: ex:expressoes-antecessor_sucessor
 Faça um programa que pergunta um número ao usuário, e em seguida mostra o antecessor e o sucessor desse número.  
@@ -90,29 +92,31 @@ printf("Hello world!\n");
 ::::::
 
 :::::{exercise}
-1. Faça um programa que pergunta o nome do usuário, e em seguida mostra a frase "Boa tarde" seguida do nome do usuário.  
+Faça um programa que pergunta o nome do usuário, e em seguida mostra a frase "Boa tarde" seguida do nome do usuário.  
 :::::
 
 :::::{exercise}
-1. Pergunte um número ao usuário, e mostre o valor desse número ao cubo.  
+Pergunte um número ao usuário, e mostre o valor desse número ao cubo.  
 :::::
 
 :::::{exercise}
-1. Pergunte três valores ao usuário, que correspondem às horas, minutos e segundos do horário atual. Calcule quantos segundos se passaram desde 00:00 horas.  
-(Adaptado de MENEZES 2019, pg. 72)  
+Pergunte três valores ao usuário, que correspondem às horas, minutos e segundos do horário atual. Calcule quantos segundos se passaram desde 00:00 horas.  
+
+Adaptado de [@menezes2019 p. 72]
 :::::
 
 :::::{exercise}
-1. Pergunte um número ao usuário, e em seguida mostre a raiz quadrada e a raiz cúbica desse número.  
+Pergunte um número ao usuário, e em seguida mostre a raiz quadrada e a raiz cúbica desse número.  
 :::::
 
 :::::{exercise}
-1. Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R\$ 60,00 por dia e R\$ 0,15 por km rodado.  
-(Fonte: MENEZES 2019, pg. 72)
+Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R\$ 60,00 por dia e R\$ 0,15 por km rodado.  
+
+Adaptado de [@menezes2019 p. 72]
 :::::
 
 :::::{exercise}
-1. Escreva um programa para ler as dimensões de um retângulo, com o tamanho da base ($b$) e da altura ($h$). Calcule o mostre o perímetro ($p$) e área ($a$) desse retângulo.
+Escreva um programa para ler as dimensões de um retângulo, com o tamanho da base ($b$) e da altura ($h$). Calcule o mostre o perímetro ($p$) e área ($a$) desse retângulo.
 $$
 p = 2(b+h)
 $$
@@ -123,7 +127,7 @@ $$
 :::::
 
 :::::{exercise}
-1. Pergunte ao usuário o valor do raio ($r$) de um círculo, e em seguida mostre o perímetro ($p$) e a área ($a$) desse círculo.
+Pergunte ao usuário o valor do raio ($r$) de um círculo, e em seguida mostre o perímetro ($p$) e a área ($a$) desse círculo.
 $$
 p = 2\pi r
 $$
@@ -134,7 +138,7 @@ $$
 :::::
 
 :::::{exercise}
-1. Faça  um  algoritmo  que  leia  três  notas ($N_1$, $N_2$ e $N_3$)  de  um  aluno,  calcule  e  escreva  a  média  final  deste  aluno. Considerar que a média ($M$) é ponderada e que o peso das notas é 2, 3 e 5. A equação para o cálculo da média final é: 
+Faça  um  algoritmo  que  leia  três  notas ($N_1$, $N_2$ e $N_3$)  de  um  aluno,  calcule  e  escreva  a  média  final  deste  aluno. Considerar que a média ($M$) é ponderada e que o peso das notas é 2, 3 e 5. A equação para o cálculo da média final é: 
 $$
 M = \frac{N_1 \times 2 + N_2 \times 3 + N_3 \times 5}{2+3+5}
 $$  
@@ -142,17 +146,19 @@ $$
 :::::
 
 :::::{exercise}
-1. Faça um programa que solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.  
-(Fonte: MENEZES 2019, pg. 72)
+Faça um programa que solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.  
+
+Adaptado de [@menezes2019 p. 72]
 :::::
 
 :::::{exercise}
-1. Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem de aumento. Exiba o valor do aumento e do novo salário.  
-(Fonte: MENEZES 2019, pg. 72)
+Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem de aumento. Exiba o valor do aumento e do novo salário.  
+
+Adaptado de [@menezes2019 p. 72]
 :::::
 
 :::::{exercise}
-1. Peça ao usuário que informe o valor de um boleto, o percentual de juros cobrado e o número de dias em atraso. O programa deve calcular o valor total a ser pago, utilizando a fórmula  
+Peça ao usuário que informe o valor de um boleto, o percentual de juros cobrado e o número de dias em atraso. O programa deve calcular o valor total a ser pago, utilizando a fórmula  
 $$
 Total = Valor + Valor \times \frac{Juros}{100} \times Dias
 $$  
@@ -160,22 +166,22 @@ $$
 :::::
 
 :::::{exercise}
-1. Considere que houve uma eleição, na qual três candidatos concorreram ($C_a$, $C_b$ e $C_c$). O usuário deve informar quantos votos cada candidato recebeu e quantidade de votos brancos e nulos. O programa deve calcular e mostrar a quantidade total de eleitores, o percentual de votos que cada candidato recebeu, o percentual de votos brancos e o percentual de votos nulos. O cálculo dos percentuais é dado em relação ao total de votos da eleição.  
+Considere que houve uma eleição, na qual três candidatos concorreram ($C_a$, $C_b$ e $C_c$). O usuário deve informar quantos votos cada candidato recebeu e quantidade de votos brancos e nulos. O programa deve calcular e mostrar a quantidade total de eleitores, o percentual de votos que cada candidato recebeu, o percentual de votos brancos e o percentual de votos nulos. O cálculo dos percentuais é dado em relação ao total de votos da eleição.  
 (Adaptado de LOPES, 2011)
 :::::
 
 :::::{exercise}
-1. O  custo  de  um  carro  novo  ao  consumidor  é  a  soma  do  custo  de  fábrica  com a  porcentagem  do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja  de  28%  e  os  impostos  de  45%,  desenvolva  um  algoritmo que receba como entrada o valor do custo  de  fábrica  de  um  carro, e partir de disso calcule e mostre o custo final do carro ao consumidor.  
+O  custo  de  um  carro  novo  ao  consumidor  é  a  soma  do  custo  de  fábrica  com a  porcentagem  do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja  de  28%  e  os  impostos  de  45%,  desenvolva  um  algoritmo que receba como entrada o valor do custo  de  fábrica  de  um  carro, e partir de disso calcule e mostre o custo final do carro ao consumidor.  
 (Adaptado de CARVALHO, 2007)
 :::::
 
 :::::{exercise}
-1. Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais  uma  comissão  fixa  de 5% sobre o valor de todos os carros vendidos pelo funcionário. Escreva um algoritmo que receba como entrada o valor total de suas vendas e seu salário fixo, e em seguida calcula e apresenta o salário final do vendedor.  
+Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais  uma  comissão  fixa  de 5% sobre o valor de todos os carros vendidos pelo funcionário. Escreva um algoritmo que receba como entrada o valor total de suas vendas e seu salário fixo, e em seguida calcula e apresenta o salário final do vendedor.  
   (Adaptado de CARVALHO, 2007).
 :::::
 
 ::::::{exercise}
-1. Suponha que `A`, `B` e `C` são variáveis de tipo inteiro, com valores iguais a $5$, $10$ e $-8$, respectivamente, e uma variável real `D`, com valor de $1.5$. Quais serão os resultados das expressões aritméticas a seguir?  
+Suponha que `A`, `B` e `C` são variáveis de tipo inteiro, com valores iguais a $5$, $10$ e $-8$, respectivamente, e uma variável real `D`, com valor de $1.5$. Quais serão os resultados das expressões aritméticas a seguir?  
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -227,7 +233,7 @@ $$
 ::::::
 
 ::::::{exercise}
-1. Sendo P, Q e R variáveis de tipo inteiro, com valores iguais a 2, 3 e 12, respectivamente, e
+Sendo P, Q e R variáveis de tipo inteiro, com valores iguais a 2, 3 e 12, respectivamente, e
 uma variável real S, com valor de 4.5, quais os valores fornecidos por cada uma das expressões
 aritméticas abaixo?
 
@@ -281,7 +287,7 @@ aritméticas abaixo?
 ::::::
 
 ::::::{exercise}
-1. Considere as seguintes atribuições, R = 2, S = 5, T = -1, X = - 3, Y = -1 e Z = 0, resolver as
+Considere as seguintes atribuições, R = 2, S = 5, T = -1, X = - 3, Y = -1 e Z = 0, resolver as
 expressões abaixo:
 
 <!-- TABSET -->
@@ -326,7 +332,7 @@ expressões abaixo:
 ::::::
 
 ::::::{exercise}
-1. Resolva as expressões abaixo, apresentando o resultado final. Considere o valor de `PI` como $3,14$:
+Resolva as expressões abaixo, apresentando o resultado final. Considere o valor de `PI` como $3,14$:
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -382,7 +388,7 @@ expressões abaixo:
 ::::::
 
 ::::::{exercise}
-1. Resolva as expressões a seguir, quanto a seu valor lógico.
+Resolva as expressões a seguir, quanto a seu valor lógico.
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -426,7 +432,7 @@ expressões abaixo:
 ::::::
 
 ::::::{exercise}
-1. Resolva as expressões a seguir, quanto a seu valor lógico.
+Resolva as expressões a seguir, quanto a seu valor lógico.
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -462,7 +468,7 @@ expressões abaixo:
 ::::::
 
 ::::::{exercise}
-1. Considerando as variáveis numéricas X, Y e Z, contendo os valores 2, 5 e 9, respectivamente, a
+Considerando as variáveis numéricas X, Y e Z, contendo os valores 2, 5 e 9, respectivamente, a
 variável literal NOME, contendo o literal "MARIA"; e a variável lógica SIM, contendo o valor
 lógico Verdadeiro (V), observar os resultados obtidos das expressões lógicas a seguir.
 
@@ -508,7 +514,7 @@ lógico Verdadeiro (V), observar os resultados obtidos das expressões lógicas 
 ::::::
 
 ::::::{exercise}
-1. Considerando A e C variáveis inteiras, contendo os valores, $1$ e $8$ e, B como uma variável real, com o valor $4.5$ e TESTE variável lógica contendo o valor verdadeiro (V), determinar os resultados obtidos da avaliação das seguintes expressões:
+Considerando A e C variáveis inteiras, contendo os valores, $1$ e $8$ e, B como uma variável real, com o valor $4.5$ e TESTE variável lógica contendo o valor verdadeiro (V), determinar os resultados obtidos da avaliação das seguintes expressões:
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -560,7 +566,7 @@ lógico Verdadeiro (V), observar os resultados obtidos das expressões lógicas 
 ::::::
 
 ::::::{exercise}
-1. Determine os resultados na avaliação das expressões lógicas seguintes, sabendo que A, B, C
+Determine os resultados na avaliação das expressões lógicas seguintes, sabendo que A, B, C
 contêm, respectivamente, 2, 7, 3.5, e que existe uma variável lógica L cujo valor é F.
 
 <!-- TABSET -->
@@ -625,7 +631,7 @@ contêm, respectivamente, 2, 7, 3.5, e que existe uma variável lógica L cujo v
 ::::::
 
 ::::::{exercise}
-1. Sabendo que A = 5, B = 4, C = 3 e D = 6, informe se as expressões abaixo são verdadeiras ou
+Sabendo que A = 5, B = 4, C = 3 e D = 6, informe se as expressões abaixo são verdadeiras ou
 falsas.
 
 <!-- TABSET -->
@@ -670,7 +676,7 @@ falsas.
 ::::::
 
 ::::::{exercise}
-1. Sabendo que A = 3, B = 7 e C = 4, informe se as expressões abaixo são verdadeiras ou falsas.
+Sabendo que A = 3, B = 7 e C = 4, informe se as expressões abaixo são verdadeiras ou falsas.
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -718,21 +724,21 @@ falsas.
 ::::::
 
 ::::::{exercise}
-1. Elabore um programa que leia a altura de um andar do prédio e quantos andares o prédio possui. Calcule e mostre a altura do prédio.
+Elabore um programa que leia a altura de um andar do prédio e quantos andares o prédio possui. Calcule e mostre a altura do prédio.
 ::::::
 
 ::::::{exercise}
-1. Desenvolva um programa que leia um valor. Em seguida, deve ser mostrada a parte inteira da raiz quadrada do número lido.
+Desenvolva um programa que leia um valor. Em seguida, deve ser mostrada a parte inteira da raiz quadrada do número lido.
 ::::::
 
 ::::::{exercise}
-1. Faça um programa que calcule a médio do peso de uma família que possui 5 pessoas.
+Faça um programa que calcule a médio do peso de uma família que possui 5 pessoas.
 ::::::
 
 ### Testes de mesa
 
 ::::::{exercise}
-1. Analise os valores que estão armazenados em cada uma das variáveis, após a execução de cada instrução. Prencha com "?" nos lugares em que o valor da variável não é conhecido.
+Analise os valores que estão armazenados em cada uma das variáveis, após a execução de cada instrução. Prencha com "?" nos lugares em que o valor da variável não é conhecido.
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -811,7 +817,7 @@ int main () {           //   a  |    b   |    c   |    x   |
 ::::::
 
 ::::::{exercise}
-1. Indique os valores armazenados em cada variável, após executar cada uma das instruções
+Indique os valores armazenados em cada variável, após executar cada uma das instruções
 
 <!-- TABSET -->
 :::::{tab-set}
@@ -895,32 +901,32 @@ int main () {           //   q  |    w   |    r   |    ex  |
 ### Matemática
 
 ::::::{exercise}
-1. Elabore um programa para calcular o valor de $y$ em uma equação e segundo grau. O usuário deve informar quais são os valores para $a$, $b$, $c$ e $x$. Uma equação de segundo grau é definida pela fórmula:
+Elabore um programa para calcular o valor de $y$ em uma equação e segundo grau. O usuário deve informar quais são os valores para $a$, $b$, $c$ e $x$. Uma equação de segundo grau é definida pela fórmula:
 $$
 y = ax^2 + bx + c
 $$
 ::::::
 
 ::::::{exercise}
-1. Desenvolva um programa para calcular as raízes de uma equação de segundo grau. As raízes de uma equação do segundo grau podem ser obtidas por meio da fórmula de [Bháskara](https://pt.wikipedia.org/wiki/Bhaskara_II):
+Desenvolva um programa para calcular as raízes de uma equação de segundo grau. As raízes de uma equação do segundo grau podem ser obtidas por meio da fórmula de [Bháskara](https://pt.wikipedia.org/wiki/Bhaskara_II):
 $$
 x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 $$
 ::::::
 
 ::::::{exercise}
-1. Faça um algoritmo para calcular a distância entre dois pontos $A$ e $B$ em um plano cartesiano. O ponto $A$ possui as coordenadas $(x_1, y_1)$ e o ponto $B$ possui as coordenadas $(x_1, y_2)$. A distância $d$ entre os pontos $A$ e $B$ é dada pela seguinte fórmula:
+Faça um algoritmo para calcular a distância entre dois pontos $A$ e $B$ em um plano cartesiano. O ponto $A$ possui as coordenadas $(x_1, y_1)$ e o ponto $B$ possui as coordenadas $(x_1, y_2)$. A distância $d$ entre os pontos $A$ e $B$ é dada pela seguinte fórmula:
 $$
 d = \sqrt{(x_2-x_2)^2+(y_2-y_2)^2}
 $$
 ::::::
 
 ::::::{exercise}
-1. A partir de um ângulo expresso em graus ($\degree$), converta o valor do ângulo de graus para radianos ($rad$). Sabe-se que $\pi\ rad = 180\degree$ ([Vídeo: Convertendo de graus para radianos](https://www.youtube.com/watch?v=41S62_F5fl8)).
+A partir de um ângulo expresso em graus ($\degree$), converta o valor do ângulo de graus para radianos ($rad$). Sabe-se que $\pi\ rad = 180\degree$ ([Vídeo: Convertendo de graus para radianos](https://www.youtube.com/watch?v=41S62_F5fl8)).
 ::::::
 
 ::::::{exercise}
-1. Calcule as médias definidas a seguir para os valores reais $a$, $b$, $c$ e $d$, e o inteiro $n=4$ .
+Calcule as médias definidas a seguir para os valores reais $a$, $b$, $c$ e $d$, e o inteiro $n=4$ .
   - Média Aritmética:
     $$
     m_a = \frac{a+b+c+d}{n}
@@ -940,14 +946,14 @@ $$
 ::::::
 
 ::::::{exercise}
-1. Desenvolva um programa para converter o valor de uma temperatura em graus Celsius ($C$) para graus Fahrenheit ($F$). Para essa conversão, temos a seguinte fórmula:
+Desenvolva um programa para converter o valor de uma temperatura em graus Celsius ($C$) para graus Fahrenheit ($F$). Para essa conversão, temos a seguinte fórmula:
 $$
 F = \frac{9}{5}*C + 32
 $$
 ::::::
 
 ::::::{exercise}
-1. Elabore um algorimo para converter o valor de uma temperatura expressa em graus Celsius ($C$) para Kelvin ($K$). Para tal, utilize a seguinte fórmula:
+Elabore um algorimo para converter o valor de uma temperatura expressa em graus Celsius ($C$) para Kelvin ($K$). Para tal, utilize a seguinte fórmula:
 $$
 K = C + 273.15
 $$
@@ -956,11 +962,11 @@ $$
 ## Desafios
 
 ::::::{exercise}
-1. Desenvolva um algoritmo que recebe como entrada informações da hora e minuto inicial e final da partida de um determinado jogo. Com esses dados, informe a duração total do jogo, em horas e minutos (Obs: Para simplificação do problema, você pode considerar que o jogo sempre começa e termina no mesmo dia).
+Desenvolva um algoritmo que recebe como entrada informações da hora e minuto inicial e final da partida de um determinado jogo. Com esses dados, informe a duração total do jogo, em horas e minutos (Obs: Para simplificação do problema, você pode considerar que o jogo sempre começa e termina no mesmo dia).
 ::::::
 
 ::::::{exercise}
-1. Desenvolva um algoritmo que recebe como entrada informações da hora e minuto inicial e final da partida de um determinado jogo. Com esses dados, informe a duração total do jogo, em horas e minutos. Considere que a duração de uma partida nunca será maior ou igual que 24 horas.
+Desenvolva um algoritmo que recebe como entrada informações da hora e minuto inicial e final da partida de um determinado jogo. Com esses dados, informe a duração total do jogo, em horas e minutos. Considere que a duração de uma partida nunca será maior ou igual que 24 horas.
 ::::::
 
 
@@ -976,10 +982,6 @@ $$
 1. [Beecrowd 1021 - Notas e Moedas ](https://www.beecrowd.com.br/judge/pt/problems/view/1021)
 ::::::
 
-
-
-## Referências
-MENEZES, N. N. C. Introdução à programação com Python: algoritmos e lógica de programação para iniciantes. 3.ed. São Paulo: Novatec, 2019.
 
 **Outras referências**  
 
