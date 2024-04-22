@@ -55,3 +55,11 @@ Definição aqui
 
 <legenda>
 ::::
+
+:::::{exercise}
+:label: ex:<conteudo>-label
+:::::
+
+:::::{solution} ex:<conteudo>-label
+
+:::::
