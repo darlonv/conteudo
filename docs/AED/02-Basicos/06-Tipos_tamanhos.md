@@ -7,15 +7,18 @@ As diferentes linguagens de programação podem possuir em sua implementação v
 
 ## Tipos
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
 Para inteiros:   
 
@@ -47,40 +50,44 @@ para caractere:
 |---|---|---|
 |char|2 bytes| armazena um único caractere|
 
-Fonte: [Oracle. Java Language Specification. Types, Values and Variables: 4.2.1 Integral Types and Values.](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2)
+[@Oracle:Java2023:LanguageSpecificationTypesValuesVariables]
 
-</TabItem>
-<TabItem value="python" label="Python">
+
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 ## Mínimos e máximos para inteiro
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void mostrarValoresMinimosInteiro() {
 
     byte var_byte = Byte.MIN_VALUE;
@@ -126,39 +133,42 @@ Valores máximos para inteiros:
     max long  : 9223372036854775807
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 
 ## Mínimos e máximos para real
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void mostrarValoresMinimosReal() {
     float var_float = Float.MIN_VALUE;
     double var_double = Double.MIN_VALUE;
@@ -191,24 +201,24 @@ Valores máximos para real:
 **Observe**  
 O que o valor mínimo significa aqui?
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 Um simulador do armazenamento de variáveis pode ser conferido em [@schmidt2024]. [Link:](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
@@ -216,17 +226,20 @@ Um simulador do armazenamento de variáveis pode ser conferido em [@schmidt2024]
 
 Dizemos que existe um *overflow* quando o valor a ser armazenado extrapola (para mais ou para menos) o valor possível de ser armazenado utilizando determinado tipo de dado.
 
-Quando o valor extrapola o valor máximo dizemos que existe um **overflow positivo**, e quando extrapola o valor mínimo dizemos que ocorre um **overflow negativo** (STALLINGS 2010 p.270).
+Quando o valor extrapola o valor máximo dizemos que existe um **overflow positivo**, e quando extrapola o valor mínimo dizemos que ocorre um **overflow negativo** [@stallings2010 p. 270].
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
 ```javascript
 public static void mostrarOverflowInteiro() {
@@ -260,28 +273,28 @@ Valores máximos +1 para inteiros:
     max long  : -9223372036854775808
 ```
 
-:::caution Atenção
+:::{caution} Atenção
 O *overflow* é um erro nos valores, e portanto deve-se evitar que ele ocorra. Por isso, deve-se tomar o cuidado ao escolher o tipo de dado a ser utilizado.
 :::
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 ## Underflow
 
@@ -295,17 +308,20 @@ Chamamos de literais aos valores informados diretamente no código, de maneira e
 
 #### Decimal
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
  public static void mostrarLiteraisInteiroDecimal() {
     int var_int;
     long var_long;
@@ -328,38 +344,41 @@ Valores em decimal:
     10100  : 10100
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 #### Hexadecimal
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void mostrarLiteraisInteiroHexadecimal() {
     int var_int;
     long var_long;
@@ -374,6 +393,7 @@ public static void mostrarLiteraisInteiroHexadecimal() {
 
 }
 ```
+
 Saída:
 ```
 Valores em hexadecimal: 
@@ -381,38 +401,41 @@ Valores em hexadecimal:
     0x10100  : 65792
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 #### Binário
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void mostrarLiteraisInteiroBinario() {
     int var_int;
     long var_long;
@@ -427,6 +450,7 @@ public static void mostrarLiteraisInteiroBinario() {
 
     }
 ```
+
 Saída:
 ```
 Valores em binário: 
@@ -434,40 +458,43 @@ Valores em binário:
     0b10100  : 20
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 ### real
 
 #### Decimal
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void mostrarLiteraisRealDecimal() {
     float var_float;
     double var_double;
@@ -482,6 +509,7 @@ public static void mostrarLiteraisRealDecimal() {
 
 }
 ```
+
 Saída:
 ```
 Valores em decimal: 
@@ -489,38 +517,41 @@ Valores em decimal:
     10100d  : 10100.0
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
+::::
+:::::
 
 #### Hexadecimal
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void mostrarLiteraisRealHexadecimal() {
     float var_float;
     double var_double;
@@ -536,6 +567,7 @@ public static void mostrarLiteraisRealHexadecimal() {
 
 }
 ```
+
 Saída:
 ```
 Valores em hexadecimal: 
@@ -543,27 +575,21 @@ Valores em hexadecimal:
     0x1p1f  : 128.0
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
-
-</Tabs>
-
-## Referências
-
-[Oracle. Java Language Specification. Types, Values and Variables: 4.2.1 Integral Types and Values.](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2)
-
-STALLINGS, William. Organização e Arquitetura de Computadores. 8. ed. São Paulo: Pearson Practice Hall, 2010.
+::::
+:::::
