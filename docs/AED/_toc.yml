@@ -81,7 +81,7 @@ chapters:
           - file: 09-LFP/Exercicios/03-Lista_ex.md
           - file: 09-LFP/Exercicios/04-Tabela_dispersao_ex.md
           - file: 09-LFP/Exercicios/05-Conjuntos_ex.md
-  - title: Arvores
+  - title: Árvores
     sections:
       - file: 10-Arvores/01-Arvores.md
       - file: 10-Arvores/02-Binaria.md
@@ -89,7 +89,7 @@ chapters:
         sections:
           - file: 10-Arvores/Exercicios/01-Arvores_ex.md
           - file: 10-Arvores/Exercicios/02-Binaria_ex.md
-  - title: Ordenacao
+  - title: Ordenação
     sections:
       - file: 11-Ordenacao/00-Ordenacao.md
       - file: 11-Ordenacao/01-BubbleSort.md
