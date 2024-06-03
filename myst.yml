@@ -35,7 +35,7 @@ project:
 
 site:
   template: book-theme
-  title: Algoritmos
+  title: Materiais
 
   options:
     hide_footer_links: true
