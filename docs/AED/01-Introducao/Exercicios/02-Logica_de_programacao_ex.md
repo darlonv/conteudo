@@ -1,6 +1,5 @@
 # Lógica de programação
 
-
 ::::{exercise}
 :label: ex:logica-senhoras
 
