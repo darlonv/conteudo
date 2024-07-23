@@ -5,14 +5,14 @@ chapters:
   - title: Camadas de protocolos
     sections: 
       - file: 02-Camadas/modelos.md
-      # - title: Aplicação
-      #   sections:
-      #   - file: 02-Camadas/02-Aplicacao/01-Protocolos.md
-      #   - title: HTTP
-      #     sections:
-      #     - file: 02-Camadas/02-Aplicacao/01-HTTP/01-http.md
-      #     - file: 02-Camadas/02-Aplicacao/01-HTTP/02-http_server.md
-      #     - file: 02-Camadas/02-Aplicacao/01-HTTP/03-http_fast_api.md
+      - title: Aplicação
+        sections:
+        - file: 02-Camadas/02-Aplicacao/01-Protocolos.md
+        - title: HTTP
+          sections:
+          - file: 02-Camadas/02-Aplicacao/01-HTTP/01-http.md
+          - file: 02-Camadas/02-Aplicacao/01-HTTP/02-http_server.md
+          - file: 02-Camadas/02-Aplicacao/01-HTTP/03-http_fast_api.md
       - title: Transporte
         sections:
         - file: 02-Camadas/03-Transporte/01-Transporte.md

@@ -35,6 +35,18 @@ printf("Hello world!\n");
 ::::
 :::::
 
+<!-- TABSET 1 aba -->
+
+:::::{tab-set}
+::::{tab-item} Python
+:sync: python
+
+```python
+print("Hello world!")
+```
+::::
+:::::
+
 
 
 

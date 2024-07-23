@@ -1,21 +1,18 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-
 # HTTP Server
 
 
-## HTTP com sockets
+## Sockets
 
 Podemos implementar um servidor HTTP simples utilizando sockets.
 
 
-<Tabs>
-  <TabItem value="servidor" label="Servidor">
+:::::{tab-set}
+::::{tab-item} Servidor
+:sync: servidor
 
-  Código `server_http.py`:
+Código `server_http.py`:
 
-```py
+```python
 #Bibliotecas
 import socket
 from datetime import datetime
@@ -72,8 +69,8 @@ if __name__ == '__main__':
     main()
 ```
 
-  </TabItem>
-</Tabs>
+::::
+:::::
 
 - Execute o servidor
 
@@ -88,16 +85,17 @@ python3 server_http.py
   - Quais são as limitações deste servidor?
 
 
-## HTTP com sockets e threads
+## Sockets e threads
 
 Para resolver o problema do acesso por diversos cliente ao "mesmo" tempo, podemos incrementar o servidor HTTP desenvolvido anteriormente utilizando *threads*. Nesta abordagem, cada conexão é tratada separadamente.
 
-<Tabs>
-  <TabItem value="servidor" label="Servidor">
+:::::{tab-set}
+::::{tab-item} Servidor
+:sync: servidor
 
-  Código `server_http_threads.py`:
+Código `server_http_threads.py`:
 
-```py
+```python
 #Bibliotecas
 import socket
 from datetime import datetime
@@ -168,5 +166,5 @@ if __name__ == '__main__':
     main()
 ```
 
-  </TabItem>
-</Tabs>
+::::
+:::::

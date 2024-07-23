@@ -1,6 +1,7 @@
 
 # HTTP
 
+@kurose2021_book
 
 O Protocolo HTTP (_**H**iper**T**ext **T**ransfer **P**rotocol_) é um protocolo de comunicação utilizado para transferência de dados na World Wide Web (WWW). Ele é responsável por permitir que as aplicações web possam se comunicar com os servidores web de forma eficiente e padronizada.
 
@@ -40,9 +41,9 @@ Uma parte importante das requisições HTTP são as URLs (_**U**niform **R**esou
 
 A estrutura de uma URL pode ser entendida como:
 
-:::info Sintaxe
+::: {note} Sintaxe
 
-```url
+``` url
 <protocolo>://<domínio ou ip>:<porta>/<caminho>?<parametros>=<valores>&<parametros>=<valores>#<fragmentos>
 ```
 
@@ -195,22 +196,23 @@ Em resumo, o funcionamento básico do HTTP é baseado em requisição-resposta, 
 
 O HTTP é um protocolo baseado em conexão. Isso significa que ele usa conexões TCP.
 
-<details>
-  <summary>TCP</summary>
+:::::{note} TCP
+:class: dropdown
 
 O TCP (_**T**ransmission **C**ontrol **P**rotocol_) é um protocolo de camada de transporte, utilizado para estabelecer uma comunicação entre o cliente e o servidor.
 
 Uma conexão TCP é uma conexão orientada a fluxo que garante a entrega confiável de dados em ambas as direções. Isso significa que o cliente e o servidor podem enviar e receber dados de forma confiável, sem perda de pacotes ou corrupção de dados.
 
-</details>  
+
+:::::
 
 O HTTP pode usar duas abordagens diferentes para estabelecer uma conexão:
 
 - Conexão persistente: nessa abordagem, a conexão TCP é mantida aberta após a primeira requisição e resposta entre o cliente e o servidor. Isso permite que o cliente envie várias requisições usando a mesma conexão, o que pode melhorar o desempenho, reduzindo o tempo necessário para estabelecer uma nova conexão TCP.  
 
 
-<details>
-  <summary>Conexão persistente</summary>
+:::::{note} Conexão Persistente
+:class: dropdown
 
   Quando o HTTP usa conexão persistente, a conexão TCP entre o cliente e o servidor é mantida aberta após a primeira requisição e resposta. Isso significa que, em vez de estabelecer uma nova conexão TCP para cada requisição, o cliente pode enviar várias requisições usando a mesma conexão.
 
@@ -224,10 +226,12 @@ Permite a utilização do pipeline de requisições, em que o cliente pode envia
 
 Por outro lado, o uso de conexões persistentes pode levar a problemas de escalabilidade em servidores com grande número de clientes, uma vez que a conexão TCP entre o cliente e o servidor é mantida aberta por um período prolongado de tempo.
 
-</details>  
+:::::
 
 - Conexão não persistente: nessa abordagem, a conexão TCP é fechada após cada requisição e resposta entre o cliente e o servidor. Isso significa que o cliente precisa estabelecer uma nova conexão TCP para cada requisição. Essa abordagem é menos eficiente em termos de desempenho, mas é mais adequada para conexões de curta duração.  
 
+:::::{note} Conexão não persistente
+:class: dropdown
 <details>
   <summary>Conexão não persistente</summary>
   Quando o HTTP usa conexão não persistente, a conexão TCP entre o cliente e o servidor é fechada após cada requisição e resposta. Isso significa que o cliente precisa estabelecer uma nova conexão TCP para cada requisição que deseja enviar.
@@ -241,7 +245,8 @@ O número de conexões TCP estabelecidas pode aumentar consideravelmente em situ
 O pipeline de requisições não pode ser utilizado em conexões não persistentes, uma vez que o cliente precisa esperar pela resposta do servidor antes de enviar a próxima requisição.
 
 Por outro lado, a utilização de conexões não persistentes pode ser mais adequada em situações em que o cliente precisa enviar apenas uma ou duas requisições em um curto período de tempo, uma vez que o custo de estabelecer uma nova conexão TCP é relativamente baixo.
-</details>
+
+:::::
 
 Além disso, o HTTP também oferece suporte a conexões seguras usando SSL/TLS (Secure Sockets Layer/Transport Layer Security). Isso permite que o cliente e o servidor criptografem a comunicação, garantindo que os dados sejam transmitidos com segurança e privacidade.
 
@@ -291,7 +296,3 @@ Em seguida, abra utilizando um navegador:
 ```
 http://localhost:8080
 ```
-
-## Referências
-
-- [KUROSE, Jim; ROSS, Keith W. Redes de computadores e a internet: uma abordagem top-down. 8.ed. São Paulo: Pearson, 2021. ISBN 9788582605592.](https://plataforma.bvirtual.com.br/Acervo/Publicacao/198909)

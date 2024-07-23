@@ -59,10 +59,10 @@ site:
   actions:
     - title: Prof. Darlon
       url: https://github.com/darlonv
-    - title: AED
-      url: /AED
-    - title: RC
-      url: /RC
+    # - title: AED
+    #   url: /AED
+    # - title: RC
+    #   url: /RC
   
     
   domains: []
