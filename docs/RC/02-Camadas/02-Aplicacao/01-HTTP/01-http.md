@@ -1,7 +1,7 @@
 
 # HTTP
 
-@kurose2021_book
+@kurose2021_book [@kurose2021_book]
 
 O Protocolo HTTP (_**H**iper**T**ext **T**ransfer **P**rotocol_) é um protocolo de comunicação utilizado para transferência de dados na World Wide Web (WWW). Ele é responsável por permitir que as aplicações web possam se comunicar com os servidores web de forma eficiente e padronizada.
 
