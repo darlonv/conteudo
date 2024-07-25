@@ -2,6 +2,17 @@
 format: jb-book
 root: README
 chapters:
+  - title: Python
+    sections: 
+      - title: Pandas
+        sections:
+          - file: docs/01-Python/01-Pandas/01-Pandas.md
+          - file: docs/01-Python/01-Pandas/02-Series.md
+          - file: docs/01-Python/01-Pandas/03-Dataframes.md
+      - title: Gráficos
+        sections:
+          - file: docs/01-Python/02-Graficos/01-Matplotlib.md
+          - file: docs/01-Python/02-Graficos/02-Seaborn.md
   # - file: materiais.md
   # - file: trabalhos.md
   - file: docs/RNA/01-RNA.md
