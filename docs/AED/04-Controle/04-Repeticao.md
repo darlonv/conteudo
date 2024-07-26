@@ -311,17 +311,17 @@ Observe que antes de adentrar na estrutura, é necessário inicializar a variáv
 
 
 
-## repita
+## faça-até
 
-Podemos utilizar uma outra estrutura, em que a condição é testada ao final. Nesta estrutura, o conteúdo da repetição sempre é executado pelo menos uma vez. A estrutura é repetida enquanto a condição for falsa.
+Podemos utilizar uma outra estrutura, em que a condição é testada ao final. Nesta estrutura, o conteúdo da repetição sempre é executado pelo menos uma vez. A estrutura é repetida até que a condição seja verdadeira.
 
-A estrutura sintática do comando `repita` é a seguinte:
+A estrutura sintática do comando `faça-até` é a seguinte:
 ::::{tab-set}
 :::{tab-item} Pseudocódigo
 :sync: pseudocodigo
 
   ```c
-  repita
+  faça
     ...
     ...código...
     ...
@@ -332,7 +332,7 @@ A estrutura sintática do comando `repita` é a seguinte:
 :::{tab-item} Java
 :sync: java
 
-  ```js
+  ```java
   do{
     ...
     ...código...
@@ -344,13 +344,7 @@ A estrutura sintática do comando `repita` é a seguinte:
 :::{tab-item} Python
 :sync: python
 
-  ```python
-  ...código inicial...
-  while(<condição>):
-    ...
-    ...código...
-    ...
-  ```
+  A linguagem Python não possui esta estrutura.
 
 :::
 :::{tab-item} C
