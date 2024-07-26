@@ -446,3 +446,190 @@ A sintaxe da estrutura `para` segue a seguinte forma:
 :::
 ::::
 
+
+## Estruturas aninhadas
+
+As estruturas de repetição também podem ser aninhadas, ou seja, existirem dentro de outra estrutura de repetição. É possível aninhar quantas estruturas forem necessárias.
+
+**Exemplo**
+- Apresente na saída o padrão definido abaixo, de acordo com o valor $n$. No exemplo tem-se como $n=5$:
+
+```
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+```
+
+Para solucionar este problema podemos utilizar estruturas de repetição aninhadas. A estrutura **mais externa** trata de iterar para cada linha, enquanto que a estrutura **mais interna** é responsável por apresentar os valores.
+
+ Utilizando a estrutura `enquanto`:
+
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+  ```c
+  //variáveis
+  inteiro n, i=1, j;
+
+  //entrada
+  n ← 5;
+  
+  //processamento e saída
+  enquanto(i<=n)
+    j=1;
+    enquanto(j<=i)
+      escreva(j);
+      j = j+1;
+    fimenquanto;
+    i = i+1;
+  fimenquanto;
+  ```
+
+:::
+:::{tab-item} Java
+:sync: java
+
+  ```java
+  //variáveis
+  int n, i=1, j;
+  
+  //entrada
+  n = 5;
+
+  //processamento e saída
+  while(i<=n){
+    j=1;
+    while(j<=i){
+      System.out.print(j + " ");
+      j++;
+    }
+    System.out.println();
+    i++;
+  }
+  ```
+
+:::
+:::{tab-item} Python
+:sync: python
+
+  ```python
+  #entrada
+  n=5
+  
+  #processamento e saída
+  i=1
+  while(i<=n)
+    j=1
+    while(j<=i)
+      print(j, end=' ')
+      j+=1
+    print()
+    i+=1
+  ```
+
+:::
+:::{tab-item} C
+:sync: c
+
+  ```c
+  //variáveis
+  int n, i=0, j;
+
+  //entrada
+  n = 5;
+
+  //processamento
+  while(i<=n){
+    j=0;
+    while(j<=i){
+      printf("%d ", i);
+      j++;
+    }
+    printf("\n");
+    i++;
+  }
+  ```
+:::
+::::
+
+Ou então, utilizando a estrutura `para`:
+
+::::{tab-set}
+:::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+  ```c
+  //variáveis
+  inteiro n, i=1, j;
+
+  //entrada
+  n ← 5;
+  
+  //processamento e saída
+  para i de 1 até n faça:
+    para j de 1 até i faça:
+      escreva(j);
+    fimpara;
+    escreva();
+  fimpara;
+  ```
+
+:::
+:::{tab-item} Java
+:sync: java
+
+  ```java
+  //variáveis
+  int n, i=1, j;
+  
+  //entrada
+  n = 5;
+
+  //processamento e saída
+  for(i=1;i<n;i++){
+    for(j=1;j<i;j++){
+      System.out.print(j + " ");
+    }
+    System.out.println();
+  }
+  ```
+
+:::
+:::{tab-item} Python
+:sync: python
+
+  ```python
+  #entrada
+  n=5
+  
+  #processamento e saída
+  for i in range(1,n+1):
+    for j in range(1, i+1):
+      print(i, end=' ')
+    print()
+  ```
+
+:::
+:::{tab-item} C
+:sync: c
+
+  ```c
+  //variáveis
+  int n, i=0, j;
+
+  //entrada
+  n = 5;
+
+  //processamento
+  for(i=1;i<n;i++){
+    for(j=1;j<n;j++){
+      printf("%d ", j);
+    }
+    printf("\n");
+  }
+  ```
+:::
+::::
