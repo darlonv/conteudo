@@ -281,8 +281,10 @@ while( valor <= 5 ){
 
 Observe que a estrutura executada diversas vezes, e a quantidade de vezes a ser executada dependerá do resultado da condição.
 
+Chamamos de  **iteração** a cada vez que o código na estrutura de repetição é executado. 
+
 :::{caution} Cuidado
-Observe que antes de adentrar na estrutura, é necessário inicializar a variável, e a variável deve ter seu valor modificado durante a execução do laço de repetição. Caso a variável não se altere, ocorre o risco de gerar um laço que é executado infinitamente, um *loop* infinito.
+Observe que antes de adentrar na estrutura, é necessário inicializar a variável, a qual deve ter seu valor modificado durante a execução do laço de repetição. Caso a variável não se altere, ocorre o risco de gerar um laço que é executado infinitamente, um *loop* infinito.
 :::
 
 **Atividades**  
