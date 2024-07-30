@@ -153,7 +153,7 @@ Pergunte ao usuário dois números, $x$ e $y$, e mostre todos os números perfei
 :label: ex:repeticao-fibonacci
 Calcule e mostre a sequência de Fibonacci $F$, de $1$ até $n$, tal que $n$ é digitado pelo usuário. Observe a definição de [{name}](#def:mat-fibonacci).
 
-:::note Exemplo
+:::{note} Exemplo
 
 Para `n=11`:
 ```
