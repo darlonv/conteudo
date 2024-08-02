@@ -633,3 +633,7 @@ Ou então, utilizando a estrutura `para`:
   ```
 :::
 ::::
+
+
+**Atividade**
+- Desenvolva um algoritmo que apresenta a tabuada de multiplicação dos números de 1 a 9.
