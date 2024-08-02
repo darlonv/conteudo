@@ -14,8 +14,10 @@ chapters:
           - file: docs/01-Python/02-Graficos/01-Matplotlib.md
           - file: docs/01-Python/02-Graficos/02-Seaborn.md
           - file: docs/01-Python/02-Graficos/Plot.ipynb
-  # - file: materiais.md
-  # - file: trabalhos.md
-  - file: docs/RNA/01-RNA.md
-  - file: docs/RNA/02-CNN.md
+  # - file: docs/RNA/01-RNA.md
+  # - file: docs/RNA/02-CNN.md
+  - title: Bases
+    sections: 
+    - file: docs/Bases/01-Portais.md
+    - file: docs/Bases/02-Sugestoes.md
   
