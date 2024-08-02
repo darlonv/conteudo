@@ -123,31 +123,53 @@ $$
 
 
 
-::::{exercise}
+::::::{exercise}
 :label: ex:repeticao-numero_perfeito
 Dado um número $n$, inteiro e positivo, dizemos que $n$ é perfeito se $n$ for igual à soma de seus divisores positivos e diferentes de $n$. Desenvolva um algoritmo que verifica se determinado número é perfeito.  
 
-:::{note} Exemplo
+:::::{prf:example}
 
-Para `n=6`:
+:::{card} Entrada
+`6`
+:::
+
+:::{card} Saída
 ```
 True
 ```
+:::
 
+:::{card} Observação
 $6$ é perfeito, pois $6=3+2+1$.
-Para `n=15`:
+:::
+
+:::::
+
+:::::{prf:example}
+
+:::{card} Entrada
+`15`
+:::
+
+:::{card} Saída
 ```
 False
 ```
+:::
 
+:::{card} Observação
 $15$ não é perfeito, pois $15\neq5+3+1$.
 :::
-::::
+
+
+:::::
+
+::::::
 
 ::::{exercise}
 :label: ex:repeticao_numeros_perfeitos_intervalo
 Pergunte ao usuário dois números, $x$ e $y$, e mostre todos os números perfeitos no intervalo $[x,y]$.
-::::
+:::::
 
 ::::{exercise}
 :label: ex:repeticao-fibonacci
