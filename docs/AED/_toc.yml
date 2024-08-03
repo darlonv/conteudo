@@ -32,6 +32,21 @@ chapters:
           - file: 04-Controle/Exercicios/02-Selecao_ex.md
           - file: 04-Controle/Exercicios/03-Multipla_ex.md
           - file: 04-Controle/Exercicios/04-Repeticao_ex.md
+
+  # - title: Modularização
+  #   sections:
+  #     - file: 03-Modulos/01-Decomposicao.md
+  #     - file: 03-Modulos/02-Modularizacao.md
+  #     - file: 03-Modulos/03-Parametros.md
+  #     - file: 03-Modulos/04-Escopo.md
+  #     - file: 03-Modulos/05-Recursividade.md
+  #     - file: 03-Modulos/06-Bibliotecas.md
+  #     - title: Exercícios
+  #       sections:
+  #         - file: 03-Modulos/Exercicios/02-Modularizacao_ex.md
+  #         - file: 03-Modulos/Exercicios/05-Recursividade_ex.md
+
+
   # - title: Caracteres
   #   sections:
   #     - file: 05-Caracteres/01-Strings.md

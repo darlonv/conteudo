@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Modularização
 
 A construção de um **módulo** trata do desenvolvimento de um sub-algoritmo, este especializado em resolver determinado problema. É como se refinássemos um problema, e a partir das pequenas soluções chegássemos a uma solução final para todo o problema. Outra vantagem da modularização é a **reutilização de código**, dado que quando o mesmo sub-problema aparece diversas vezes, não é necessário reescrever a solução para o sub-problema diversas vezes, assim reaproveitando soluções já desenvolvidas.

@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Parâmetros
 
 Uma das possibilidades com os procedimentos e as funções é a passagem de parâmetros. Os parâmetros consistem nos conteúdos a serem passados para as variáveis que estão dentro das funções.
