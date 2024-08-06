@@ -55,14 +55,14 @@ multi-build:
 
 multi-build-jlab:
 	docker buildx create --name mybuilder --use
-	docker buildx build --target myst_jlab --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE)_jlab:$(DOCKER_IMAGE_VERSION) --push .
-	docker buildx build --target myst_jlab --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE)_jlab:latest --push .
+	docker buildx build --target myst_jlab --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)-jlab --push .
+	docker buildx build --target myst_jlab --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):latest-jlab --push .
 	docker buildx rm
 
 multi-build-full:
 	docker buildx create --name mybuilder --use
-	docker buildx build --target myst_full --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE)_full:$(DOCKER_IMAGE_VERSION) --push .
-	docker buildx build --target myst_full --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE)_full:latest --push .
+	docker buildx build --target myst_full --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)-full --push .
+	docker buildx build --target myst_full --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):latest-full --push .
 	docker buildx rm
 
 #myst-jupyter
