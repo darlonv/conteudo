@@ -12,15 +12,16 @@ A construção de um **módulo** trata do desenvolvimento de um sub-algoritmo, e
 
 Um procedimento é um conjunto de linhas de um algoritmo que são agrupados, e quando o procedimento é chamado, todas as linhas são executadas.
 
-**Exemplo**  
+:::::{prf:example}
 Tome como exemplo um sistema em que no início do algoritmo é mostrado um cabeçalho e ao final é mostrado um rodapé, estes compostos por uma sequência de `"="`. O algoritmo consiste em perguntar o nome do usuário e apresentar seu nome na tela, junto com a mensagem "Boa noite".
 
 Uma forma de solução para o problema seria:
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-``` c
+```c
 inicio
 
 //variaveis
@@ -42,10 +43,11 @@ escreva("==========");
 fim.
 ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-``` javascript
+```java
 pubic static void Main(String[] args){
 
     //variáveis
@@ -67,28 +69,39 @@ pubic static void Main(String[] args){
 }
 ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-``` python
+```python
 # highlight-next-line
 print("##########")
 nome = input("Nome: ")
 print(f"Boa noite, {nome}")
 # highlight-next-line
 print("##########")
-
 ```
 
-  </TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
 
 No exemplo observe que há linha que se repete. Esta linha (ou mais que uma linha) poderia ser parte de um procedimento.
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
 
-``` c
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
 inicio
     //módulos
     // highlight-start
@@ -115,11 +128,11 @@ inicio
 fim.
 ```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-``` javascript
-
+```java
 // highlight-start
 public static void mostrarLinhas(){
     System.out.println("##########");
@@ -145,14 +158,13 @@ pubic static void Main(String[] args){
     mostrarLinhas();
 
 }
-
 ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-``` python
-
+```python
 def mostrarLinhas():
     print("##########")
 
@@ -160,17 +172,28 @@ mostrarLinhas()
 nome = input("Nome: ")
 print(f"Boa noite, {nome}")
 mostrarLinhas()
-
 ```
 
-  </TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
 
-**Atividade**
-- O que deveria ser feito para modificar o cabeçalho, utilizando `*`?
-    - É necessário realizar esta modificação em quantas linhas?
+```c
+printf("Hello world!\n");
+```
 
-:::info
+::::
+:::::
+
+::::{exercise}
+- O que deveria ser feito para modificar o cabeçalho, utilizando `*` ?
+::::
+
+::::{exercise}
+- É necessário realizar a modificação em quantas linhas?
+::::
+
+:::{hint} Dica
 
 As principais vantagens da modularização são:
 - O mesmo trecho de código pode ser executado mais de uma vez, diminuindo a quantidade de código escrito;
@@ -183,15 +206,16 @@ As principais vantagens da modularização são:
 
 Os procedimentos consistem na mera execução das linhas de código que estão contidas neles. Já as funções podem **retornar** um valor, ou seja, trazer um valor que foi calculado ou obtido dentro delas para dentro do algoritmo.
 
-**Exemplo**  
+::::::{prf:example}
 
 Considere um algoritmo que pergunta a três pessoas sua idade, calcula e *retorna* a idade média entre essas pessoas:
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ``` c
-  inicio
+```c
+inicio
     //variáveis
     inteiro idade_p1, idade_p2, idade_p3;
     real idade_media;
@@ -211,12 +235,13 @@ Considere um algoritmo que pergunta a três pessoas sua idade, calcula e *retorn
     escreva("A idade média é ", idade_media);
 
   fim.
-  ```
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ``` javascript
+```java
 public static void main(String[] args){
     
     //variáveis
@@ -239,31 +264,43 @@ public static void main(String[] args){
     //saida
     System.out.prinln("A idade média é " + idade_media);
 }
-  ```
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  idade_p1 = int(input("Idade da primeira pessoa: "))
-  idade_p2 = int(input("Idade da segunda pessoa: "))
-  idade_p3 = int(input("Idade da terceira pessoa: "))
+```python
+idade_p1 = int(input("Idade da primeira pessoa: "))
+idade_p2 = int(input("Idade da segunda pessoa: "))
+idade_p3 = int(input("Idade da terceira pessoa: "))
 
- idade_media = (idade_p1 + idade_p2 + idade_p3)/3
+idade_media = (idade_p1 + idade_p2 + idade_p3)/3
 
- print(f"A idade média é de {idade_media}")
-  ```
+print(f"A idade média é de {idade_media}")
+```
 
-  </TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
+::::::
 
 Poderia ser desenvolvida uma função que obtém as entradas e calcula e retorna a idade média.
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ``` c
-  inicio
+```c
+inicio
     modulo idadeMediaTresPessoas
         //variáveis
         inteiro idade_p1, idade_p2, idade_p3;
@@ -297,13 +334,13 @@ Poderia ser desenvolvida uma função que obtém as entradas e calcula e retorna
     escreva("A idade média é ", idade_media);
 
   fim.
-  ```
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ``` javascript
-
+```java
 public static void idadeMediaTresPessoas(){
     //variáveis
     int idade_p1, idade_p2, idade_p3;
@@ -340,16 +377,16 @@ public static void main(String[] args){
     //saida
     System.out.prinln("A idade média é " + idade_media);
 }
-  ```
+```
 
 Java é uma linguagem de programação **orientada a objetos**. Aqui desenvolvemos uma função, porém no contexto de orientação a objetos esta atividade é chamada de **método**. Por ora utilizaremos o termo função e método como sinônimos, porém tenha em mente que estes possuem funcionalidades distintas, e suas diferenças e características serão abordadas futuramente.
 
+::::
+::::{tab-item} Python
+:sync: python
 
-  </TabItem>
-  <TabItem value="python" label="Python">
-
-  ```python
-  def idadeMediaTresPessoas():
+```python
+def idadeMediaTresPessoas():
     idade_p1 = int(input("Idade da primeira pessoa: "))
     idade_p2 = int(input("Idade da segunda pessoa: "))
     idade_p3 = int(input("Idade da terceira pessoa: "))
@@ -359,18 +396,28 @@ Java é uma linguagem de programação **orientada a objetos**. Aqui desenvolvem
 
  idade_media = idadeMediaTresPessoas()
  print(f"A idade média é de {idade_media}")
-  ```
+```
 
-  </TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
 
 Observe que nas funções existe o **retorno** do valor calculado. Essa é uma das principais características das funções.
 
 
-**Exercício**  
+::::{exercise}
 
 Considere um algoritmo que pergunta a altura e o peso de uma pessoa, e a partir disso calcula e retorna seu índice de massa corporal (IMC), de acordo com a seguinte fórmula:
 $$
 imc = \frac{peso}{altura^2}
 $$
 
+::::
