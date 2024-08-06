@@ -14,7 +14,7 @@ services:
     restart: always
 
   jlab:
-    image: darlon/myst_jlab:0.2
+    image: darlon/myst:0.2-jlab
     container_name: myst-jlab
     profiles: [ 'full', 'jlab' ]
     user: 1000:1000
@@ -26,7 +26,7 @@ services:
     restart: always
 
   full:
-    image: darlon/myst_full:0.2
+    image: darlon/myst:0.2-full
     container_name: myst-full
     profiles: [ 'full' ]
     volumes:
