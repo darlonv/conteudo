@@ -11,7 +11,9 @@ DOCKER_COMPOSE_TARGET = conteudo
 run:
 	echo "Run with: docker run --rm -d --name ssh -p 2222:22  darlon/ssh"
 	echo "Para acessar: docker exec -it ssh /bin/bash"
-	docker run --rm -d --name ssh -p 2222:22  darlon/ssh
+	mkdir -p /tmp/data
+	chmod -R 777 /tmp/data
+	docker run --rm -d --name ssh -v /tmp/data:/data -p 2222:22  darlon/ssh
 
 build:
 	# echo Pulling darlon/ssh_base..
