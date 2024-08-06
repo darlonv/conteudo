@@ -7,6 +7,6 @@ run:
 stop:
 	docker stop ssh
 
-clear:
+clear: stop
 	docker system prune -a -f
 
