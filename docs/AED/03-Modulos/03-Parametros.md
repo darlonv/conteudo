@@ -4,14 +4,15 @@ Uma das possibilidades com os procedimentos e as funções é a passagem de par�
 
 O uso dos parâmetros permite que o conteúdo da função seja realizado de acordo com os conteúdos das variáveis a ela passados.
 
-**Exemplo**
+::::::{prf:example}
 - Desenvolva uma função que retorna verdadeiro se o valor passado por parâmetro for par.
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  inicio
+```c
+inicio
     //módulos
     modulo testarPar(inteiro: numero)
         logico: par;
@@ -31,14 +32,15 @@ O uso dos parâmetros permite que o conteúdo da função seja realizado de acor
     valor_par = testarPar(x);
     escreva("O número ", x , " é par? ", valor_par);
 
-  fim.
-  ```
+fim.
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-  ```javascript
-    //módulos
+```java
+//módulos
     public static boolean testarPar(int numero){
         boolean par;
         par = numero % 2 == 0;
@@ -61,13 +63,14 @@ O uso dos parâmetros permite que o conteúdo da função seja realizado de acor
         valor_par = testarPar(x);
         System.out.println("O número " + x + " é par? " + valor_par);
     }
-  ```
+```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-    #módulos
+```python
+  #módulos
     def testarPar(numero):
         par = numero%2 == 0
         return par
@@ -79,13 +82,28 @@ O uso dos parâmetros permite que o conteúdo da função seja realizado de acor
     valor_par = testarPar(x)
     print(f"O número {x} é par? {valor_par}")
     
-  ```
+```
 
-  </TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
+::::::
 
 
-**Atividade**
+::::{exercise}
 - Desenvolva uma função que retorna se um número é ímpar.
+::::
+::::{exercise}
 - Desenvolva uma função que calcula a soma entre dois números.
+::::
+::::{exercise}
 - Desenvolva uma função que calcula a soma entre três números.
+::::
