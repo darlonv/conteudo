@@ -6,19 +6,21 @@ Chamamos de **escopo** ao espaço em que determinada variável pode ser utilizad
 
 Uma variável é considerada **local** quando esta existe apenas em um módulo específico.
 
-**Exemplo**
+::::::{prf:example}
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void funcaoA(){
     //variáveis declaradas dentro da função
     int valor; 
@@ -40,36 +42,39 @@ public static void main(String[] args){
 }
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-
-<TabItem value="c" label="C">
+::::
+::::{tab-item} C
+:sync: c
 
 ```c
-printf("Olá Mundo")
+printf("Hello world!\n");
 ```
 
-</TabItem>
+::::
+:::::
 
-</Tabs>
+::::::
 
 Observe que dentro das funções as variáveis possuem o mesmo identificador. Porém, como cada variável pertence ao módulo, estas são variáveis **diferentes**, ou seja, ocupam locais diferentes na memória.  
 
 Chamamos de **escopo** à área em que a variável existem. Em escopos diferentes, variáveis locais podem utilizar os mesmos nomes. Como estão em escopos diferentes são **variáveis diferentes**.
 
-**Exemplo**
+::::::{prf:example}
 
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
-  ```c
-  inicio
+```c
+inicio
     modulo media3Valores(inteiro: a, real: b, real: c)
         //variáveis
         inteiro soma;
@@ -90,13 +95,14 @@ Chamamos de **escopo** à área em que a variável existem. Em escopos diferente
 
     escreva("A média é ", media3Valores(x,y,z))
 
-  fim.
-  ```
+fim.
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static float media3Valores(int a, int b, int c){
   //variáveis
   int soma;
@@ -126,11 +132,12 @@ public static void main(String[] args){
 }
 ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-    def media3Valores(a, b, c)
+```python
+def media3Valores(a, b, c)
         #processamento
         soma = a+b+c
         media = soma/3
@@ -143,21 +150,33 @@ public static void main(String[] args){
     x, y, z = lerInt("X: "), lerInt("Y: "), lerInt("Z: ")
 
     print("A média é ", media3Valores(x,y,z))
-  ```
+```
 
-  </TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
+::::::
 
 Observe que as variáveis `a`, `b`, `c`, `soma` e `media` existem **apenas** dentro do módulo `media3valores`. Com isto, dizemos que o **escopo** destas variáveis é **local** à função `media3Valores`.
 
 Acessar estas variáveis fora de seu escopo ocasiona em um erro.
 
-**Exemplo**
-<Tabs groupId='language'>
-  <TabItem value="pseudocodigo" label="Pseudocódigo" default>
+::::::{prf:example}
 
-  ```c
-  inicio
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+inicio
     modulo media3Valores(inteiro: a, real: b, real: c)
         //variáveis
         inteiro soma;
@@ -182,13 +201,14 @@ Acessar estas variáveis fora de seu escopo ocasiona em um erro.
     //highlight-next-line
     escreva("A soma dos valores é ", soma);//soma não existe neste escopo
 
-  fim.
-  ```
+fim.
+```
 
-  </TabItem>
-  <TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static float media3Valores(int a, int b, int c){
   //variáveis
   int soma;
@@ -222,59 +242,83 @@ public static void main(String[] args){
 }
 ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
-  ```python
-  print("Olá Mundo")
-  ```
+```python
+print("Hello world!")
+```
 
-  </TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
+::::::
 
 ### Parâmetros de funções
 
 Os parâmetros de funções são também variáveis locais.
 
-**Exemplo**  
+::::::{prf:example}
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 public static void funcaoA(int valor){ //Parâmetros de funções são variáveis locais
-        System.out.println("Valor na funcao A (antes)  : " + valor);
-        funcaoB(valor +1);
-        System.out.println("Valor na funcao A (depois) :" + valor);
-    }
+    System.out.println("Valor na funcao A (antes)  : " + valor);
+    funcaoB(valor +1);
+    System.out.println("Valor na funcao A (depois) :" + valor);
+}
 
-    public static void funcaoB(int valor){ //Parâmetros de funções são variáveis locais
-        System.out.println("Valor na funcao B (antes)  : " + valor);
-        valor++;
-        System.out.println("Valor na funcao B (depois) : " + valor);
-    }
+public static void funcaoB(int valor){ //Parâmetros de funções são variáveis locais
+    System.out.println("Valor na funcao B (antes)  : " + valor);
+    valor++;
+    System.out.println("Valor na funcao B (depois) : " + valor);
+}
 
-    public static void main(String[] args){
-        funcaoA(10);
-    }
+public static void main(String[] args){
+    funcaoA(10);
+}
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
+::::::
 
 
 
@@ -284,17 +328,19 @@ Aa variáveis **globais** são aquelas que podem ser acessadas por todos, e port
 
 Para definir uma variável como global, basta declará-la fora do módulo.
 
-<Tabs groupId='language'>
-<TabItem value="pseudocodigo" label="Pseudocódigo" default>
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
 ```c
-escreva("Olá Mundo");
+escreva("Hello world!");
 ```
 
-</TabItem>
-<TabItem value="java" label="Java">
+::::
+::::{tab-item} Java
+:sync: java
 
-```javascript
+```java
 //variáveis globais
 static int var_global; //<- A variável é definida fora das funções
 
@@ -320,17 +366,26 @@ public static void main(String[] args){
 }
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+::::
+::::{tab-item} Python
+:sync: python
 
 ```python
-print("Olá Mundo")
+print("Hello world!")
 ```
 
-</TabItem>
-</Tabs>
+::::
+::::{tab-item} C
+:sync: c
 
-:::caution Variáveis globais
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+
+:::{caution} Variáveis globais
 Variáveis globais são um recurso muito poderoso no desenvolvimento de algoritmos. Porém, devem ser utilizados com cautela. O uso de variáveis globais pode dificultar a leitura do código, bem como levar a inconsistências de estados de variáveis.
 :::
 
