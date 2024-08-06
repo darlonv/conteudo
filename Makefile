@@ -89,7 +89,7 @@ rebuild: stop build run
 
 rm: remove
 
-all: run
+all: build build-jlab multi-build multi-build-jlab multi-build-full
 
 .PHONY: run build multi-build push ps stop remove
 
