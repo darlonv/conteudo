@@ -41,9 +41,12 @@ FROM myst_jlab AS myst_full
 EXPOSE 8888
 # Latex
 USER root
+RUN apt update
 ENV TZ=America/Sao_Paulo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apt -y install latexmk tzdata texlive-xetex texlive-fonts-extra texlive-fonts-recommended lmodern
+RUN apt --no-install-recommends -y install latexmk tzdata texlive-xetex texlive-fonts-extra texlive-fonts-recommended lmodern && apt clean
+# RUN apt clean && rm -rf /var/lib/apt/lists/*
+# RUN apt clean
 
 USER 1000:1000
 ENV PATH="/opt/venv/bin:$PATH"
