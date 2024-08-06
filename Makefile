@@ -35,12 +35,12 @@ build:
 	docker tag $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION) $(DOCKER_IMAGE):latest
 
 build-jlab: build
-	docker build --target myst_jlab -t $(DOCKER_IMAGE)_jlab:$(DOCKER_IMAGE_VERSION) .
-	docker tag $(DOCKER_IMAGE)_jlab:$(DOCKER_IMAGE_VERSION) $(DOCKER_IMAGE)_jlab:latest
+	docker build --target myst_jlab -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)-jlab .
+	docker tag $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)-jlab $(DOCKER_IMAGE):latest-jlab
 
 build-full: build-jlab
-	docker build --target myst_full -t $(DOCKER_IMAGE)_full:$(DOCKER_IMAGE_VERSION) .
-	docker tag $(DOCKER_IMAGE)_full:$(DOCKER_IMAGE_VERSION) $(DOCKER_IMAGE)_full:latest
+	docker build --target myst_full -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)-full .
+	docker tag $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)-full $(DOCKER_IMAGE):latest-full
 
 build-base: build
 
