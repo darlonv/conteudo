@@ -38,5 +38,7 @@ stop:
 	docker stop ssh
 
 all: build add push
-build-all: build add push
+
+push-all: push-base push
+build-all: build add push-all
 
