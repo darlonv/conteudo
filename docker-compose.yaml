@@ -1,54 +1,42 @@
-version: '3'
 services:
   #Materiais
-  init:
-    image: node:19-slim
-    container_name: materiais_init
-    profiles: [ 'init', 'all' ]
-    volumes:
-      - ./:/src
-    working_dir: /src
-    command: npm install
-
-  serve:
-    image: node:19-slim
-    container_name: materiais
-    profiles: [ 'serve' ]
-    volumes:
-      - ./:/src
+  myst:
+    image: darlon/myst:0.2
+    container_name: myst
+    user: 1000:1000
     ports:
-      - "3002:3000"
-    working_dir: /src
-    command: npx docusaurus start --host 0.0.0.0
+      - 3000:3000
+      - 3100:3100
+    volumes:
+      - ./:/data
+    working_dir: /data
+    command: ./myst_start.sh
     restart: always
 
-  build:
-    image: node:19-slim
-    container_name: materiais-build
-    profiles: [ 'build' ]
+  jlab:
+    image: darlon/myst_jlab:0.2
+    container_name: myst-jlab
+    profiles: [ 'full', 'jlab' ]
+    user: 1000:1000
     volumes:
-      - ./:/src
-    working_dir: /src
-    command: npx docusaurus build
+      - ./:/data
+    ports:
+      - "8890:8888"
+    working_dir: /data
+    restart: always
 
-  deploy:
-    image: node:19
-    container_name: materiais_deploy
-    profiles: [ 'deploy', 'all' ]
-    environment:
-      - GIT_USER=$GIT_USER
-      - GIT_PASS=$GIT_PASS
-      - GIT_NAME=$GIT_NAME
-      - GIT_MAIL=$GIT_MAIL
-      - USE_SSH=$USE_SSH
-      - CURRENT_BRANCH=$CURRENT_BRANCH
+  full:
+    image: darlon/myst_full:0.2
+    container_name: myst-full
+    profiles: [ 'full' ]
     volumes:
-      - ./:/src
-    working_dir: /src
-    command: bash -c "git config --global user.email $GIT_MAIL && git config --global user.name $GIT_NAME && yarn deploy"
+      - ./:/data
+    working_dir: /data
+    # command: npx docusaurus build
+
 
   bash:
-    image: node:20
+    image: darlon/myst:0.2
     container_name: myst_bash
     profiles: [ 'bash' ]
     stdin_open: true #docker run -i
@@ -56,6 +44,4 @@ services:
     volumes:
       - ./:/data
     working_dir: /data
-    ports:
-      - "3000:3000"
     command: /bin/bash
