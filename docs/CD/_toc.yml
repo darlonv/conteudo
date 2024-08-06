@@ -14,6 +14,9 @@ chapters:
           - file: docs/01-Python/02-Graficos/01-Matplotlib.md
           - file: docs/01-Python/02-Graficos/02-Seaborn.md
           - file: docs/01-Python/02-Graficos/Plot.ipynb
+  - title: Teste
+    sections:
+      - file: docs/99-Teste/01-Teste.md
   # - file: docs/RNA/01-RNA.md
   # - file: docs/RNA/02-CNN.md
   - title: Bases

@@ -44,7 +44,7 @@ USER root
 RUN apt update
 ENV TZ=America/Sao_Paulo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apt --no-install-recommends -y install latexmk tzdata texlive-xetex texlive-fonts-extra texlive-fonts-recommended lmodern && apt clean
+RUN apt -y install latexmk tzdata texlive-xetex texlive-fonts-extra texlive-fonts-recommended lmodern
 # RUN apt clean && rm -rf /var/lib/apt/lists/*
 # RUN apt clean
 
@@ -53,7 +53,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 WORKDIR /data
 CMD ["jupyter", "lab", "--notebook-dir=/data", "--preferred-dir", "/data", "--NotebookApp.token=''", "--NotebookApp.password=''", "--allow-root", "--ip=0.0.0.0"]
 
-WORKDIR /data
+# WORKDIR /data
 
 
 

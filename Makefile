@@ -8,8 +8,12 @@ PORTS = "-p 3000:3000 -p 3100:3100"
 
 DOCKER_COMPOSE_TARGET = conteudo
 
-run:
+rund:
 	docker compose up -d --remove-orphans
+	
+run:
+	docker compose up --remove-orphans
+
 
 attach:
 	docker compose attach $(DOCKER_COMPOSE_TARGET)

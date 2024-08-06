@@ -1,0 +1,18 @@
+
+format: jb-book
+root: README
+chapters:
+  - title: LPI-AE
+    sections: 
+      - title: Diego
+        sections:
+          - file: LPI-AE/Diego/01-Repeticao_01.md
+      - title: Lucas
+        sections:
+          - file: LPI-AE/Lucas/01-Repeticao_01.md
+  - title: Teste
+    sections:
+      - file: docs/LPI-AE/Exercicios/01-Repeticao_01.md
+  # - file: docs/RNA/01-RNA.md
+  # - file: docs/RNA/02-CNN.md
+  
