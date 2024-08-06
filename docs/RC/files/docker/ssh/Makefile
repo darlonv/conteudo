@@ -26,10 +26,13 @@ add:
 	docker build --no-cache --target ssh --platform linux/amd64 -t darlon/ssh:latest .
 	echo done.
 
+push-base:
+	echo Pushinng darlon/ssh_base..
+	docker push darlon/ssh_base
 
 push:
-	echo Pushinng darlon/ssh_base..
-	docker push darlon/ssh:latest
+	echo Pushinng darlon/ssh..
+	docker push darlon/ssh
 
 stop:
 	docker stop ssh
