@@ -1,141 +1,5 @@
 # Modularização
 
-## Procedimentos
-
-::::::{exercise}
-Desenvolva um procedimento chamado `tabuada`, que recebe um número `x`, e apresenta a tabuada desse número na tela, com seus múltiplos de 1 a 10.  
-
-
-:::::{prf:example}
-:class: dropdown
-:nonumber:
-
-
-::::{card} Chamada
-```c
-tabuada(5)
-```
-::::
-
-::::{card} Saída
-
-```
-5x1 = 50
-5x2 = 10
-5x3 = 15
-5x4 = 20
-5x5 = 25
-5x6 = 30
-5x7 = 35
-5x8 = 40
-5x9 = 45
-5x10 = 50
-```
-::::
-
-:::::
-
-::::::
-
-::::::{exercise}
-Desenvola um procedimento chamado `tabuadaIntervalo`, que recebe três valores: `x`, `inicio` e `fim`, e apresenta os múltiplos de `x` no intervalo `[inicio, fim]`  
-
-
-
-
-:::::{prf:example}
-:nonumber:
-
-::::{card} Chamada
-```c
-tabuadaIntervalo(10,15,23)
-```
-::::
-
-::::{card} Saída
-
-```
-10x15 = 150
-10x16 = 160
-10x17 = 170
-10x18 = 180
-10x19 = 190
-10x20 = 200
-10x21 = 210
-10x22 = 220
-10x23 = 230
-```
-::::
-
-:::::
-
-::::::
-
-::::::{exercise}
-Desenvolva um procedimento chamado `mostrarDivisores`, que calcula e mostra todos os divisores de um número.   
-
-:::::{prf:example}
-:nonumber:
-
-::::{card} Chamada
-```c
-mostrarDivisores(15)
-```
-::::
-
-::::{card} Saída
-```
-1
-3
-5
-15
-```
-::::
-
-:::::
-
-:::::{prf:example}
-:nonumber:
-
-::::{card} Chamada
-```c
-mostrarDivisores(53)
-```
-::::
-
-::::{card} Saída
-```
-1
-3
-17
-51
-```
-::::
-
-:::::
-
-:::::{prf:example}
-:nonumber:
-
-::::{card} Chamada
-```c
-mostrarDivisores(97)
-```
-::::
-
-::::{card} Saída
-```
-1
-97
-```
-::::
-
-:::::
-
-
-
-::::::
-
 ## Funções
 
 ::::::{exercise}
@@ -155,20 +19,8 @@ Implemente a função `ehNegativo`, que retorna verdadeiro caso o valor passado 
 ::::::
 
 ::::::{exercise}
-Implemente a função `fatorial`, que calcula e retorna o fatorial de um número inteiro.
+Implemente a função `fatorial`, que calcula e retorna o fatorial de um número inteiro maior ou igual a zero. Observe a definição de [{name}](#def:mat-fatorial).
 ::::::
-
-:::note Definição
-**Fatorial**
-
-O fatorial de um valor consiste no produto dele pelo seus antecessores maiores que 0. Para representar o fatorial de um número, é utilizado o número seguido do sinal de exclamação.  
-
-Exemplo:  
-$5! = 5\times4\times3\times2\times1 = 120$
-
-Por conveniência, define-se que $0! = 1$.
-:::
-
 
 :::::{prf:example}
 :nonumber:
@@ -205,39 +57,15 @@ fatorial(0)
 :::::
 
 ::::::{exercise}
-Implemente uma função chamada `primo`, que retorna verdadeiro caso o valor passado por parâmetro seja um número primo.
-
-:::note Definição
-**Números primos**
-
-Um número é dito ser primo quando este possui apenas dois divisores, sendo ele próprio e o número $1$.
-
-Exemplos:  
-- 5 é um número primo;
-- 19 é um número primo;
-- 33 não é um número primo.
-:::
+Implemente uma função chamada `ehPrimo`, que retorna verdadeiro caso o valor passado por parâmetro seja um número primo. Observe a definição de [{name}](#def:mat-primos).
 
 ::::::
 
 ::::::{exercise}
 
-Desenvolva uma função que calcula o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$.
+Desenvolva uma função que calcula o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$. Observe a definição de [{name}](#def:mat-combinacao).
 
-:::note Definição
-**Combinação**
 
-A combinação simples é um tipo de agrupamento de análise combinatória. Esta consiste em todas as variações possíveis de elementos de dado conjunto, desde que a ordem não seja importante.
-
-Para calcular o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$ utilizamos a seguinte equação:
-
-$$C^n_p = \frac{n!}{p!(n-p)!}$$
-
-Exemplo:  
-- Combinação de 10 elementos tomados de 4 a 4:  
-
-$$C^{10}_4 = \frac{10!}{4!(10-4)!} = \frac{10\times9\times8\times7\times6!}{4\times3\times2\times1\times6!} = \frac{10\times9\times8\times7}{4\times3\times2\times1}=\frac{5040}{24}=210$$
-:::
 
 :::::{prf:example}
 :nonumber:
@@ -651,3 +479,140 @@ Desenvolva uma função chamada `notaParaConceito`, que recebe como entrada uma 
 > Fonte: Adaptado de [PINHO](https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/Funcoes/lista.htm).
 
 ::::::
+
+## Procedimentos
+
+::::::{exercise}
+Desenvolva um procedimento chamado `tabuada`, que recebe um número `x`, e apresenta a tabuada desse número na tela, com seus múltiplos de 1 a 10.  
+
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+
+::::{card} Chamada
+```c
+tabuada(5)
+```
+::::
+
+::::{card} Saída
+
+```
+5x1 = 50
+5x2 = 10
+5x3 = 15
+5x4 = 20
+5x5 = 25
+5x6 = 30
+5x7 = 35
+5x8 = 40
+5x9 = 45
+5x10 = 50
+```
+::::
+
+:::::
+
+::::::
+
+::::::{exercise}
+Desenvola um procedimento chamado `tabuadaIntervalo`, que recebe três valores: `x`, `inicio` e `fim`, e apresenta os múltiplos de `x` no intervalo `[inicio, fim]`  
+
+
+
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
+```c
+tabuadaIntervalo(10,15,23)
+```
+::::
+
+::::{card} Saída
+
+```
+10x15 = 150
+10x16 = 160
+10x17 = 170
+10x18 = 180
+10x19 = 190
+10x20 = 200
+10x21 = 210
+10x22 = 220
+10x23 = 230
+```
+::::
+
+:::::
+
+::::::
+
+::::::{exercise}
+Desenvolva um procedimento chamado `mostrarDivisores`, que calcula e mostra todos os divisores de um número.   
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
+```c
+mostrarDivisores(15)
+```
+::::
+
+::::{card} Saída
+```
+1
+3
+5
+15
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
+```c
+mostrarDivisores(53)
+```
+::::
+
+::::{card} Saída
+```
+1
+3
+17
+51
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
+```c
+mostrarDivisores(97)
+```
+::::
+
+::::{card} Saída
+```
+1
+97
+```
+::::
+
+:::::
+
+
+
+::::::
+

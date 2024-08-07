@@ -28,14 +28,41 @@ O MMC (Mínimo múltiplo Comum) é o menor valor que é múltiplo de ambos os n�
 
 ::::{prf:definition} Fatorial
 :label: def:mat-fatorial
+:nonumber:
+
+O fatorial de um valor consiste no produto dele pelo seus antecessores maiores que 0. Para representar o fatorial de um número, é utilizado o número seguido do sinal de exclamação. Para o número $0$ tem-se por definição que $0! = 1$.
 
 De forma matemática:
 $$
 x!= x\times(x-1)\times(x-2)\times...\times2\times1
 $$
 
+ou então, de maneira recursiva:
+
+$$
+0!= 1
+$$
+e
+$$
+x!= x\times(x-1)!
+$$
+
 **Exemplos**
 
+:::{math}
+5! = 120
+:::
+:::{math}
+4! = 24
+:::
+:::{math}
+1! = 1
+:::
+:::{math}
+0! = 1
+:::
+
+Observe:
 :::{math}
 5! = 5\times4\times3\times2\times1 = 120
 :::
@@ -43,11 +70,18 @@ $$
 4! = 4\times3\times2\times1 = 24
 :::
 
-E por definição:
-:::{math}
-0! = 1
-:::
+::::
 
+::::{prf:definition} Números Primos
+:label: def:mat-primos
+:nonumber:
+
+Um número é dito ser primo quando este possui apenas dois divisores, sendo ele próprio e o número $1$.
+
+Exemplos:  
+- 5 é um número primo;
+- 19 é um número primo;
+- 33 não é um número primo.
 ::::
 
 ### Conjuntos
@@ -104,4 +138,21 @@ Para que a operação entre duas matrizes $A$ e $B$ possa ocorrer, é necessári
 
 A multiplicação é realizada pela multiplicação dos elementos da primeira matriz pelos elementos da coluna da segunda matriz, e então somar esses produtos [@ufabc2024:operacoes-matrizes]. 
 
+::::
+
+### Análise combinatória
+
+::::{prf:definition} Combinação
+:label: def:mat-combinacao
+
+A combinação simples é um tipo de agrupamento de análise combinatória. Esta consiste em todas as variações possíveis de elementos de dado conjunto, desde que a ordem não seja importante.
+
+Para calcular o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$ utilizamos a seguinte equação:
+
+$$C^n_p = \frac{n!}{p!(n-p)!}$$
+
+Exemplo:  
+- Combinação de 10 elementos tomados de 4 a 4:  
+
+$$C^{10}_4 = \frac{10!}{4!(10-4)!} = \frac{10\times9\times8\times7\times6!}{4\times3\times2\times1\times6!} = \frac{10\times9\times8\times7}{4\times3\times2\times1}=\frac{5040}{24}=210$$
 ::::
