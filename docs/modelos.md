@@ -47,7 +47,17 @@ print("Hello world!")
 ::::
 :::::
 
+# Exemplos
 
+:::::{prf:example}
+
+::::{card} Entrada
+::::
+
+::::{card} Saída
+::::
+
+:::::
 
 
 # Definições
