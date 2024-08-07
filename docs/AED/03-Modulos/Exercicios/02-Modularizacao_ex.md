@@ -2,16 +2,23 @@
 
 ## Procedimentos
 
-1. Desenvolva um procedimento chamado `tabuada`, que recebe um número `x`, e apresenta a tabuada desse número na tela, com seus múltiplos de 1 a 10.  
+::::::{exercise}
+Desenvolva um procedimento chamado `tabuada`, que recebe um número `x`, e apresenta a tabuada desse número na tela, com seus múltiplos de 1 a 10.  
 
-<details>
-  <summary>Exemplos</summary>
 
-- Chamada:
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+
+::::{card} Chamada
 ```c
 tabuada(5)
 ```
-- Saída:
+::::
+
+::::{card} Saída
+
 ```
 5x1 = 50
 5x2 = 10
@@ -24,19 +31,29 @@ tabuada(5)
 5x9 = 45
 5x10 = 50
 ```
+::::
 
-</details>
+:::::
 
-2. Desenvola um procedimento chamado `tabuadaIntervalo`, que recebe três valores: `x`, `inicio` e `fim`, e apresenta os múltiplos de `x` no intervalo `[inicio, fim]`  
+::::::
 
-<details>
-  <summary>Exemplos</summary>
+::::::{exercise}
+Desenvola um procedimento chamado `tabuadaIntervalo`, que recebe três valores: `x`, `inicio` e `fim`, e apresenta os múltiplos de `x` no intervalo `[inicio, fim]`  
 
-- Chamada:
+
+
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 tabuadaIntervalo(10,15,23)
 ```
-- Saída:
+::::
+
+::::{card} Saída
+
 ```
 10x15 = 150
 10x16 = 160
@@ -48,64 +65,98 @@ tabuadaIntervalo(10,15,23)
 10x22 = 220
 10x23 = 230
 ```
+::::
 
-</details>
+:::::
 
-3. Desenvolva um procedimento chamado `mostraDivisores`, que calcula e mostra todos os divisores de um número.   
+::::::
 
-<details>
-  <summary>Exemplos</summary>
+::::::{exercise}
+Desenvolva um procedimento chamado `mostrarDivisores`, que calcula e mostra todos os divisores de um número.   
 
-- Chamada:
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
-mostraDivisores(15)
+mostrarDivisores(15)
 ```
-- Saída:
+::::
+
+::::{card} Saída
 ```
 1
 3
 5
 15
 ```
-----------
-- Chamada:
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
-mostraDivisores(53)
+mostrarDivisores(53)
 ```
-- Saída:
+::::
+
+::::{card} Saída
 ```
 1
 3
 17
 51
 ```
-----------
-- Chamada:
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
-mostraDivisores(97)
+mostrarDivisores(97)
 ```
-- Saída:
+::::
+
+::::{card} Saída
 ```
 1
 97
 ```
-----------
+::::
 
-</details>
+:::::
 
+
+
+::::::
 
 ## Funções
 
-1. Implemente a função `maior5`, que recebe como entrada 5 números, retornando o maior dos valores.
+::::::{exercise}
+Implemente a função `maior5`, que recebe como entrada 5 números, retornando o maior dos valores.
+::::::
 
-2. Implemente a função `menor5`, que recebe como entrada 5 números, retornando o menor dos valores.
+::::::{exercise}
+Implemente a função `menor5`, que recebe como entrada 5 números, retornando o menor dos valores.
+::::::
 
-3. Implemente a função `ehPositivo`, que retorna verdadeiro caso o valor passado por parâmetro seja maior que zero, e falso caso contrário.
+::::::{exercise}
+Implemente a função `ehPositivo`, que retorna verdadeiro caso o valor passado por parâmetro seja maior que zero, e falso caso contrário.
+::::::
 
-4. Implemente a função `ehNegativo`, que retorna verdadeiro caso o valor passado por parâmetro seja menor que zero, e falso caso contrário.
+::::::{exercise}
+Implemente a função `ehNegativo`, que retorna verdadeiro caso o valor passado por parâmetro seja menor que zero, e falso caso contrário.
+::::::
 
-5. Implemente a função `fatorial`, que calcula e retorna o fatorial de um número inteiro.
-
+::::::{exercise}
+Implemente a função `fatorial`, que calcula e retorna o fatorial de um número inteiro.
+::::::
 
 :::note Definição
 **Fatorial**
@@ -119,30 +170,42 @@ Por conveniência, define-se que $0! = 1$.
 :::
 
 
-<details>
-  <summary>Exemplos</summary>
+:::::{prf:example}
+:nonumber:
 
-- Chamada:
+::::{card} Chamada
 ```c
 fatorial(5)
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 120
 ```
-------------------------------
-- Chamada:
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 fatorial(0)
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 1
 ```
+::::
 
-</details>
+:::::
 
-7. Implemente uma função chamada `primo`, que retorna verdadeiro caso o valor passado por parâmetro seja um número primo.
+::::::{exercise}
+Implemente uma função chamada `primo`, que retorna verdadeiro caso o valor passado por parâmetro seja um número primo.
 
 :::note Definição
 **Números primos**
@@ -155,7 +218,11 @@ Exemplos:
 - 33 não é um número primo.
 :::
 
-8. Desenvolva uma função que calcula o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$.
+::::::
+
+::::::{exercise}
+
+Desenvolva uma função que calcula o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$.
 
 :::note Definição
 **Combinação**
@@ -172,38 +239,62 @@ Exemplo:
 $$C^{10}_4 = \frac{10!}{4!(10-4)!} = \frac{10\times9\times8\times7\times6!}{4\times3\times2\times1\times6!} = \frac{10\times9\times8\times7}{4\times3\times2\times1}=\frac{5040}{24}=210$$
 :::
 
-<details>
-  <summary>Exemplos</summary>
+:::::{prf:example}
+:nonumber:
 
-- Chamada:
+::::{card} Chamada
 ```c
 combinacao(10,4)
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 210
 ```
-----------
-- Chamada:
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 combinacao(7,2)
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 21
 ```
-----------
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 combinacao(4,3)
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 4
 ```
+::::
 
-</details>
+:::::
 
-9. Implemente uma função chamada perfeito, que retorna verdadeiro caso o valor passado por
+::::::
+
+::::::{exercise}
+
+Implemente uma função chamada perfeito, que retorna verdadeiro caso o valor passado por
 parâmetro seja um número perfeito, e falso caso contrário. 
 
 :::note Definição
@@ -216,31 +307,45 @@ Exemplo:
 $6$ é um número perfeito, pois $6=1+2+3$.
 :::
 
-10. Implemente um procedimento chamado `perfeitos` que recebe dois números inteiros `ini` e `fim` como parâmetro, e exibe na tela todos os números perfeitos que estão no intervalo entre `[ini,fim]`.
+::::::
 
-<details>
-  <summary>Exemplo</summary>
+::::::{exercise}
 
-- Chamada
+Implemente um procedimento chamado `perfeitos` que recebe dois números inteiros `ini` e `fim` como parâmetro, e exibe na tela todos os números perfeitos que estão no intervalo entre `[ini,fim]`.
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 perfeitos(2,10)
 ```
-- Saída
+::::
+
+::::{card} Saída
 ```
 6
 ```
-</details>
+:::
 
-11. Implemente um procedimento chamado `primos`, que apresenta todos os números primos em um intervalo especificado.
+:::::
 
-<details>
-  <summary>Exemplos</summary>
+::::::
 
-- Chamada
+::::::{exercise}
+
+Implemente um procedimento chamado `primos`, que apresenta todos os números primos em um intervalo especificado.
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 primos(2,11)
 ```
-- Saída
+:::
+
+::::{card} Saída
 ```
 2
 3
@@ -248,46 +353,79 @@ primos(2,11)
 7
 11
 ```
+::::
 
-</details>
+:::::
 
-12. Implemente uma função chamada `conversorTemperatura`, que recebe três parâmetros como entrada: 
+::::::
+
+::::::{exercise}
+
+Implemente uma função chamada `conversorTemperatura`, que recebe três parâmetros como entrada: 
 - um valor de temperatura (real), 
 - a escala da temperatura de entrada (caractere) e 
 - a escala da temperatura de saída (caractere).  
 Os possíveis valores para escala são C, F, K, R (maiúsculas ou minúsculas) que correspondem às escalas Celsius, Fahrenheit, Kelvin e Réaumur. A função deve retornar a temperatura informada na entrada para a temperatura na escala definida para saída.
 
-<details>
-  <summary>Exemplos</summary>
+:::::{prf:example}
+:nonumber:
 
-- Chamada:
+::::{card} Chamada
 ```c
 converterTemperatura(100.0, 'C', 'K')
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 373.15
 ```
-retorna 373.15, pois 100º Celsius equivale a 273.15 Kelvin.
+::::
 
-----------
-- Chamada:
+::::{card} Observação
+retorna 373.15, pois 100º Celsius equivale a 273.15 Kelvin.
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 converterTemperatura(22.0, 'R', 'c')
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 27.5
 ```
+::::
+
+::::{card} Observação
 Retorna 27.5, pois 22º Réaumur equivale a 27.5º Celsius.
+::::
 
-</details>
+:::::
 
-13. Faça uma função chamada `pot2` que retorna verdadeiro caso o parâmetro passado seja uma potência de 2.
+::::::
 
-14. Desenvolva uma função chamada `potN`, que possui dois parâmetros $x$ e $n$. A função deve retornar verdadeiro caso $x$ seja uma potência de $n$.
+::::::{exercise}
 
-15. Implemente uma função chamada `distanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores.
+Faça uma função chamada `pot2` que retorna verdadeiro caso o parâmetro passado seja uma potência de 2.
+
+::::::
+
+::::::{exercise}
+
+Desenvolva uma função chamada `potN`, que possui dois parâmetros $x$ e $n$. A função deve retornar verdadeiro caso $x$ seja uma potência de $n$.
+
+::::::
+
+::::::{exercise}
+
+Implemente uma função chamada `distanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores.
 
 :::note Definição
 **Distância cartesiana**
@@ -300,90 +438,122 @@ $$
 
 :::
 
-<details>
-  <summary>Exemplos</summary>
+:::::{prf:example}
+:nonumber:
 
-- Chamada:  
-
+::::{card} Chamada
 ```c
 distanciaCartesiana(0,0,0,1)
 ```
+::::
 
-- Retorno:
-
+::::{card} Retorno
 ```
 1.0
 ```
+::::
 
+::::{card} Observação
 Retorna $1.0$, pois a distância do ponto $(0,0)$ a $(0,1)$ é $1$.
+::::
 
-----------
+:::::
 
-- Chamada:
+:::::{prf:example}
+:nonumber:
 
+::::{card} Chamada
 ```c
 distanciaCartesiana(5,3,7,0)
 ```
+::::
 
-- Retorno:
-
+::::{card} Retorno
 ```
 3.605551275463989
 ```
+::::
 
+::::{card} Observação
 Retorna $3.605551275463989$, pois esta é a distância do ponto $(5,3)$ ao ponto $(7,0)$.
+::::
 
-----------
+:::::
 
-- Chamada:
+:::::{prf:example}
+:nonumber:
 
+::::{card} Chamada
 ```c
 distanciaCartesiana(3,0,6,4)
 ```
+::::
 
-- Retorno:
+::::{card} Retorno
 ```
 5.0
 ```
+::::
+
+::::{card} Observação
 Retorna $5.0$, pois a distância do ponto $(3,0)$ a $(6,4)$ é $5$.
+::::
 
-</details>
+:::::
 
-16. Implemente uma função chamada `trianguloPerimetro`, que recebe três pares de números, que correspondem a coordenadas em um plano cartesiano. Tais coordenadas correspondem aos vértices de um triângulo. Calcule e retorno o perímetro do triângulo formado pelos pontos. Os parâmetros devem ser identificados como `x0`, `y0`, `x1`, `y1`, `x2` e `y2`.
+::::::
 
-<details>
-  <summary>Exemplos</summary>
+::::::{exercise}
 
-- Chamada:
+Implemente uma função chamada `trianguloPerimetro`, que recebe três pares de números, que correspondem a coordenadas em um plano cartesiano. Tais coordenadas correspondem aos vértices de um triângulo. Calcule e retorno o perímetro do triângulo formado pelos pontos. Os parâmetros devem ser identificados como `x0`, `y0`, `x1`, `y1`, `x2` e `y2`.
 
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 trianguloPerimetro(0,0,1,1,1,0)
 ```
+::::
 
-- Retorno:
-
+::::{card} Retorno
 ```
 3.414213562373095
 ```
+::::
 
+::::{card} Observação
 Retorna $3.414213562373095$, pois é o perímetro do triângulo formado pelos pontos $(0,0)$, $(1,1)$ e $(1,0)$.
+::::
 
-----------
+:::::
 
-- Chamada:
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 trianguloPerimetro(0,0,3,4,3,0) 
 ```
-- Retorno:
+::::
+
+::::{card} Retorno
 ```
 12.0
 ```
+::::
+
+::::{card} Observação
 Retorna $12.0$, pois é o perímetro do triângulo formado pelos pontos $(0,0)$, $(3,4)$ e $(3,0)$
+::::
 
-</details>
+:::::
 
+::::::
 
-17. Desenvolva um procedimento que recebe como entrada a idade de um nadador. Seu retorno deve ser a a categoria em que o nadador deve competir, de acordo com a tabela apresentada.
+::::::{exercise}
+
+Desenvolva um procedimento que recebe como entrada a idade de um nadador. Seu retorno deve ser a a categoria em que o nadador deve competir, de acordo com a tabela apresentada.
 
 |Idade (anos)|Categoria|
 |------------|---------|
@@ -395,56 +565,81 @@ Retorna $12.0$, pois é o perímetro do triângulo formado pelos pontos $(0,0)$,
 
 Fonte: Adaptado de [PINHO](https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/Funcoes/lista.htm).  
 
+::::::
 
-18. Programe uma função chamada `soma_s` que tem como entrada um valor $n$, tal que $n$ pertence aos inteiros positivos. A função deve retornar o valor da soma S, onde:
+::::::{exercise}
+
+Programe uma função chamada `soma_s` que tem como entrada um valor $n$, tal que $n$ pertence aos inteiros positivos. A função deve retornar o valor da soma S, onde:
+
 $$S = \frac{1}{1}+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n-1}+\frac{1}{n}$$
 
-19. Desenvolva um procedimento chamado `cabecalho`, que "desenha" na tela um retângulo com valores especificados pelo usuário, junto com uma mensagem. Devem ser passados os valores da largura, os caracteres que compõem a borda e o número de espaços antes de mostrar a mensagem.
+::::::
+
+::::::{exercise}
+
+Desenvolva um procedimento chamado `cabecalho`, que "desenha" na tela um retângulo com valores especificados pelo usuário, junto com uma mensagem. Devem ser passados os valores da largura, os caracteres que compõem a borda e o número de espaços antes de mostrar a mensagem.
 
 
-<details>
-  <summary>Exemplos</summary>
+:::::{prf:example}
+:nonumber:
 
-- Entrada:
-    - Mensagem= "Olá, Turma."
-    - Espacos=4
-    - Largura=25
-    - Borda="X"
-- Chamada:
+::::{card} Entrada
+- Mensagem= "Olá, Turma."
+- Espacos=4
+- Largura=25
+- Borda="X"
+::::
+
+::::{card} Chamada
 ```c
 cabecalho("Olá, Turma.", 4, 25, "X");
 ```
-- Saída:
+::::
+
+::::{card} Saída
 ```
 XXXXXXXXXXXXXXXXXXXXXXXXX
     Olá, Turma.
 XXXXXXXXXXXXXXXXXXXXXXXXX
 ```
+::::
 
---------------------
+:::::
 
-- Chamada:
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
 ```c
 cabecalho("Tchau!", 1, 8, "#");
 ```
-- Saída:
+::::
+
+::::{card} Saída
 ```
 ########
  Tchau!
 ########
 ```
+::::
 
-</details>
+:::::
 
 Fonte: Adaptado de [OLIVEIRA](http://professor.pucgoias.edu.br/SiteDocente/admin/arquivosUpload/17504/material/cmp1048-lista_exercicios-01.pdf).
 
+::::::
 
-20. Implemente uma função para verificar se determinado valor é ou não regular. Um número é dito regular se sua decomposição em fatores primos apresenta apenas potências de 2, 3 e 5.
+::::::{exercise}
+
+Implemente uma função para verificar se determinado valor é ou não regular. Um número é dito regular se sua decomposição em fatores primos apresenta apenas potências de 2, 3 e 5.
 
 Fonte: Adaptado de [OLIVEIRA](http://professor.pucgoias.edu.br/SiteDocente/admin/arquivosUpload/17504/material/cmp1048-lista_exercicios-01.pdf).  
 
+::::::
 
-21. Desenvolva uma função chamada `notaParaConceito`, que recebe como entrada uma nota e a converte para conceito, de acordo com a tabela apresentada a seguir.
+::::::{exercise}
+
+Desenvolva uma função chamada `notaParaConceito`, que recebe como entrada uma nota e a converte para conceito, de acordo com a tabela apresentada a seguir.
 
 |Nota|Conceito|
 |----|--------|
@@ -455,3 +650,4 @@ Fonte: Adaptado de [OLIVEIRA](http://professor.pucgoias.edu.br/SiteDocente/admin
 
 > Fonte: Adaptado de [PINHO](https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/Funcoes/lista.htm).
 
+::::::
