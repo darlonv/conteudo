@@ -23,9 +23,10 @@ Implemente a função `fatorial`, que calcula e retorna o fatorial de um número
 ::::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 fatorial(5)
 ```
@@ -40,9 +41,10 @@ fatorial(5)
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 fatorial(0)
 ```
@@ -65,12 +67,11 @@ Implemente uma função chamada `ehPrimo`, que retorna verdadeiro caso o valor p
 
 Desenvolva uma função que calcula o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$. Observe a definição de [{name}](#def:mat-combinacao).
 
-
-
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 combinacao(10,4)
 ```
@@ -85,9 +86,10 @@ combinacao(10,4)
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 combinacao(7,2)
 ```
@@ -102,9 +104,10 @@ combinacao(7,2)
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 combinacao(4,3)
 ```
@@ -136,9 +139,10 @@ Implemente uma função chamada `conversorTemperatura`, que recebe três parâme
 Os possíveis valores para escala são C, F, K, R (maiúsculas ou minúsculas) que correspondem às escalas Celsius, Fahrenheit, Kelvin e Réaumur. A função deve retornar a temperatura informada na entrada para a temperatura na escala definida para saída.
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 converterTemperatura(100.0, 'C', 'K')
 ```
@@ -157,9 +161,10 @@ retorna 373.15, pois 100º Celsius equivale a 273.15 Kelvin.
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 converterTemperatura(22.0, 'R', 'c')
 ```
@@ -207,9 +212,10 @@ $$
 :::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 distanciaCartesiana(0,0,0,1)
 ```
@@ -228,9 +234,10 @@ Retorna $1.0$, pois a distância do ponto $(0,0)$ a $(0,1)$ é $1$.
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 distanciaCartesiana(5,3,7,0)
 ```
@@ -249,9 +256,10 @@ Retorna $3.605551275463989$, pois esta é a distância do ponto $(5,3)$ ao ponto
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 distanciaCartesiana(3,0,6,4)
 ```
@@ -276,9 +284,10 @@ Retorna $5.0$, pois a distância do ponto $(3,0)$ a $(6,4)$ é $5$.
 Implemente uma função chamada `trianguloPerimetro`, que recebe três pares de números, que correspondem a coordenadas em um plano cartesiano. Tais coordenadas correspondem aos vértices de um triângulo. Calcule e retorno o perímetro do triângulo formado pelos pontos. Os parâmetros devem ser identificados como `x0`, `y0`, `x1`, `y1`, `x2` e `y2`.
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 trianguloPerimetro(0,0,1,1,1,0)
 ```
@@ -297,9 +306,10 @@ Retorna $3.414213562373095$, pois é o perímetro do triângulo formado pelos po
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 trianguloPerimetro(0,0,3,4,3,0) 
 ```
@@ -349,6 +359,7 @@ Desenvolva um procedimento chamado `cabecalho`, que "desenha" na tela um retâng
 
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
 ::::{card} Entrada
@@ -358,7 +369,7 @@ Desenvolva um procedimento chamado `cabecalho`, que "desenha" na tela um retâng
 - Borda="X"
 ::::
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 cabecalho("Olá, Turma.", 4, 25, "X");
 ```
@@ -375,9 +386,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXX
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada da função
 ```c
 cabecalho("Tchau!", 1, 8, "#");
 ```
@@ -431,7 +443,7 @@ Desenvolva um procedimento chamado `tabuada`, que recebe um número `x`, e apres
 :nonumber:
 
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 tabuada(5)
 ```
@@ -461,9 +473,10 @@ tabuada(5)
 Desenvola um procedimento chamado `tabuadaIntervalo`, que recebe três valores: `x`, `inicio` e `fim`, e apresenta os múltiplos de `x` no intervalo `[inicio, fim]`  
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 tabuadaIntervalo(10,15,23)
 ```
@@ -492,9 +505,10 @@ tabuadaIntervalo(10,15,23)
 Desenvolva um procedimento chamado `mostrarDivisores`, que calcula e mostra todos os divisores de um número.   
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 mostrarDivisores(15)
 ```
@@ -512,9 +526,10 @@ mostrarDivisores(15)
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 mostrarDivisores(51)
 ```
@@ -532,9 +547,10 @@ mostrarDivisores(51)
 :::::
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 mostrarDivisores(97)
 ```
@@ -547,7 +563,7 @@ mostrarDivisores(97)
 ```
 ::::
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 mostrarDivisores(5427)
 ```
@@ -576,9 +592,10 @@ mostrarDivisores(5427)
 Implemente um procedimento chamado `perfeitos` que recebe dois números inteiros `ini` e `fim` como parâmetro, e exibe na tela todos os números perfeitos que estão no intervalo entre `[ini,fim]`. Observe a definição de [{name}](#def:mat-perfeitos).
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 perfeitos(2,10)
 ```
@@ -599,9 +616,10 @@ perfeitos(2,10)
 Implemente um procedimento chamado `primos`, que apresenta todos os números primos em um intervalo especificado.
 
 :::::{prf:example}
+:class: dropdown
 :nonumber:
 
-::::{card} Chamada
+::::{card} Chamada do procedimento
 ```c
 primos(2,11)
 ```
@@ -621,5 +639,68 @@ primos(2,11)
 
 ::::::
 
+
+
+::::::{exercise}
+
+Implemente um procedimento chamado `nPrimos`, que apresenta os `n` primeiros números primos. Considere `2` como primeiro número primo.
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Chamada do procedimento
+```c
+nPrimos(5)
+```
+::::
+
+::::{card} Saída
+```
+2
+3
+5
+7
+11
+```
+::::
+
+::::{card} Chamada do procedimento
+```c
+nPrimos(20)
+```
+::::
+
+::::{card} Saída
+```
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+53
+59
+61
+67
+71
+```
+::::
+
+:::::
+
 ::::::
+
+::::::
+
+
 
