@@ -84,6 +84,18 @@ Exemplos:
 - 33 não é um número primo.
 ::::
 
+::::{prf:definition} Números Perfeitos
+:label: def:mat-perfeitos
+:nonumber:
+
+Um número perfeito é aquele que é igual à soma de todos os seus divisores, exceto ele próprio.  
+
+Exemplo:  
+- $6$ é um número perfeito, pois $6=1+2+3$.
+- $8$ não é um número perfeito, pois $8\neq1+2+4$.
+
+::::
+
 ### Conjuntos
 
 ::::{prf:definition} Conjunto União

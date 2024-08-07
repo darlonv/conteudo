@@ -125,66 +125,6 @@ combinacao(4,3)
 Implemente uma função chamada perfeito, que retorna verdadeiro caso o valor passado por
 parâmetro seja um número perfeito, e falso caso contrário. 
 
-:::note Definição
-**Números perfeitos**
-
-Um número perfeito é aquele que é igual à soma de todos os seus divisores, exceto ele próprio.  
-
-Exemplo:  
-
-$6$ é um número perfeito, pois $6=1+2+3$.
-:::
-
-::::::
-
-::::::{exercise}
-
-Implemente um procedimento chamado `perfeitos` que recebe dois números inteiros `ini` e `fim` como parâmetro, e exibe na tela todos os números perfeitos que estão no intervalo entre `[ini,fim]`.
-
-:::::{prf:example}
-:nonumber:
-
-::::{card} Chamada
-```c
-perfeitos(2,10)
-```
-::::
-
-::::{card} Saída
-```
-6
-```
-:::
-
-:::::
-
-::::::
-
-::::::{exercise}
-
-Implemente um procedimento chamado `primos`, que apresenta todos os números primos em um intervalo especificado.
-
-:::::{prf:example}
-:nonumber:
-
-::::{card} Chamada
-```c
-primos(2,11)
-```
-:::
-
-::::{card} Saída
-```
-2
-3
-5
-7
-11
-```
-::::
-
-:::::
-
 ::::::
 
 ::::::{exercise}
@@ -520,9 +460,6 @@ tabuada(5)
 ::::::{exercise}
 Desenvola um procedimento chamado `tabuadaIntervalo`, que recebe três valores: `x`, `inicio` e `fim`, e apresenta os múltiplos de `x` no intervalo `[inicio, fim]`  
 
-
-
-
 :::::{prf:example}
 :nonumber:
 
@@ -579,7 +516,7 @@ mostrarDivisores(15)
 
 ::::{card} Chamada
 ```c
-mostrarDivisores(53)
+mostrarDivisores(51)
 ```
 ::::
 
@@ -610,9 +547,79 @@ mostrarDivisores(97)
 ```
 ::::
 
+::::{card} Chamada
+```c
+mostrarDivisores(5427)
+```
+::::
+
+::::{card} Saída
+```
+1
+5
+7
+25
+31
+35
+155
+175
+217
+775
+1085
+5425
+```
+::::
+
 :::::
 
+::::::{exercise}
+Implemente um procedimento chamado `perfeitos` que recebe dois números inteiros `ini` e `fim` como parâmetro, e exibe na tela todos os números perfeitos que estão no intervalo entre `[ini,fim]`. Observe a definição de [{name}](#def:mat-perfeitos).
 
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
+```c
+perfeitos(2,10)
+```
+::::
+
+::::{card} Saída
+```
+6
+```
+::::
+
+:::::
+
+::::::
+
+::::::{exercise}
+
+Implemente um procedimento chamado `primos`, que apresenta todos os números primos em um intervalo especificado.
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Chamada
+```c
+primos(2,11)
+```
+::::
+
+::::{card} Saída
+```
+2
+3
+5
+7
+11
+```
+::::
+
+:::::
+
+::::::
 
 ::::::
 
