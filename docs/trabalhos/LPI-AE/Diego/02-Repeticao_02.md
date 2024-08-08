@@ -1,6 +1,6 @@
 # Repetição - 02
 
-- Prazo final para entrega: 13/08/2024 - 12:00
+- Prazo final para entrega: 16/08/2024
 
 
 ## Exercícios
@@ -9,13 +9,15 @@
 
 
 -----
-:::::{exercise} Soma de valores em intervalo
+::::::{exercise} Soma de valores em intervalo
 :label: ex:repeticao-soma-intervalo
 
 Desenvolva um programa em Java que solicita ao usuário que digite dois valores $a$ e $b$. Seu programa deve mostrar na tela o valor da soma de todos os números de $a$ até $b$. Utilize estruturas de repetição, como `while` ou `for`.
 
-::::{prf:example}
+:::::{prf:example}
 :nonumber:
+
+::::{grid} 1 2 2 2
 
 :::{card} Entrada
 ```
@@ -28,15 +30,16 @@ Desenvolva um programa em Java que solicita ao usuário que digite dois valores 
 25
 ```
 :::
-
+::::
 :::{card} Explicação
 A resposta é 25 porque 3+4+5+6+7 = 25.
 :::
-::::
+:::::
 
-::::{prf:example}
+:::::{prf:example}
 :nonumber:
 
+::::{grid} 1 2 2 2
 :::{card} Entrada
 ```
 10 e 20
@@ -48,24 +51,23 @@ A resposta é 25 porque 3+4+5+6+7 = 25.
 165
 ```
 :::
+::::
 
-Explicação
 :::{card} Explicação
 A resposta é 165 porque 10+11+12+13+14+15+16+17+18+19+20 = 165.
 :::
-::::
-
 :::::
+::::::
 
 -----
 
-:::::{exercise} Divisores
+::::::{exercise} Divisores
 :label: ex:repeticao-divisores
 Desenvolva um programa que solicita ao usuário que digite um número inteiro $n$. Em seguida, deve ser mostrado na tela todos os divisores de $n$. 
 
-::::{prf:example}
+:::::{prf:example}
 :nonumber:
-
+::::{grid} 1 2 2 2
 :::{card} Entrada
 ```
 10
@@ -80,16 +82,19 @@ Desenvolva um programa que solicita ao usuário que digite um número inteiro $n
 10
 ```
 :::
+::::
 
 :::{card} Explicação
 Os divisores de 10 são 1, 2, 5 e 10.  
 Para verificar se um número é divisor, o resto da divisão deve ser igual a 0.  
 :::
 
-::::
+:::::
 
-::::{prf:example}
+:::::{prf:example}
 :nonumber:
+
+::::{grid} 1 2 2 2
 
 :::{card} Entrada
 ``` 
@@ -97,7 +102,6 @@ Para verificar se um número é divisor, o resto da divisão deve ser igual a 0.
 ```
 :::
 
-Saída
 :::{card} Saída
 ``` 
 1
@@ -106,28 +110,27 @@ Saída
 21
 ```
 :::
-
 ::::
+:::::
 
-::::{prf:example}
+:::::{prf:example}
 :nonumber:
 
-Entrada
+::::{grid} 1 2 2 2
 :::{card} Entrada
 ``` 
 5
 ```
 :::
 
-Saída
 :::{card} Saída
 ``` 
 1
 5
 ```
 :::
-
 ::::
-
 :::::
+
+::::::
 

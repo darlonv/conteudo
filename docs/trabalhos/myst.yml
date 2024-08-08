@@ -2,17 +2,17 @@
 version: 1
 project:
   id: b92261d1-fb0c-4571-8803-1b5789f52ba4
-  title: Conteúdo
+  title: Trabalhos
   # description:
   # keywords: []
-  authors:
-    - name: Darlon Vasata
+  # authors:
+  #   - name: Darlon Vasata
   # github: https://github.com/executablebooks/mystmd-quickstart
   bibliography: /data/references.bib
 
 site:
   template: book-theme
-  title: Materiais
+  title: Trabalhos
   # options:
   #   downloads:
   #     - file: mydoc.pdf
@@ -21,7 +21,7 @@ site:
   # options:
   #   logo: site_logo.png
   # nav: []
-  actions:
-    - title: Myst
-      url: https://mystmd.org/guide
-  domains: []
+  # actions:
+  #   - title: Myst
+  #     url: https://mystmd.org/guide
+  # domains: []
