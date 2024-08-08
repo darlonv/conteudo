@@ -50,6 +50,7 @@ print("Hello world!")
 # Exemplos
 
 :::::{prf:example}
+<!-- :class: dropdown -->
 
 ::::{card} Entrada
 ::::
