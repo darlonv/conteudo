@@ -4,6 +4,7 @@ Diz-se que uma função que aplica a recursividade é uma função recursiva. A 
 
 
 ::::::{prf:example}
+:nonumber:
 
 Considere o módulo abaixo, que apresenta números em ordem decrescente:
 
@@ -70,6 +71,7 @@ printf("Hello world!\n");
 É possível implementar esse mesmo módulo de maneira recursiva.
 
 ::::::{prf:example}
+:nonumber:
 
 :::::{tab-set}
 ::::{tab-item} Pseudocódigo
@@ -154,6 +156,7 @@ A região de memória em que se encontra a pilha é limitada, e ao requisitar ma
 
 
 ::::::{prf:example}
+:nonumber:
 
 Considere os dois módulos abaixo, sem e com recursividade. Ambas realizam a soma da sequência de valores de 1 a $n$.
 
