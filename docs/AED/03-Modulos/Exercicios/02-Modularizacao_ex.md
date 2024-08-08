@@ -4,13 +4,16 @@
 
 ::::::{exercise} Menor valor
 :label: ex:funcao-menor
+:nonumber:
+
 Implemente a função `menor`, que recebe como entrada 2 números, retornando o menor dos valores.
 
 :::::{prf:example}
 :class: dropdown
 
 ::::{card} Entrada
-`10`, `5`
+`10`  
+`5`
 ::::
 
 ::::{card} Chamada da função
@@ -27,7 +30,8 @@ Implemente a função `menor`, que recebe como entrada 2 números, retornando o 
 :class: dropdown
 
 ::::{card} Entrada
-6, 8
+6  
+8
 ::::
 
 ::::{card} Chamada da função
