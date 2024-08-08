@@ -32,7 +32,10 @@ terminal:
 term: terminal
 
 bash:
-	docker compose run -v "$(PWD):/data" -it $(DOCKER_COMPOSE_TARGET) /bin/bash
+	docker compose run -v "$(PWD):/data" -it myst /bin/bash
+
+bash-full:
+	docker compose run -v "$(PWD):/data" -it full /bin/bash
 
 build:
 	docker build --target myst -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION) .
