@@ -4,11 +4,11 @@ root: README
 chapters:
   - title: LPI-AE
     sections: 
-      - title: Diego
+      - title: 20223001463
         sections:
           - file: LPI-AE/Diego/01-Repeticao_01.md
           - file: LPI-AE/Diego/02-Repeticao_02.md
-      - title: Lucas
+      - title: 20233005662
         sections:
           - file: LPI-AE/Lucas/01-Repeticao_01.md
   - title: Teste

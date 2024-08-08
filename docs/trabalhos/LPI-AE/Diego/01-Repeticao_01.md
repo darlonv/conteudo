@@ -11,9 +11,8 @@ downloads:
     title: Publication
 ---
 
-# Estrutura de repetição - 01
+# Repetição - 01
 
-- Aluno: Diego Coimbra de Mello
 - Prazo final para entrega: 13/08/2024 - 12:00
 
 **Exercício 1**
