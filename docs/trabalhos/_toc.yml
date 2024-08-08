@@ -7,6 +7,7 @@ chapters:
       - title: Diego
         sections:
           - file: LPI-AE/Diego/01-Repeticao_01.md
+          - file: LPI-AE/Diego/02-Repeticao_02.md
       - title: Lucas
         sections:
           - file: LPI-AE/Lucas/01-Repeticao_01.md
