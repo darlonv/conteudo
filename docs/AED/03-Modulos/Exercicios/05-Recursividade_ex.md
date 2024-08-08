@@ -1,29 +1,210 @@
 
 # Recursividade
 
-Resolva os exercícios apresentados abaixo, utilizando recursividade.
+Resolva os exercícios apresentados abaixo, utilizando recursividade. Não utilize estruturas de repetição em suas soluções. Caso seja necessário, utilize mais de uma função para resolver o exercício.
 
-1. Implemente o cálculo do Fatorial.
+:::::::{exercise} Multiplicação recursiva
+:label: ex:recursividade-multiplicacao
+Calcule o resultado de $a*b$, tal que $a$ e $b$ são números inteiros não negativos, sem utilizar o operador aritmético `*`. Observe que $a*5 = a+a+a+a+a$.
 
-:::info Definição
+::::::{solution} ex:recursividade-multiplicacao
+:class: dropdown
 
-$$
-Fatorial(x) = x! = 1\times2\times3\times...\times(x-1)\times x
-$$
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
+public static int multiplicacaoRecursiva(int a, int b){
+    if(b == 0){
+        return 0;
+    }
+
+    return a + multiplicacaoRecursiva(a, b-1);
+}
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+def multiplicacaoRecursiva(a, b):
+    if b == 0:
+        return 0
+
+    return a + multiplicacaoRecursiva(a, b-1)
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+int multiplicacaoRecursiva(int a, int b){
+    if(b == 0){
+        return 0;
+    }
+
+    return a + multiplicacaoRecursiva(a, b-1);
+}
+```
+
+::::
+:::::
+::::::
+:::::::
+
+:::::::{exercise} Potência recursiva
+:label: ex:recursividade-potencia
+Calcule o resultado de $a^b$, tal que $a$ e $b$ são números inteiros não negativos. Observe que $a^5 = a*a*a*a*a$.
+
+::::::{solution} ex:recursividade-potencia
+:hidden:
+<!-- :class: dropdown -->
+
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
+public static int potenciaRecursiva(int a, int b){
+    if(b == 0){
+        return 1;
+    }
+
+    return a * potenciaRecursiva(a, b-1);
+}
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+def potenciaRecursiva(a, b):
+    if b == 0:
+        return 1
+
+    return a*potenciaRecursiva(a, b-1)
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+int potenciaRecursiva(int a, int b){
+    if(b == 0){
+        return 1;
+    }
+
+    return a * potenciaRecursiva(a, b-1);
+}
+```
+
+::::
+:::::
+::::::
+:::::::
+
+:::::::{exercise} Fatorial recursivo
+:label: ex:recursividade-fatorial
+Implemente uma função que dado um número $n$, retorna $n!$. Observe a definição de [{name}](#def:mat-fatorial).
+
+::::::{solution} ex:recursividade-fatorial
+:hidden:
+:class: dropdown
+
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
+public static int fatorialRecursivo(int n){
+    if(n == 0){
+        return 1;
+    }
+    return n * fatorialRecursivo(n-1);
+}
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+def fatorialRecursivo( n ):
+    if n==0:
+        return 1
+    return n * fatorialRecursivo(n-1)
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+int fatorialRecursivo(int n){
+    if(n == 0){
+        return 1;
+    }
+    return n * fatorialRecursivo(n-1);
+}
+```
+
+::::
+:::::
+::::::
+
+:::::::
+
+::::::{exercise}
+Calcule o resultado da função $E(n)$,tal que
+
+:::{math}
+
+E(n) = \frac{1}{1}+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n-1}+\frac{1}{n}
 :::
 
-2. Calcule a potência de qualquer número inteiro positivo elevado a qualquer número inteiro positivo, utilizando recursividade.
+::::::
 
-3. Calcule o resultado da função $E(n)$,tal que
+::::::{exercise}
+Implemente um procedimento que apresenta na tela um triângulo seguindo o exemplo apresentado abaixo, onde $n$ define a quantidade de linhas utilizadas.
 
-$$
-E(n) = \frac{1}{1}+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n-1}+\frac{1}{n}
-$$
+:::::{prf:example}
+:nonumber:
 
-4. Implemente uma função para verificar se determinado valor é ou não regular. Um número é dito regular se sua decomposição em fatores primos apresenta apenas potências de 2, 3 e 5.
+::::{card} Entrada
+6
+::::
 
-5. Desenhe um triângulo seguindo o seguinte formato, onde $n$ define a quantidade de linhas utilizadas:
+::::{card} Saída
+::::
 ```
 *
 * *
@@ -32,8 +213,39 @@ $$
 * * * * *
 * * * * * *
 ```
+:::::
 
-6. Desenhe uma pirâmide, seguindo o formato abaixo, perguntando ao usuário o número de linhas que ele deseja para o padrão.
+::::::
+
+::::::{exercise}
+Implemente um procedimento que apresenta na tela a imagem apresentada no exemplo abaixo.
+
+:::::{prf:example}
+:nonumber:
+
+::::{card} Entrada
+5
+::::
+
+::::{card} Saída
+::::
+```
+*
+* *
+* * *
+* * * * 
+* * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+```
+:::::
+::::::
+
+::::::{exercise}
+Desenhe uma pirâmide, seguindo o formato abaixo, perguntando ao usuário o número de linhas que ele deseja para o padrão.
 ```
 - - - - * - - - -
 - - - * * * - - -
@@ -42,54 +254,54 @@ $$
 * * * * * * * * *
 ```
 
-7. Desenhe um triângulo, seguindo o formato apresentado abaixo, perguntando `n` ao usuário. No caso do exemplo, `n=5`.
-```
-*
-* *
-* * *
-* * * * 
-* * * * *
-* * * *
-* * *
-* *
-*
-```
+::::::
 
-8. Calcule o enésimo termo da sequência de Fibonacci para x, sabendo que cada termo é composto da soma dos dois termos anteriores. Para `F(n)`, tem-se:
+::::::{exercise}
+Calcule o enésimo termo da sequência de Fibonacci para x, sabendo que cada termo é composto da soma dos dois termos anteriores. Para `F(n)`, tem-se:
 ```py
 F(0) = 0
 F(1) = 1
 F(n) = F(n-1) + F(n-2)
 ```
 
-9. Desenvolva uma módulo que calcula uma aproximação para o número Euler $e$, sem utilizar estruturas de repetição. Como teste, utilize $n=10$.
+::::::
 
+::::::{exercise}
+Desenvolva uma função que calcula uma aproximação para o número Euler $e$, sem utilizar estruturas de repetição. Como teste, utilize $n=10$.
 
-:::info Definição
 
 Uma das maneiras de calcular o número de Euler $e$ pode ser calculado utilizando a seguinte equação:
 
 $$
-e = \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + … + \frac{1}{(n-1)!} + \frac{1}{n!}
+e = \frac{1}{0!} +\frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + … + \frac{1}{(n-1)!} + \frac{1}{n!}
 $$
 
-- [Número de Euler](https://pt.wikipedia.org/wiki/Número_de_Euler)
-
-:::
+- Veja [Número de Euler](https://pt.wikipedia.org/wiki/Número_de_Euler)
 
 
-10. Calcule o resto da divisão inteira (mod), utilizando recursividade. Sabe-se que:
+::::::
+
+::::::{exercise}
+Desenvolva uma funçã que calcula e retorna o resto da divisão inteira (mod) entre dois números $a$ e $b$, utilizando recursividade. Sabe-se que:
 ```
 mod(x,y) = mod(x-y, y) se x > y
 mod(x,y) = x se x < y
 mod(x,y) = 0 se x = y
 ```
 
-11. Calcule o máximo divisor comum (mdc) de dois números inteiros x e y. Sabe-se que:
+::::::
+
+::::::{exercise}
+Calcule o máximo divisor comum (mdc) de dois números inteiros x e y. Sabe-se que:
 ```
 mdc(x,y) = mdc(x-y,y) se x>y
 mdc(x,y) = mdc(y,x)
 mdc(x,x) = x
 ```
 
-12. Desenvolva uma função que retorna verdadeiro se determinado valor $x$ é um número primo, e falso caso contrário.
+::::::
+
+::::::{exercise}
+Desenvolva uma função que retorna verdadeiro se determinado valor $x$ é um número primo, e falso caso contrário.
+
+::::::
