@@ -184,7 +184,7 @@ int fatorialRecursivo(int n){
 :::::::
 
 ::::::{exercise}
-Calcule o resultado da função $E(n)$,tal que
+Calcule o resultado da função $E(n)$, tal que
 
 :::{math}
 

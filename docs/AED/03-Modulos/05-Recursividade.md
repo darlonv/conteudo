@@ -138,10 +138,8 @@ printf("Hello world!\n");
 
 Observe nestes exemplos, no módulo recursivo  *não existe* propriamente uma estrutura de repetição, como na função apresentada anteriormente.
 
-**Exercício**  
-
 :::{exercise}
-1. Implemente uma função recursiva que calcula e retorna a soma da sequência de números de 1 até $x$.
+Implemente uma função recursiva que calcula e retorna a soma da sequência de números de 1 até $x$.
 :::
 
 ## Critério de parada
