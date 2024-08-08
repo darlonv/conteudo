@@ -40,3 +40,15 @@ Com os valores de $\Delta$, pode-se obter as seguintes informações:
 - $\Delta > 0 $: As raízes são diferentes e pertencem aos números reais.
 
 ```
+
+
+::::{prf:definition} Distância entre dois pontos
+:label: eq:mat-distancia-pontos
+:nonumber:
+
+A distância $d$ entre os pontos $(x_0, y_0)$ a $(x_1,y_1)$ no plano cartesiano é calculada utilizando a seguinte equação:
+
+:::{math}
+d = \sqrt{(x_1-x_0)^2 + (y_1-y_0)^2}
+:::
+::::
