@@ -2,6 +2,100 @@
 
 ## Funções
 
+::::::{exercise} Menor valor
+:label: ex:funcao-menor
+Implemente a função `menor`, que recebe como entrada 2 números, retornando o menor dos valores.
+
+:::::{prf:example}
+:class: dropdown
+
+::::{card} Entrada
+`10`, `5`
+::::
+
+::::{card} Chamada da função
+`menor(10,5)`
+::::
+
+::::{card} Saída
+5
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+
+::::{card} Entrada
+6, 8
+::::
+
+::::{card} Chamada da função
+`menor(6,8)`
+::::
+
+::::{card} Saída
+6
+::::
+
+:::::
+
+:::::{solution} ex:funcao-menor
+:class: dropdown
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
+public static int menor(int a, int b){
+    if(a<b){
+        return a;
+    }
+    return b;
+}
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+def menor(a, b):
+    if a<b:
+        return a
+    return b
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+int menor(int a, int b){
+    if(a<b){
+        return a;
+    }
+    return b;
+}
+```
+
+::::
+:::::
+
+::::::
+
+::::::{exercise}
+Implemente a função `maior`, que recebe como entrada 2 números, retornando o menor dos valores.
+::::::
+
 ::::::{exercise}
 Implemente a função `maior5`, que recebe como entrada 5 números, retornando o maior dos valores.
 ::::::
@@ -186,7 +280,41 @@ Retorna 27.5, pois 22º Réaumur equivale a 27.5º Celsius.
 
 ::::::{exercise}
 
-Faça uma função chamada `pot2` que retorna verdadeiro caso o parâmetro passado seja uma potência de 2.
+Faça uma função chamada `pot2` que retorna verdadeiro caso o parâmetro passado seja potência de 2.
+
+:::::{prf:example}
+:class: dropdown
+
+::::{card} Entrada
+7
+::::
+
+::::{card} Saída
+Falso
+::::
+
+::::{card} Explicação
+Retorna falso, pois as potências de $2$ são $2,4,8,16,32$ e assim por diante. $7$ não é uma potência de $2$.
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+
+::::{card} Entrada
+8
+::::
+
+::::{card} Saída
+Verdadeiro
+::::
+
+::::{card} Explicação
+Retorna verdadeiro, pois $2^3=8$.
+::::
+
+:::::
 
 ::::::
 
@@ -194,22 +322,49 @@ Faça uma função chamada `pot2` que retorna verdadeiro caso o parâmetro passa
 
 Desenvolva uma função chamada `potN`, que possui dois parâmetros $x$ e $n$. A função deve retornar verdadeiro caso $x$ seja uma potência de $n$.
 
+:::::{prf:example}
+:class: dropdown
+
+::::{card} Entrada
+- `x=25`
+- `n=5`
+::::
+
+::::{card} Saída
+Verdadeiro
+::::
+
+::::{card} Explicação
+Retorna verdadeiro, pois $5^2=25$.
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+
+::::{card} Entrada
+- `x=50`
+- `n=5`
+::::
+
+::::{card} Saída
+Verdadeiro
+::::
+
+::::{card} Explicação
+Retorna Falso, pois as potências de 5 são $5,25,125,625$, e assim por diante. $50$ não é uma potência de $5$.
+::::
+
+:::::
+
 ::::::
 
 ::::::{exercise}
 
-Implemente uma função chamada `distanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores.
+Implemente uma função chamada `distanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores. Observe como calcular a [{name}](#eq:mat-distancia-pontos)
 
-:::note Definição
-**Distância cartesiana**
 
-A distância $d$ entre os pontos $(x_0, y_0)$ a $(x_1,y_1)$ no plano cartesiano é calculada utilizando a seguinte equação:
-
-$$
-d = \sqrt{(x_1-x_0)^2 + (y_1-y_0)^2}
-$$
-
-:::
 
 :::::{prf:example}
 :class: dropdown
