@@ -11,7 +11,16 @@ chapters:
       - title: 20233005662
         sections:
           - file: LPI-AE/Lucas/01-Repeticao_01.md
-  - title: Teste
+  - title: LPI
+    sections:
+      - file: docs/LPI-AE/Exercicios/01-Repeticao_01.md
+  - title: AED
+    sections:
+      - file: docs/LPI-AE/Exercicios/01-Repeticao_01.md
+  - title: RC
+    sections:
+      - file: docs/LPI-AE/Exercicios/01-Repeticao_01.md
+  - title: CD
     sections:
       - file: docs/LPI-AE/Exercicios/01-Repeticao_01.md
   # - file: docs/RNA/01-RNA.md
