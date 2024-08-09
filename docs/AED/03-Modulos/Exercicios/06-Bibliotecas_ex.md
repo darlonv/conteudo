@@ -1,5 +1,5 @@
 
-# Múltiplos arquivos
+# Pacotes e Bibliotecas
 
 Prepare arquivos de código com os exercícios já resolvidos, organizados por tema.
 
