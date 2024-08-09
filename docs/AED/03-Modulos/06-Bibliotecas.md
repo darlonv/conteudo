@@ -166,13 +166,11 @@ Em Java existe o conceito de **packages** (pacotes), que consistem no agrupament
 aed
 ├── aulas
 │   └── Aula20.java
-├── lib
-│   └── Entrada.java
 ├── Main.java
 └── Makefile
 ```
 
-- Inclua o seguinte código em `Aula20.java`. Perce que na linha 1 é incluído o nome do **pacote**, que dever ser o mesmo nome do diretório (aulas).
+- Inclua o seguinte código em `Aula20.java`. Perceba que na linha 1 é incluído o nome do **pacote**, que dever ser o mesmo nome do diretório (aulas).
 
 :::::{code} java
 :filename: Aula20.java
