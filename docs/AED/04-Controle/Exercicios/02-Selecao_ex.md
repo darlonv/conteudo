@@ -44,12 +44,12 @@ Construa um algoritmo que calcule e imprima o peso ideal de uma pessoa, utilizan
 
 :::::{exercise}
 :label: ex:selecao-calculadora
-Faça um programa em que são solicitados ao ao usuário dois valores (operandos) e um operador, que pode ser `+`, `-`, `*` ou `/`. De acordo com o operador digitado, mostre o resultado da operação.
+Faça um programa em que são solicitados ao usuário dois valores (operandos) e um operador, que pode ser `+`, `-`, `*` ou `/`. De acordo com o operador digitado, mostre o resultado da operação.
 :::::
 
 :::::{exercise}
 :label: ex:selecao-triangulo_existe
-Desenvolva um algoritmo que possui como entrada 3 valores (A, B e C), que represem as medidas dos lados de um triângulo. Informe se pode ou não existir um triângulo com as medidas informadas.  
+Desenvolva um algoritmo que possui como entrada 3 valores (A, B e C), que representam as medidas dos lados de um triângulo. Informe se pode ou não existir um triângulo com as medidas informadas.  
   - Resolva o problema utilizando a estrutura **se** apenas uma vez no algoritmo.  
 
 :::{note} Triângulo
@@ -113,7 +113,8 @@ Para que uma pessoa possa doar sangue é necessário ter entre 18 e 67 anos. Fa�
 :label: ex:selecao-nota_aprovado_reprovado
 Faça um programa que receba três notas de um aluno, e com base nelas informa se esse aluno foi aprovado ou reprovado.  
   - Média maior ou igual a 7,00: *"ALUNO APROVADO"*
-  - Média menor que 7,00: *"ALUNO REPROVADO"*:::::
+  - Média menor que 7,00: *"ALUNO REPROVADO"*
+:::::
 
 :::::{exercise}
 :label: ex:selecao-desconto_salario
