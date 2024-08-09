@@ -3,25 +3,27 @@
 
 Prepare arquivos de código com os exercícios já resolvidos, organizados por tema.
 
-- Main.java
-- Entrada.java
-- Matematica.java
-- Recursividade.java
 
-Dentro destes arquivos, inclua as seguintes funções já resolvidas:
+
+- [Main.java](#ex:bibliotecas-main)
+- Pacote `libs`:
+    - [Entrada.java](#ex:bibliotecas-entrada)
+    - [Matematica.java](#ex:bibliotecas-matematica)
+    - [Recursividade.java](#ex:bibliotecas-recursividade)
+
+Dentro destes arquivos, inclua os seguinte métodos já desenvolvidos anteriormente:
 
 
 ::::::{code} java
 :filename: Main.java
-package aula;
-
+:label: ex:bibliotecas-main
 public static void main(String[] args)
-
 ::::::
 
 ::::::{code} java
 :filename: Entrada.java
-package aula;
+:label: ex:bibliotecas-entrada
+package libs;
 
 import java.util.Scanner;
 
@@ -45,8 +47,9 @@ public class Entrada {
 
 ::::::{code} java
 :filename: Matematica.java
+:label: ex:bibliotecas-matematica
 
-package aula;
+package libs;
 
 public class Matematica {
 
@@ -66,7 +69,8 @@ public class Matematica {
 
 ::::::{code} java
 :filename: Recursividade.java
-package aula;
+:label: ex:bibliotecas-recursividade
+package libs;
 
 public class Recursividade {
 

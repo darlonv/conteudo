@@ -45,7 +45,7 @@ chapters:
         sections:
           - file: 03-Modulos/Exercicios/02-Modularizacao_ex.md
           - file: 03-Modulos/Exercicios/05-Recursividade_ex.md
-          # - file: 03-Modulos/Exercicios/06-bibliotecas_ex.md
+          - file: 03-Modulos/Exercicios/06-Bibliotecas_ex.md
 
 
   # - title: Caracteres
