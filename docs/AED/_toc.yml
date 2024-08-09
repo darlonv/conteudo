@@ -40,12 +40,12 @@ chapters:
       - file: 03-Modulos/03-Parametros.md
       - file: 03-Modulos/04-Escopo.md
       - file: 03-Modulos/05-Recursividade.md
-      - file: 03-Modulos/06-Multiplos_arquivos.md
+      # - file: 03-Modulos/06-Multiplos_arquivos.md
       - title: Exercícios
         sections:
           - file: 03-Modulos/Exercicios/02-Modularizacao_ex.md
           - file: 03-Modulos/Exercicios/05-Recursividade_ex.md
-          - file: 03-Modulos/Exercicios/06-Multiplos_arquivos_ex.md
+          # - file: 03-Modulos/Exercicios/06-Multiplos_arquivos_ex.md
 
 
   # - title: Caracteres
