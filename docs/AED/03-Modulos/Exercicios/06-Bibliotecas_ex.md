@@ -55,14 +55,15 @@ public class Matematica {
 
     public static void menor(int a, int b){...}
     public static void maior(int a, int b){...}
-    public static int tabuada(int k){...}
     public static int fatorial(int n){...}
     public static boolean ehDivisor (int a, int b){...}
     public static boolean ehPerfeito (int n){...}
     public static boolean ehPrimo (int n){...}
     public static int fibonacci (int n){...}
-    public static void kPrimeirosPrimos(int k){...}
-    public static void perfeitosIntervalo (int a, int b){...}
+
+    public static void mostrarTabuada(int k){...}
+    public static void mostrarKPrimeirosPrimos(int k){...}
+    public static void mostrarPerfeitosIntervalo (int a, int b){...}
 }
 
 ::::::
@@ -83,6 +84,7 @@ public class Recursividade {
     public static boolean ehPrimo (int n){...}
     public static int restoDivisao (int x, int y){...}
     public static int mdc(int a, int b){...}
+    
     public static void mostrarLinha (int n_vezes, String caracteres){...}
     public static void mostrarTriangulo (int n){...}
     public static void mostrarTriangulo2 (int n){...}
