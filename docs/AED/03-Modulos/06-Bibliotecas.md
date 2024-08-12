@@ -1,6 +1,6 @@
 # Pacotes e Bibliotecas
 
-Apenas sistemas muito pequenos serão compostos por um único arquivo com o algoritmo. A grande maioria será composta por diversos arquivos que operam em conjunto, formando um sistema muito mais complexo.
+Apenas sistemas muito pequenos serão compostos por um único arquivo com o algoritmo. A grande maioria será composta por diversos arquivos que operam em conjunto, formando um sistema mais complexo.
 
 Códigos desenvolvidos por outros programadores podem também ser utilizados, e estes podem ser obtidos a partir de diversas fontes. Chamamos de **bibliotecas** a esse conjunto de códigos que podem **importados** e utilizados nos códigos que desenvolvemos.
 
@@ -101,7 +101,7 @@ make clear
 :::::
 ::::::
 
-Utilizando `make`, diversos passos podem ser executados de uma única vez.
+Utilizando `make`, diversos passos podem ser executados em sequência.
 
 ::::::{exercise} Atividade
 :nonumber:
@@ -114,7 +114,7 @@ make build run
 
 ::::::{exercise} Atividade
 :nonumber:
-- Compile, execute e remova os arquivos binários de uma única vez
+- Compile, execute e remova os arquivos binários em sequência.
 
 :::::{code} bash
 make build run clear
@@ -156,7 +156,7 @@ make build run
 
 ### Organizando o código em pacotes
 
-Em Java existe o conceito de **packages** (pacotes), que consistem no agrupamento de diversas classes em um mesmo arquivo. Basta informar no início do código a qual pacote a classe definida no arquivo pertence. Classes pertencentes ao mesmo pacote podem acessar métodos umas das outras. Assim como as classes devem possui o mesmo nome do arquivo, os pacotes devem possui o mesmo nome do diretório.
+Em Java existe o conceito de **packages** (pacotes), que consistem no agrupamento de diversas classes em um mesmo arquivo. Basta informar no início do código a qual pacote a classe definida no arquivo pertence. Classes pertencentes ao mesmo pacote podem acessar métodos umas das outras. Assim como as classes devem possuir o mesmo nome do arquivo, os pacotes devem possuir o mesmo nome do diretório que as contém.
 
 ::::::{exercise} Atividade
 :nonumber:
@@ -175,6 +175,7 @@ aed
 :::::{code} java
 :filename: Aula20.java
 :linenos:
+:emphasize-lines: 1
 package aulas;
 
 public class Main{
@@ -190,7 +191,7 @@ Desta forma, podemos a partir da classe `Main` utilizar o código da classe `Aul
 
 ::::::{exercise} Atividade
 :nonumber:
-- Importe a classe `Aula20` no arquivo `Main.java`. Perceba que dever ser importado op nome do pacote seguido do nome da classe.
+- Importe a classe `Aula20` no arquivo `Main.java`. Perceba que dever ser importado o nome do pacote seguido do nome da classe.
 - Chame o método `aula`, da classe `Aula20`.
 
 :::::{code} java
@@ -209,7 +210,7 @@ public class Main{
 
 ::::::
 
-Agora possuimos um outro arquivo que também deve ser compilado. Logo, o código responsável pela compilação deve ser adicionado ao arquivo `Makefile`.
+Agora possuimos um outro arquivo que também deve ser compilado. Logo, o comando responsável pela compilação deve ser adicionado ao arquivo `Makefile`.
 
 ::::::{exercise} Atividade
 :nonumber:
