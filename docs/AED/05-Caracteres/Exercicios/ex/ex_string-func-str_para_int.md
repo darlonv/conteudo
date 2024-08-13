@@ -19,6 +19,8 @@ Desenvolva uma função que recebe via parâmetro de entrada uma sequência de c
 ```
 ::::
 
+:::::
+
 :::::{prf:example}
 :class: dropdown
 :nonumber:
@@ -34,5 +36,7 @@ Desenvolva uma função que recebe via parâmetro de entrada uma sequência de c
 51107
 ```
 ::::
+
+:::::
 
 :::::::

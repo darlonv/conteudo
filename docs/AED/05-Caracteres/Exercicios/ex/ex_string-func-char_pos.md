@@ -29,7 +29,7 @@ Desenvolva uma função que recebe como entradas uma frase, uma posição e um c
 
 ::::{card} Explicação
 ```
-v                               vv
+p    v
 0000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999
 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
 Naquela manha tranquila, os passaros voavam alto, e as folhas das arvores balançavam suavemente com 
@@ -61,13 +61,13 @@ Naquela manha tranquila, os passaros voavam alto, e as folhas das arvores balan�
 
 ::::{card} Retorno
 ```
-67
+86
 ```
 ::::
 
 ::::{card} Explicação
 ```
-                                                  v                                   v
+                                                  p                                   v
 0000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999
 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
 Naquela manha tranquila, os passaros voavam alto, e as folhas das arvores balançavam suavemente com 
