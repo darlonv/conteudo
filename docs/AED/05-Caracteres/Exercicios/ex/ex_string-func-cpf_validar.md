@@ -1,9 +1,12 @@
 ::::::{exercise} Validar CPF
 :label: ex_string-func-cpf_validar
 
-Desenvolva uma função que verifica se um CPF é válido. A validação do CPF é realizada de acordo com um cálculo e verificação de seus dígitos. Para a validação os seguintes passos devem ser seguidos:
+Desenvolva uma função que verifica se um CPF é válido. A validação do CPF é realizada de acordo com um cálculo e verificação de seus dígitos. 
 
-:::::{card} Validar CPF
+:::::{hint} Passos para validar um CPF
+:class: dropdown
+
+Para a validação os seguintes passos devem ser seguidos:
 
 1. Calcula o valor do 1º dígito verificador
 1. Calcular o valor do 2º dígito verificador
@@ -68,6 +71,30 @@ Logo, o 2º dígito verificador é 0.
 
 ::::
 
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+::::{card} Entrada
+::::
+
+::::{card} Retorno
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+::::{card} Entrada
+::::
+
+::::{card} Retorno
+::::
 
 :::::
 
