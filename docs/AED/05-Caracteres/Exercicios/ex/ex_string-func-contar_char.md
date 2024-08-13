@@ -1,4 +1,4 @@
-::::::{exercise} Contagem de caractere específico
+::::::{exercise} Contar caractere
 :label: ex_string-func-contar_char
 Desenvolva uma função que recebe como entradas uma frase e um caractere. A função deve retornar a quantidade de vezes que o caractere aparece na frase.
 

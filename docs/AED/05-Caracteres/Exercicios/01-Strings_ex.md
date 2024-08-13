@@ -1,110 +1,89 @@
 # Cadeias de caracteres
 
-## Procedimentos
-
-ok
+## Procedimentos e funções
+<!-- Mostrar texto na vertical -->
 ::::::{include} ex/ex_string-proc-texto_vertical.md
 ::::::
 
-## Funções
-
-ok
+<!-- Converter para maiúsculas -->
 ::::::{include} ex/ex_string-func-maiusculas.md
 ::::::
 
-ok
+Converter para minúsculas
 ::::::{include} ex/ex_string-func-minusculas.md
 ::::::
 
-ok
+Frase inversa
 ::::::{include} ex/ex_string-func-inversa.md
 :label: ex_string-func-inversa
 ::::::
 
-ok
-::::::{include} ex/ex_string-func-remover_char.md
-:label: ex_string-func-remover_char
-::::::
-
-ok
-::::::{include} ex/ex_string-func-remover_chars.md
-:label: ex_string-func-remover_chars
-::::::
-
-ok
+Verificar iguais
 ::::::{include} ex/ex_string-func-iguais.md
-:label: ex_string-func-iguais
 ::::::
 
-ok
+Sentenças iguais sem considerar maiúsculas ou minúsculas
 ::::::{include} ex/ex_string-func-iguais_conteudo.md
-:label: ex_string-func-iguais_conteudo
 ::::::
 
-### Contagem
+Palíndromos
+::::::{include} ex/ex_string-func-palindromo.md
+::::::
 
-ok
+Remover caractere de sentença
+::::::{include} ex/ex_string-func-remover_char.md
+::::::
+
+Remover caracteres de sentença
+::::::{include} ex/ex_string-func-remover_chars.md
+::::::
+
+Comprimento
 ::::::{include} ex/ex_string-func-comprimento.md
-:label: ex_string-func-comprimento
 ::::::
 
-ok
+Contar caractere
 ::::::{include} ex/ex_string-func-contar_char.md
-:label: ex_string-func-contar_char
 ::::::
 
-ok
+Contar caracteres
 ::::::{include} ex/ex_string-func-contar_chars.md
-:label: ex_string-func-contar_chars
 ::::::
 
-### Conversão
-
-ok
-::::::{include} ex/ex_string-func-char_para_int.md
-:label: ex_string-func-ex_string-func-char_para_int
-::::::
-
-ok
-::::::{include} ex/ex_string-func-str_para_int.md
-:label: ex_string-func-str_para_int
-::::::
-
-### Busca
-
-ok
+Obter posicao do caractere
 ::::::{include} ex/ex_string-func-char_pos.md
-:label: ex_string-func-char_pos
 ::::::
 
-ok
+Obter posicao dos caracteres
 ::::::{include} ex/ex_string-func-chars_pos.md
-:label: ex_string-func-chars_pos
 ::::::
 
-ok
-::::::{include} ex/ex_string-func-buscar_caractere_pos.md
-:label: ex_string-func-buscar_caractere_pos
-::::::
-
-### Substituição
-
-ok
+Obter posição de subfrase
 ::::::{include} ex/ex_string-func-substr_pos.md
-:label: ex_string-func-substr_pos
 ::::::
 
-ok
+Contar subfrase
 ::::::{include} ex/ex_string-func-substr_count.md
-:label: ex_string-func-substr_count
 ::::::
 
-ok
+Extrair caracteres
 ::::::{include} ex/ex_string-func-extrair_caracteres.md
-:label: ex_string-func-extrair_caracteres
 ::::::
 
-## Exercícios de Fixação
+## Matemática
+
+Caractere para inteiro
+::::::{include} ex/ex_string-func-char_para_int.md
+::::::
+
+Caracteres para inteiro
+::::::{include} ex/ex_string-func-str_para_int.md
+::::::
+
+::::::{include} ex/ex_string-proc-soma_cubos.md
+::::::
+
+## Análise em Texto
 
 ::::{exercise}
 Utilize o texto abaixo para responder aos questionamentos seguintes.
@@ -130,79 +109,51 @@ texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de s
 
 ::::
 
-ok
-::::::{include} ex/ex_string-func-palindromo.md
-:label: ex_string-func-palindromo
-::::::
+## Desafios
 
-ok
+### Cifra de César
 ::::::{include} ex/ex_string-func-cesar_criptografar.md
-:label: ex_string-func-cesar_criptografar
 ::::::
 
-ok
 ::::::{include} ex/ex_string-func-cesar_descriptografar.md
-:label: ex_string-func-cesar_descriptografar
 ::::::
 
-ok
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n_criptografar.md
-:label: ex_string-func-cesar_deslocamento_n_criptografar
 ::::::
 
-ok
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n_descriptografar.md
-:label: ex_string-func-cesar_deslocamento_n_descriptografar
 ::::::
 
-ok
+Substituir subfrase
 ::::::{include} ex/ex_string-func-subst_string.md
-:label: ex_string-func-subst_string
 ::::::
 
-ok
+Substituir subfrase todas
 ::::::{include} ex/ex_string-func-subst_string_todas.md
-:label: ex_string-func-subst_string_todas
 ::::::
 
-ok
+Substituir caractere
 ::::::{include} ex/ex_string-func-subst_char.md
-:label: ex_string-func-subst_char
 ::::::
 
-ok
+Substituir caracteres por caracter
 ::::::{include} ex/ex_string-func-subst_chars.md
-:label: ex_string-func-subst_chars
 ::::::
 
-## Formato
+### CPF
 
-ok
 ::::::{include} ex/ex_string-func-cpf_formato.md
-:label: ex_string-func-cpf_formato
 ::::::
 
-ok
 ::::::{include} ex/ex_string-proc-obter_estado_cpf.md
-:label: ex_string-proc-obter_estado_cpf
 ::::::
 
-
-## Matemática
-
-ok
-::::::{include} ex/ex_string-proc-soma_cubos.md
-:label: ex_string-proc-soma_cubos
-::::::
-
-ok
 ::::::{include} ex/ex_string-func-cpf_validar.md
-:label: ex_string-func-cpf_validar
 ::::::
 
 
 
-## Fixação
+
 
 ## Desafio
 
@@ -314,244 +265,14 @@ PRLLAAEO
 ::::
 
 
-::::{exercise} Anagrama
+Verificar anagrama
+::::::{include} ex/ex_string-funcao-verificarAnagrama.md
+::::::
 
-Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Chame sua função de `isAnagram`.
+Contar repetições seguidas
+::::::{include} ex/ex_string-funcao-contarRepeticoesSeguidas.md
+::::::
 
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-ABACATES
-ACEBASAT
-```
-
-- Saída:
-
-```
-verdadeiro
-```
-
----
-
-- Entrada:
-
-```
-primeira
-marifrei
-```
-
-- Saída:
-
-```
-falso
-```
-
----
-
-- Entrada:
-
-```
-frase
-resaf
-```
-
-- Saída:
-
-```
-verdadeiro
-```
-
----
-
-- Entrada:
-
-```
-pudim
-batata
-```
-
-- Saída:
-
-```
-falso
-```
-
----
-
-- Entrada:
-
-```
-abcdef
-cbafed
-```
-
-- Saída:
-
-```
-verdadeiro
-```
-
----
-
-- Entrada:
-
-```
-sera
-ser
-```
-
-- Saída:
-
-```
-falso
-```
-
----
-
-- Entrada:
-
-```
-ba
-aba
-```
-
-- Saída:
-
-```
-falso
-```
-
----
-
-- Entrada:
-
-```
-Roma
-Amor
-```
-
-- Saída:
-
-```
-verdadeiro
-```
-
----
-
-- Entrada:
-
-```
-ovni
-ovo
-```
-
-- Saída:
-
-```
-falso
-```
-
-:::
-
-
-<!-- |Entrada|Entrada|Saida| -->
-<!-- |-|-|-| -->
-<!-- |`ABACATES`| `ACEBASAT` |`True`| -->
-<!-- |`primeira`|`marifrei`|`False`| -->
-<!-- |`frase`| `resaf`|`True`| -->
-<!-- |`pudim`|`batata`|`False`| -->
-<!-- |`abcdef`|`cbafed`|`True`| -->
-<!-- |`sera`|`ser`|`False`| -->
-<!-- |`ba`|`aba`|`False`| -->
-<!-- |`Roma`|`Amor`|`True`| -->
-<!-- |`ovni`|`ovo`|`False`| -->
-
-::::
-
-
-::::{exercise} Repetições de caracteres
-
-Desenvolva uma função que recebe como entrada uma cadeia de caracteres, que possui diversos caracteres que se repetem em sequência. Sua função deve retornar uma cadeia de caracteres contendo a quantidade de vezes que o caractere se repete e o caractere em si, separados por vírgula.
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-ABB
-```
-
-- Saída:
-
-```
-1A,2B
-```
-
----
-
-- Entrada:
-
-```
-HHHH
-```
-
-- Saída:
-
-```
-4H
-```
-
----
-
-
-- Entrada:
-
-```
-AAABBCCCC
-```
-
-- Saída:
-
-```
-3A,2B,4C
-```
-
----
-
-- Entrada:
-
-```
-AAAAAGGGCCCTTTCCTTAAAAAATCG
-```
-
-- Saída:
-
-```
-5A,3G,3C,3T,2C,2T,6A,1T,1C,1G
-```
-
----
-
-- Entrada:
-
-```
-..,,aaaAAAAA--------!!!!!!!!!!!!!!!999999900      .
-```
-
-- Saída:
-
-```
-2.,2,,3a,5A,8-,15!,79,20,6 ,1.
-```
-
-:::
-::::
 
 
 ::::{exercise}
