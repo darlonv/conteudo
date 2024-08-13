@@ -190,8 +190,9 @@ ok
 
 ## Matemática
 
-::::::{include} ex/ex_string-func-soma_cubos.md
-:label: ex_string-func-soma_cubos
+ok
+::::::{include} ex/ex_string-proc-soma_cubos.md
+:label: ex_string-proc-soma_cubos
 ::::::
 
 ok
