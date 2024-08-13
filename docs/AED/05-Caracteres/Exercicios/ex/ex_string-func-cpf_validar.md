@@ -8,7 +8,7 @@ Desenvolva uma função que verifica se um CPF é válido. A validação do CPF 
 
 Para a validação os seguintes passos devem ser seguidos:
 
-1. Calcula o valor do 1º dígito verificador
+1. Calcular o valor do 1º dígito verificador
 1. Calcular o valor do 2º dígito verificador
 1. Verificar se os dígitos verificadores calculados são iguais aos fornecidos na entrada.
 
