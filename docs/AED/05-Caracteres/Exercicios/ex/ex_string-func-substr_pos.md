@@ -47,7 +47,7 @@ O trecho `ar` é encontrado na posição `32` da entrada `fraseA` (parte do text
 
 ::::{card} Entradas
 ```
-Naquela manha tranquila, os passaros voavam alto, e as folhas das arvores balançavam suavemente com a brisa fresca que vinha do mar distante.
+"Naquela manha tranquila, os passaros voavam alto, e as folhas das arvores balançavam suavemente com a brisa fresca que vinha do mar distante."
 ```  
 
 ```

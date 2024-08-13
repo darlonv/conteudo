@@ -3,38 +3,40 @@
 
 Desenvolva uma função que recebe como entrada uma frase e retorna a quantidade total de caracteres presente na frase.
 
-::::{prf:example}
+:::::{prf:example}
 :class: dropdown
 :nonumber:
 
-- Entrada:
-
+::::{card} Entrada
 ```
-Alessandra
+"Alessandra"
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 10
 ```
-
 ::::
-::::{prf:example}
+
+:::::
+
+:::::{prf:example}
 :class: dropdown
 :nonumber:
 
-- Entrada:
-
+::::{card} Entrada
 ```
-Adroaldo dos Santos
+"Adroaldo dos Santos"
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 17
 ```
-
 ::::
+
+:::::
+
 ::::::

@@ -4,7 +4,8 @@
 Desenvolva uma função que recebe como entrada uma frase `frase`, uma posição inicial `pos` e um conjunto de caracteres `caracteres`. A função deve retornar a posição que encontrar primeiro  algum dos caracteres em `caracteres`, a partir da posição `pos`. Caso nenhum dos caracteres seja encontrado, o valor `-1` deve ser retornado.
 
 :::::{prf:example}
-<!-- :class: dropdown -->
+:class: dropdown
+:nonumber:
 
 ::::{card} Entradas
 ```
@@ -27,7 +28,7 @@ mv
 ::::
 
 ::::{card} Explicação
-Observe:
+Observe as posições em que cada caractere está:
 ```
         m           p                v  v m
 0000000000111111111122222222223333333333444444444
@@ -45,7 +46,8 @@ Após a posição `20`, o primeiro caractere encontrado foi `v`, na posição `3
 :::::
 
 :::::{prf:example}
-<!-- :class: dropdown -->
+:class: dropdown
+:nonumber:
 
 ::::{card} Entradas
 
@@ -69,7 +71,8 @@ yjxbc!
 :::::
 
 :::::{prf:example}
-<!-- :class: dropdown -->
+:class: dropdown
+:nonumber:
 
 ::::{card} Entradas
 

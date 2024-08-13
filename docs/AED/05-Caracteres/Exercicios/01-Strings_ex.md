@@ -2,74 +2,115 @@
 
 ## Procedimentos
 
+ok
 ::::::{include} ex/ex_string-proc-texto_vertical.md
-::::::
-
-::::::{include} ex/ex_string-func-maiusculas.md
 ::::::
 
 ## Funções
 
+ok
+::::::{include} ex/ex_string-func-maiusculas.md
+::::::
+
+ok
 ::::::{include} ex/ex_string-func-minusculas.md
 ::::::
 
-::::::{include} ex/ex_string-func-vogais.md
-::::::
-
+ok
 ::::::{include} ex/ex_string-func-inversa.md
 :label: ex_string-func-inversa
 ::::::
 
+ok
+::::::{include} ex/ex_string-func-remover_char.md
+:label: ex_string-func-remover_char
+::::::
+
+ok
+::::::{include} ex/ex_string-func-remover_chars.md
+:label: ex_string-func-remover_chars
+::::::
+
+ok
+::::::{include} ex/ex_string-func-iguais.md
+:label: ex_string-func-iguais
+::::::
+
+ok
+::::::{include} ex/ex_string-func-iguais_conteudo.md
+:label: ex_string-func-iguais_conteudo
+::::::
+
 ### Contagem
 
+ok
 ::::::{include} ex/ex_string-func-comprimento.md
 :label: ex_string-func-comprimento
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-contar_char.md
 :label: ex_string-func-contar_char
 ::::::
 
+ok
+::::::{include} ex/ex_string-func-contar_chars.md
+:label: ex_string-func-contar_chars
+::::::
+
 ### Conversão
 
+ok
 ::::::{include} ex/ex_string-func-char_para_int.md
 :label: ex_string-func-ex_string-func-char_para_int
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-str_para_int.md
 :label: ex_string-func-str_para_int
 ::::::
 
 ### Busca
 
+ok
 ::::::{include} ex/ex_string-func-char_pos.md
 :label: ex_string-func-char_pos
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-chars_pos.md
 :label: ex_string-func-chars_pos
 ::::::
 
-
+ok
 ::::::{include} ex/ex_string-func-buscar_caractere_pos.md
 :label: ex_string-func-buscar_caractere_pos
 ::::::
 
 ### Substituição
 
+ok
 ::::::{include} ex/ex_string-func-substr_pos.md
 :label: ex_string-func-substr_pos
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-substr_count.md
 :label: ex_string-func-substr_count
+::::::
+
+ok
+::::::{include} ex/ex_string-func-extrair_caracteres.md
+:label: ex_string-func-extrair_caracteres
 ::::::
 
 ## Exercícios de Fixação
 
 ::::{exercise}
 Utilize o texto abaixo para responder aos questionamentos seguintes.
-> '*Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrão de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associação com o reptil do mesmo nome.*'  
+> "*Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrão de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associação com o reptil do mesmo nome.*"
+
+
 > (Texto adaptado de [Wikipedia: Python](https://pt.wikipedia.org/wiki/Python))
 
 - Mostre:
@@ -83,64 +124,67 @@ Utilize o texto abaixo para responder aos questionamentos seguintes.
     1. todas as palavras que possuem a letra "p" (minúscula).
 
 Código para entrada, atribuindo texto diretamenta à variável:
-
-<Tabs groupId='language'>
-  <TabItem value="java" label="Java">
-
 ```java
 texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrao de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associacao com o reptil do mesmo nome.";
 ```
 
-  </TabItem>
-  <TabItem value="python" label="Python">
-
-```python
-texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrao de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associacao com o reptil do mesmo nome."
-```
-
-  </TabItem>
-</Tabs>
-
 ::::
 
+ok
 ::::::{include} ex/ex_string-func-palindromo.md
 :label: ex_string-func-palindromo
 ::::::
 
-
+ok
 ::::::{include} ex/ex_string-func-cesar_criptografar.md
 :label: ex_string-func-cesar_criptografar
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-cesar_descriptografar.md
 :label: ex_string-func-cesar_descriptografar
 ::::::
 
-
+ok
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n_criptografar.md
 :label: ex_string-func-cesar_deslocamento_n_criptografar
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n_descriptografar.md
 :label: ex_string-func-cesar_deslocamento_n_descriptografar
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-subst_string.md
 :label: ex_string-func-subst_string
 ::::::
 
+ok
+::::::{include} ex/ex_string-func-subst_string_todas.md
+:label: ex_string-func-subst_string_todas
+::::::
+
+ok
 ::::::{include} ex/ex_string-func-subst_char.md
 :label: ex_string-func-subst_char
 ::::::
 
+ok
 ::::::{include} ex/ex_string-func-subst_chars.md
 :label: ex_string-func-subst_chars
 ::::::
 
 ## Formato
 
+ok
 ::::::{include} ex/ex_string-func-cpf_formato.md
 :label: ex_string-func-cpf_formato
+::::::
+
+ok
+::::::{include} ex/ex_string-proc-obter_estado_cpf.md
+:label: ex_string-proc-obter_estado_cpf
 ::::::
 
 
@@ -148,6 +192,11 @@ texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de s
 
 ::::::{include} ex/ex_string-func-soma_cubos.md
 :label: ex_string-func-soma_cubos
+::::::
+
+ok
+::::::{include} ex/ex_string-func-cpf_validar.md
+:label: ex_string-func-cpf_validar
 ::::::
 
 
@@ -590,9 +639,10 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 
 ### Testes
 
-## Problemas
+## Problemas -->
 
-## Desafios -->
+<!-- ## Desafios  -->
+
 
 ## Biblioteca
 

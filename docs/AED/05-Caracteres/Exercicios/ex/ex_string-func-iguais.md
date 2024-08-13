@@ -1,18 +1,30 @@
-::::::{exercise} Palíndromos
-:label: ex_string-func-palindromo
-Desenvolva uma função que recebe uma frase como entrada e verifica se essa frase forma um palíndromo, ou seja, se os caracteres da entrada forem invertidos, a entrada permanece idêntica. A função deve retornar `verdadeiro` caso a entrada forme um palíndromo, e `falso` caso contrário.
+::::::{exercise} Sentenças iguais
+:label: ex_string-func-iguais
+
+Desenvolva uma função que recebe como entrada duas frases `fraseA` e `fraseB`. Desenvolva uma função que retorna verdadeiro se `fraseA` é idêntica a `fraseB`.
+
+
 :::::{prf:example}
 :class: dropdown
 :nonumber:
 
 ::::{card} Entrada
+
 ```
-A mala nada na lama
+"Naquela manha tranquila"
+```
+
+```
+"Naquela manha tranquila"
 ```
 ::::
 
 ::::{card} Retorno
+
+
+```
 verdadeiro
+```
 ::::
 
 :::::
@@ -22,45 +34,72 @@ verdadeiro
 :nonumber:
 
 ::::{card} Entrada
+
 ```
-O Breve Verbo
+"naquela manha tranquila"
 ```
-::::
 
-::::{card} Retorno
-verdadeiro
-::::
-
-:::::
-
-:::::{prf:example}
-:class: dropdown
-:nonumber:
-
-::::{card} Entrada
 ```
-anotaram a data da maratona
+"naquela manha tranquila"
 ```
 ::::
 
 ::::{card} Retorno
-verdadeiro
-::::
 
-:::::
 
-:::::{prf:example}
-:class: dropdown
-:nonumber:
-
-::::{card} Entrada
 ```
-anotaram as datas da maratona
-```
-::::
-
-::::{card} Retorno
 falso
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+
+```
+"batata"
+```
+
+```
+"batatas"
+```
+::::
+
+::::{card} Retorno
+
+
+```
+falso
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+
+```
+"batata"
+```
+
+```
+"abacate"
+```
+::::
+
+::::{card} Retorno
+
+
+```
+falso
+```
 ::::
 
 :::::

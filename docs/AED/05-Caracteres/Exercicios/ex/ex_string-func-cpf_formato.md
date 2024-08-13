@@ -1,20 +1,102 @@
-::::{exercise} CPF no formato correto
+::::::{exercise} CPF no formato correto
 :label: ex_string-func-cpf_formato
 
-Desenvolva um programa que verifica se um CPF está no formato válido (11 dígitos, seguindo o formato **xxx.xxx.xxx-xx**). O programa deve observar se apenas números, pontos e hífen foram digitados, observando nos locais corretos. Ao final deve informar "CPF Válido" ou "CPF Inválido".
+Desenvolva uma função que verifica se um CPF está no formato válido (11 dígitos, seguindo o formato **xxx.xxx.xxx-xx**). O programa deve observar se apenas números, pontos e hífen foram digitados, verificando os locais corretos. Deve retornar verdadeiro caso o formato esteja correto, e falso caso contrário.
 
-:::{prf:example}
+:::::{prf:example}
 :class: dropdown
 :nonumber:
 
-|Entrada   |Saída           |
-|----------|----------------|
-|123.456.789-01|CPF Válido  |
-|12.3456.789-01|CPF Inválido|
-|12X.456.789-01|CPF Inválido|
-|12345678901   |CPF Inválido|
-|12.3456.789-01|CPF Inválido|
-|123-456.789-01|CPF Inválido|
-
-:::
+::::{card} Entrada
+```
+"123.456.789-01"
+```
 ::::
+
+::::{card} Retorno
+verdadeiro
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"12.3456.789-01"
+```
+::::
+
+::::{card} Retorno
+falso
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"12X.456.789-01"
+```
+::::
+
+::::{card} Retorno
+falso
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"12345678901"
+```
+::::
+
+::::{card} Retorno
+falso
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"12.3456.789-01"
+```
+::::
+
+::::{card} Retorno
+falso
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"123-456.789-01"
+```
+::::
+
+::::{card} Retorno
+falso
+::::
+
+:::::
+
+::::::

@@ -1,61 +1,91 @@
-::::{exercise} Cifra de César - Descriptografar
+::::::{exercise} Cifra de César - Descriptografar
 :label: ex_string-func-cesar_descriptografar
 
 Implemente um algoritmo que descriptografa um texto criptografado com a Cifra de César, cifrado utilizando deslocamento de $3$ letras. A entrada deve ser digitada pelo usuário sem espaços, números, caracteres acentuados ou especiais.
 
-:::{prf:example}
+:::::{prf:example}
 :class: dropdown
 :nonumber:
 
-- Entrada:
-
+::::{card} Entrada
 ```
-sbwkrq
+"sbwkrq"
 ```
-
-- Saída:
-
-```
-python
-```
-**Observe**: s->p, b->y, w->t, k->h, r->o e q->n.
-
----
-
-- Entrada:
-
-```
-mdyd
-```
-
-- Saída:
-
-```
-java
-```
-
----
-
-```
-dqrwaudpdgdwdgdpdudwrqd
-```
-
-- Saída:
-
-```
-anotaramadatadamaratona
-```
-
----
-
-```
-adguhc
-```
-
-- Saída:
-
-```
-xadrez
-```
-:::
 ::::
+
+::::{card} Retorno
+```
+"python"
+```
+::::
+
+::::{card} Explicação
+```
+s->p
+b->y
+w->t
+k->h
+r->o
+q->n
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"mdyd"
+```
+::::
+
+::::{card} Retorno
+```
+"java"
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"dqrwaudpdgdwdgdpdudwrqd"
+```
+::::
+
+::::{card} Retorno
+```
+"anotaramadatadamaratona"
+```
+::::
+
+:::::
+
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+"adguhc"
+```
+::::
+
+::::{card} Retorno
+```
+"xadrez"
+```
+::::
+
+:::::
+
+
+::::::

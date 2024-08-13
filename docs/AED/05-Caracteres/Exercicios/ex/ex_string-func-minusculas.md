@@ -1,6 +1,6 @@
 ::::::{exercise} Converter para minúsculas
 :label: ex_string-func-minusculas
-Desenvolva uma função que recebe como entrada uma frase e retorna a mesma frase com todas as letras em minúsculas.
+Desenvolva uma função que recebe como entrada uma frase e retorna a mesma frase com todas as letras em minúsculas. Não utilize funções prontas de conversão em sua solução.
 
 
 :::::{prf:example}
