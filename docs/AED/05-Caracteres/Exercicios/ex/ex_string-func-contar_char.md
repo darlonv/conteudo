@@ -1,0 +1,55 @@
+::::::{exercise} Contagem de caractere específico
+:label: ex_string-func-contar_char
+Desenvolva uma função que recebe como entradas uma frase e um caractere. A função deve retornar a quantidade de vezes que o caractere aparece na frase.
+
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+batata e cebola
+a
+```
+::::
+
+::::{card} Saída
+```
+4
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+```
+batata e cebola
+t
+```
+::::
+
+::::{card} Saída
+```
+2
+```
+::::
+
+::::{card} Entrada
+```
+batata e cebola
+x
+```
+::::
+
+::::{card} Saída
+```
+0
+```
+::::
+
+:::::::

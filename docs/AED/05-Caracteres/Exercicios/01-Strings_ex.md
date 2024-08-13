@@ -1,151 +1,71 @@
 # Cadeias de caracteres
 
-## Exercícios de fixação
+## Procedimentos
 
-Resolva os exercícios abaixo sobre cadeias de caracteres. Organize seu código utilizando procedimentos e funções.
+::::::{include} ex/ex_string-proc-texto_vertical.md
+::::::
 
-::::{exercise}
-:label: ex_string-nome_vertical
-Pergunte o nome do usuário, e mostre o nome na vertical.
+::::::{include} ex/ex_string-func-maiusculas.md
+::::::
 
+## Funções
 
-:::{prf:example}
-:class: dropdown
-:nonumber:
+::::::{include} ex/ex_string-func-minusculas.md
+::::::
 
-- Entrada:
+::::::{include} ex/ex_string-func-vogais.md
+::::::
 
-```
-Darlon
-```
+::::::{include} ex/ex_string-func-inversa.md
+:label: ex_string-func-inversa
+::::::
 
-- Saída:
+### Contagem
 
-```
-D
-a
-r
-l
-o
-n
-```
+::::::{include} ex/ex_string-func-comprimento.md
+:label: ex_string-func-comprimento
+::::::
 
----
+::::::{include} ex/ex_string-func-contar_char.md
+:label: ex_string-func-contar_char
+::::::
 
-- Entrada:
+### Conversão
 
-```
-Daniel
-```
+::::::{include} ex/ex_string-func-char_para_int.md
+:label: ex_string-func-ex_string-func-char_para_int
+::::::
 
-- Saída:
+::::::{include} ex/ex_string-func-str_para_int.md
+:label: ex_string-func-str_para_int
+::::::
 
-```
-D
-a
-n
-i
-e
-l
-```
+### Busca
 
-:::
-::::
+::::::{include} ex/ex_string-func-char_pos.md
+:label: ex_string-func-char_pos
+::::::
+
+::::::{include} ex/ex_string-func-chars_pos.md
+:label: ex_string-func-chars_pos
+::::::
 
 
-::::{exercise}
-Pergunte ao usuário uma frase, e mostre apenas as vogais presentes na frase.
+::::::{include} ex/ex_string-func-buscar_caractere_pos.md
+:label: ex_string-func-buscar_caractere_pos
+::::::
 
-:::{prf:example}
-:class: dropdown
-:nonumber:
+### Substituição
 
-- Entrada:
+::::::{include} ex/ex_string-func-substr_pos.md
+:label: ex_string-func-substr_pos
+::::::
 
-```
-batata e cebola
-```
+::::::{include} ex/ex_string-func-substr_count.md
+:label: ex_string-func-substr_count
+::::::
 
-- Saída:
-
-```
-aaaeeoa
-```
-
----
-
-- Entrada:
-
-```
-Abacaxi E Acerola
-```
-
-- Saída:
-
-```
-AaaiEAeoa
-```
-:::
-::::
-
-::::{exercise}
-Digite um nome, e informe quantas letras possui esse nome.
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-Alessandra
-```
-
-- Saída:
-
-```
-O nome Alessandra possui 10 letras.
-```
-
----
-
-- Entrada:
-
-```
-Adroaldo dos Santos
-```
-
-- Saída:
-
-```
-O nome Adroaldo dos Santos possui 17 letras.
-```
-
-:::
-::::
-
-
-::::{exercise}
-Digite uma frase, e mostre essa frase na ordem inversa (de trás para frente).
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-batata e cebola
-```
-
-- Saída:
-
-```
-alobec e atatab
-```
-:::
-::::
-
+## Exercícios de Fixação
 
 ::::{exercise}
 Utilize o texto abaixo para responder aos questionamentos seguintes.
@@ -156,8 +76,8 @@ Utilize o texto abaixo para responder aos questionamentos seguintes.
     1. o número total de caracteres;
     1. quantas vezes cada vogal aparece;
     1. quantas frases existem no texto;
-    1. quantos caracteres possui a maior palavra presente no texto;
     1. qual é a maior palavra presente no texto.
+    1. quantos caracteres possui a maior palavra presente no texto;
     1. as palavras que possuem duas letras iguais seguidas;
     1. todas as palavras que iniciam com letras maiúsculas;
     1. todas as palavras que possuem a letra "p" (minúscula).
@@ -167,7 +87,7 @@ Código para entrada, atribuindo texto diretamenta à variável:
 <Tabs groupId='language'>
   <TabItem value="java" label="Java">
 
-```javascript
+```java
 texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrao de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associacao com o reptil do mesmo nome.";
 ```
 
@@ -175,7 +95,7 @@ texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de s
   <TabItem value="python" label="Python">
 
 ```python
-texto = 'Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrao de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associacao com o reptil do mesmo nome.'
+texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinamica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitario, aberto e gerenciado pela organizacao sem fins lucrativos Python Software Foundation. Apesar de varias partes da linguagem possuirem padroes e especificacoes formais, a linguagem como um todo nao e formalmente especificada. O padrao de facto e a implementacao CPython. O nome Python teve a sua origem no grupo humoristico britanico Monty Python, criador do programa Monty Pythons Flying Circus, embora muitas pessoas façam associacao com o reptil do mesmo nome."
 ```
 
   </TabItem>
@@ -183,278 +103,62 @@ texto = 'Python e uma linguagem de programacao de alto nivel, interpretada, de s
 
 ::::
 
-::::{exercise}
-Peça ao usuário que digite uma entrada, e verifique se essa entrada forma um palíndromo, ou seja, se os caracteres da entrada forem invertidos, a entrada permanece idêntica. 
+::::::{include} ex/ex_string-func-palindromo.md
+:label: ex_string-func-palindromo
+::::::
 
-:::{prf:example}
-:class: dropdown
-:nonumber:
 
-- Entrada:
+::::::{include} ex/ex_string-func-cesar_criptografar.md
+:label: ex_string-func-cesar_criptografar
+::::::
 
-```
-A mala nada na lama
-```
+::::::{include} ex/ex_string-func-cesar_descriptografar.md
+:label: ex_string-func-cesar_descriptografar
+::::::
 
-- Saída:
 
-```
-A frase "A mala nada na lama" é um palíndromo
-```
+::::::{include} ex/ex_string-func-cesar_deslocamento_n_criptografar.md
+:label: ex_string-func-cesar_deslocamento_n_criptografar
+::::::
 
----
+::::::{include} ex/ex_string-func-cesar_deslocamento_n_descriptografar.md
+:label: ex_string-func-cesar_deslocamento_n_descriptografar
+::::::
 
-- Entrada:
+::::::{include} ex/ex_string-func-subst_string.md
+:label: ex_string-func-subst_string
+::::::
 
-```
-o breve verbo
-```
+::::::{include} ex/ex_string-func-subst_char.md
+:label: ex_string-func-subst_char
+::::::
 
-- Saída:
+::::::{include} ex/ex_string-func-subst_chars.md
+:label: ex_string-func-subst_chars
+::::::
 
-```
-A frase "o breve verbo" é um palíndromo
-```
+## Formato
 
----
+::::::{include} ex/ex_string-func-cpf_formato.md
+:label: ex_string-func-cpf_formato
+::::::
 
-- Entrada:
 
-```
-anotaram a data da maratona
-```
+## Matemática
 
-- Saída:
+::::::{include} ex/ex_string-func-soma_cubos.md
+:label: ex_string-func-soma_cubos
+::::::
 
-```
-A frase "anotaram a data da maratona é um palíndromo"
-```
 
----
 
-- Entrada:
+## Fixação
 
-```
-anotaram as datas da maratona
-```
+## Desafio
 
-- Saída:
+::::{exercise} Texto estiloso
 
-```
-A frase "anotaram as datas da maratona não é um palíndromo"
-```
-
-:::
-::::
-
-
-::::{exercise}
-
-A Cifra de César é uma das mais antigas e conhecidas técnicas de criptografia. Sua técnica consiste na substituição de cada letra do texto por outra, em que a letra é trocada pela letra seguinte no alfabeto com um número fixo.
-
-Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $3$ letras. Pergunte ao usuário qual frase deseja criptografar. Considere que a entrada não possui espaços, números, caracteres acentuados ou especiais.
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-python
-```
-
-- Saída:
-
-```
-sbwkrq
-```
-**Observe**: p->s,y->b,t->w,h->k,o->r e n->q.
-
----
-
-- Entrada:
-
-```
-java
-```
-
-- Saída:
-
-```
-mdyd
-```
-
----
-
-```
-anotaramadatadamaratona
-```
-
-- Saída:
-
-```
-dqrwaudpdgdwdgdpdudwrqd
-```
-
----
-
-```
-xadrez
-```
-
-- Saída:
-
-```
-adguhc
-```
-
-:::
-::::
-
-
-::::{exercise}
-
-Implemente um algoritmo que descriptografa um texto criptografado com a Cifra de César, cifrado utilizando deslocamento de $3$ letras. A entrada deve ser digitada pelo usuário sem espaços, números, caracteres acentuados ou especiais.
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-sbwkrq
-```
-
-- Saída:
-
-```
-python
-```
-**Observe**: s->p, b->y, w->t, k->h, r->o e q->n.
-
----
-
-- Entrada:
-
-```
-mdyd
-```
-
-- Saída:
-
-```
-java
-```
-
----
-
-```
-dqrwaudpdgdwdgdpdudwrqd
-```
-
-- Saída:
-
-```
-anotaramadatadamaratona
-```
-
----
-
-```
-adguhc
-```
-
-- Saída:
-
-```
-xadrez
-```
-:::
-::::
-
-::::{exercise}
-
-Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $3$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas.
-
-::::
-
-::::{exercise}
-
-Implemente um algoritmo de criptografia que utiliza a Cifra de César, utilizando um deslocamento de $n$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas. O valor $n$ também deve ser uma entrada definida pelo usuário.
-
-::::
-
-::::{exercise}
-
-Implemente um algoritmo de criptografia que descritografa textos utilizando a Cifra de César, com deslocamento de $n$ letras. Devem ser considerados apenas as letras da frase, porém o usuário pode digitar qualquer sentenças com qualquer caractere na entrada. Caso hajam letras maiúsculas, estas devem ser convertidas para minúsculas. O valor $n$ também deve ser uma entrada definida pelo usuário.
-
-::::
-
-::::{exercise}
-
-Desenvolva um algoritmo que altera todas as vogais de uma frase para uma mesma vogal. Terá como saída 5 frases, cada uma com uma vogal.
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-o sapo nao lava o pe. nao lava porque nao quer
-```
-
-- Saída:
-
-```
-a sapa naa lava a pa. naa lava parqaa naa qaar
-e sepe nee leve e pe. nee leve perqee nee qeer
-i sipi nii livi i pi. nii livi pirqii nii qiir
-o sopo noo lovo o po. noo lovo porqoo noo qoor
-u supu nuu luvu u pu. nuu luvu purquu nuu quur
-```
-:::
-::::
-
-::::{exercise}
-
-Desenvolva um programa que verifica se um CPF está no formato válido (11 dígitos, seguindo o formato **xxx.xxx.xxx-xx**). O programa deve observar se apenas números, pontos e hífen foram digitados, observando nos locais corretos. Ao final deve informar "CPF Válido" ou "CPF Inválido".
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-|Entrada   |Saída           |
-|----------|----------------|
-|123.456.789-01|CPF Válido  |
-|12.3456.789-01|CPF Inválido|
-|12X.456.789-01|CPF Inválido|
-|12345678901   |CPF Inválido|
-|12.3456.789-01|CPF Inválido|
-|123-456.789-01|CPF Inválido|
-
-:::
-::::
-
-
-
-<!-- 13. Importe a biblioteca
-```py
-from random import shuffle
-```
-e utilize a função 
-```py
-shuffle(palavra)
-```
-para embaralhar uma palavra. Com isto, implemente um jogo que mostra uma palavra embaralhada ao usuário, que deve adivinhar qual é a palavra original. Cadastre algumas palavras no código, e faça com que o sistema escolha uma delas aleatoriamente. O usuário ganha ou perde conforme adivinha corretamente ou incorretamente a palavra original. -->
-
-
-
-::::{exercise}
-
-Peça ao usuário que digite uma palavra, e então converta as letras para números utilizando a tabela abaixo, e então mostre o resultado. Converta todas as letras da entrada para maiúsculas.
+Peça ao usuário que digite uma palavra, e então converta as letras para números utilizando a tabela abaixo, e então retorne o resultado. Converta todas as letras da entrada para maiúsculas.
 
 |letra|número|
 |----|----|
@@ -516,19 +220,9 @@ AL90R17M05
 :::
 ::::
 
-::::{exercise}
 
-O número 153 é igual à soma dos cubos dos algarismos que o compõe.  
-**Observe:**  
-$$
-1^3+5^3+3^3 = 1 + 125 + 27 = 153
-$$
 
-Entre 100 e 999 também existem outros números que seguem esta propriedade. Quais são?
-
-::::
-
-::::{exercise}
+::::{exercise} Frase bagunçada
 
 Implemente uma função que pergunte um valor x e uma frase ao usuário. Deve ser mostrado na tela a frase por colunas, como apresentado no exemplo abaixo, para `x=3` e frase ABACATES.
 
@@ -570,7 +264,7 @@ PRLLAAEO
 ::::
 
 
-::::{exercise}
+::::{exercise} Anagrama
 
 Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Chame sua função de `isAnagram`.
 
@@ -729,7 +423,7 @@ falso
 ::::
 
 
-::::{exercise}
+::::{exercise} Repetições de caracteres
 
 Desenvolva uma função que recebe como entrada uma cadeia de caracteres, que possui diversos caracteres que se repetem em sequência. Sua função deve retornar uma cadeia de caracteres contendo a quantidade de vezes que o caractere se repete e o caractere em si, separados por vírgula.
 
@@ -899,3 +593,12 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 ## Problemas
 
 ## Desafios -->
+
+## Biblioteca
+
+Desenvolva uma nova biblioteca ou pacote em `libs`, chamada `Strings`, incluindo nela os códigos com a resolução dos exercícios indicados abaixo. A ideia é que os códigos desta biblioteca possam ser utilizados futuramente para resolver outros exercícios.
+
+- `converterParaMaiusculas`, do exercício [{name}](#ex_string-func-maiusculas) 
+  - Exemplo: `public static String  converterParaMaiusculas(String frase)`
+- `converterParaMinusculas`, do exercício [{name}](#ex_string-func-minusculas)
+- `obterComprimento`, do exercício [Exercício {name}](#ex_string-func-comprimento)

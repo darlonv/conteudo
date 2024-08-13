@@ -244,7 +244,7 @@ escreva("Hello world!");
 ::::{tab-item} Java
 :sync: java
 
-  |Operaçãozzz|Código|Tipo do retorno|
+  |Operação|Código|Tipo do retorno|
   |--------|------|---------------|
   |Comparação|`.equals(<str>)`|`bool`|
   |Tamanho|`.length()`|`int`|
