@@ -51,6 +51,7 @@ print("Hello world!")
 
 :::::{prf:example}
 <!-- :class: dropdown -->
+<!-- :nonumber: -->
 
 ::::{card} Entrada
 ::::
