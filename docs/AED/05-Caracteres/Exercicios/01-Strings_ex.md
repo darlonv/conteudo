@@ -155,7 +155,7 @@ Substituir caracteres por caracter
 
 
 
-## Desafio
+## Desafios
 
 ::::{exercise} Texto estiloso
 
