@@ -18,8 +18,16 @@ chapters:
         - file: 02-Camadas/03-Transporte/01-Transporte.md
         - file: 02-Camadas/03-Transporte/02-TCP.md
         - file: 02-Camadas/03-Transporte/03-UDP.md
-      # - title: Rede
-      #   sections:
+      - title: Rede
+        sections:
+        # - file: 02-Camadas/04-Rede/01-Rede.md
+        - file: 02-Camadas/04-Rede/02-EnderecamentoIP.md
+        - file: 02-Camadas/04-Rede/03-Classes.md
+        - file: 02-Camadas/04-Rede/04-CIDR.md
+        # - file: 02-Camadas/04-Rede/06-NAT.md
+        # - file: 02-Camadas/04-Rede/07-DHCP.md
+        # - file: 02-Camadas/04-Rede/08-ICMP.md
+        # - file: 02-Camadas/04-Rede/09-IP.md
       #   - file: trabalhos.md
       # - title: Enlace
       #   sections:
