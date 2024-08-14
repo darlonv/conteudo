@@ -38,7 +38,7 @@ Remover caracteres de sentença
 ::::::{include} ex/ex_string-func-remover_chars.md
 ::::::
 
-Comprimento
+Obter comprimento
 ::::::{include} ex/ex_string-func-comprimento.md
 ::::::
 
@@ -145,19 +145,16 @@ Substituir caracteres por caracter
 ::::::{include} ex/ex_string-func-cpf_formato.md
 ::::::
 
-::::::{include} ex/ex_string-proc-obter_estado_cpf.md
-::::::
-
 ::::::{include} ex/ex_string-func-cpf_validar.md
 ::::::
 
-
-
+::::::{include} ex/ex_string-proc-obter_estado_cpf.md
+::::::
 
 
 ## Desafios
 
-::::{exercise} Texto estiloso
+::::{exercise} Estilizar texto
 
 Peça ao usuário que digite uma palavra, e então converta as letras para números utilizando a tabela abaixo, e então retorne o resultado. Converta todas as letras da entrada para maiúsculas.
 
@@ -225,7 +222,7 @@ AL90R17M05
 
 ::::{exercise} Frase bagunçada
 
-Implemente uma função que pergunte um valor x e uma frase ao usuário. Deve ser mostrado na tela a frase por colunas, como apresentado no exemplo abaixo, para `x=3` e frase ABACATES.
+Implemente um procedimento que recebe um valor x e uma frase como entrada. Deve ser mostrado na tela a frase por colunas, como apresentado no exemplo abaixo, para `x=3` e frase ABACATES.
 
 
 Observe que:
@@ -241,8 +238,8 @@ O resultado deve ser o formato acima lido de cima para baixo, da esquerda para a
 :nonumber:
 - Entrada:
 ```
-3
 ABACATES
+3
 ```
 - Saída: 
 ```
@@ -253,8 +250,8 @@ ACEBASAT
 
 - Entrada
 ```
-2
 PARALELO
+2
 ```
 
 - Saída

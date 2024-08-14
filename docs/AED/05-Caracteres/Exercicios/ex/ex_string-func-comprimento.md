@@ -1,4 +1,4 @@
-::::::{exercise} Comprimento
+::::::{exercise} Obter comprimento
 :label: ex_string-func-comprimento
 
 Desenvolva uma função que recebe como entrada uma frase e retorna a quantidade total de caracteres presente na frase.

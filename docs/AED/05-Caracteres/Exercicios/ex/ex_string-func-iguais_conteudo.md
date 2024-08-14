@@ -3,7 +3,6 @@
 
 Desenvolva uma função que recebe como entrada duas frases `fraseA` e `fraseB`. Desenvolva uma função que retorna verdadeiro se `fraseA` é idêntica a `fraseB` desconsiderando letras maiúsculas e minúsculas.
 
-
 :::::{prf:example}
 :class: dropdown
 :nonumber:
@@ -40,7 +39,7 @@ verdadeiro
 ```
 
 ```
-"naquela manha tranquila"
+"Naquela Manha Tranquila"
 ```
 ::::
 
@@ -105,3 +104,4 @@ falso
 :::::
 
 ::::::
+
