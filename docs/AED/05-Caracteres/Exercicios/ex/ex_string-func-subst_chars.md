@@ -1,5 +1,5 @@
 ::::::{exercise} Substituir caracteres por caracter
-:label: ex_string-func-subst_caracteres
+:label: ex_string-func-subst_chars
 
 Desenvolva uma função que possui três entradas, um frase `frase`, uma sequencia de caracteres `caracteresDe` e um caractere `caracterePara`. Seu algoritmo deve alterar cada ocorrência de **todos** os caracteres de `caracteresDe` em `frase` para `caractereDe`. Sua função deve retornar `frase` com as substituições realizadas.
 

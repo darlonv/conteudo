@@ -13,9 +13,8 @@ Converter para minúsculas
 ::::::{include} ex/ex_string-func-minusculas.md
 ::::::
 
-Frase inversa
-::::::{include} ex/ex_string-func-inversa.md
-:label: ex_string-func-inversa
+Inverter frase
+::::::{include} ex/ex_string-func-inverter.md
 ::::::
 
 Verificar iguais
@@ -80,6 +79,7 @@ Caracteres para inteiro
 ::::::{include} ex/ex_string-func-str_para_int.md
 ::::::
 
+Soma de cubos dos algarismos
 ::::::{include} ex/ex_string-proc-soma_cubos.md
 ::::::
 
@@ -129,7 +129,7 @@ Substituir subfrase
 ::::::
 
 Substituir subfrase todas
-::::::{include} ex/ex_string-func-subst_string_todas.md
+::::::{include} ex/ex_string-func-subst_strings.md
 ::::::
 
 Substituir caractere
@@ -154,112 +154,15 @@ Substituir caracteres por caracter
 
 ## Desafios
 
-::::{exercise} Estilizar texto
-
-Peça ao usuário que digite uma palavra, e então converta as letras para números utilizando a tabela abaixo, e então retorne o resultado. Converta todas as letras da entrada para maiúsculas.
-
-|letra|número|
-|----|----|
-|O|0|
-|I|1|
-|Z|2|
-|E|3|
-|H|4|
-|S|5|
-|B|6|
-|T|7|
-|X|8|
-|G|9|
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-STREAM
-```
-
-- Saída:
-
-```
-57R3AM
-```
-
----
-
-- Entrada:
-
-```
-pool
-```
-
-- Saída:
-
-```
-P00L
-```
-
----
-
-- Entrada:
-
-```
-algoritmos
-```
-
-- Saída:
-
-```
-AL90R17M05
-```
-
-:::
-::::
+Estilizar texto
+::::::{include} ex/ex_string-funcao-estilizarTexto.md
+::::::
 
 
 
-::::{exercise} Frase bagunçada
-
-Implemente um procedimento que recebe um valor x e uma frase como entrada. Deve ser mostrado na tela a frase por colunas, como apresentado no exemplo abaixo, para `x=3` e frase ABACATES.
-
-
-Observe que:
-```
-A B A
-C A T
-E S
-```  
-O resultado deve ser o formato acima lido de cima para baixo, da esquerda para a direita.
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-- Entrada:
-```
-ABACATES
-3
-```
-- Saída: 
-```
-ACEBASAT
-```
-
----
-
-- Entrada
-```
-PARALELO
-2
-```
-
-- Saída
-```
-PRLLAAEO
-```
-:::
-::::
+Mostrar palavra lendo na vertical
+::::::{include} ex/ex_string-proc-mostrarPalavraLendoNaVertical.md
+::::::
 
 
 Verificar anagrama
@@ -271,86 +174,11 @@ Contar repetições seguidas
 ::::::
 
 
-
-::::{exercise}
-
-Desenvolva uma função que recebe como entrada uma cadeia de caracteres que é composta por um número inteiro seguido de um caractere, onde o número indica a quantidade de vezes que o caractere deve ser repetido. Este padrão pode ocorrer diversas vezes na entrada, separada por vírgulas.
-
-:::{prf:example}
-:class: dropdown
-:nonumber:
-
-- Entrada:
-
-```
-1A,2B
-```
-
-- Saída:
-
-```
-ABB
-```
-
----
-
-- Entrada:
-
-```
-4H
-```
-
-- Saída:
-
-```
-HHHH
-```
-
----
+Repetir caracteres
+::::::{include} ex/ex_string-funcao-repetirCaracteres.md
+::::::
 
 
-- Entrada:
-
-```
-3A,2B,4C
-```
-
-- Saída:
-
-```
-AAABBCCCC
-```
-
----
-
-- Entrada:
-
-```
-5A,3G,3C,3T,2C,2T,6A,1T,1C,1
-```
-
-- Saída:
-
-```
-AAAAAGGGCCCTTTCCTTAAAAAATCG
-```
-
----
-
-- Entrada:
-
-```
-2.,2,,3a,5A,8-,15!,79,20,6 ,1.
-```
-
-- Saída:
-
-```
-..,,aaaAAAAA--------!!!!!!!!!!!!!!!999999900      .
-```
-
-:::
-::::
 
 <!-- 20. Desenvolva diversas funções que realizam a conversão de valores  -->
 
@@ -363,11 +191,45 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 <!-- ## Desafios  -->
 
 
-## Biblioteca
+## Bibliotecas
 
 Desenvolva uma nova biblioteca ou pacote em `libs`, chamada `Strings`, incluindo nela os códigos com a resolução dos exercícios indicados abaixo. A ideia é que os códigos desta biblioteca possam ser utilizados futuramente para resolver outros exercícios.
 
 - `converterParaMaiusculas`, do exercício [{name}](#ex_string-func-maiusculas) 
   - Exemplo: `public static String  converterParaMaiusculas(String frase)`
 - `converterParaMinusculas`, do exercício [{name}](#ex_string-func-minusculas)
-- `obterComprimento`, do exercício [Exercício {name}](#ex_string-func-comprimento)
+- `obterComprimento`, do exercício [{name}](#ex_string-func-comprimento)
+- `inverter`, do exercício [{name}](#ex_string-func-inverter)
+- `verificarIguais`, do exercício [{name}](#ex_string-func-iguais)
+- `verificarIguaisSemCaixa`, do exercício [{ex_string-func-iguais_conteudo}](#ex_string-func-iguais)
+- `verificarPalindromo`, do exercício [{name}](#ex_string-func-palindromo)
+- `removerCaractere`, do exercício [{name}](#ex_string-func-remover_char)
+- `removerCaractere`, do exercício [{name}](#ex_string-func-remover_chars)
+- `obterComprimento`, do exercício [{name}](#ex_string-func-comprimento)
+- `contarCaractere`, do exercício [{name}](#ex_string-func-contar_char)
+- `contarCaracteres`, do exercício [{name}](#ex_string-func-contar_chars)
+- `obterPosicaoCaractere`, do exercício [{name}](#ex_string-func-char_pos)
+- `obterPosicaoCaracteres`, do exercício [{name}](#ex_string-func-chars_pos)
+- `obterPosicaoSubfrase`, do exercício [{name}](#ex_string-func-substr_pos)
+- `contarSubfrase`, do exercício [{name}](#ex_string-func-substr_count)
+- `extrairCaracteres`, do exercício [{name}](#ex_string-func-extrair_caracteres)
+- `substituirCaractere`, do exercício [{name}](#ex_string-func-subst_char)
+- `substituirCaracteres`, do exercício [{name}](#ex_string-func-subst_chars)
+- `substituir`, do exercício [{name}](#ex_string-func-subst_string)
+- `substituirTodos`, do exercício [{name}](#ex_string-func-subst_strings)
+
+- `cpfVerificarFormato`, do exercício [{name}](#ex_string-func-cpf_formato)
+- `cpfValidar`, do exercício [{name}](#ex_string-func-cpf_validar)
+- `verificarAnagrama`, do exercício [{name}](#ex_string-funcao-verificarAnagrama)
+
+Adicione na biblioteca Matemática:
+- `caractereParaInteiro`, do exercício [{name}](#ex_string-func-char_para_int)
+- `caracteresParaInteiro`, do exercício [{name}](#ex_string-func-str_para_int)
+
+
+Desenvolva uma nova biblioteca ou pacote em `libs`, chamada `Criptografia`, com os códigos com a resolução dos seguintes exercícios:
+
+- `cifrarCesar`, do exercício [{name}](#ex_string-func-cesar_criptografar)
+- `decifrarCesar`, do exercício [{name}](#ex_string-func-cesar_descriptografar)
+- `cifrarCesarN`, do exercício [{name}](#ex_string-func-cesar_deslocamento_n_criptografar)
+- `decifrarCesarN`, do exercício [{name}](#ex_string-func-cesar_deslocamento_n_descriptografar)

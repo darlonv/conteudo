@@ -79,21 +79,45 @@ Logo, o 2º dígito verificador é 0.
 <!-- :class: dropdown -->
 
 ::::{card} Entrada
+```
+"987.654.321-00"
+```
 ::::
 
 ::::{card} Retorno
+verdadeiro
 ::::
 
 :::::
 
 :::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 ::::{card} Entrada
+```
+"987.654.321-50"
+```
 ::::
 
 ::::{card} Retorno
+falso
+::::
+
+:::::
+
+:::::{prf:example}
+:nonumber:
+:class: dropdown
+
+::::{card} Entrada
+```
+"98A.654.321-00"
+```
+::::
+
+::::{card} Retorno
+falso
 ::::
 
 :::::
