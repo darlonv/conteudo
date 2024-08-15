@@ -291,12 +291,12 @@ Devem ser chamados os métodos presentes na classe `Matematica`, do pacote `libs
 - Desenvolva a biblioteca `Entrada` na classe `libs`, com os seguintes métodos:
 
 :::::{code} java
-    public class Entrada {
+public class Entrada {
 
     static Scanner entrada;
 
     public static void abrir(){...}
-    public static void Fechar(){...}
+    public static void fechar(){...}
     public static int lerInt(){...}
     public static int lerInt(String mensagem){...}
     public static double lerDouble(){...}
