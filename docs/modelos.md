@@ -49,9 +49,28 @@ print("Hello world!")
 
 # Exemplos
 
-:::::{prf:example}
+## Exemplo em grid
+::::::{prf:example}
+:nonumber:
 <!-- :class: dropdown -->
-<!-- :nonumber: -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+a
+::::
+
+::::{card} Saída
+b
+::::
+
+:::::
+::::::
+
+
+## Exemplo simples
+:::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
 
 ::::{card} Entrada
 ::::
