@@ -48,14 +48,14 @@ chapters:
           - file: 03-Modulos/Exercicios/06-Bibliotecas_ex.md
 
 
-  # - title: Caracteres
-  #   sections:
-  #     - file: 05-Caracteres/01-Strings.md
+  - title: Caracteres
+    sections:
+      - file: 05-Caracteres/01-Strings.md
   #     - file: 05-Caracteres/02-Codificacao.md
   #     - file: 05-Caracteres/03-Conversoes.md
-  #     - title: Exercícios
-  #       sections:
-  #         - file: 05-Caracteres/Exercicios/01-Strings_ex.md
+      - title: Exercícios
+        sections:
+          - file: 05-Caracteres/Exercicios/01-Strings_ex.md
   # - title: Variáveis compostas
   #   sections:
   #     - file: 06-Vetores/01-Variaveis_compostas.md
