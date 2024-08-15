@@ -2,6 +2,9 @@
 format: jb-book
 root: RC
 chapters:
+  # - title: Conceitos e ferramentas
+  #   sections: 
+  #     - file: 01-Conceitos_e_ferramentas/02-Ferramentas/04-ssh.md
   - title: Camadas de protocolos
     sections: 
       - file: 02-Camadas/modelos.md

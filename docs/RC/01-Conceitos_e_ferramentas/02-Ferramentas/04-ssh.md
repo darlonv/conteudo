@@ -1,7 +1,3 @@
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # SSH
 
 
@@ -24,9 +20,6 @@ onde:
 - opções:  
     - `-p <porta>` : especifica que a conexão deve ser realizada utilizando uma porta específica.
     
-
-
-
 **Exemplos**  
 ```sh
 ssh 192.168.0.10  
@@ -148,4 +141,11 @@ Algumas destas perguntas requerem pesquisas.
 - Como você pode encaminhar portas usando o SSH?
 
 - Como você pode fazer uma conexão reversa com o SSH?
+
+## Outros materiais
+
+:::{iframe} https://www.youtube.com/embed/e4Yt-UlsJG4
+[Código Fonte TV: SSH (O Protocolo Indispensável Para Usar em Servidores) // Dicionário do Programador (Youtube)](https://youtu.be/e4Yt-UlsJG4)
+:::
+
 
