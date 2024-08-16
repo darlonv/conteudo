@@ -1,10 +1,5 @@
 # Cadeias de caracteres
 
-:::::::{exercise} Teste Teste
-::::::{include} ex/ex_testeteste.md
-::::::
-:::::::
-
 ## Procedimentos e funções
 :::::::{exercise} 
 <!-- Mostrar texto na vertical -->
