@@ -1,5 +1,10 @@
 # Cadeias de caracteres
 
+:::::::{exercise} Teste Teste
+::::::{include} ex/ex_testeteste.md
+::::::
+:::::::
+
 ## Procedimentos e funções
 <!-- Mostrar texto na vertical -->
 ::::::{include} ex/ex_string-proc-texto_vertical.md
@@ -124,6 +129,9 @@ texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de s
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n_descriptografar.md
 ::::::
 
+::::::{include} ex/ex_string-func-cesar_deslocamento_n.md
+::::::
+
 Substituir subfrase
 ::::::{include} ex/ex_string-func-subst_string.md
 ::::::
@@ -158,12 +166,9 @@ Estilizar texto
 ::::::{include} ex/ex_string-funcao-estilizarTexto.md
 ::::::
 
-
-
 Mostrar palavra lendo na vertical
 ::::::{include} ex/ex_string-proc-mostrarPalavraLendoNaVertical.md
 ::::::
-
 
 Verificar anagrama
 ::::::{include} ex/ex_string-funcao-verificarAnagrama.md

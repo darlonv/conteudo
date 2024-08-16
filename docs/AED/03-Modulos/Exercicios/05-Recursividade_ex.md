@@ -318,7 +318,7 @@ Implemente um procedimento que apresenta na tela um triângulo seguindo o exempl
 ::::::
 
 ::::::{exercise}
-Implemente um procedimento que apresenta na tela a imagem apresentada no exemplo abaixo.
+Implemente um procedimento que apresenta na tela a imagem apresentada no exemplo abaixo. Não utilize estruturas de repetição em sua solução. Implemente procedimentos ou funções auxiliares, caso ache necessário.
 
 :::::{prf:example}
 :nonumber:
@@ -345,7 +345,7 @@ Implemente um procedimento que apresenta na tela a imagem apresentada no exemplo
 ::::::
 
 ::::::{exercise}
-Desenhe uma pirâmide, seguindo o formato abaixo, perguntando ao usuário o número de linhas que ele deseja para o padrão.
+Desenhe uma pirâmide, seguindo o formato abaixo, perguntando ao usuário o número de linhas que ele deseja para o padrão. Não utilize estruturas de repetição em sua solução. Implemente procedimentos ou funções auxiliares, caso ache necessário.
 ```
 - - - - * - - - -
 - - - * * * - - -

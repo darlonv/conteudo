@@ -1,5 +1,6 @@
 ::::{exercise} Verificar anagrama
 :label: ex_string-funcao-verificarAnagrama
+:nonumber:
 
 Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Retorne verdadeiro caso sejam anagramas e falso para o caso contrário.
 
@@ -141,18 +142,5 @@ falso
 ```
 
 :::
-
-
-<!-- |Entrada|Entrada|Saida| -->
-<!-- |-|-|-| -->
-<!-- |`ABACATES`| `ACEBASAT` |`True`| -->
-<!-- |`primeira`|`marifrei`|`False`| -->
-<!-- |`frase`| `resaf`|`True`| -->
-<!-- |`pudim`|`batata`|`False`| -->
-<!-- |`abcdef`|`cbafed`|`True`| -->
-<!-- |`sera`|`ser`|`False`| -->
-<!-- |`ba`|`aba`|`False`| -->
-<!-- |`Roma`|`Amor`|`True`| -->
-<!-- |`ovni`|`ovo`|`False`| -->
 
 ::::

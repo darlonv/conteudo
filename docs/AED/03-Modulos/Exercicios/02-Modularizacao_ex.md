@@ -157,7 +157,20 @@ fatorial(0)
 :::::
 
 ::::::{exercise}
-Implemente uma função chamada `ehPrimo`, que retorna verdadeiro caso o valor passado por parâmetro seja um número primo. Observe a definição de [{name}](#def:mat-primos).
+Implemente uma função chamada `verificarPrimo`, que retorna verdadeiro caso o valor passado por parâmetro seja um número primo. Observe a definição de [{name}](#def:mat-primos).
+
+::::::
+
+::::::{exercise}
+Implemente uma função chamada `obterNPrimo`, que recebe como entrada um valor inteiro positivo $n$ e retorna o valor do $n$-ésimo número primo. Considere que $2$ é o primeiro número primo. Observe a definição de [{name}](#def:mat-primos).
+
+::::::
+
+::::::{exercise} Obter soma de primos em intervalo
+:label: ex_modulos-funcoes-obterSomaPrimosIntervalo
+:nonumber:
+
+Implemente uma função chamada `obterSomaPrimosIntervalo`, que recebe como entrada dois valores inteiros positivo $m$ e $n$ e retorna a soma do $m$-ésimo até o $n$-ésimo número primo. Considere que $2$ é o primeiro número primo. Observe a definição de [{name}](#def:mat-primos).
 
 ::::::
 
@@ -228,9 +241,12 @@ parâmetro seja um número perfeito, e falso caso contrário.
 
 ::::::
 
-::::::{exercise}
+::::::{exercise} Converter temperatura
+:label: ex_modulos-funcoes-converterTemperatura
+:nonumber:
 
-Implemente uma função chamada `conversorTemperatura`, que recebe três parâmetros como entrada: 
+
+Implemente uma função chamada `converterTemperatura`, que recebe três parâmetros como entrada: 
 - um valor de temperatura (real), 
 - a escala da temperatura de entrada (caractere) e 
 - a escala da temperatura de saída (caractere).  
@@ -322,11 +338,14 @@ Retorna verdadeiro, pois $2^3=8$.
 
 ::::::
 
-::::::{exercise}
+::::::{exercise} Verificar se valor é uma potência de $n$
+:label: ex_modulos-funcoes-verificarPotenciaDeN
+:nonumber:
 
 Desenvolva uma função chamada `potN`, que possui dois parâmetros $x$ e $n$. A função deve retornar verdadeiro caso $x$ seja uma potência de $n$.
 
 :::::{prf:example}
+:nonumber:
 :class: dropdown
 
 ::::{card} Entrada
@@ -345,6 +364,7 @@ Retorna verdadeiro, pois $5^2=25$.
 :::::
 
 :::::{prf:example}
+:nonumber:
 :class: dropdown
 
 ::::{card} Entrada
@@ -364,9 +384,11 @@ Retorna Falso, pois as potências de 5 são $5,25,125,625$, e assim por diante. 
 
 ::::::
 
-::::::{exercise}
+::::::{exercise} Obter distância cartesiana
+:label: ex_modulos-funcoes-obterDistanciaCartesiana
+:nonumber:
 
-Implemente uma função chamada `distanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores. Observe como calcular a [{name}](#eq:mat-distancia-pontos)
+Implemente uma função chamada `obterDistanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores. Observe como calcular a [{name}](#eq:mat-distancia-pontos)
 
 
 
@@ -490,81 +512,9 @@ Retorna $12.0$, pois é o perímetro do triângulo formado pelos pontos $(0,0)$,
 
 ::::::{exercise}
 
-Desenvolva um procedimento que recebe como entrada a idade de um nadador. Seu retorno deve ser a a categoria em que o nadador deve competir, de acordo com a tabela apresentada.
-
-|Idade (anos)|Categoria|
-|------------|---------|
-|5 a 7| Infantil A|
-|8 a 10|Infantil B|
-|11 a 13| Juvenil A|
-|14 a 17| Juvenil B|
-|18 e acima de 18| Adulto|
-
-Fonte: Adaptado de [PINHO](https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/Funcoes/lista.htm).  
-
-::::::
-
-::::::{exercise}
-
-Programe uma função chamada `soma_s` que tem como entrada um valor $n$, tal que $n$ pertence aos inteiros positivos. A função deve retornar o valor da soma S, onde:
+Programe uma função chamada `somarS` que tem como entrada um valor $n$, tal que $n$ pertence aos inteiros positivos. A função deve retornar o valor da soma $S$, onde:
 
 $$S = \frac{1}{1}+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n-1}+\frac{1}{n}$$
-
-::::::
-
-::::::{exercise}
-
-Desenvolva um procedimento chamado `cabecalho`, que "desenha" na tela um retângulo com valores especificados pelo usuário, junto com uma mensagem. Devem ser passados os valores da largura, os caracteres que compõem a borda e o número de espaços antes de mostrar a mensagem.
-
-
-:::::{prf:example}
-:class: dropdown
-:nonumber:
-
-::::{card} Entrada
-- Mensagem= "Olá, Turma."
-- Espacos=4
-- Largura=25
-- Borda="X"
-::::
-
-::::{card} Chamada da função
-```c
-cabecalho("Olá, Turma.", 4, 25, "X");
-```
-::::
-
-::::{card} Saída
-```
-XXXXXXXXXXXXXXXXXXXXXXXXX
-    Olá, Turma.
-XXXXXXXXXXXXXXXXXXXXXXXXX
-```
-::::
-
-:::::
-
-:::::{prf:example}
-:class: dropdown
-:nonumber:
-
-::::{card} Chamada da função
-```c
-cabecalho("Tchau!", 1, 8, "#");
-```
-::::
-
-::::{card} Saída
-```
-########
- Tchau!
-########
-```
-::::
-
-:::::
-
-Fonte: Adaptado de [OLIVEIRA](http://professor.pucgoias.edu.br/SiteDocente/admin/arquivosUpload/17504/material/cmp1048-lista_exercicios-01.pdf).
 
 ::::::
 
@@ -772,7 +722,7 @@ perfeitos(2,10)
 
 ::::::{exercise}
 
-Implemente um procedimento chamado `primos`, que apresenta todos os números primos em um intervalo especificado.
+Implemente um procedimento chamado `mostrarPrimos`, que apresenta todos os números primos em um intervalo especificado.
 
 :::::{prf:example}
 :class: dropdown
@@ -859,7 +809,76 @@ nPrimos(20)
 
 ::::::
 
+
+::::::{exercise}
+
+Desenvolva um procedimento que recebe como entrada a idade de um nadador. Seu retorno deve ser a a categoria em que o nadador deve competir, de acordo com a tabela apresentada.
+
+|Idade (anos)|Categoria|
+|------------|---------|
+|5 a 7| Infantil A|
+|8 a 10|Infantil B|
+|11 a 13| Juvenil A|
+|14 a 17| Juvenil B|
+|18 e acima de 18| Adulto|
+
+Fonte: Adaptado de [PINHO](https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/Funcoes/lista.htm).  
+
 ::::::
 
 
+::::::{exercise}
 
+Desenvolva um procedimento chamado `cabecalho`, que "desenha" na tela um retângulo com valores especificados pelo usuário, junto com uma mensagem. Devem ser passados os valores da largura, os caracteres que compõem a borda e o número de espaços antes de mostrar a mensagem.
+
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Entrada
+- Mensagem= "Olá, Turma."
+- Espacos=4
+- Largura=25
+- Borda="X"
+::::
+
+::::{card} Chamada da função
+```c
+cabecalho("Olá, Turma.", 4, 25, "X");
+```
+::::
+
+::::{card} Saída
+```
+XXXXXXXXXXXXXXXXXXXXXXXXX
+    Olá, Turma.
+XXXXXXXXXXXXXXXXXXXXXXXXX
+```
+::::
+
+:::::
+
+:::::{prf:example}
+:class: dropdown
+:nonumber:
+
+::::{card} Chamada da função
+```c
+cabecalho("Tchau!", 1, 8, "#");
+```
+::::
+
+::::{card} Saída
+```
+########
+ Tchau!
+########
+```
+::::
+
+:::::
+
+Fonte: Adaptado de [OLIVEIRA](http://professor.pucgoias.edu.br/SiteDocente/admin/arquivosUpload/17504/material/cmp1048-lista_exercicios-01.pdf).
+
+::::::
