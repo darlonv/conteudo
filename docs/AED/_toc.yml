@@ -132,4 +132,14 @@ chapters:
       - file: Anexos/Equacoes.md
       - file: Anexos/Definicoes.md
       - file: Anexos/Tabelas.md
+  # - title: Trabalhos
+  #   sections:
+  #     - title: AED
+  #       sections:
+  #         - file: _trabalhos/AED/AED2024-2B.md
+  #     - title: LPI
+  #       sections:
+  #         - file: _trabalhos/LPI/LPIDP2024-2B.md
+        
+  
   
