@@ -10,7 +10,7 @@ Desenvolva uma função que recebe via parâmetro de entrada uma sequência de c
 
 ::::{card} Entrada
 ```
-'157'
+"157"
 ```
 ::::
 
@@ -28,7 +28,7 @@ Desenvolva uma função que recebe via parâmetro de entrada uma sequência de c
 
 ::::{card} Entrada
 ```
-'51107'
+"51107"
 ```
 ::::
 
