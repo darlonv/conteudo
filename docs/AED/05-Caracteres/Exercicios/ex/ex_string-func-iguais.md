@@ -1,5 +1,6 @@
-::::::{exercise} Verificar iguais
-:label: ex_string-func-iguais
+(ex_string-func-iguais)=
+::::::{card} Verificar iguais
+
 
 Desenvolva uma função que recebe como entrada duas frases `fraseA` e `fraseB`. Desenvolva uma função que retorna verdadeiro se `fraseA` é idêntica a `fraseB`. Não utilize funções prontas de comparação de sequências de caracteres em sua solução.
 

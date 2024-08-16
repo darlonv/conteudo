@@ -1,5 +1,5 @@
-::::::{exercise} Extrair caracteres
-:label: ex_string-func-extrair_caracteres
+(ex_string-func-extrair_caracteres)=
+::::::{card} Extrair caracteres
 
 Desenvolva uma função que recebe como entrada uma frase. Sua função deve retornar os caracteres que existem na frase sem repetição, preservando a ordem em que aparecem na frase.
 

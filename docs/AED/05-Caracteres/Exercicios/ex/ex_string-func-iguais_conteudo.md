@@ -1,5 +1,6 @@
-::::::{exercise} Sentenças iguais sem considerar maiúsculas ou minúsculas
-:label: ex_string-func-iguais_conteudo
+(ex_string-func-iguais_conteudo)=
+::::::{card} Sentenças iguais sem considerar maiúsculas ou minúsculas
+
 
 Desenvolva uma função que recebe como entrada duas frases `fraseA` e `fraseB`. Desenvolva uma função que retorna verdadeiro se `fraseA` é idêntica a `fraseB` desconsiderando letras maiúsculas e minúsculas.
 

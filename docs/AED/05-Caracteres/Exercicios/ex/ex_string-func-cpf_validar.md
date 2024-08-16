@@ -1,6 +1,5 @@
-::::::{exercise} Validar CPF
-:label: ex_string-func-cpf_validar
-:nonumber:
+(ex_string-func-cpf_validar)=
+::::::{card} Validar CPF
 
 Desenvolva uma função que verifica se um CPF é válido. A validação do CPF é realizada de acordo com um cálculo e verificação de seus dígitos. 
 

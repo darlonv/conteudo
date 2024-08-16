@@ -1,5 +1,6 @@
-::::::{exercise} Obter posicao do caractere
-:label: ex_string-func-char_pos
+(ex_string-func-char_pos)=
+::::::{card} Obter posicao do caractere
+
 Desenvolva uma função que recebe como entradas uma frase, uma posição e um caractere (`frase`, `pos`, `caractere`). A função deve retornar a posição em que `caractere` aparece em `frase`,  porém deve procurar apenas a partir da posição `pos` em `frase`. Caso não seja encontrado, o valor `-1` deve ser retornado.
 
 

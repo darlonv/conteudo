@@ -1,5 +1,6 @@
-::::::{exercise} Palíndromos
-:label: ex_string-func-palindromo
+(ex_string-func-palindromo)=
+::::::{card} Palíndromos
+
 Desenvolva uma função que recebe uma frase como entrada e verifica se essa frase forma um palíndromo, ou seja, se os caracteres da entrada forem invertidos, a entrada permanece idêntica. A função deve retornar `verdadeiro` caso a entrada forme um palíndromo, e `falso` caso contrário.
 :::::{prf:example}
 :class: dropdown

@@ -1,5 +1,6 @@
-::::::{exercise} Cifra de César - Criptografar
-:label: ex_string-func-cesar_criptografar
+(ex_string-func-cesar_criptografar)=
+::::::{card} Cifra de César - Criptografar
+
 
 A Cifra de César é uma das mais antigas e conhecidas técnicas de criptografia. Sua técnica consiste na substituição de cada letra do texto por outra, em que a letra é trocada pela letra seguinte no alfabeto com um número fixo.
 

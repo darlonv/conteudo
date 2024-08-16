@@ -1,6 +1,5 @@
-::::{exercise} Soma de cubos dos algarismos
-:label: ex_string-proc-soma_cubos
-:nonumber:
+(ex_string-proc-soma_cubos)=
+::::{card} Soma de cubos dos algarismos
 
 O número 153 é igual à soma dos cubos dos algarismos que o compõe.  
 

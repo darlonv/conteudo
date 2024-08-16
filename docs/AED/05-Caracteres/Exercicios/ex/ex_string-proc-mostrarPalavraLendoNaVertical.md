@@ -1,5 +1,6 @@
-:::::::{exercise} Mostrar palavra lendo na vertical
-:label: ex_string-proc-mostrarPalavraLendoNaVertical
+(ex_string-proc-mostrarPalavraLendoNaVertical)=
+:::::::{card} Mostrar palavra lendo na vertical
+
 
 Implemente um procedimento que recebe um valor x e uma frase como entrada. Deve ser mostrado na tela a frase por colunas, como apresentado no exemplo abaixo, para `x=3` e frase ABACATES.
 

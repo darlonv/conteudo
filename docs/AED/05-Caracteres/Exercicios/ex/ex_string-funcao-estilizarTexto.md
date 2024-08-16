@@ -1,5 +1,6 @@
-:::::::{exercise} Estilizar texto
-:label: ex_string-funcao-estilizarTexto
+(ex_string-funcao-estilizarTexto)=
+:::::::{card} Estilizar texto
+
 
 Desenvolva uma função que recebe como entrada uma frase. Nesta, converta as letras para números utilizando a tabela abaixo, e então retorna o resultado. Converta todas as letras da entrada para maiúsculas.
 

@@ -1,5 +1,6 @@
-::::::{exercise} Inverter frase
-:label: ex_string-func-inverter
+(ex_string-func-inverter)=
+::::::{card} Inverter frase
+
 
 Programe uma função que recebe como entrada uma frase e retorna a frase na ordem inversa (de trás para frente).
 

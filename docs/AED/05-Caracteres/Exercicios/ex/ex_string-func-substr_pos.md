@@ -1,5 +1,6 @@
-::::::{exercise} Obter posição de subfrase
-:label: ex_string-func-substr_pos
+(ex_string-func-substr_pos)=
+::::::{card} Obter posição de subfrase
+
 Desenvolva uma função que recebe como entradas duas frases e o valor de uma posição (`fraseA`, `pos`, `fraseB`). A função deve retornar a posição em que `fraseB` aparece em `fraseA`,  porém deve procurar apenas a partir da posição `pos` em `fraseA`. Caso nada seja encontrado, o valor `-1` deve ser retornado.
 
 

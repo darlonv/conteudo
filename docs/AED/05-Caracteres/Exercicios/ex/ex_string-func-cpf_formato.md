@@ -1,5 +1,6 @@
-::::::{exercise} CPF no formato correto
-:label: ex_string-func-cpf_formato
+(ex_string-func-cpf_formato)=
+::::::{card} CPF no formato correto
+
 
 Desenvolva uma função que verifica se um CPF está no formato válido (11 dígitos, seguindo o formato **xxx.xxx.xxx-xx**). O programa deve observar se apenas números, pontos e hífen foram digitados, verificando os locais corretos. Deve retornar verdadeiro caso o formato esteja correto, e falso caso contrário.
 

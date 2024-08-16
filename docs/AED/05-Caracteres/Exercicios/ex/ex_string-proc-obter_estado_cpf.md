@@ -1,5 +1,5 @@
-::::::{exercise} Obter estado a partir do CPF
-:label: ex_string-proc-obter_estado_cpf
+(ex_string-proc-obter_estado_cpf)=
+::::::{card} Obter estado a partir do CPF
 
 Desenvolva um procedimento que recebe como entrada um número válido de CPF e apresenta os possíveis estados ao qual o CPF pertence.
 

@@ -1,5 +1,6 @@
-::::::{exercise} Contar caractere
-:label: ex_string-func-contar_char
+(ex_string-func-contar_char)=
+::::::{card} Contar caractere
+
 Desenvolva uma função que recebe como entradas uma frase e um caractere. A função deve retornar a quantidade de vezes que o caractere aparece na frase.
 
 

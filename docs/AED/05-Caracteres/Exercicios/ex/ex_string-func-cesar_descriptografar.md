@@ -1,5 +1,6 @@
-::::::{exercise} Cifra de César - Descriptografar
-:label: ex_string-func-cesar_descriptografar
+(ex_string-func-cesar_descriptografar)=
+::::::{card} Cifra de César - Descriptografar
+
 
 Implemente um algoritmo que descriptografa um texto criptografado com a Cifra de César, cifrado utilizando deslocamento de $3$ letras. A entrada deve ser digitada pelo usuário sem espaços, números, caracteres acentuados ou especiais.
 

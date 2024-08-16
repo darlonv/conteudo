@@ -1,5 +1,6 @@
-::::::{exercise} Mostrar texto na vertical
-:label: ex_string-proc-texto_vertical
+(ex_string-proc-texto_vertical)=
+::::::{card} Mostrar texto na vertical
+
 Desenvolva um procedimento que recebe como entrada uma frase. O procedimento apresenta essa frase colocando um caractere em cada linha.
 
 

@@ -6,87 +6,127 @@
 :::::::
 
 ## Procedimentos e funções
+:::::::{exercise} 
 <!-- Mostrar texto na vertical -->
 ::::::{include} ex/ex_string-proc-texto_vertical.md
 ::::::
+:::::::
 
+:::::::{exercise}
 <!-- Converter para maiúsculas -->
 ::::::{include} ex/ex_string-func-maiusculas.md
 ::::::
+:::::::
 
-Converter para minúsculas
+:::::::{exercise}
+<!-- Converter para minúsculas -->
 ::::::{include} ex/ex_string-func-minusculas.md
 ::::::
+:::::::
 
-Inverter frase
+:::::::{exercise}
+<!-- Inverter frase -->
 ::::::{include} ex/ex_string-func-inverter.md
 ::::::
+:::::::
 
-Verificar iguais
+:::::::{exercise}
+<!-- Verificar iguais -->
 ::::::{include} ex/ex_string-func-iguais.md
 ::::::
+:::::::
 
-Sentenças iguais sem considerar maiúsculas ou minúsculas
+:::::::{exercise}
+<!-- Sentenças iguais sem considerar maiúsculas ou minúsculas -->
 ::::::{include} ex/ex_string-func-iguais_conteudo.md
 ::::::
+:::::::
 
-Palíndromos
+:::::::{exercise}
+<!-- Palíndromos -->
 ::::::{include} ex/ex_string-func-palindromo.md
 ::::::
+:::::::
 
-Remover caractere de sentença
+:::::::{exercise}
+<!-- Remover caractere de sentença -->
 ::::::{include} ex/ex_string-func-remover_char.md
 ::::::
+:::::::
 
-Remover caracteres de sentença
+:::::::{exercise}
+<!-- Remover caracteres de sentença -->
 ::::::{include} ex/ex_string-func-remover_chars.md
 ::::::
+:::::::
 
-Obter comprimento
+:::::::{exercise}
+<!-- Obter comprimento -->
 ::::::{include} ex/ex_string-func-comprimento.md
 ::::::
+:::::::
 
-Contar caractere
+:::::::{exercise}
+<!-- Contar caractere -->
 ::::::{include} ex/ex_string-func-contar_char.md
 ::::::
+:::::::
 
-Contar caracteres
+:::::::{exercise}
+<!-- Contar caracteres -->
 ::::::{include} ex/ex_string-func-contar_chars.md
 ::::::
+:::::::
 
-Obter posicao do caractere
+:::::::{exercise}
+<!-- Obter posicao do caractere -->
 ::::::{include} ex/ex_string-func-char_pos.md
 ::::::
+:::::::
 
-Obter posicao dos caracteres
+:::::::{exercise}
+<!-- Obter posicao dos caracteres -->
 ::::::{include} ex/ex_string-func-chars_pos.md
 ::::::
+:::::::
 
-Obter posição de subfrase
+:::::::{exercise}
+<!-- Obter posição de subfrase -->
 ::::::{include} ex/ex_string-func-substr_pos.md
 ::::::
+:::::::
 
-Contar subfrase
+:::::::{exercise}
+<!-- Contar subfrase -->
 ::::::{include} ex/ex_string-func-substr_count.md
 ::::::
+:::::::
 
-Extrair caracteres
+:::::::{exercise}
+<!-- Extrair caracteres -->
 ::::::{include} ex/ex_string-func-extrair_caracteres.md
 ::::::
+:::::::
 
 ## Matemática
 
-Caractere para inteiro
+:::::::{exercise}
+<!-- Caractere para inteiro -->
 ::::::{include} ex/ex_string-func-char_para_int.md
 ::::::
+:::::::
 
-Caracteres para inteiro
+:::::::{exercise}
+<!-- Caracteres para inteiro -->
 ::::::{include} ex/ex_string-func-str_para_int.md
 ::::::
+:::::::
 
-Soma de cubos dos algarismos
+:::::::{exercise}
+<!-- Soma de cubos dos algarismos -->
 ::::::{include} ex/ex_string-proc-soma_cubos.md
 ::::::
+:::::::
 
 ## Análise em Texto
 
@@ -117,71 +157,101 @@ texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de s
 ## Desafios
 
 ### Cifra de César
+:::::::{exercise} 
 ::::::{include} ex/ex_string-func-cesar_criptografar.md
 ::::::
+:::::::
 
+:::::::{exercise} 
 ::::::{include} ex/ex_string-func-cesar_descriptografar.md
 ::::::
+:::::::
 
+:::::::{exercise} 
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n_criptografar.md
 ::::::
+:::::::
 
+:::::::{exercise} 
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n_descriptografar.md
 ::::::
+:::::::
 
+:::::::{exercise} 
 ::::::{include} ex/ex_string-func-cesar_deslocamento_n.md
 ::::::
+:::::::
 
-Substituir subfrase
+:::::::{exercise} Substituir subfrase
 ::::::{include} ex/ex_string-func-subst_string.md
 ::::::
+:::::::
 
-Substituir subfrase todas
+:::::::{exercise} Substituir subfrase todas
 ::::::{include} ex/ex_string-func-subst_strings.md
 ::::::
+:::::::
 
-Substituir caractere
+:::::::{exercise} Substituir caractere
 ::::::{include} ex/ex_string-func-subst_char.md
 ::::::
+:::::::
 
-Substituir caracteres por caracter
+:::::::{exercise} Substituir caracteres por caracter
 ::::::{include} ex/ex_string-func-subst_chars.md
 ::::::
+:::::::
 
 ### CPF
 
+:::::::{exercise} 
 ::::::{include} ex/ex_string-func-cpf_formato.md
 ::::::
+:::::::
 
+:::::::{exercise} 
 ::::::{include} ex/ex_string-func-cpf_validar.md
 ::::::
+:::::::
 
+:::::::{exercise} 
 ::::::{include} ex/ex_string-proc-obter_estado_cpf.md
 ::::::
+:::::::
 
 
 ## Desafios
 
-Estilizar texto
+:::::::{exercise}
+<!-- Estilizar texto -->
 ::::::{include} ex/ex_string-funcao-estilizarTexto.md
 ::::::
+:::::::
 
-Mostrar palavra lendo na vertical
+:::::::{exercise}
+<!-- Mostrar palavra lendo na vertical -->
 ::::::{include} ex/ex_string-proc-mostrarPalavraLendoNaVertical.md
 ::::::
+:::::::
 
-Verificar anagrama
+:::::::{exercise}
+<!-- Verificar anagrama -->
 ::::::{include} ex/ex_string-funcao-verificarAnagrama.md
 ::::::
+:::::::
 
-Contar repetições seguidas
+:::::::{exercise}
+<!-- Contar repetições seguidas -->
 ::::::{include} ex/ex_string-funcao-contarRepeticoesSeguidas.md
 ::::::
+:::::::
 
 
-Repetir caracteres
+:::::::{exercise}
+<!-- Repetir caracteres -->
 ::::::{include} ex/ex_string-funcao-repetirCaracteres.md
 ::::::
+:::::::
 
 
 

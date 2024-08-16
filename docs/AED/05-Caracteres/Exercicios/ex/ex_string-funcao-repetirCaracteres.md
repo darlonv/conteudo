@@ -1,6 +1,5 @@
-:::::::{exercise} Repetir caracteres
-:label: ex_string-funcao-repetirCaracteres
-:nonumber:
+(ex_string-funcao-repetirCaracteres)=
+:::::::{card} Repetir caracteres
 
 Desenvolva uma função que recebe como entrada uma cadeia de caracteres que é composta por um número inteiro seguido de um caractere, onde o número indica a quantidade de vezes que o caractere deve ser repetido. Este padrão pode ocorrer diversas vezes na entrada, separada por vírgulas.
 
