@@ -166,12 +166,13 @@ Implemente uma função chamada `obterNPrimo`, que recebe como entrada um valor 
 
 ::::::
 
-::::::{exercise} Obter soma de primos em intervalo
-:label: ex_modulos-funcoes-obterSomaPrimosIntervalo
-:nonumber:
+::::::{exercise}
+(ex_modulos-funcoes-obterSomaPrimosIntervalo)=
+:::::{card} Obter soma de primos em intervalo
 
 Implemente uma função chamada `obterSomaPrimosIntervalo`, que recebe como entrada dois valores inteiros positivo $m$ e $n$ e retorna a soma do $m$-ésimo até o $n$-ésimo número primo. Considere que $2$ é o primeiro número primo. Observe a definição de [{name}](#def:mat-primos).
 
+:::::
 ::::::
 
 ::::::{exercise}
@@ -241,9 +242,9 @@ parâmetro seja um número perfeito, e falso caso contrário.
 
 ::::::
 
-::::::{exercise} Converter temperatura
-:label: ex_modulos-funcoes-converterTemperatura
-:nonumber:
+:::::::{exercise} 
+(ex_modulos-funcoes-converterTemperatura)=
+::::::{card} Converter temperatura
 
 
 Implemente uma função chamada `converterTemperatura`, que recebe três parâmetros como entrada: 
@@ -297,6 +298,7 @@ Retorna 27.5, pois 22º Réaumur equivale a 27.5º Celsius.
 :::::
 
 ::::::
+:::::::
 
 ::::::{exercise}
 
@@ -338,9 +340,9 @@ Retorna verdadeiro, pois $2^3=8$.
 
 ::::::
 
-::::::{exercise} Verificar se valor é uma potência de $n$
-:label: ex_modulos-funcoes-verificarPotenciaDeN
-:nonumber:
+:::::::{exercise}
+(ex_modulos-funcoes-verificarPotenciaDeN)=
+::::::{card} Verificar se valor é uma potência de $n$
 
 Desenvolva uma função chamada `potN`, que possui dois parâmetros $x$ e $n$. A função deve retornar verdadeiro caso $x$ seja uma potência de $n$.
 
@@ -383,10 +385,12 @@ Retorna Falso, pois as potências de 5 são $5,25,125,625$, e assim por diante. 
 :::::
 
 ::::::
+:::::::
 
-::::::{exercise} Obter distância cartesiana
-:label: ex_modulos-funcoes-obterDistanciaCartesiana
-:nonumber:
+:::::::{exercise} 
+(ex_modulos-funcoes-obterDistanciaCartesiana)=
+::::::{card} Obter distância cartesiana
+
 
 Implemente uma função chamada `obterDistanciaCartesiana` que recebe dois pares de números, que correspondem a pontos em um plano cartesiano com coordenadas $x,y$. A função deve retornar a distância entre esses dois pontos. Não é necessário arredondar valores. Observe como calcular a [{name}](#eq:mat-distancia-pontos)
 
@@ -459,6 +463,7 @@ Retorna $5.0$, pois a distância do ponto $(3,0)$ a $(6,4)$ é $5$.
 :::::
 
 ::::::
+:::::::
 
 ::::::{exercise}
 

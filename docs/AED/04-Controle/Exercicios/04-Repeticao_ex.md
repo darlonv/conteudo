@@ -2,8 +2,9 @@
 
 ## Fixação
 
-:::::{exercise}
-:label: ex:repeticao-sequencia_crescente
+::::::{exercise}
+(ex:repeticao-sequencia_crescente)=
+:::::{card}
 Peça ao usuário que digite um valor inteiro $n$. Mostre na tela os números de $1$ até $n$, em sequência.
 
 ::::{note} Testes
@@ -13,8 +14,8 @@ Peça ao usuário que digite um valor inteiro $n$. Mostre na tela os números de
 |`3`|`1`<br>`2`<br>`3`|
 |`7`|`1`<br>`2`<br>`3`<br>`4`<br>`5`<br>`6`<br>`7`|
 ::::
-
 :::::
+::::::
 
 :::::{exercise}
 :label: ex:repeticao-maior_menor_0_1000
