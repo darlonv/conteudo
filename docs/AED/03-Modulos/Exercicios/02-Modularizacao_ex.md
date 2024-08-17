@@ -270,7 +270,7 @@ converterTemperatura(100.0, 'C', 'K')
 ::::
 
 ::::{card} Observação
-retorna 373.15, pois 100º Celsius equivale a 273.15 Kelvin.
+retorna 373.15, pois 100º Celsius equivale a 373.15 Kelvin.
 ::::
 
 :::::
@@ -312,7 +312,7 @@ Faça uma função chamada `pot2` que retorna verdadeiro caso o parâmetro passa
 ::::
 
 ::::{card} Saída
-Falso
+falso
 ::::
 
 ::::{card} Explicação
@@ -329,7 +329,7 @@ Retorna falso, pois as potências de $2$ são $2,4,8,16,32$ e assim por diante. 
 ::::
 
 ::::{card} Saída
-Verdadeiro
+verdadeiro
 ::::
 
 ::::{card} Explicação
@@ -356,7 +356,7 @@ Desenvolva uma função chamada `potN`, que possui dois parâmetros $x$ e $n$. A
 ::::
 
 ::::{card} Saída
-Verdadeiro
+verdadeiro
 ::::
 
 ::::{card} Explicação
@@ -375,11 +375,11 @@ Retorna verdadeiro, pois $5^2=25$.
 ::::
 
 ::::{card} Saída
-Verdadeiro
+verdadeiro
 ::::
 
 ::::{card} Explicação
-Retorna Falso, pois as potências de 5 são $5,25,125,625$, e assim por diante. $50$ não é uma potência de $5$.
+Retorna falso, pois as potências de 5 são $5,25,125,625$, e assim por diante. $50$ não é uma potência de $5$.
 ::::
 
 :::::
