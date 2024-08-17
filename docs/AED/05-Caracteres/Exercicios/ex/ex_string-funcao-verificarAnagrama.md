@@ -1,145 +1,216 @@
 (ex_string-funcao-verificarAnagrama)=
-::::{card} Verificar anagrama
+:::::::{card} Verificar anagrama
 
 Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Retorne verdadeiro caso sejam anagramas e falso para o caso contrário.
 
-:::{prf:example}
-:class: dropdown
+::::::{prf:example}
 :nonumber:
+:class: dropdown
 
-- Entrada:
-
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 ABACATES
 ACEBASAT
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 verdadeiro
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
+::::::{prf:example}
+:nonumber:
+:class: dropdown
 
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 primeira
 marifrei
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 falso
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
 
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 frase
 resaf
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 verdadeiro
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
+::::::{prf:example}
+:nonumber:
+:class: dropdown
 
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 pudim
 batata
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 falso
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
+::::::{prf:example}
+:nonumber:
+:class: dropdown
 
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 abcdef
 cbafed
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 verdadeiro
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
+::::::{prf:example}
+:nonumber:
+:class: dropdown
 
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 sera
 ser
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 falso
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
+::::::{prf:example}
+:nonumber:
+:class: dropdown
 
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 ba
 aba
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 falso
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
+::::::{prf:example}
+:nonumber:
+:class: dropdown
 
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 Roma
 Amor
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 verdadeiro
 ```
+::::
 
----
+:::::
+::::::
 
-- Entrada:
+::::::{prf:example}
+:nonumber:
+:class: dropdown
 
+:::::{grid} 1 1 2 2
+::::{card} Entrada
 ```
 ovni
 ovo
 ```
+::::
 
-- Saída:
-
+::::{card} Retorno
 ```
 falso
 ```
-
-:::
-
 ::::
+
+:::::
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```
+saida
+saida
+```
+::::
+
+::::{card} Retorno
+```
+verdadeiro
+```
+::::
+
+:::::
+::::::
+
+:::::::
