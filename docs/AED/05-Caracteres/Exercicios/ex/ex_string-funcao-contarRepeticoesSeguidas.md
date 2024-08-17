@@ -27,7 +27,7 @@ ABB
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -47,7 +47,7 @@ HHHH
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -67,7 +67,7 @@ AAABBCCCC
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 1 1
 ::::{card} Entrada
@@ -87,7 +87,7 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 1 1
 ::::{card} Entrada
@@ -99,6 +99,26 @@ AAAAAGGGCCCTTTCCTTAAAAAATCG
 ::::{card} Retorno
 ```
 2.,2,,3a,5A,8-,15!,79,20,6 ,1.
+```
+::::
+
+:::::
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 1 1
+::::{card} Entrada
+```
+Algoritmos
+```
+::::
+
+::::{card} Retorno
+```
+1A,1l,1g,1o,1r,1i,1t,1m,1o,1s
 ```
 ::::
 
