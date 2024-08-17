@@ -351,11 +351,15 @@ Desenvolva uma função chamada `potN`, que possui dois parâmetros $x$ e $n$. A
 :class: dropdown
 
 ::::{card} Entrada
-- `x=25`
-- `n=5`
+```
+x=25
+```
+```
+n=5
+```
 ::::
 
-::::{card} Saída
+::::{card} Retorno
 verdadeiro
 ::::
 
@@ -370,11 +374,15 @@ Retorna verdadeiro, pois $5^2=25$.
 :class: dropdown
 
 ::::{card} Entrada
-- `x=50`
-- `n=5`
+```
+x=50
+```
+```
+n=5
+```
 ::::
 
-::::{card} Saída
+::::{card} retorno
 verdadeiro
 ::::
 
@@ -397,8 +405,23 @@ Implemente uma função chamada `obterDistanciaCartesiana` que recebe dois pares
 
 
 :::::{prf:example}
-:class: dropdown
 :nonumber:
+:class: dropdown
+
+::::{card} Entrada
+```
+0
+```
+```
+0
+```
+```
+0
+```
+```
+1
+```
+::::
 
 ::::{card} Chamada da função
 ```c
@@ -419,8 +442,23 @@ Retorna $1.0$, pois a distância do ponto $(0,0)$ a $(0,1)$ é $1$.
 :::::
 
 :::::{prf:example}
-:class: dropdown
 :nonumber:
+:class: dropdown
+
+::::{card} Entrada
+```
+5
+```
+```
+3
+```
+```
+7
+```
+```
+0
+```
+::::
 
 ::::{card} Chamada da função
 ```c
