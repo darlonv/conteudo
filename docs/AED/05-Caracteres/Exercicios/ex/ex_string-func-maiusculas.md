@@ -15,7 +15,7 @@ Darlon
 ```
 ::::
 
-::::{card} Saída
+::::{card} Retorno
 
 
 ```
@@ -37,7 +37,7 @@ O rato roeu a roupa do rei de roma.
 
 ::::
 
-::::{card} Entrada Saída:
+::::{card} Retorno:
 
 ```
 O RATO ROEU A ROUPA DO REI DE ROMA.

@@ -42,7 +42,7 @@ Daniel
 
 ::::
 
-::::{card} Entrada Saída:
+::::{card} Saída:
 
 ```
 D

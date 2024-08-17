@@ -15,7 +15,7 @@ batata e cebola
 ```
 ::::
 
-::::{card} Saída
+::::{card} Retorno
 ```
 alobec e atatab
 ```
