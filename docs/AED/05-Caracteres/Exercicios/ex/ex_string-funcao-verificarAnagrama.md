@@ -1,7 +1,7 @@
 (ex_string-funcao-verificarAnagrama)=
 :::::::{card} Verificar anagrama
 
-Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Retorne verdadeiro caso sejam anagramas e falso para o caso contrário.
+Desenvolva uma função que verifica se uma palavra pode ser anagrama da outra, ou seja, se a segunda palavra pode ser formada apenas com a transposição das letras da primeira palavra. Retorne verdadeiro caso sejam anagramas e falso para o caso contrário. As entradas serão cadeias de caracteres contendo apenas letras e números.
 
 ::::::{prf:example}
 :nonumber:
