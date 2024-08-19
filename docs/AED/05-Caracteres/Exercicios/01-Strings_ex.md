@@ -155,6 +155,14 @@ texto = "Python e uma linguagem de programacao de alto nivel, interpretada, de s
 :::::::{exercise} 
 ::::::{include} ex/ex_string-func-cesar_criptografar.md
 ::::::
+
+Observe na [](#xyz) que a letra seguinte a `Z` é a letra `A`. Qual operação poderia ser realizada para que ao incrementar o valor `25` seja automaticamente convertido para `0`?
+:::::{figure} ./img/numeros_circulo.png
+:label: xyz
+:width: 60%
+:::::
+
+
 :::::::
 
 :::::::{exercise} 
