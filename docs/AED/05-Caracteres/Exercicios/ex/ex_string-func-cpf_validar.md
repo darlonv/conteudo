@@ -8,8 +8,9 @@ Desenvolva uma função que verifica se um CPF é válido. A validação do CPF 
 
 Para a validação os seguintes passos devem ser seguidos:
 
-1. Calcular o valor do 1º dígito verificador
-1. Calcular o valor do 2º dígito verificador
+1. Verificar se o CPF possui o formato correto;
+1. Calcular o valor do 1º dígito verificador;
+1. Calcular o valor do 2º dígito verificador;
 1. Verificar se os dígitos verificadores calculados são iguais aos fornecidos na entrada.
 
 
@@ -19,7 +20,9 @@ Considere o seguinte exemplo:
 "987.654.321-00"
 ```
 
-Os dois últimos dígitos (após o `-`) são os dígitos verificadores (DV). Estes são calculados a partir dos primeiros números que compõem o CPF.
+O formato CPF é composto pelos caracteres nesta sequência: 3 dígitos, 1 ponto , 3 dígitos, 1 ponto, 3 dígitos, um traço e dois dígitos (`xxx.xxx.xxx-xx`). 
+
+Os nove primeiros dígitos podem ser qualquer valor de `0` a `9`. Os dois últimos dígitos (após o `-`) são os dígitos verificadores (DV). Estes são calculados a partir dos dígitos anteriores.
 
 ::::
 
