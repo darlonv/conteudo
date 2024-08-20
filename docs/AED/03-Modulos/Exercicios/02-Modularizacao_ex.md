@@ -251,7 +251,7 @@ Implemente uma função chamada `converterTemperatura`, que recebe três parâme
 - um valor de temperatura (real), 
 - a escala da temperatura de entrada (caractere) e 
 - a escala da temperatura de saída (caractere).  
-Os possíveis valores para escala são C, F, K, R (maiúsculas ou minúsculas) que correspondem às escalas Celsius, Fahrenheit, Kelvin e Réaumur. A função deve retornar a temperatura informada na entrada para a temperatura na escala definida para saída.
+Os possíveis valores para escala são C, F, e K (maiúsculas ou minúsculas) que correspondem às escalas Celsius, Fahrenheit e kelvin. A função deve retornar a temperatura informada na entrada para a temperatura na escala definida para saída.
 
 As equações de conversão podem ser conferidas em [](eq:conversoes-temperaturas).
 
@@ -272,29 +272,7 @@ converterTemperatura(100.0, 'C', 'K')
 ::::
 
 ::::{card} Observação
-retorna 373.15, pois 100º Celsius equivale a 373.15 Kelvin.
-::::
-
-:::::
-
-:::::{prf:example}
-:class: dropdown
-:nonumber:
-
-::::{card} Chamada da função
-```c
-converterTemperatura(22.0, 'R', 'c')
-```
-::::
-
-::::{card} Retorno
-```
-27.5
-```
-::::
-
-::::{card} Observação
-Retorna 27.5, pois 22º Réaumur equivale a 27.5º Celsius.
+retorna 373.15, pois 100º Celsius equivale a 373.15 kelvin.
 ::::
 
 :::::
