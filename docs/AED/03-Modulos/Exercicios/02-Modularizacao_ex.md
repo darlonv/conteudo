@@ -253,6 +253,8 @@ Implemente uma função chamada `converterTemperatura`, que recebe três parâme
 - a escala da temperatura de saída (caractere).  
 Os possíveis valores para escala são C, F, K, R (maiúsculas ou minúsculas) que correspondem às escalas Celsius, Fahrenheit, Kelvin e Réaumur. A função deve retornar a temperatura informada na entrada para a temperatura na escala definida para saída.
 
+As equações de conversão podem ser conferidas em [](eq:conversoes-temperaturas).
+
 :::::{prf:example}
 :class: dropdown
 :nonumber:

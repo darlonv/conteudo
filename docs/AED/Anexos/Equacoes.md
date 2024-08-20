@@ -1,6 +1,48 @@
 # Fórmulas e equações
 
-## Segundo grau
+## Física
+
+(eq:conversoes-temperaturas)=
+::::{note} Conversões de temperaturas
+
+Nas escalas termométricas Celsius ($C$), kelvin ($K$) e Fahrenheit ($F$) têm-se as seguintes equivalências:
+
+
+:::{math}
+:label: eq:conversao-temperatura
+\frac{C}{100} = \frac{F-32}{180} = \frac{K-273.15}{100}
+:::
+
+
+Então, a partir delas podemos chegar às seguintes equações:
+
+:::{math}
+C = (F-32)\times\frac{5}{9}
+:::
+
+:::{math}
+C = K-273.15
+:::
+
+:::{math}
+F = \left( C \times \frac{9}{5} \right) +32
+:::
+
+:::{math}
+F = \left( (K -273.15) \times \frac{9}{5} \right) +32
+:::
+
+:::{math}
+K = C+273.15
+:::
+
+:::{math}
+K = \left( (F-32)\times\frac{5}{9} \right) + 273.15
+:::
+
+::::
+
+## Matemática
 
 ::::{note} Equação de segundo grau
 :::{math}
