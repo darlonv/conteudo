@@ -277,13 +277,10 @@ verdadeiro
 ::::::::  
 <!-- /exercise -->
 
-
-## Desafios
-
 ::::::::{exercise}
 :label: exex:ipv4_classes_info
 
-<!-- Título -->
+<!-- Classe e informações do endereço -->
 
 (ex:ipv4_classes_info)=
 :::::::{card} Classe e informações do endereço
