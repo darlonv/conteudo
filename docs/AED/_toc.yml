@@ -137,9 +137,9 @@ chapters:
       - title: AED
         sections:
           - file: _trabalhos/AED/AED2024-2B.md
-      # - title: LPI
-      #   sections:
-      #     - file: _trabalhos/LPI/LPIDP2024-2B.md
+      - title: LPI
+        sections:
+          - file: _trabalhos/LPI/LPIDP2024-2B.md
         
   
   
