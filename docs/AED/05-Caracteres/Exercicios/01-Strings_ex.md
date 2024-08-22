@@ -7,6 +7,89 @@
 ::::::
 :::::::
 
+::::::::{exercise}
+:label: exex:ex_string-proc-senha_valida
+
+(ex:ex_string-proc-senha_valida)=
+:::::::{card} Senha válida
+
+Desenvolva um procedimento que verifica a validade de uma senha fornecida pelo usuário. A senha válida é o código `4a5r9j03`. Deve ser apresentado na tela a seguinte mensagem:
+  - *"ACESSO PERMITIDO"* caso a senha seja válida.  
+  - *"ACESSO BLOQUEADO"* caso a senha seja inválida.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+"4a5r9j03"
+```
+::::  
+
+::::{card} Saída
+```
+"ACESSO PERMITIDO"
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+"4a5r9j039"
+```
+::::  
+
+::::{card} Saída
+```
+"ACESSO BLOQUEADO"
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+"12345"
+```
+::::  
+
+::::{card} Saída
+```
+"ACESSO BLOQUEADO"
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
 :::::::{exercise}
 <!-- Converter para maiúsculas -->
 ::::::{include} ex/ex_string-func-maiusculas.md

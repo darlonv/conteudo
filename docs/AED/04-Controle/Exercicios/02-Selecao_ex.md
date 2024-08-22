@@ -3,13 +3,6 @@
 
 ## Fixação
 
-:::::{exercise}
-:label: ex:selecao-senha_valida
-Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é o código `4a5r9j03`. Deve ser apresentado na tela a seguinte mensagem:
-  - *"ACESSO PERMITIDO"* caso a senha seja válida.  
-  - *"ACESSO BLOQUEADO"* caso a senha seja inválida.
-:::::
-
 ::::::::{exercise}
 :label: exex:selecao-menor_2_valores
 
