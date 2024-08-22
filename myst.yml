@@ -53,8 +53,6 @@ site:
       path: docs/RC
     - slug: CD
       path: docs/CD
-    - slug: trabalhos
-      path: docs/trabalhos
   # options:
   #   logo: site_logo.png
   # nav: []

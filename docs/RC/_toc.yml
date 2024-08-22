@@ -2,9 +2,6 @@
 format: jb-book
 root: RC
 chapters:
-  # - title: Conceitos e ferramentas
-  #   sections: 
-  #     - file: 01-Conceitos_e_ferramentas/02-Ferramentas/04-ssh.md
   - title: Camadas de protocolos
     sections: 
       - file: 02-Camadas/modelos.md
@@ -26,16 +23,15 @@ chapters:
         # - file: 02-Camadas/04-Rede/01-Rede.md
         - file: 02-Camadas/04-Rede/02-EnderecamentoIP.md
         - file: 02-Camadas/04-Rede/03-Classes.md
-        - file: 02-Camadas/04-Rede/04-CIDR.md
-        # - file: 02-Camadas/04-Rede/06-NAT.md
-        # - file: 02-Camadas/04-Rede/07-DHCP.md
-        # - file: 02-Camadas/04-Rede/08-ICMP.md
-        # - file: 02-Camadas/04-Rede/09-IP.md
-      #   - file: trabalhos.md
-      # - title: Enlace
-      #   sections:
-      #   - file: trabalhos.md
-      # - title: Física
-      #   sections:
-      #   - file: trabalhos.md
+        # - file: 02-Camadas/04-Rede/04-CIDR.md
+        - title: Exercícios
+          sections:
+            - file: 02-Camadas/04-Rede/Exercicios/02-EnderecamentoIP.md
+  - title: Trabalhos
+    sections:
+      - title: RC TINF
+        sections:
+        - file: _trabalhos/RC_TINF/RC2024-2B.md
+
+
   

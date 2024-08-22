@@ -106,3 +106,87 @@ Definição aqui
 :::::{solution} ex:<conteudo>-label
 
 :::::
+
+
+# Exercícios
+
+## Exercício com embed
+
+::::::::::{exercise}
+<!-- Título do exercício -->
+:::::::::{embed} label
+:::::::::   <!-- /embed -->
+::::::::::  <!-- /exercise -->
+
+## Exercício com 2 exemplos
+::::::::{exercise}
+:label: exex:label
+
+<!-- Título -->
+
+(ex:label)=
+:::::::{card} <!-- Título aqui -->
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+```
+::::
+
+::::{card} Saída
+```
+```
+::::
+
+:::::     <!-- /grid -->
+::::::    <!-- /example -->
+
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+```
+::::
+
+::::{card} Saída
+```
+```
+::::
+
+:::::     <!-- /grid -->
+::::::    <!-- /example -->
+
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+```
+::::
+
+::::{card} Saída
+```
+```
+::::
+
+:::::     <!-- /grid -->
+::::::    <!-- /example -->
+
+
+:::::::   <!-- /card exercicio -->
+
+::::::::  <!-- /exercise -->
+
+
+
