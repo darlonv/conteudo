@@ -115,8 +115,10 @@ Definição aqui
 ::::::::::{exercise}
 <!-- Título do exercício -->
 :::::::::{embed} label
-:::::::::   <!-- /embed -->
-::::::::::  <!-- /exercise -->
+:::::::::   
+<!-- /embed -->
+::::::::::  
+<!-- /exercise -->
 
 ## Exercício com 2 exemplos
 ::::::::{exercise}
@@ -142,8 +144,10 @@ Definição aqui
 ```
 ::::
 
-:::::     <!-- /grid -->
-::::::    <!-- /example -->
+:::::     
+<!-- /grid -->
+::::::    
+<!-- /example -->
 
 
 ::::::{prf:example}
@@ -161,8 +165,10 @@ Definição aqui
 ```
 ::::
 
-:::::     <!-- /grid -->
-::::::    <!-- /example -->
+:::::     
+<!-- /grid -->
+::::::    
+<!-- /example -->
 
 
 ::::::{prf:example}
@@ -180,13 +186,17 @@ Definição aqui
 ```
 ::::
 
-:::::     <!-- /grid -->
-::::::    <!-- /example -->
+:::::     
+<!-- /grid -->
+::::::    
+<!-- /example -->
 
 
-:::::::   <!-- /card exercicio -->
+:::::::   
+<!-- /card exercicio -->
 
-::::::::  <!-- /exercise -->
+::::::::  
+<!-- /exercise -->
 
 
 
