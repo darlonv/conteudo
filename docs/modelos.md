@@ -125,10 +125,10 @@ Definição aqui
 ::::::::{exercise}
 :label: exex:label
 
-<!-- Título -->
-
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
+
+<!-- TEXTO AQUI -->
 
 ::::::{prf:example}
 :nonumber:
@@ -154,8 +154,6 @@ Definição aqui
 <!-- /example -->
 ::::::  
 
-
-
 ::::::{prf:example}
 :nonumber:
 <!-- :class: dropdown -->
@@ -177,8 +175,6 @@ Definição aqui
 <!-- /example -->
 ::::::  
 
-
-
 ::::::{prf:example}
 :nonumber:
 <!-- :class: dropdown -->
@@ -198,14 +194,11 @@ Definição aqui
 :::::  
 
 <!-- /example -->
-::::::    
-
-
+::::::  
 <!-- /card exercicio -->
 :::::::  
-
 <!-- /exercise -->
-::::::::   
+::::::::  
 
 
 
