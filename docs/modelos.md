@@ -115,10 +115,11 @@ Definição aqui
 ::::::::::{exercise}
 <!-- Título do exercício -->
 :::::::::{embed} label
-:::::::::   
-<!-- /embed -->
+<!-- /embed -->  
+:::::::::  
+<!-- /exercise -->  
 ::::::::::  
-<!-- /exercise -->
+
 
 ## Exercício com 2 exemplos
 ::::::::{exercise}
@@ -137,17 +138,22 @@ Definição aqui
 ::::{card} Entrada
 ```c
 ```
-::::
+::::  
 
 ::::{card} Saída
 ```
 ```
-::::
+::::  
 
-:::::     
 <!-- /grid -->
-::::::    
+:::::  
+
+::::{card} Explicação
+::::  
+
 <!-- /example -->
+::::::  
+
 
 
 ::::::{prf:example}
@@ -158,17 +164,19 @@ Definição aqui
 ::::{card} Entrada
 ```c
 ```
-::::
+::::  
 
 ::::{card} Saída
 ```
 ```
-::::
+::::  
 
-:::::     
 <!-- /grid -->
-::::::    
+:::::  
+
 <!-- /example -->
+::::::  
+
 
 
 ::::::{prf:example}
@@ -179,24 +187,26 @@ Definição aqui
 ::::{card} Entrada
 ```c
 ```
-::::
+::::  
 
 ::::{card} Saída
 ```
 ```
-::::
+::::  
 
-:::::     
 <!-- /grid -->
-::::::    
+:::::  
+
 <!-- /example -->
+::::::    
 
 
-:::::::   
 <!-- /card exercicio -->
+:::::::  
 
-::::::::  
 <!-- /exercise -->
+::::::::   
+
 
 
 
