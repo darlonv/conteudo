@@ -10,6 +10,192 @@ Escreva um programa que verifique a validade de uma senha fornecida pelo usuári
   - *"ACESSO BLOQUEADO"* caso a senha seja inválida.
 :::::
 
+::::::::{exercise}
+:label: exex:selecao-menor_2_valores
+
+(ex:selecao-menor_2_valores)=
+:::::::{card} Menor valor
+
+Peça ao usuário que digite dois valores. Em seguida, mostre qual é o menor valor.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+15
+```
+```c
+5
+```
+
+::::  
+
+::::{card} Saída
+```
+3
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+Dos valores `3` e `5`, o menor valor é `3`.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+5
+```
+```c
+-2
+```
+::::  
+
+::::{card} Saída
+```
+-2
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+200
+```
+```c
+100
+```
+::::  
+
+::::{card} Saída
+```
+100
+```
+::::  
+
+<!-- /grid -->
+:::::  
+<!-- /example -->
+::::::    
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::   
+
+::::::::{exercise}
+:label: exex:selecao-maior_2_valores
+
+(ex:selecao-maior_2_valores)=
+:::::::{card} Maior valor
+
+Peça ao usuário que digite dois valores. Em seguida, mostre qual deles é o maior valor.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+3
+```
+```c
+5
+```
+::::  
+
+::::{card} Saída
+```c
+5
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+-8
+```
+```c
+-9
+```
+::::  
+
+::::{card} Saída
+```c
+-9
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+100
+```
+```c
+200
+```
+::::  
+
+::::{card} Saída
+```
+200
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
 :::::{exercise}
 :label: ex:3_numeros_menor_maior
 Pergunte 3 números ao usuário. Mostre o menor e o maior números digitados.
