@@ -140,6 +140,11 @@ chapters:
       - title: LPI
         sections:
           - file: _trabalhos/LPI/LPIDP2024-2B.md
+      - title: AE
+        sections:
+          - title: LM
+            sections:
+            - file: _trabalhos/AE/LM/Ativ_04.md
         
   
   
