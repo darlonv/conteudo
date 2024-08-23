@@ -45,3 +45,8 @@ services:
       - ./:/data
     working_dir: /data
     command: /bin/bash
+
+  version:
+    image: darlon/myst:0.2
+    profiles: [ 'version' ]
+    command: myst --version

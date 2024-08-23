@@ -14,6 +14,8 @@ rund:
 run:
 	docker compose up --remove-orphans
 
+version:
+	docker compose up version
 
 attach:
 	docker compose attach $(DOCKER_COMPOSE_TARGET)
