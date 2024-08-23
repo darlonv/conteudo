@@ -4,7 +4,7 @@ Linguagem de Programação I - DP
 
 Trabalho 2º Bimestre
 
-Itens a serem a serem resolvidos:
+Itens a serem resolvidos:
 
 :::::::{exercise}
 ::::::{card}
