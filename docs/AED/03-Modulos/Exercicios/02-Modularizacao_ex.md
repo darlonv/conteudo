@@ -166,16 +166,121 @@ Implemente uma função chamada `obterNPrimo`, que recebe como entrada um valor 
 
 ::::::
 
-::::::{exercise}
+::::::::{exercise}
 (ex_modulos-funcoes-obterSomaPrimosIntervalo)=
-:::::{card} Obter soma de primos em intervalo
+:::::::{card} Obter soma de primos em intervalo
 
 Implemente uma função chamada `obterSomaPrimosIntervalo`, que recebe como entrada dois valores inteiros positivo $m$ e $n$ e retorna a soma do $m$-ésimo até o $n$-ésimo número primo. Considere que $2$ é o primeiro número primo. Observe a definição de [{name}](#def:mat-primos).
 
-:::::
-::::::
 
-::::::{exercise}
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+3
+```
+```c
+6
+```
+::::  
+
+::::{card} Saída
+```c
+36
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+
+Observe a sequência de números primos, em ordem:
+
+|ordem| número primo|
+|-----|----|
+| 1º  | 2  |
+| 2º  | 3  |
+| **3º**  | **5**  |
+| **4º**  | **7**  |
+| **5º**  | **11** |
+| **6º**  | **13** |
+| 7º  | 17 |
+| 8º  | 19 |
+| 9º  | 23 |
+| 10º | 29 |
+| ... | ... |
+
+A soma do $3º$ ao $6º$ número primo é $5+7+11+13 = 36$.
+
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+1
+```
+```c
+3
+```
+::::  
+
+::::{card} Saída
+```c
+10
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+23
+```
+```c
+60
+```
+::::  
+
+::::{card} Saída
+```c
+6908
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+
+<!-- /card exercise -->
+:::::::
+
+<!-- /exercise -->
+::::::::
+
+:::::::{exercise}
 
 Desenvolva uma função que calcula o número de combinações simples $C$ de $n$ elementos tomados $p$ a $p$. Observe a definição de [{name}](#def:mat-combinacao).
 
