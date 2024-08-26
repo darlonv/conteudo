@@ -1,3 +1,4 @@
+(section:variaveis_compostas-matrizes)=
 # Matrizes
 
 Chamaremos de **matrizes** às variáveis compostas multimensionais com duas dimensões. Os casos de mais dimensões serão abordados mais adiante.

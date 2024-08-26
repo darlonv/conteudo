@@ -1,3 +1,4 @@
+(section:variaveis_compostas-registros)=
 # Registros
 
 Um registro é uma variável composta heterogênea, em que podemos observá-la como um conjunto de elementos que podem ser de tipos distintos (diferente dos vetores e matrizes). Dizemos que cada um destes elementos é um **campo**, e conjunto dos **campos** forma o **registro**.
