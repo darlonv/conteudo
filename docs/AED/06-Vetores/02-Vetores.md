@@ -3,12 +3,63 @@
 
 Chamamos de **vetores** ou *arrays* às estruturas de dados que possibilitam armazenar um conjunto de valores de forma organizada e contígua. Podemos fazer uma analogia com um trem, onde cada vagão do trem corresponde uma variável, e os vagões organizados em sequência formam o trem. Nesta analogia, o trem é o vetor.
 
+Para efeitos de comparação, observe a [](#fig-vetores-variavel). Nesta, é apresentada uma variável chamada `valor`, que armazena um único valor.
+
+:::{figure} ./img/variavel.svg
+:label: fig-vetores-variavel
+:alt: Variável armazenando o valor 23
+:align: center
+
+Uma variável armazena um único valor.
+:::
+
+Um vetor permite que diversas informações sejam armazenadas em uma única estrutura, como pode ser visto na [](#fig-vetores-vetor).
+
+:::{figure} ./img/vetor.svg
+:label: fig-vetores-vetor
+:alt: Um vetor armazenando diversos valores de exemplo. 19, 28, -5, 41, 0, 7, 67, 12, 1 e 8.
+:align: center
+
+Um vetor pode armazenar diversos valores.
+:::
+
 Os vetores são fundamentais para o desenvolvimento de algoritmos. Com eles podemos solucionar problemas em que seja necessário armazenar informações que estejam relacionadas a uma mesma atividade.
 
 Os vetores possuem algumas características, o que define como será o vetor. São elas:
 - Identificador: nome dado ao vetor;
-- Tamanho: quantidade de elementos do vetor;
-- Tipo: tipo de dado que cada elemento do vetor. Todos os elementos do vetor devem possuir o mesmo tipo;
+- Tamanho: quantidade de elementos do vetor.
+- Tipo: tipo dos dados armazenados em um vetor.
+
+:::{figure} ./img/vetor_caracteristicas.svg
+:label: fig-vetores-caracteristicas
+:alt: Exemplo de varável
+:align: center
+
+Cada vetor  tem um identificador (nome) e um tamanho (quantidade de elementos).
+:::
+
+
+Um vetor é composto por um conjunto de elementos, em que cada um desses delementos pode ser observado individualmente como sendo uma variável. Cada uma dessas variáveis, ou casas, pode armazenar um valor. Cada uma dessas variáveis é indexada por um **índice** (ou posição), este formado por um número inteiro iniciando em $0$. O último elemento de um vetor sempre estará no índice `tamanho -1`. Ou seja, em um vetor com $10$ elementos, o primeiro elemento estará no índice `0` e o último elemento no índice `9`. 
+
+
+:::{figure} ./img/vetor_posicoes.svg
+:label: fig-vetores-posicoes
+:alt: Exemplo de varável
+:align: center
+
+Cada elemento do vetor possui uma posição. A 1ª posição do vetor sempre é a posição número 0.
+:::
+
+:::{figure} ./img/vetor_elemento_posicao.svg
+:label: fig-vetores-elemento_posicao
+:alt: Elemento 41 está na posição 3
+:align: center
+
+Na posição `3` do vetor `valores` está armazenado o valor $41$
+:::
+
+Os elementos de um vetor sempre são do mesmo tipo de dado.
+
 
 ## Alocação estática
 
@@ -22,15 +73,18 @@ Inicialmente abordaremos a criação de vetores de maneira estática, para compr
 ::::{tab-item} Pseudocódigo
 :sync: pseudocodigo
 
+:::{card} Sintaxe
+
 ```c
 <tipo> []: <nome> = {<valores>};
 ```
+:::
 
 :::{prf:example}
 :nonumber:
 
 ```c
-inteiro []: idade = {20, 22, 18, 40, 37, 20, 12, 65, 68, 40};                                //armazena informações da idade de 10 pessoas,
+inteiro []: idade = {20, 22, 18, 40, 37, 20, 12, 65, 68, 40};           //armazena informações da idade de 10 pessoas,
 real []: altura = {1.62, 1.10,  0.23, 1,80, 1,42, ,1.20, 0.90, 1.40 };  //armazena a altura de 8 pessoas
 logico []: porta_aberta = {verdadeiro, falso, falso, verdadeiro};       //armazena informações sobre 4 portas
 ```
@@ -40,31 +94,41 @@ logico []: porta_aberta = {verdadeiro, falso, falso, verdadeiro};       //armaze
 ::::{tab-item} Java
 :sync: java
 
+:::{card} Sintaxe
 ```java
 <tipo>[] <nome> = {<valores>};
 ```
+:::
 
-**Exemplo** 
+
+:::{prf:example}
+:nonumber:
 ```java
 int[] idade = {20, 22, 18, 40, 37, 20, 12, 65, 68, 40}; //armazena informações da idade de 10 pessoas,
 float [] altura = {1.62f, 1.10f,  0.23f, 1,80f, 1,42f,1.20f, 0.90f, 1.40f };  //armazena a altura de 8 pessoas
 boolean [] porta_aberta = {true, false, false, true};   //armazena informações sobre 4 portas
 ```
+:::
 
 ::::
 ::::{tab-item} Python
 :sync: python
 
+
+:::{card} Sintaxe
 ```python
 <nome> = [<valores>]
 ```
+:::
 
-**Exemplo** 
+:::{prf:example}
+:nonumber:
 ```python
 idade = [20, 22, 18, 40, 37, 20, 12, 65, 68, 40]; #armazena informações da idade de 10 pessoas,
 altura = [1.62, 1.10,  0.23, 1,80, 1,42,1.20, 0.90, 1.40 ];  #armazena a altura de 8 pessoas
 porta_aberta = [true, false, false, true];   #armazena informações sobre 4 portas
 ```
+:::
 
 :::{note} Observação
 
@@ -75,9 +139,26 @@ Em Python, abordaremos a estrutura de dados `list` para compreendermos o funcion
 ::::{tab-item} C
 :sync: c
 
+:::{card} Sintaxe
 ```c
-printf("Hello world!\n");
+<tipo> <nome>[] = {<valores>};
 ```
+:::
+
+:::{prf:example}
+:nonumber:
+
+```c
+int idade_tam = 10; //número de elementos no vetor idade
+int idade[]   = {20, 22, 18, 40, 37, 20, 12, 65, 68, 40}; //armazena informações da idade de 10 pessoas,
+
+int altura_tam = 8; //número de elementos no vetor altura_tam
+float altura[] = {1.62f, 1.10f,  0.23f, 1,80f, 1,42f,1.20f, 0.90f, 1.40f };  //armazena a altura de 8 pessoas
+
+int porta_aberta_tam = 4; //número de elementos no vetor porta_aberta
+int porta_aberta[]   = {0, 1, 1, 1};   //armazena informações sobre 4 portas
+```
+:::
 
 ::::
 :::::
@@ -202,7 +283,7 @@ printf("Hello world!\n");
 ::::
 :::::
 
-:::{attention}
+:::{attention} Atenção
 Não confundir o **índice** com o **conteúdo** dos elementos do vetor.
 :::
 
@@ -271,20 +352,22 @@ fim.
 :sync: java
 
 ```java
+import libs.Entrada;
+
 public static void main(String[] args){
     //variáveis
     int nota1, nota2, nota3, nota4, nota5, qtde_notas=5, soma_notas;
     float media_turma;
-    Scanner entrada = new Scanner(System.in);
-
+    
     //entrada
+    Entrada.abrir();
     System.out.println("Entre com as 5 notas");
-    nota1 = entrada.nextInt();
-    nota2 = entrada.nextInt();
-    nota3 = entrada.nextInt();
-    nota4 = entrada.nextInt();
-    nota5 = entrada.nextInt();
-    entrada.close();
+    nota1 = Entrada.lerInt();
+    nota2 = Entrada.lerInt();
+    nota3 = Entrada.lerInt();
+    nota4 = Entrada.lerInt();
+    nota5 = Entrada.lerInt();
+    Entrada.close();
 
     //processamento
     soma_notas = nota1 + nota2 + nota3 + nota4 + nota5
@@ -346,7 +429,42 @@ if nota5 >= media_turma:
 :sync: c
 
 ```c
-printf("Hello world!\n");
+#include <stdio.h>
+int main(){
+    //variáveis
+    int nota1, nota2, nota3, nota4, nota5, qtde_notas=5, soma_notas;
+    double media_turma;
+
+    //entrada
+    printf("Entre com as 5 notas\n");
+    scanf("%d", &nota1);
+    scanf("%d", &nota2);
+    scanf("%d", &nota3);
+    scanf("%d", &nota4);
+    scanf("%d", &nota5);
+    soma_notas = nota1 + nota2 + nota3 + nota4 + nota5;
+    media = soma_notas / qtde_notas;
+
+    //saída
+    printf("Notas acima da média:")
+    if(nota1 >= media_turma){
+        printf("%d\n",nota1);
+    }
+    if(nota2 >= media_turma){
+        printf("%d\n",nota2);
+    }
+    if(nota3 >= media_turma){
+        printf("%d\n",nota3);
+    }
+    if(nota4 >= media_turma){
+        printf("%d\n",nota4);
+    }
+    if(nota5 >= media_turma){
+        printf("%d\n",nota5);
+    }
+
+    return 0;
+}
 ```
 
 ::::
@@ -491,7 +609,42 @@ if nota[4] >= media_turma:
 :sync: c
 
 ```c
-printf("Hello world!\n");
+#include <stdio.h>
+int main(){
+    //variáveis
+    int nota1, nota2, nota3, nota4, nota5, qtde_notas=5, soma_notas;
+    double media_turma;
+
+    //entrada
+    printf("Entre com as 5 notas\n");
+    scanf("%d", &nota[0]);
+    scanf("%d", &nota[1]);
+    scanf("%d", &nota[2]);
+    scanf("%d", &nota[3]);
+    scanf("%d", &nota[4]);
+    soma_notas = nota1 + nota2 + nota3 + nota4 + nota5;
+    media = soma_notas / qtde_notas;
+
+    //saída
+    System.out.println("Notas acima da média:")
+    if(nota[0] >= media_turma){
+        printf("%d\n",nota[0]);
+    }
+    if(nota[1] >= media_turma){
+        printf("%d\n",nota[1]);
+    }
+    if(nota[2] >= media_turma){
+        printf("%d\n",nota[2]);
+    }
+    if(nota[3] >= media_turma){
+        printf("%d\n",nota[3]);
+    }
+    if(nota[4] >= media_turma){
+        printf("%d\n",nota[4]);
+    }
+
+    return 0;
+}
 ```
 
 ::::
@@ -604,7 +757,39 @@ for i in range(5):
 :sync: c
 
 ```c
-printf("Hello world!\n");
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    //variáveis
+    int nota[], qtde_notas=5, soma_notas, i;
+    double media_turma;
+
+    nota = malloc(qtde_notas, sizeof(int));
+
+    //entrada
+    printf("Entre com as 5 notas\n");
+    for(i=0;i<qtde_notas;i++>){
+        scanf("%d", &nota[i]);
+    }
+    
+    //processamento
+    soma_notas = 0;
+    for(i=0;i<qtde_notas;i++>){
+        soma_notas += notas[i];
+    }
+    media = soma_notas / qtde_notas;
+
+    //saída
+    System.out.println("Notas acima da média:");
+    for(i=0;i<qtde_notas;i++>){
+        if(nota[i] >= media_turma){
+            printf("%d\n",nota[i]);
+        }
+    }
+
+    return 0;
+}
 ```
 
 ::::
@@ -678,4 +863,127 @@ Seu programa deve mostrar quantos pontos o jogador acertou. Cada número acertad
 A alocação dinâmica trata da alocação do vetor em tempo de execução. Durante a execução é que é conhecida a **quantidade** de elementos que serão necessários. Após saber a quantidade de elementos o vetor pode ser alocado, solicitando memória ao sistema operacional.
 
 
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
 
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
+int[] valores; //declaração do vetor
+
+valores = new int[<número de elementos>]; //alocação dos elementos
+
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+import numpy as np
+
+valores = np.array(<número de elementos>)
+
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+int valores[];
+
+valores = malloc(<número de elementos>, <tamanho do elemento> )
+```
+
+::::
+
+:::::
+
+::::::{prf:example}
+:nonumber:
+
+Suponha o mesmo exemplo das notas, porém agora a quantidade de notas é decidida durante a execução do programa. Considere que antes dos valores das notas serem digitados, o usuário informa a quantidade de notas que serão digitadas.
+
+Neste caso, **após** conhecer a quantidade de notas que serão digitadas, o vetor é **alocado**. Após a alocação, os valores podem ser armazenados em cada posição.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```{code} java
+:linenos:
+:emphasize-lines: 11,12
+
+import libs.Entrada;
+public static void main(String[] args){
+    //variáveis
+    int[] nota; //declaração do vetor
+    int qtde_notas; //tabanho do vetor
+    int soma_notas, i;
+    float media_turma;
+
+    //entrada
+    Entrada.abrir();
+    qtde_notas = Entrada.lerInt("Quantas notas serão digitadas?");
+    nota = new int[qtde_notas]; //alocação dos elementos
+
+    System.out.println("Entre com as " + qtde_notas + " notas:");
+    for(i=0;i<qtde_notas;i++){
+        nota[i] = Entrada.lerInt();
+    }
+    Entrada.fechar();
+
+    //processamento
+    soma_notas = 0;
+    for(i=0;i<qtde_notas;i++){
+        soma_notas += nota[i];
+    }
+    media = (float) soma_notas / qtde_notas;
+
+    //saída
+    System.out.println("Notas acima da média:")
+    for(i=0;i<qtde_notas;i++){
+        if(nota[i] >= media_turma){
+            System.out.println(nota[i]);
+        }
+    }
+}
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+print("Hello world!")
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
