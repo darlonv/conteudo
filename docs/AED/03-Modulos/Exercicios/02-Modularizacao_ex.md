@@ -468,7 +468,7 @@ n=5
 ::::
 
 ::::{card} retorno
-verdadeiro
+falso
 ::::
 
 ::::{card} Explicação
