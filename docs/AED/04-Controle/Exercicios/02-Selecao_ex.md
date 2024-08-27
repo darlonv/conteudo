@@ -28,7 +28,7 @@ Peça ao usuário que digite dois valores. Em seguida, mostre qual é o menor va
 
 ::::{card} Saída
 ```
-3
+5
 ```
 ::::  
 
