@@ -531,21 +531,22 @@ Apenas substituindo as variáveis por vetor utilizando índices, poderíamos che
 :sync: java
 
 ```java
+  import libs.Entrada;
   public static void main(String[] args){
     //variáveis
     int[] nota = {0,0,0,0,0};
     int qtde_notas=5, soma_notas;
     float media_turma;
-    Scanner entrada = new Scanner(System.in);
 
     //entrada
+    Entrada.abrir();
     System.out.println("Entre com as 5 notas");
-    nota[0] = entrada.nextInt();
-    nota[1] = entrada.nextInt();
-    nota[2] = entrada.nextInt();
-    nota[3] = entrada.nextInt();
-    nota[4] = entrada.nextInt();
-    entrada.close();
+    nota[0] = Entrada.lerInt();
+    nota[1] = Entrada.lerInt();
+    nota[2] = Entrada.lerInt();
+    nota[3] = Entrada.lerInt();
+    nota[4] = Entrada.lerInt();
+    Entrada.fechar();
 
     //processamento
     soma_notas = nota[0] + nota[1] + nota[2] + nota[3] + nota[4]
@@ -696,23 +697,24 @@ fim.
 :sync: java
 
 ```java
+import libs.Entrada;
 public static void main(String[] args){
     //variáveis
     int[] nota = {0,0,0,0,0};
-    int qtde_notas=5, soma_notas, i;
+    int soma_notas, i;
     float media_turma;
-    Scanner entrada = new Scanner(System.in);
 
     //entrada
+    Entrada.abrir();
     System.out.println("Entre com as 5 notas");
-    for(i=0;i<qtde_notas;i++){
-        nota[i] = entrada.nextInt();
+    for(i=0;i<nota.length();i++){
+        nota[i] = Entrada.lerInt();
     }
-    entrada.close();
+    Entrada.fechar();
 
     //processamento
     soma_notas = 0;
-    for(i=0;i<qtde_notas;i++){
+    for(i=0;i<nota.length();i++){
         soma_notas += nota[i];
     }
     media = (float) soma_notas / qtde_notas;
@@ -734,6 +736,7 @@ public static void main(String[] args){
 ```python
 #variáveis
 nota = [0,0,0,0,0]
+
 #entrada
 escreva("Entre com as 5 notas")
 for i in range(5):
@@ -762,7 +765,7 @@ for i in range(5):
 
 int main(){
     //variáveis
-    int nota[], qtde_notas=5, soma_notas, i;
+    int *nota, qtde_notas=5, soma_notas, i;
     double media_turma;
 
     nota = malloc(qtde_notas, sizeof(int));
@@ -899,7 +902,7 @@ valores = np.array(<número de elementos>)
 :sync: c
 
 ```c
-int valores[];
+int *valores;
 
 valores = malloc(<número de elementos>, <tamanho do elemento> )
 ```
@@ -935,7 +938,7 @@ escreva("Hello world!");
 import libs.Entrada;
 public static void main(String[] args){
     //variáveis
-    int[] nota; //declaração do vetor
+    int *nota; //declaração do vetor
     int qtde_notas; //tabanho do vetor
     int soma_notas, i;
     float media_turma;
@@ -987,3 +990,167 @@ printf("Hello world!\n");
 ::::
 :::::
 ::::::
+
+## Vetores em funções
+
+Podemos utilizar vetores como entrada para funções em diversas situações. Como os vetores podem ser de diferentes tamanhos, estes podem ser utilizados em situações em que a quantidade de dados é desconhecida.
+
+
+Observe o [](#vetores-exemplo_funcoes_entrada):
+
+::::::{prf:example}
+:label: vetores-exemplo_funcoes_entrada
+
+Função recebendo um vetor como parâmetro de entrada. A entrada é um vetor de inteiros, e o objetivo dessa função é calcular a soma de todos os valores e retorná-lo.
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
+public static int somarVetor(int valores[]){
+    int soma = 0;
+    int i;
+    for(i=0; i < valores.lenghth; i++)
+        soma+=valores[i]
+
+    return soma;
+}
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+print("Hello world!")
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+Perceba que nos parâmetros da função o vetor está apenas **declarado**. Desta forma, é esperado que no momento da chamada da função o vetor passado a ela já esteja alocado. O [](#vetores-exemplo_funcoes_entrada_2) demonstra uma chada de função utilizando um vetor alocado previamente. Observe que dentro da função é utilizado o vetor já considerando que existem valores em todas as suas posições.
+
+::::::{prf:example}
+:label: vetores-exemplo_funcoes_entrada_2
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+```java
+public static void main(String[] args){
+    int[] valores; //declaração do vetor
+    int valores_tam = 5;
+    int soma_valores;
+
+    valores = new int[valores_tam]; //alocação do vetor
+
+    soma_valores = somarVetor(valores); //chamada da função com vetor como parâmetro
+}
+```
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+print("Hello world!")
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+```c
+printf("Hello world!\n");
+```
+
+::::
+:::::
+::::::
+
+
+Desta forma, caso passássemos para a função um vetor com valores não alocados, seria gerado um erro. Observe o [](#vetores-exemplo_funcoes_entrada_3_erro).
+
+::::::{prf:example}
+:label: vetores-exemplo_funcoes_entrada_3_erro
+
+<!-- TABSET -->
+:::::{tab-set}
+::::{tab-item} Pseudocódigo
+:sync: pseudocodigo
+
+```c
+escreva("Hello world!");
+```
+
+::::
+::::{tab-item} Java
+:sync: java
+
+:::{error} Erro
+```java
+public static void main(String[] args){
+    int[] valores; //declaração do vetor
+    int valores_tam = 5;
+    int soma_valores;
+
+    //valores = new int[valores_tam]; //vetor não está sendo alocado
+
+    soma_valores = somarVetor(valores); //dentro da função, ao tentar acessar os valores será levado a um erro
+}
+```
+:::
+
+::::
+::::{tab-item} Python
+:sync: python
+
+```python
+print("Hello world!")
+```
+
+::::
+::::{tab-item} C
+:sync: c
+
+:::{error} Erro
+```c
+printf("Hello world!\n");
+```
+:::
+
+::::
+:::::
+::::::
+
+
+## Organização na memória
