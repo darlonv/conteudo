@@ -23,7 +23,7 @@ Um vetor permite que diversas informações sejam armazenadas em uma única estr
 Um vetor pode armazenar diversos valores.
 :::
 
-Os vetores são fundamentais para o desenvolvimento de algoritmos. Com eles podemos solucionar problemas em que seja necessário armazenar informações que estejam relacionadas a uma mesma atividade.
+Os vetores são fundamentais para o desenvolvimento de algoritmos. Com eles podemos solucionar problemas em que seja necessário armazenar informações que estejam relacionadas a uma mesma atividade ou contexto.
 
 Os vetores possuem algumas características, o que define como será o vetor. São elas:
 - Identificador: nome dado ao vetor;
@@ -58,7 +58,7 @@ Cada elemento do vetor possui uma posição. A 1ª posição do vetor sempre é 
 Na posição `3` do vetor `valores` está armazenado o valor $41$
 :::
 
-Os elementos de um vetor sempre são do mesmo tipo de dado.
+Os elementos de um mesmo vetor devem sempre ser do mesmo tipo de dado. Esta característica será abordada em detalhes na seção [](#secao-vetores-memoria)
 
 
 ## Alocação estática
@@ -1047,7 +1047,7 @@ printf("Hello world!\n");
 :::::
 ::::::
 
-Perceba que nos parâmetros da função o vetor está apenas **declarado**. Desta forma, é esperado que no momento da chamada da função o vetor passado a ela já esteja alocado. O [](#vetores-exemplo_funcoes_entrada_2) demonstra uma chada de função utilizando um vetor alocado previamente. Observe que dentro da função é utilizado o vetor já considerando que existem valores em todas as suas posições.
+Perceba que nos parâmetros da função o vetor está apenas **declarado**. Desta forma, é esperado que no momento da chamada da função o vetor passado a ela já esteja com seus elementos alocados. O [](#vetores-exemplo_funcoes_entrada_2) demonstra uma chamada de função utilizando um vetor alocado previamente. Observe que dentro da função é utilizado o vetor já considerando que existem valores em todas as suas posições.
 
 ::::::{prf:example}
 :label: vetores-exemplo_funcoes_entrada_2
@@ -1152,5 +1152,50 @@ printf("Hello world!\n");
 :::::
 ::::::
 
-
+(secao-vetores-memoria)=
 ## Organização na memória
+
+Internamente, uma variável consiste em um **endereço de memória**. Ao utilizarmos uma variável, o sistema converte o nome da variável que utilizamos para o local na memória em que o dado está armazenado. 
+
+Para os exemplos a seguir, suponha que temos uma memória que em cada endereço armazena $1$ byte, e para armazenar um valor inteiro são necessários $2$ bytes.
+
+Observe o exemplo da [](#fig-vetores-variavel_memoria_01). A variável `x` armazena seu valor na posição `15` da memória, logo, ocupa os endereços `15` e `16`. 
+
+:::{figure} ./img/vetor_memoria_01.svg
+:label: fig-vetores-variavel_memoria_01
+:alt: TODO
+:align: center
+
+Variável `x` com valor `60` armazenado. A variável `x` está utilizando o endereço de memória `15`. Considerando que o valor inteiro ocupa dois bytes de memória, as posições `15` e `16` estão sendo utilizadas por `x`. 
+:::
+
+A definição de qual posição de memória a variável utilizará é definida durante a execução do programa. O ambiente de execução[^1] disponibiliza endereços de memória ao programa, garantindo que outros programas não utilizarão aquela região da memória. O endereço utilizado por uma variável será diferente a cada execução do programa[^2].
+
+[^1]: Sistema operacional, interpretador ou máquina virtual.
+[^2]: Pode receber a mesma posição, mas está a critério do ambiente de execução.
+
+No caso dos vetores, seu endereço de memória opera de forma semelhante a uma variável. Porém, os valores do vetor ocupam posições contínuas na memória. 
+
+A [](#fig-vetores-variavel_memoria_02) demonstra um exemplo de vetor `v`, que possui $5$ elementos. `v` inicia na posição de memória `52`, e seus elementos ocupam as posições seguintes. Como cada valor inteiro ocupa $2$ bytes, `v` então ocupa $12$ bytes, ou seja, as posições `52` a `63`.
+
+:::{figure} ./img/vetor_memoria_02.svg
+:label: fig-vetores-variavel_memoria_02
+:alt: TODO
+:align: center
+
+Vetor `v` ocupando a posição de memória `52`. Os valores de `v` ocupam posições contínuas na memória. `v`.
+:::
+
+Para descobrir qual o endereço de memória determinado elemento do vetor está armazenado, a seguinte equação pode ser utilizada:
+
+$$
+end = end_{ini} + pos * tam
+$$
+em que:
+- $end$: endereço de memória a ser calculado;
+- $end_{ini}$ endereço do vetor, com a primeira posição de memória do vetor;
+- $pos$: posição do vetor que se deseja descobrir o endereço;
+- $tam$: quantidade de bytes utilizada pelo tipo de dado que o vetor armazena.
+
+
+No exemplo da [](#fig-vetores-variavel_memoria_02), o valor de `v[3]` está no endereço $58$. Como o vetor inicia na posição $52$, procuramos pela posição $3$, e cada valor armazenado está ocupando $2$ bytes, temos que $52 + 3 * 2 = 58$.
