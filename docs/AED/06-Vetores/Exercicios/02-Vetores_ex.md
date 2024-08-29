@@ -3823,7 +3823,7 @@ Uma empresa deseja fazer um levantamento do seu estoque. Para isto possui para c
 
 ## Desafios
 
-## Endereço de Memória
+## Endereços de Memória
 
 ::::::::{exercise}
 :label: exex:vetores-endereco_inteiro_primeira_posicao
