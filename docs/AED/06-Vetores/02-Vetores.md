@@ -1174,7 +1174,7 @@ A definição de qual posição de memória a variável utilizará é definida d
 [^1]: Sistema operacional, interpretador ou máquina virtual.
 [^2]: Pode receber a mesma posição, mas está a critério do ambiente de execução.
 
-No caso dos vetores, seu endereço de memória opera de forma semelhante a uma variável. Porém, os valores do vetor ocupam posições contínuas na memória. 
+No caso dos vetores, seu endereço de memória opera de forma semelhante a uma variável. Porém, os elementos do vetor ocupam posições contíguas na memória. 
 
 A [](#fig-vetores-variavel_memoria_02) demonstra um exemplo de vetor `v`, que possui $5$ elementos. `v` inicia na posição de memória `52`, e seus elementos ocupam as posições seguintes. Como cada valor inteiro ocupa $2$ bytes, `v` então ocupa $12$ bytes, ou seja, as posições `52` a `63`.
 
