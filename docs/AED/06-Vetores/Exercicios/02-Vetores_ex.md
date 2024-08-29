@@ -12,7 +12,7 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa que leia 8 números inteiros e informe quantos são maiores que a média dos valores digitados.
+Elaborar um programa que leia $8$ números inteiros e informe quantos valores são maiores ou iguals à média de todos os valores digitados.
 
 ::::::{prf:example}
 :nonumber:
@@ -21,11 +21,13 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[10, 11, 12, 13, 14]
 ```
 ::::  
 
 ::::{card} Saída
 ```
+3
 ```
 ::::  
 
@@ -33,6 +35,7 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 :::::  
 
 ::::{card} Explicação
+A média dos valores 10, 11, 12, 13 e 14 é 12. Como os valores 12, 13 e 14 são maiores ou iguais à média, é apresentado o valor $3$.
 ::::  
 
 <!-- /example -->
@@ -45,11 +48,13 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[10, 20, 30, 1000]
 ```
 ::::  
 
 ::::{card} Saída
 ```
+1
 ```
 ::::  
 
@@ -66,11 +71,13 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[2,2,2,2,2]
 ```
 ::::  
 
 ::::{card} Saída
 ```
+5
 ```
 ::::  
 
@@ -79,16 +86,35 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```
+0
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
 ::::::::  
 
-
-
-<!-- ::::{exercise}
-Leia dois vetores VA e VB de 10 posições cada um, contendo valores inteiros. Em seguida, gere um vetor VC com 20 posições, contendo os valores de VA nas posições pares e os valores de VB nas posições ímpares.
-:::: -->
 
 ::::::::{exercise}
 :label: exex:label
@@ -1210,7 +1236,7 @@ Use um vetor unidimensional para resolver o seguinte problema. Uma companhia pag
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Use um vetor unidimensional para resolver o seguinte problema. Uma companhia paga seus vendedores com base em comissões. O vendedor recebe R\$200 por semana mais 9 por cento de suas vendas brutas daquela semana. Por exemplo, um vendedor que teve vendas brutas de R\$3000 em uma semana recebe R\$200 mais 9 por cento de R\$3000, ou seja, um total de R\$470. Escreva um programa em C (usando um vetor de contadores) que determine quantos vendedores receberam salários nos seguintes intervalos de valores (considere que o salário de cada vendedor é arredondado para que seja obtido um valor inteiro):
+Use um vetor unidimensional para resolver o seguinte problema. Uma companhia paga seus vendedores com base em comissões. O vendedor recebe R\$200 por semana mais 9 por cento de suas vendas brutas daquela semana. Por exemplo, um vendedor que teve vendas brutas de R\$3000 em uma semana recebe R\$200 mais 9 por cento de R\$3000, ou seja, um total de R\$470. Escreva um programa (usando um vetor de contadores) que determine quantos vendedores receberam salários nos seguintes intervalos de valores (considere que o salário de cada vendedor é arredondado para que seja obtido um valor inteiro):
 - 1: R\$200-R\$299
 - 2: R\$300-R\$399
 - 3: R\$400-R\$499
@@ -3240,7 +3266,94 @@ O conjunto intersecção $A \cap B$ é dado pelos elementos que simultaneamente 
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Uma pequena companhia aérea acabou de comprar um computador para o seu novo sistema automático de reservas. O presidente pediu a você que programasse o novo sistema em C. Você deve escrever um programa para atribuir assentos a cada voo do único avião da companhia (capacidade: 20 assentos). Seu programa deve exibir o seguinte menu de alternativas:
+Desenvolva um programa em que o usuário digita diversos valores, parando quando um número negativo for digitado. Ao final, deve ser mostrado:
+- a média dos valores
+- quais são os valores maiores que a média dos valores digitados (desconsiderando o número negativo).
+
+:::{attention} Atenção
+:class: dropdown
+Não se sabe quantos valores serão digitados pelo usuário.
+:::
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+```
+::::  
+
+::::{card} Saída
+```
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+```
+::::  
+
+::::{card} Saída
+```
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+```
+::::  
+
+::::{card} Saída
+```
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+
+
+::::::::{exercise}
+:label: exex:label
+
+(ex:label)=
+:::::::{card} <!-- Título aqui -->
+
+Uma pequena companhia aérea acabou de comprar um computador para o seu novo sistema automático de reservas. O presidente pediu a você que programasse o novo sistema. Você deve escrever um programa para atribuir assentos a cada voo do único avião da companhia (capacidade: 20 assentos). Seu programa deve exibir o seguinte menu de alternativas:
 - Favor digitar 1 para "vip"
 - Favor digitar 2 para "normal"
 Se a pessoa digitar 1, seu programa deve fazer a reserva de um assento no setor vip (assentos 1-5). Se a pessoa digitar 2, seu programa deve reservar um assento no setor de normal (assentos 6-20). Seu programa deve então imprimir um cartão de embarque indicando o número do assento do passageiro e se ele se encontra no setor vip ou normal do avião. Use um vetor unidimensional para representar o esquema dos assentos do avião. Inicialize todos os elementos do vetor com 0 para indicar que todos os assentos estão livres. A medida que cada assento for reservado, iguale os elementos correspondentes a 1 para indicar que o assento não está mais disponível. Seu programa nunca deve, obviamente, reservar um assento que já tenha sido ocupado. Quando o setor vip estiver lotado, seu programa deve perguntar se a pessoa aceita um lugar no setor normal (e vice-versa). Em caso positivo, faça a reserva apropriada do assento. Em caso negativo, imprima a mensagem "Próximo voo sai em 3 horas".
