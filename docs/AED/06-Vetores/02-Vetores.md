@@ -3,7 +3,7 @@
 
 Chamamos de **vetores** ou *arrays* às estruturas de dados que possibilitam armazenar um conjunto de valores de forma organizada e contígua. Podemos fazer uma analogia com um trem, onde cada vagão do trem corresponde uma variável, e os vagões organizados em sequência formam o trem. Nesta analogia, o trem é o vetor.
 
-Para efeitos de comparação, observe a [](#fig-vetores-variavel). Nesta, é apresentada uma variável chamada `valor`, que armazena um único valor.
+Para efeitos de comparação, observe a [](#fig-vetores-variavel). Nesta, é apresentada uma variável chamada `idade`, que armazena um único valor: a idade de uma única pessoa.
 
 :::{figure} ./img/variavel.svg
 :label: fig-vetores-variavel
@@ -13,7 +13,7 @@ Para efeitos de comparação, observe a [](#fig-vetores-variavel). Nesta, é apr
 Uma variável armazena um único valor.
 :::
 
-Um vetor permite que diversas informações sejam armazenadas em uma única estrutura, como pode ser visto na [](#fig-vetores-vetor).
+Diferente de uma variável, um vetor permite que diversas informações sejam armazenadas em uma única estrutura. A [](#fig-vetores-vetor) ilustra um exemplo de vetor que possui as idades de $10$ pessoas.
 
 :::{figure} ./img/vetor.svg
 :label: fig-vetores-vetor
@@ -39,7 +39,7 @@ Cada vetor  tem um identificador (nome) e um tamanho (quantidade de elementos).
 :::
 
 
-Um vetor é composto por um conjunto de elementos, em que cada um desses delementos pode ser observado individualmente como sendo uma variável. Cada uma dessas variáveis, ou casas, pode armazenar um valor. Cada uma dessas variáveis é indexada por um **índice** (ou posição), este formado por um número inteiro iniciando em $0$. O último elemento de um vetor sempre estará no índice `tamanho -1`. Ou seja, em um vetor com $10$ elementos, o primeiro elemento estará no índice `0` e o último elemento no índice `9`. 
+Um vetor é composto por um conjunto de elementos, em que cada um desses delementos pode ser observado individualmente como sendo uma variável independente das demais. Cada uma dessas variáveis, ou casas, pode armazenar um valor. Cada uma dessas variáveis é localizada no vetor por um **índice** (também chamado de **posição**), este formado por um número inteiro iniciando em $0$. O último elemento de um vetor sempre estará no índice `tamanho -1`. Ou seja, em um vetor com $10$ elementos, o primeiro elemento estará no índice `0` e o último elemento no índice `9`. 
 
 
 :::{figure} ./img/vetor_posicoes.svg
@@ -47,7 +47,7 @@ Um vetor é composto por um conjunto de elementos, em que cada um desses delemen
 :alt: Exemplo de varável
 :align: center
 
-Cada elemento do vetor possui uma posição. A 1ª posição do vetor sempre é a posição número 0.
+Cada elemento do vetor possui uma posição. O índice da 1ª posição é $0$, e o índice da última posição é `tamanho -1`. Neste exemplo, o vetor `vetor_idade` possui $10$ elementos. Logo, seu último elemento está no índice $9$.
 :::
 
 :::{figure} ./img/vetor_elemento_posicao.svg
@@ -1153,9 +1153,9 @@ printf("Hello world!\n");
 ::::::
 
 (secao-vetores-memoria)=
-## Organização na memória
+## Organização na Memória
 
-Internamente, uma variável consiste em um **endereço de memória**. Ao utilizarmos uma variável, o sistema converte o nome da variável que utilizamos para o local na memória em que o dado está armazenado. 
+Internamente, uma variável consiste em um **endereço de memória**. Ao utilizarmos uma variável, o sistema converte o nome da variável que utilizamos para o endereço na memória em que o dado está armazenado. 
 
 Para os exemplos a seguir, suponha que temos uma memória que em cada endereço armazena $1$ byte, e para armazenar um valor inteiro são necessários $2$ bytes.
 
@@ -1189,13 +1189,33 @@ Vetor `v` ocupando a posição de memória `52`. Os valores de `v` ocupam posiç
 Para descobrir qual o endereço de memória determinado elemento do vetor está armazenado, a seguinte equação pode ser utilizada:
 
 $$
-end = end_{ini} + pos * tam
+addr = addr_{start} + idx \times size
 $$
 em que:
-- $end$: endereço de memória a ser calculado;
-- $end_{ini}$ endereço do vetor, com a primeira posição de memória do vetor;
-- $pos$: posição do vetor que se deseja descobrir o endereço;
-- $tam$: quantidade de bytes utilizada pelo tipo de dado que o vetor armazena.
+- $addr$: endereço de memória a ser calculado;
+- $addr_{start}$ endereço do vetor, com a primeira posição de memória do vetor;
+- $idx$: índice do elemento;
+- $size$: quantidade de bytes utilizada pelo tipo de dado que o vetor armazena.
+
+Visto que o endereço de memória de cada elemento é calculado, o acesso a cada elemento do vetor é realizado diretamente, sem a necessidade de passar por outros elementos. Porém, observe nesta equação que é necessário que **cada valor armazenado no vetor tenha o mesmo tamanho**, ou seja, tenham o mesmo tipo de dado.
+
+No exemplo da [](#fig-vetores-variavel_memoria_02), o valor de `v[3]` está no endereço $58$. Como o vetor inicia na posição $52$, procuramos pela posição $3$, e cada valor armazenado está ocupando $2$ bytes, temos que $52 + 3 * 2 = 58$. A [](#fig-vetores-variavel_memoria_03) indica os endereços de memória de cada elemento do vetor `v`.
+
+:::{figure} ./img/vetor_memoria_03.svg
+:label: fig-vetores-variavel_memoria_03
+:alt: TODO
+:align: center
+
+Endereço na memória de cada um dos elementos do vetor `v`.
+:::
+
+Do ponto de vista do algoritmo, utilizamos indiretamente as posições em memória. A [](#fig-vetores-variavel_memoria_04) apresenta os valores armazenados em cada elemento do vetor, do ponto de vista do programador.
 
 
-No exemplo da [](#fig-vetores-variavel_memoria_02), o valor de `v[3]` está no endereço $58$. Como o vetor inicia na posição $52$, procuramos pela posição $3$, e cada valor armazenado está ocupando $2$ bytes, temos que $52 + 3 * 2 = 58$.
+:::{figure} ./img/vetor_memoria_04.svg
+:label: fig-vetores-variavel_memoria_04
+:alt: TODO
+:align: center
+
+Valores armazenados em cada elemento do vetor.
+:::
