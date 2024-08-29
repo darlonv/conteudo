@@ -121,7 +121,7 @@ Definição aqui
 ::::::::::  
 
 
-## Exercício com 2 exemplos
+## Exercício com 3 exemplos
 ::::::::{exercise}
 :label: exex:label
 
