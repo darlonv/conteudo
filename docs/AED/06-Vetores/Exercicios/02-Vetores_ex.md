@@ -122,20 +122,24 @@ A média dos valores 10, 11, 12, 13 e 14 é 12. Como os valores 12, 13 e 14 são
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Leia dois vetores VA e VB de 10 posições cada um, contendo valores inteiros. Em seguida, gere um vetor VC com 20 posições, contendo os valores de VA nas posições pares e os valores de VB nas posições ímpares.
+Leia valores inteiros e armazene nos dois vetores `va` e `vb`, com 10 posições cada um. Em seguida, gere um vetor `vc` com 20 posições. Os elementos de `vc` nas posições pares devem conter o valor de `va + vb` na mesma posição, e o `va - vb` nas posições ímpares. Mostre na tela os valores dos vetores `va`, `vb` e `vc`.
 
 ::::::{prf:example}
 :nonumber:
 <!-- :class: dropdown -->
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
+1, 2 ,3, 4, 5, 6, 7, 8, 9, 10, 10, 9, 8, 7, 6, 8, 4, 3, 2, 1
 ```
 ::::  
 
 ::::{card} Saída
 ```
+va: [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10]
+vb: [10, 9, 8, 7, 6, 8, 4, 3, 2, 1]
+vc: [11, -7, 11, -3, 11, -2, 11, 5, 11, 9]
 ```
 ::::  
 
@@ -143,52 +147,19 @@ Leia dois vetores VA e VB de 10 posições cada um, contendo valores inteiros. E
 :::::  
 
 ::::{card} Explicação
-::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
+As posições pares são 0, 2, 4, 6 e 8, e as ímpares são 1, 3 ,5 ,7 e 9. Logo, o vetor `vc` terá o seguinte resultado:
 ```c
+[1+10, 2-9, 3+8, 4-7, 5+6, 6-8, 7+4, 8-3, 9+2, 10-9]
 ```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
+ou seja,
 ```c
+[11, -7, 11, -3, 11, -2, 11, 5, 11, 9]
 ```
 ::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
 
 <!-- /example -->
 ::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
@@ -196,30 +167,38 @@ Leia dois vetores VA e VB de 10 posições cada um, contendo valores inteiros. E
 
 
 
-<!-- ::::{exercise}
-Elaborar um programa que leia um vetor C de 10 elementos inteiros. Após o término da leitura, trocar todos os valores negativos do vetor C por 0. Após todas as trocas terem sido efetuadas, escrever o novo vetor C.
-:::: -->
-
 ::::::::{exercise}
 :label: exex:label
 
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa que leia um vetor C de 10 elementos inteiros. Após o término da leitura, trocar todos os valores negativos do vetor C por 0. Após todas as trocas terem sido efetuadas, escrever o novo vetor C.
+Elaborar um programa que leia um vetor `c` de 10 elementos inteiros. Após o término da leitura, trocar todos os valores negativos do vetor `c` por $0$. Mostre o vetor antes e após as trocas.
 
 ::::::{prf:example}
 :nonumber:
 <!-- :class: dropdown -->
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
+1
+2
+3
+-4
+-5
+-6
+7
+8
+-9
+-10 
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[1, 2, 3, -4, -5, -6, 7, 8, -9, -10]
+[1, 2, 3, 0, 0, 0, 7, 8, 0, 0]
 ```
 ::::  
 
@@ -236,14 +215,25 @@ Elaborar um programa que leia um vetor C de 10 elementos inteiros. Após o térm
 :nonumber:
 <!-- :class: dropdown -->
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 ```
 ::::  
 
@@ -257,14 +247,25 @@ Elaborar um programa que leia um vetor C de 10 elementos inteiros. Após o térm
 :nonumber:
 <!-- :class: dropdown -->
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
+-5
+-6
+-7
+-8
+-9
+-10
+-11
+-12
+-13
+-14
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
 ::::  
 
@@ -296,7 +297,7 @@ Elaborar um programa que leia 6 números e exiba:
 Elaborar um programa que leia 6 números e exiba:
 - o maior número lido;
 - o menor número lido;
-- quantos números são iguais ao primeiro número.
+- quantos números são iguais ao primeiro número digitado.
 
 ::::::{prf:example}
 :nonumber:
@@ -305,11 +306,20 @@ Elaborar um programa que leia 6 números e exiba:
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+5
+7
+5
+8
+4
+5
 ```
 ::::  
 
 ::::{card} Saída
 ```
+8
+4
+3
 ```
 ::::  
 
@@ -329,11 +339,20 @@ Elaborar um programa que leia 6 números e exiba:
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+9
+9
+9
+9
+9
+9
 ```
 ::::  
 
 ::::{card} Saída
 ```
+9
+9
+6
 ```
 ::::  
 
@@ -350,11 +369,21 @@ Elaborar um programa que leia 6 números e exiba:
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+-1
+0
+0
+0
+0
+-2
+
 ```
 ::::  
 
 ::::{card} Saída
 ```
+0
+-2
+1
 ```
 ::::  
 
@@ -383,10 +412,10 @@ Leia um vetor A, com 10 elementos. Crie em vetor B da seguinte forma:
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Leia um vetor A, com 10 elementos. Crie em vetor B da seguinte forma:
-- coloque os números pares primeiro;
-- coloque os números ímpares logo após os pares;
-- exiba o vetor B.
+Leia um vetor A, com 10 elementos contendo valores do tipo inteiro. Em seguida, gere um vetor B e copie para ele os elementos de A, organizando da seguinte forma:
+- coloque os números pares primeiro (mantendo a ordem que aparecem em A);
+- coloque os números ímpares logo após os pares (mantendo a ordem que aparecem em B);
+- mostre o vetor B na tela.
 
 ::::::{prf:example}
 :nonumber:
