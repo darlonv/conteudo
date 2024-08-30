@@ -1810,10 +1810,10 @@ Desenvolva uma função chamada `vetorLeituraInt`, que recebe como parâmetro um
 
 Desenvolva uma função chamada `obterPosicaoInteiro`, que recebe como parâmetros um vetor de inteiros `vetor`, um valor inteiro `valor_buscar` e outro valor inteiro `pos_inicial`. A função deve procurar pelo valor de `valor_buscar` no vetor `vetor`, procurando a partir do índice `pos_inicial`. A função deve retornar o índice em que `valor` se encontra, e retornar `-1` caso o valor não seja encontrado.
 
-:::{attention} C
+<!-- :::{attention} C
 :class: dropdown
 Em C, também deve ser passado um parâmetro adicional contendo o tamanho do vetor. No cabeçalho da função, deve ser o próximo parâmetro após o vetor.
-:::
+::: -->
 
 ::::::{prf:example}
 :nonumber:
