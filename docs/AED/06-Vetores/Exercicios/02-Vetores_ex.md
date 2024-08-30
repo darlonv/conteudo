@@ -521,180 +521,6 @@ Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em segu
 ::::::::  
 
 
-
-<!-- ::::{exercise}
-Ler um conjunto de números reais, armazenando-o em vetor e calcular o quadrado das componentes deste vetor, armazenando o resultado em outro vetor. Os conjuntos tem 10 elementos cada. Imprimir todos os conjuntos.
-:::: -->
-
-::::::::{exercise}
-:label: exex:label
-
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
-
-Ler um conjunto de números reais, armazenando-o em vetor e calcular o quadrado das componentes deste vetor, armazenando o resultado em outro vetor. Os conjuntos tem 10 elementos cada. Imprimir todos os conjuntos.
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-::::{card} Explicação
-::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-<!-- /card exercicio -->
-:::::::  
-<!-- /exercise -->
-::::::::  
-
-
-
-<!-- ::::{exercise}
-Elaborar um programa que leia um vetor com 20 números inteiros. Escreva os elementos do vetor eliminando elementos repetidos.
-:::: -->
-
-::::::::{exercise}
-:label: exex:label
-
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
-
-Elaborar um programa que leia um vetor com 20 números inteiros. Escreva os elementos do vetor eliminando elementos repetidos.
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-::::{card} Explicação
-::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-<!-- /card exercicio -->
-:::::::  
-<!-- /exercise -->
-::::::::  
-
-
-
-<!-- ::::{exercise}
-Elaborar um programa que leia um vetor de 10 posições. Contar e escrever quantos valores pares ele possui.
-:::: -->
-
-
 ::::::::{exercise}
 :label: exex:label
 
@@ -2498,6 +2324,144 @@ Desenvolva a função chamada `obterPosicaoCadeiaDeCaracteres`, semelhante a [](
 <!-- /exercise -->
 ::::::::  
 
+### Operações em vetores
+
+::::::::{exercise}
+:label: exex:label
+
+(ex:label)=
+:::::::{card} Remover repetidos
+
+Elaborar uma função que recebe como entrada um vetor. Retorne outro vetor que contenha os mesmos valores, porém sem os elementos repetidos.
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 1, 4, 0, 3, 9]
+```
+::::  
+
+::::{card} Saída
+```
+[1, 2, 3, 4, 0, 9]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+Os valores $1$ e $3$ têm elementos repetidos. Logo, estes aparecem uma única vez no vetor retornado.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[30, 20, 50]
+```
+::::  
+
+::::{card} Saída
+```
+[30, 20, 50]
+```
+::::  
+
+<!-- /grid -->
+:::::
+
+::::{card} Explicação
+Como não há elementos repetidos, todos os valores são retornados.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 1 1
+::::{card} Entrada
+```c
+[10, 20, 10, 20, 20, 20, 10, 20, 10, 20, 20, 20, 10]
+```
+::::  
+
+::::{card} Saída
+```
+[10, 20]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 1 1
+::::{card} Entrada
+```c
+[9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9]
+```
+::::  
+
+::::{card} Saída
+```
+[9]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
 ### Mostrar valores
 
 Inclua os algoritmos desenvolvidos como solução para os exercícios seguintes à biblioteca `Saida`.
@@ -2508,7 +2472,7 @@ Inclua os algoritmos desenvolvidos como solução para os exercícios seguintes 
 (ex:vetores-saida_vetor_inteiros_separador)=
 :::::::{card} Mostrar vetor de inteiros com separador específico
 
-Desenvolva um procedimento chamado `mostrarInteiros` que recebe como entrada um vetor com elementos do tipo inteiro e um caractere `separador` e mostra esses valores na tela, todos em uma única linha. Cada elemento deve ser separado por pelo caractere `separador`.
+Desenvolva um procedimento chamado `mostrarInteiros` que recebe como entrada um vetor com elementos do tipo inteiro e um caractere `separador` e mostra esses valores na tela, todos em uma única linha. Cada elemento deve ser separado pelo caractere `separador`.
 
 ::::::{prf:example}
 :nonumber:
