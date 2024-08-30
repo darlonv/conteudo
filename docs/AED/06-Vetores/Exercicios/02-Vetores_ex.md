@@ -412,10 +412,10 @@ Leia um vetor A, com 10 elementos. Crie em vetor B da seguinte forma:
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Leia um vetor A, com 10 elementos contendo valores do tipo inteiro. Em seguida, gere um vetor B e copie para ele os elementos de A, organizando da seguinte forma:
-- coloque os números pares primeiro (mantendo a ordem que aparecem em A);
-- coloque os números ímpares logo após os pares (mantendo a ordem que aparecem em B);
-- mostre o vetor B na tela.
+Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em seguida, gere um vetor `vb` e copie para ele os elementos de A, organizando da seguinte forma:
+- coloque os números pares primeiro (mantendo a ordem que aparecem em `va`);
+- coloque os números ímpares logo após os pares (mantendo a ordem que aparecem em `va`);
+- mostre na tela o vetor `vb`.
 
 ::::::{prf:example}
 :nonumber:
@@ -424,11 +424,22 @@ Leia um vetor A, com 10 elementos contendo valores do tipo inteiro. Em seguida, 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+5
+9
+2
+4
+7
+7
+1
+0
+15
+0
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[2, 4, 0, 0, 5, 9, 7, 7, 1, 15]
 ```
 ::::  
 
@@ -448,11 +459,22 @@ Leia um vetor A, com 10 elementos contendo valores do tipo inteiro. Em seguida, 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[2, 4, 6, 8, 10, 1, 3, 5, 7, 9]
 ```
 ::::  
 
@@ -469,11 +491,22 @@ Leia um vetor A, com 10 elementos contendo valores do tipo inteiro. Em seguida, 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+3
+9
+5
+1
+7
+5
+3
+1
+1
+20
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[20, 3, 9, 5, 1, 7, 5, 3, 1, 1]
 ```
 ::::  
 
@@ -3285,7 +3318,143 @@ O conjunto intersecção $A \cap B$ é dado pelos elementos que simultaneamente 
 <!-- /exercise -->
 ::::::::  
 
+::::::::{exercise}
+:label: exex:label
 
+(ex:label)=
+:::::::{card} Equação de nº grau
+
+Desenvolva uma função que calcula uma equação de qualquer grau. Para ela devem ser passados um vetor `coeficientes` com os coeficientes da equação e o valor de `x` para calcular a equação. Tanto `coeficentes` como `x` devem operar com dados do tipo real. 
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[2.0, 3.0, 4.0]
+```
+```c
+2.0
+```
+::::  
+
+::::{card} Saída
+```
+18.0
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+Como `coeficientes` possui $3$ elementos, é calculado uma equação de segundo grau. A equação calculada é 
+
+$$
+ax^2+bx^1 +cx^0
+$$
+
+ou seja,
+
+$$
+ax^2+bx +c
+$$
+
+O vetor `coeficientes` define que os valores para $a$, $b$ e $c$ são $a=2$, $b=3$ e $c=4$. Logo,
+
+$$
+2x^2+3x +4
+$$
+
+E como $x=2$, tem-se que:
+
+$$
+2*2^2 + 3*2 + 4 = 18
+$$
+
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1.0, 2.0, 3.0, 4.0, 5.0]
+```
+```c
+10.0
+```
+::::  
+
+::::{card} Saída
+```
+12345.0
+```
+::::  
+
+<!-- /grid -->
+::::: 
+
+::::{card} Explicação
+Como `coeficientes` possui $5$ elementos, é calculado uma equação de 4º grau. A equação calculada é 
+
+$$
+ax^4+bx^3 +cx^2+dx+e
+$$
+
+ou seja,
+
+$$
+1*x^4+2*x^3 +3x^2+4*x+5
+$$
+
+como `x` é $x=10$, tem-se que:
+
+$$
+1*10^4 + 2*10^3 +3*10*^2+4*10^1+5 = 12345
+$$
+
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[5.0, 10.0]
+```
+```c
+9
+```
+::::  
+
+::::{card} Saída
+```
+55.0
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
 
 ## Problemas
 
