@@ -2027,7 +2027,9 @@ Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Man
 (ex:label)=
 :::::::{card} Leitura de valores inteiros
 
-Desenvolva uma função chamada `lerVetorInt`, que recebe como parâmetro um vetor. A função deve solicitar ao usuário para que digite os valores a serem preenchidos no vetor, e em seguida retornar o vetor preenchido.
+Desenvolva uma função chamada `lerVetorInt`, que recebe como parâmetro um número inteiro `n`. A função deve solicitar ao usuário para que digite `n` valores. A função deve retornar um vetor contendo todos os valores digitados pelo usuário.
+
+ a serem preenchidos no vetor, e em seguida retornar o vetor preenchido.
 - Implemente também as funções `vetorLeituraFloat` e `vetorLeituraString`, que operam com os tipos de dados real e caractere.
 
 ::::::{prf:example}
