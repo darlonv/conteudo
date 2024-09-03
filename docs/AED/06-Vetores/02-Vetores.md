@@ -1219,3 +1219,22 @@ Do ponto de vista do algoritmo, utilizamos indiretamente as posições em memór
 
 Valores armazenados em cada elemento do vetor.
 :::
+
+::::::::::{exercise}
+<!-- Título do exercício -->
+:::::::::{embed} ex:vetores-endereco_inteiro_primeira_posicao
+<!-- /embed -->  
+:::::::::  
+<!-- /exercise -->  
+::::::::::  
+
+::::::::::{exercise}
+<!-- Título do exercício -->
+:::::::::{embed} ex:vetores-endereco_real_quinta_posicao
+<!-- /embed -->  
+:::::::::  
+<!-- /exercise -->  
+::::::::::  
+
+
+

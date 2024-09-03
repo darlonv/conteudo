@@ -122,6 +122,7 @@ Definição aqui
 
 
 ## Exercício com 3 exemplos
+
 ::::::::{exercise}
 :label: exex:label
 
@@ -199,7 +200,3 @@ Definição aqui
 :::::::  
 <!-- /exercise -->
 ::::::::  
-
-
-
-

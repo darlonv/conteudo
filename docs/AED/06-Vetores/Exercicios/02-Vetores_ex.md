@@ -1719,15 +1719,317 @@ Desenvolva uma função chamada `alocarCadeiasDeCaracteres`, que recebe como par
 <!-- /exercise -->
 ::::::::  
 
+### Cópia de vetores
+
+::::::::{exercise}
+:label: exex:vetores-subvetores
+
+(ex:vetores-subvetores)=
+:::::::{card} Copiar trecho de vetor
+
+Desenvolva uma função que recebe como entrada um vetor `v` e dois índices, `a` e `b`. A função deve retornar um novo vetor, contendo apenas os elementos de `v` da posição `a` até `b-1`. Chame sua função de `subVetor`. Caso os índices `a` e `b` sejam índices fora do vetor `v` deve-se copiar apenas os elementos no intervalo válido.
+
+:::{attention} Java
+:class: dropdown
+Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Mantenha o mesmo nome de função, modificando apenas o tipo de dado de entrada.
+:::
+
+:::{attention} C
+:class: dropdown
+Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos elementos do vetor.
+:::
+
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 11, 12, 13, 14 ,15]
+```
+```c
+1
+```
+```c
+3
+```
+::::  
+
+::::{card} Saída
+```c
+[11, 12]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+É retornado um novo vetor, com cópia dos valores das posições $1$ e $2$ do vetor `v`.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+0
+```
+```c
+5
+```
+::::  
+
+::::{card} Retorno
+```c
+[10, 20, 30, 40, 50]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+-5
+```
+```c
+3
+```
+::::  
+
+::::{card} Saída
+```c
+[10, 20]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+2
+```
+```c
+10
+```
+::::  
+
+::::{card} Saída
+```c
+[30, 40, 50]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+-20
+```
+```c
+50
+```
+::::  
+
+::::{card} Saída
+```c
+[10, 20, 30, 40, 50]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+3
+```
+```c
+1
+```
+::::  
+
+::::{card} Saída
+```
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+15
+```
+```c
+20
+```
+::::  
+
+::::{card} Saída
+```
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+::::::::{exercise}
+:label: exex:vetores-copa
+
+(ex:vetores-subvetores)=
+:::::::{card} Copiar
+
+Desenvolva uma função que recebe como entrada um vetor `v`. A função deve retornar um **novo** vetor com o mesmo tamanho de `v`, contendo uma cópia dos elementos de `v` em cada posição. Chame sua função de `copiar`.
+
+:::{attention} Java
+:class: dropdown
+Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Mantenha o mesmo nome de função, modificando apenas o tipo de dado de entrada.
+:::
+
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 11, 12, 13, 14 ,15]
+```
+::::  
+
+::::{card} Saída
+```c
+[10, 11, 12, 13, 14 ,15]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+É retornado um novo vetor, com cópia de todos os valores.
+::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+
 ### Leitura de valores
 
 ::::::::{exercise}
 :label: exex:label
 
 (ex:label)=
-:::::::{card} <!-- Título aqui -->
+:::::::{card} Leitura de valores inteiros
 
-Desenvolva uma função chamada `vetorLeituraInt`, que recebe como parâmetro um vetor. A função deve solicitar ao usuário para que digite os valores a serem preenchidos no vetor, e em seguida retornar o vetor preenchido.
+Desenvolva uma função chamada `lerVetorInt`, que recebe como parâmetro um número inteiro `n`. A função deve solicitar ao usuário para que digite `n` valores. A função deve retornar um vetor contendo todos os valores digitados pelo usuário.
+
+ a serem preenchidos no vetor, e em seguida retornar o vetor preenchido.
 - Implemente também as funções `vetorLeituraFloat` e `vetorLeituraString`, que operam com os tipos de dados real e caractere.
 
 ::::::{prf:example}
@@ -4096,7 +4398,7 @@ Uma empresa deseja fazer um levantamento do seu estoque. Para isto possui para c
 <!-- /exercise -->
 ::::::::  
 
-## Desafios
+<!-- ## Desafios -->
 
 ## Endereços de Memória
 
@@ -4166,7 +4468,7 @@ Por que é necessário que todos os elementos de um vetor possuam sempre o mesmo
 <!-- /exercise -->
 ::::::::  
 
-## Exercícios Externos
+<!-- ## Exercícios Externos -->
 
 ## Agradecimentos
 
