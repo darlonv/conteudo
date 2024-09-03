@@ -66,8 +66,12 @@ int multiplicacaoRecursiva(int a, int b){
 :::::::
 
 :::::::{exercise} Potência recursiva
-:label: ex:recursividade-potencia
+:label: exex:recursividade-potencia
+
+(ex:recursividade-potencia)=
+::::::{card}
 Calcule o resultado de $a^b$, tal que $a$ e $b$ são números inteiros não negativos. Observe que $a^5 = a*a*a*a*a$.
+::::::
 
 ::::::{solution} ex:recursividade-potencia
 :hidden:

@@ -18,7 +18,7 @@ O resultado deve ser o formato acima lido de cima para baixo, da esquerda para a
 :nonumber:
 <!-- :class: dropdown -->
 
-:::::{grid} 1 1 2 2
+:::::{grid} 2 2 2 2
 ::::{card} Entrada
 ```
 ABACATES
@@ -37,9 +37,9 @@ ACEBASAT
 
 ::::::{prf:example}
 :nonumber:
-:class: dropdown
+<!-- :class: dropdown -->
 
-:::::{grid} 1 1 2 2
+:::::{grid} 2 2 2 2
 ::::{card} Entrada
 ```
 PARALELO
