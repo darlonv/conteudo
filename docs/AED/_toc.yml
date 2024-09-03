@@ -56,17 +56,17 @@ chapters:
       - title: Exercícios
         sections:
           - file: 05-Caracteres/Exercicios/01-Strings_ex.md
-  # - title: Variáveis compostas
-  #   sections:
-  #     - file: 06-Vetores/01-Variaveis_compostas.md
-  #     - file: 06-Vetores/02-Vetores.md
-  #     - file: 06-Vetores/03-Matrizes.md
-  #     - file: 06-Vetores/04-Registros.md
-  #     - title: Exercícios
-  #       sections:
-  #         - file: 06-Vetores/Exercicios/02-Vetores_ex.md
-  #         - file: 06-Vetores/Exercicios/03-Matrizes_ex.md
-  #         - file: 06-Vetores/Exercicios/04-Registros_ex.md
+  - title: Variáveis compostas
+    sections:
+      - file: 06-Vetores/01-Variaveis_compostas.md
+      - file: 06-Vetores/02-Vetores.md
+      - file: 06-Vetores/03-Matrizes.md
+      - file: 06-Vetores/04-Registros.md
+      - title: Exercícios
+        sections:
+          - file: 06-Vetores/Exercicios/02-Vetores_ex.md
+          - file: 06-Vetores/Exercicios/03-Matrizes_ex.md
+          - file: 06-Vetores/Exercicios/04-Registros_ex.md
   # - title: Arquivos
   #   sections:
   #     - file: 07-Arquivos/01-Arquivos.md
@@ -137,6 +137,9 @@ chapters:
       - title: AED
         sections:
           - file: _trabalhos/AED/AED2024-2B.md
+          # - file: _trabalhos/AED/AED2024-P2Q1.md
+          # - file: _trabalhos/AED/AED2024-P2Q2.md
+          # - file: _trabalhos/AED/AED2024-P2Q3.md
       - title: LPI
         sections:
           - file: _trabalhos/LPI/LPIDP2024-2B.md
