@@ -11,15 +11,15 @@ DOCKER_IMAGE_VERSION = 0.1
 all: multi-build
 
 build:
-	docker build --target java -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION) .
+	docker build -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION) .
 	docker tag $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION) $(DOCKER_IMAGE):latest
 
 multi-build:
 #java
 	docker buildx create --name mybuilder --use
 	# docker buildx inspect --bootstrap
-	docker buildx build --target java --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION) --push .
-	docker buildx build --target java --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):latest --push .
+	docker buildx build --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION) --push .
+	docker buildx build --platform=linux/amd64,linux/arm64 -t $(DOCKER_IMAGE):latest --push .
 	# docker manifest inspect $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)
 	docker buildx rm
 
