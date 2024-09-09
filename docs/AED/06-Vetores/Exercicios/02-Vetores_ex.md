@@ -1295,7 +1295,7 @@ Use um vetor unidimensional para resolver o seguinte problema. Leia 20 números,
    
 ## Procedimentos e funções
 
-Desenvolva biblioteca chamada `Vetores`, incluindo nela as soluções dos exercícios a seguir.
+Desenvolva uma biblioteca chamada `Vetores`, incluindo nela as soluções dos exercícios a seguir.
 
 ### Alocação de vetores
 
