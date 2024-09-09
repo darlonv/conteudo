@@ -28,6 +28,7 @@ multi-build-clean:
 	docker buildx rm
 
 push:
+	docker push $(DOCKER_IMAGE):$(DOCKER_IMAGE_VERSION)
 	docker push $(DOCKER_IMAGE)
 
 
