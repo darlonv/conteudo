@@ -74,7 +74,7 @@ Calcule o resultado de $a^b$, tal que $a$ e $b$ são números inteiros não nega
 ::::::
 
 ::::::{solution} ex:recursividade-potencia
-:hidden:
+<!-- :hidden: -->
 <!-- :class: dropdown -->
 
 :::::{tab-set}
