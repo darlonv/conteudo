@@ -122,7 +122,7 @@ A média dos valores 10, 11, 12, 13 e 14 é 12. Como os valores 12, 13 e 14 são
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Leia valores inteiros e armazene nos dois vetores `va` e `vb`, com 10 posições cada um. Em seguida, gere um vetor `vc` com 20 posições. Os elementos de `vc` nas posições pares devem conter o valor de `va + vb` na mesma posição, e o `va - vb` nas posições ímpares. Mostre na tela os valores dos vetores `va`, `vb` e `vc`.
+Leia valores inteiros e armazene nos dois vetores `va` e `vb`, com 10 posições cada um. Em seguida, gere um vetor `vc` com 10 posições. Os elementos de `vc` nas posições pares devem conter o valor de `va + vb` na mesma posição, e o `va - vb` nas posições ímpares. Mostre na tela os valores dos vetores `va`, `vb` e `vc`.
 
 ::::::{prf:example}
 :nonumber:
