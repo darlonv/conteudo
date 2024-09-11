@@ -2304,7 +2304,7 @@ Desenvolva uma função chamada `alocarLogicos`, que recebe como parâmetro a qu
 (ex:label)=
 :::::::{card} Novo vetor de caracteres
 
-Desenvolva uma função chamada `alocarCaracteres`, que recebe como parâmetro a quantidade de elementos que deve conter um vetor. A função deve retornar um vetor de elementos do tipo caractere com a quantidade de elementos informada. O vetor retornado deve possuir todos seus elementos preenchidos com o valor `'\0'`.
+Desenvolva uma função chamada `alocarCaracteres`, que recebe como parâmetro a quantidade de elementos que deve conter um vetor. A função deve retornar um vetor de elementos do tipo caractere com a quantidade de elementos informada. O vetor retornado deve possuir todos seus elementos preenchidos com o caractere `'\0'`.
 
 ::::::{prf:example}
 :nonumber:
