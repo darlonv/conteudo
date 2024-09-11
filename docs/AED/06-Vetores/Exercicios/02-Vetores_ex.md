@@ -12,16 +12,20 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa que leia $8$ números inteiros e informe quantos valores são maiores ou iguals à média de todos os valores digitados.
+Elaborar um programa que leia $5$ números inteiros e informe quantos valores são maiores ou iguals à média de todos os valores digitados.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[10, 11, 12, 13, 14]
+10
+11
+12
+13
+14
 ```
 ::::  
 
@@ -43,12 +47,16 @@ A média dos valores 10, 11, 12, 13 e 14 é 12. Como os valores 12, 13 e 14 são
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[10, 20, 30, 1000]
+10
+20
+30
+40
+1000
 ```
 ::::  
 
@@ -66,12 +74,16 @@ A média dos valores 10, 11, 12, 13 e 14 é 12. Como os valores 12, 13 e 14 são
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[2,2,2,2,2]
+2
+2
+2
+2
+2
 ```
 ::::  
 
@@ -89,18 +101,22 @@ A média dos valores 10, 11, 12, 13 e 14 é 12. Como os valores 12, 13 e 14 são
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[]
+80
+10
+90
+10
+10
 ```
 ::::  
 
 ::::{card} Saída
 ```
-0
+2
 ```
 ::::  
 
@@ -126,12 +142,31 @@ Leia valores inteiros e armazene nos dois vetores `va` e `vb`, com 10 posições
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
-:::::{grid} 1 1 1 1
+:::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-1, 2 ,3, 4, 5, 6, 7, 8, 9, 10, 10, 9, 8, 7, 6, 8, 4, 3, 2, 1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+10
+9
+8
+7
+6
+8
+4
+3
+2
+1
 ```
 ::::  
 
@@ -177,7 +212,7 @@ Elaborar um programa que leia um vetor `c` de 10 elementos inteiros. Após o té
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 1 1
 ::::{card} Entrada
@@ -213,7 +248,7 @@ Elaborar um programa que leia um vetor `c` de 10 elementos inteiros. Após o té
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 1 1
 ::::{card} Entrada
@@ -234,6 +269,7 @@ Elaborar um programa que leia um vetor `c` de 10 elementos inteiros. Após o té
 ::::{card} Saída
 ```
 [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 ```
 ::::  
 
@@ -245,7 +281,7 @@ Elaborar um programa que leia um vetor `c` de 10 elementos inteiros. Após o té
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 1 1
 ::::{card} Entrada
@@ -265,6 +301,7 @@ Elaborar um programa que leia um vetor `c` de 10 elementos inteiros. Após o té
 
 ::::{card} Saída
 ```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
 ::::  
@@ -294,14 +331,14 @@ Elaborar um programa que leia 6 números e exiba:
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa que leia 6 números e exiba:
+Elaborar um programa que leia 6 números e mostre:
 - o maior número lido;
 - o menor número lido;
 - quantos números são iguais ao primeiro número digitado.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -334,7 +371,7 @@ Elaborar um programa que leia 6 números e exiba:
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -364,7 +401,7 @@ Elaborar um programa que leia 6 números e exiba:
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
