@@ -1501,11 +1501,18 @@ O aluno 68 é o mais baixo da turma, com 1.77m de altura.
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Considere uma turma que possui $n$ alunos. Sobre cada aluno tem-se 5 informações: o número do aluno (`id`), e 4 notas, que correspondem às notas do 1º ao 4º bimestre. Desenvolva uma aplicação em que o usuário entra com estas informações e ao final são apresentadas as notas, a média final e se o aluno foi aprovado ou reprobado. São aprovados alunos com média maior ou igual a $7.0$. O primeiro valor digitado corresponde a $n$, com a quantidade de alunos na turma. 
+Considere uma turma de alunos. Sobre cada aluno tem-se 5 informações:
+- `id` do aluno (número do registro)
+- nota do 1º bimestre
+- nota do 2º bimestre
+- nota do 3º bimestre
+- nota do 4º bimestre
+
+ Desenvolva uma aplicação em que o usuário entra com estas informações e ao final são apresentados o `id` do aluno, sua média final e se o aluno foi aprovado ou reprovado. São aprovados alunos com média maior ou igual a $70.0$. O primeiro valor digitado corresponde a $n$, com a quantidade de alunos na turma.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -1556,7 +1563,7 @@ id  média   status
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -1589,7 +1596,7 @@ id  média   status
 ```
 
 ```c
-20
+25
 98
 94
 97
@@ -1614,7 +1621,7 @@ id  média   status
 16	75.0	Aprovado
 18	70.0	Aprovado
 9	67.5	Reprovado
-20	87.5	Reprovado
+25	87.5	Reprovado
 20	67.0	Aprovado
 ```
 ::::  
@@ -1627,7 +1634,7 @@ id  média   status
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -1637,323 +1644,323 @@ id  média   status
 ```
 
 ```c
-20
-100
+179
+56
+81
 67
+75
+```
+
+```c
+103
+97
+99
+54
+85
+```
+
+```c
+196
+91
+72
+95
+59
+```
+
+```c
+58
+51
+81
+93
+54
+```
+
+```c
+170
+50
+74
+50
+96
+```
+
+```c
+138
+78
+61
+86
+87
+```
+
+```c
+137
+84
+57
+84
+73
+```
+
+```c
+191
+53
+71
 69
+85
+```
+
+```c
+81
+70
+67
+52
 79
 ```
 
 ```c
-14
-57
-89
-83
-58
-```
-
-```c
-14
-88
-98
-55
-99
-```
-
-```c
-13
-58
-73
+46
+56
+72
 74
-64
-```
-
-```c
-4
-73
-95
-70
-73
-```
-
-```c
-17
-92
-67
-96
 55
+```
+
+```c
+50
+54
+70
+93
+57
+```
+
+```c
+197
+60
+65
+98
+66
+```
+
+```c
+76
+80
+97
+60
+74
+```
+
+```c
+106
+73
+64
+82
+93
+```
+
+```c
+176
+90
+100
+68
+83
+```
+
+```c
+199
+97
+69
+99
+50
+```
+
+```c
+45
+59
+52
+66
+70
+```
+
+```c
+60
+85
+51
+75
+57
+```
+
+```c
+190
+61
+63
+84
+51
+```
+
+```c
+89
+70
+61
+71
+58
+```
+
+```c
+87
+53
+53
+65
+90
+```
+
+```c
+32
+96
+100
+82
+95
+```
+
+```c
+30
+91
+94
+86
+79
+```
+
+```c
+117
+92
+68
+55
+52
 ```
 
 ```c
 2
-54
-98
-84
-63
-```
-
-```c
-20
-82
-54
-98
-87
-```
-
-```c
-3
-69
-94
-63
-61
-```
-
-```c
-4
-78
-62
-53
-93
-```
-
-```c
-17
-64
-97
-77
-84
-```
-
-```c
-11
-79
-66
-59
-98
-```
-
-```c
-13
-94
-70
-58
-74
-```
-
-```c
-14
-67
-98
-72
 89
-```
-
-```c
-8
-86
-79
-99
-68
+74
+76
+67
 ```
 
 ```c
 15
-56
-84
-69
-94
-```
-
-```c
-14
-63
-51
-63
-62
-```
-
-```c
-20
-64
-89
-61
-90
-```
-
-```c
-5
-88
 70
-88
-98
-```
-
-```c
-5
-90
-79
-90
-61
-```
-
-```c
-7
-60
-80
-58
-75
-```
-
-```c
-3
-67
-90
-70
-62
-```
-
-```c
-20
+65
 83
-80
-78
-74
-```
-
-```c
-14
-82
-89
-99
-62
-```
-
-```c
-20
-60
-92
-79
-59
-```
-
-```c
-8
-67
-90
-55
-75
-```
-
-```c
-17
-87
-75
-62
-67
-```
-
-```c
-6
-77
-98
-61
-79
-```
-
-```c
-14
-75
-76
-67
-85
-```
-
-```c
-9
-85
-78
-85
-86
-```
-
-```c
-12
-81
-78
-89
-51
-```
-
-```c
-19
-86
-51
-79
 98
 ```
 
 ```c
-3
-85
-59
-60
-57
-```
-
-```c
-16
-60
-96
-93
-88
-```
-
-```c
-13
-82
-51
-91
+185
 69
-```
-
-```c
-16
-66
-77
-67
 51
+50
+81
 ```
 
 ```c
-19
-100
+104
 74
-61
+50
+81
+55
+```
+
+```c
+40
+86
+63
+71
 62
 ```
 
 ```c
-12
-67
+119
+84
+66
+81
+99
+```
+
+```c
+141
+84
+77
+63
+90
+```
+
+```c
+93
 91
+92
+91
+98
+```
+
+```c
+44
+57
+60
+89
+87
+```
+
+```c
+74
+80
+71
+66
+68
+```
+
+```c
+193
+60
+66
+98
+92
+```
+
+```c
+184
+75
+59
+78
+91
+```
+
+```c
+55
+57
+80
+57
+67
+```
+
+```c
+99
 61
+94
+54
+92
+```
+
+```c
+107
+84
+89
+71
 64
 ```
 
 ```c
-18
-76
-53
-55
-57
-```
-
-```c
-10
-63
-94
-90
-98
+162
+99
+61
+73
+84
 ```
 ::::  
 
@@ -1961,46 +1968,46 @@ id  média   status
 ```
 id  média   status
 --------------------
-20	78.75	Aprovado
-14	71.75	Aprovado
-14	85.0	Aprovado
-13	67.25	Reprovado
-4	77.75	Aprovado
-17	77.5	Aprovado
-2	74.75	Aprovado
-20	80.25	Aprovado
-3	71.75	Aprovado
-4	71.5	Aprovado
-17	80.5	Aprovado
-11	75.5	Aprovado
-13	74.0	Aprovado
-14	81.5	Aprovado
-8	83.0	Aprovado
-15	75.75	Aprovado
-14	59.75	Reprovado
-20	76.0	Aprovado
-5	86.0	Aprovado
-5	80.0	Aprovado
-7	68.25	Reprovado
-3	72.25	Aprovado
-20	78.75	Aprovado
-14	83.0	Aprovado
-20	72.5	Aprovado
-8	71.75	Aprovado
-17	72.75	Aprovado
-6	78.75	Aprovado
-14	75.75	Aprovado
-9	83.5	Aprovado
-12	74.75	Aprovado
-19	78.5	Aprovado
-3	65.25	Reprovado
-16	84.25	Aprovado
-13	73.25	Aprovado
-16	65.25	Reprovado
-19	74.25	Aprovado
-12	70.75	Aprovado
-18	60.25	Reprovado
-10	86.25	Aprovado
+179	69.75	Reprovado
+103	83.75	Aprovado
+196	79.25	Aprovado
+58	69.75	Reprovado
+170	67.5	Reprovado
+138	78.0	Aprovado
+137	74.5	Aprovado
+191	69.5	Reprovado
+81	67.0	Reprovado
+46	64.25	Reprovado
+50	68.5	Reprovado
+197	72.25	Aprovado
+76	77.75	Aprovado
+106	78.0	Aprovado
+176	85.25	Aprovado
+199	78.75	Aprovado
+45	61.75	Reprovado
+60	67.0	Reprovado
+190	64.75	Reprovado
+89	65.0	Reprovado
+87	65.25	Reprovado
+32	93.25	Aprovado
+30	87.5	Aprovado
+117	66.75	Reprovado
+2	76.5	Aprovado
+15	79.0	Aprovado
+185	62.75	Reprovado
+104	65.0	Reprovado
+40	70.5	Aprovado
+119	82.5	Aprovado
+141	78.5	Aprovado
+93	93.0	Aprovado
+44	73.25	Aprovado
+74	71.25	Aprovado
+193	79.0	Aprovado
+184	75.75	Aprovado
+55	65.25	Reprovado
+99	75.25	Aprovado
+107	77.0	Aprovado
+162	79.25	Aprovado
 ```
 ::::  
 
@@ -2016,185 +2023,14 @@ id  média   status
 
 
 
-<!-- ::::{exercise}
-Use um vetor unidimensional para resolver o seguinte problema. Uma companhia paga seus vendedores com base em comissões. O vendedor recebe R\$200 por semana mais 9 por cento de suas vendas brutas daquela semana. Por exemplo, um vendedor que teve vendas brutas de R\$3000 em uma semana recebe R\$200 mais 9 por cento de R\$3000, ou seja, um total de R\$470. Escreva um programa em C (usando um vetor de contadores) que determine quantos vendedores receberam salários nos seguintes intervalos de valores (considere que o salário de cada vendedor é trancado para que seja obtido um valor inteiro):
-- 1: R\$200-R\$299
-- 2: R\$300-R\$399
-- 3: R\$400-R\$499
-- 4: R\$500-R\$599
-- 5: R\$600-R\$699
-- 6: R\$700-R\$799
-- 7: R\$800-R\$899
-- 8: R\$900-R\$999
-- 9: R\$1000 em diante
-:::: -->
-
 ::::::::{exercise}
 :label: exex:label
 
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Use um vetor unidimensional para resolver o seguinte problema. Uma companhia paga seus vendedores com base em comissões. O vendedor recebe R\$200 por semana mais 9 por cento de suas vendas brutas daquela semana. Por exemplo, um vendedor que teve vendas brutas de R\$3000 em uma semana recebe R\$200 mais 9 por cento de R\$3000, ou seja, um total de R\$470. Escreva um programa (usando um vetor de contadores) que determine quantos vendedores receberam salários nos seguintes intervalos de valores (considere que o salário de cada vendedor é arredondado para que seja obtido um valor inteiro):
-- 1: R\$200-R\$299
-- 2: R\$300-R\$399
-- 3: R\$400-R\$499
-- 4: R\$500-R\$599
-- 5: R\$600-R\$699
-- 6: R\$700-R\$799
-- 7: R\$800-R\$899
-- 8: R\$900-R\$999
-- 9: R\$1000 em diante
+Use um vetor unidimensional para resolver o seguinte problema. Peça ao usuário que digite 20 números inteiros, que podem ser valores de 0 a 100. À medida que o usuário for digitando valores, caso o valor já tenha sido digitado anteriormente, deve ser mostrada a mensagem "Valor já digitado", e um novo número deve ser digitado. A entrada só é finalizada quando todos os 20 números distintos forem digitados.
 
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-::::{card} Explicação
-::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-<!-- /card exercicio -->
-:::::::  
-<!-- /exercise -->
-::::::::  
-
-
-
-<!-- ::::{exercise}
-Use um vetor unidimensional para resolver o seguinte problema. Leia 20 números, todos situados entre 0 e 100, inclusive. À medida que cada número for lido, imprima-o somente se não for duplicata de um número já lido. Experimente o "pior caso", no qual todos os 20 números são diferentes.
-:::: -->
-
-::::::::{exercise}
-:label: exex:label
-
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
-
-Use um vetor unidimensional para resolver o seguinte problema. Leia 20 números, todos situados entre 0 e 100, inclusive. À medida que cada número for lido, imprima-o somente se não for duplicata de um número já lido. Experimente o "pior caso", no qual todos os 20 números são diferentes.
-
-::::::{prf:example}
-:nonumber:
-:class: dropdown
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-::::{card} Explicação
-::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
