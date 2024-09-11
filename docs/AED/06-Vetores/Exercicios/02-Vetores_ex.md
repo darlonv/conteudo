@@ -1501,7 +1501,7 @@ O aluno 68 é o mais baixo da turma, com 1.77m de altura.
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Ler as notas finais de uma turma de 10 alunos armazenando-as em um vetor N. A seguir calcule a média aritmética das notas dos alunos aprovados (nota >= 6,0). Armazene em um vetor P a posição (índice) que cada aluno ocupa no vetor N, dos alunos que obtiveram nota maior que a mádia calculada. Imprimir a média calculada, em ordem crescente e logo após o vetor P.
+Considere uma turma que possui $n$ alunos. Sobre cada aluno tem-se 5 informações: o número do aluno (`id`), e 4 notas, que correspondem às notas do 1º ao 4º bimestre. Desenvolva uma aplicação em que o usuário entra com estas informações e ao final são apresentadas as notas, a média final e se o aluno foi aprovado ou reprobado. São aprovados alunos com média maior ou igual a $7.0$.
 
 ::::::{prf:example}
 :nonumber:
