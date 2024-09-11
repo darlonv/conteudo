@@ -435,28 +435,20 @@ Elaborar um programa que leia 6 números e mostre:
 ::::::::  
 
 
-
-<!-- ::::{exercise}
-Leia um vetor A, com 10 elementos. Crie em vetor B da seguinte forma:
-- coloque os números pares primeiro;
-- coloque os números ímpares logo após os pares;
-- exiba o vetor B.
-:::: -->
-
 ::::::::{exercise}
 :label: exex:label
 
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em seguida, gere um vetor `vb` e copie para ele os elementos de A, organizando da seguinte forma:
-- coloque os números pares primeiro (mantendo a ordem que aparecem em `va`);
+Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em seguida, gere um vetor `vb` e copie para ele os elementos de `va`, organizando da seguinte forma:
+- coloque os números **pares** primeiro (mantendo a ordem que aparecem em `va`);
 - coloque os números ímpares logo após os pares (mantendo a ordem que aparecem em `va`);
 - mostre na tela o vetor `vb`.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -491,7 +483,7 @@ Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em segu
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -523,7 +515,7 @@ Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em segu
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -564,20 +556,33 @@ Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em segu
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa que leia um vetor de 10 posições. Contar e escrever quantos valores pares ele possui.
+Aloque um vetor `valores`, com espaço para armazenar $10$ elementos com dados do tipo inteiro. Conforme os dados vão sendo lidos, coloque os valores pares a partir do início do vetor e os valor ímpares a partir do final do vetor.
+
+ 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
+5
+9
+2
+4
+7
+7
+1
+0
+15
+0
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[2, 4, 0, 0, 15, 1, 7, 7, 9, 5]
 ```
 ::::  
 
@@ -585,6 +590,13 @@ Elaborar um programa que leia um vetor de 10 posições. Contar e escrever quant
 :::::  
 
 ::::{card} Explicação
+Observe a saída:
+```
+pares -> [2, 4, 0, 0, 15, 1, 7, 7, 9, 5] <-ímpares
+
+```
+
+Os valores pares aparecem na ordem, a partir da posição `0` do vetor e são armazenados nas posições seguintes. Os valores ímpares iniciam na última posição do vetor, e são armazenados nas posições anteriores.
 ::::  
 
 <!-- /example -->
@@ -592,16 +604,27 @@ Elaborar um programa que leia um vetor de 10 posições. Contar e escrever quant
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[2, 4, 6, 8, 10, 9, 7, 5, 3, 1]
 ```
 ::::  
 
@@ -613,16 +636,27 @@ Elaborar um programa que leia um vetor de 10 posições. Contar e escrever quant
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+3
+9
+5
+1
+7
+5
+3
+1
+1
+20
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[20, 1, 1, 3, 5, 7, 1, 5, 9, 3]
 ```
 ::::  
 
@@ -635,12 +669,6 @@ Elaborar um programa que leia um vetor de 10 posições. Contar e escrever quant
 :::::::  
 <!-- /exercise -->
 ::::::::  
-
-
-
-<!-- ::::{exercise}
-Elaborar um programa que leia um vetor de 5 posições para números reais e, depois, um código inteiro. Se o código for zero, finalize o programa; se for 1, mostre o vetor na ordem direta; se for 2, mostre o vetor na ordem inversa. Caso, o código for diferente de 1 e 2 escreva uma mensagem informando que o código é inválido.
-:::: -->
 
 ::::::::{exercise}
 :label: exex:label
@@ -648,20 +676,32 @@ Elaborar um programa que leia um vetor de 5 posições para números reais e, de
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa que leia um vetor de 5 posições para números reais e, depois, um código inteiro. Se o código for zero, finalize o programa; se for 1, mostre o vetor na ordem direta; se for 2, mostre o vetor na ordem inversa. Caso, o código for diferente de 1 e 2 escreva uma mensagem informando que o código é inválido.
+Elaborar um programa que leia $n$ valores inteiros. O primeiro valor digitado pelo usuário corresponde a $n$. Após ler os valores, mostre quantos valores pares e ímpares foram digitados, e também quais são esses valores.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+5
+```
+```c
+4
+6
+1
+3
+7
 ```
 ::::  
 
 ::::{card} Saída
 ```
+Par: 2
+[4, 6]
+Ímpar: 3
+[1, 3, 7]
 ```
 ::::  
 
@@ -669,6 +709,7 @@ Elaborar um programa que leia um vetor de 5 posições para números reais e, de
 :::::  
 
 ::::{card} Explicação
+O primeiro valor digitado corresponde à quantidade de números que serão digitados ($n$). No exemplo, $n=5$. Foram digitados 2 valores par (`[4, 6]`) e 3 valores ímpar (`[1, 3, 7]`).
 ::::  
 
 <!-- /example -->
@@ -676,16 +717,31 @@ Elaborar um programa que leia um vetor de 5 posições para números reais e, de
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+10
+100
+8
+6
+4
+9
+8
+10
+12
+33
+49
 ```
 ::::  
 
 ::::{card} Saída
 ```
+Par: 7
+[100, 8, 6, 4, 8, 10, 12]
+Ímpar: 3
+[9, 33, 49]
 ```
 ::::  
 
@@ -697,16 +753,21 @@ Elaborar um programa que leia um vetor de 5 posições para números reais e, de
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+0
 ```
 ::::  
 
 ::::{card} Saída
 ```
+Par: 0
+[]
+Ímpar: 0
+[]
 ```
 ::::  
 
@@ -721,10 +782,6 @@ Elaborar um programa que leia um vetor de 5 posições para números reais e, de
 ::::::::  
 
 
-
-<!-- ::::{exercise}
-Elaborar um programa com um vetor de tamanho 50 preenchido com o seguinte valor: $(i + 5i)\%(i + 1)$, sendo $i$ a posição do elemento no vetor. Em seguida imprima o vetor na tela.
-:::: -->
 
 ::::::::{exercise}
 :label: exex:label
@@ -732,20 +789,25 @@ Elaborar um programa com um vetor de tamanho 50 preenchido com o seguinte valor:
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa com um vetor de tamanho 50 preenchido com o seguinte valor: $(i + 5i)\%(i + 1)$, sendo $i$ a posição do elemento no vetor. Em seguida imprima o vetor na tela.
+Solicite ao usuário que digite dois valores, $n$ e $k$, ambos inteiros e positivos. Em seguida, aloque um vetor com $n$ elementos de inteiros, em que em cada posição $i$ do vetor é armazenado o resultado de $i\%k$.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+11
+```
+```c
+3
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1]
 ```
 ::::  
 
@@ -760,16 +822,21 @@ Elaborar um programa com um vetor de tamanho 50 preenchido com o seguinte valor:
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+6
+```
+```c
+10
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[0, 1, 2, 3, 4, 5]
 ```
 ::::  
 
@@ -781,16 +848,21 @@ Elaborar um programa com um vetor de tamanho 50 preenchido com o seguinte valor:
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+50
+```
+```c
+10
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 ::::  
 
@@ -799,37 +871,81 @@ Elaborar um programa com um vetor de tamanho 50 preenchido com o seguinte valor:
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+1
+```
+```c
+1
+```
+::::  
+
+::::{card} Saída
+```
+[0]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
 ::::::::  
 
+::::::::{exercise}
+:label: exex:label
 
+(ex:label)=
+:::::::{card} <!-- Título aqui -->
 
-<!-- ::::{exercise}
 Elaborar um programa que receba do usuário dois vetores, A e B, com 10 números inteiros cada. Crie um novo vetor denominado C calculando $C = A − B$. Mostre na tela os dados do vetor C.
-:::: -->
-
-::::::::{exercise}
-:label: exex:label
-
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
-
-Elaborar um programa que receba do usuário dois vetores, A e B, com 10 números inteiros cada. Crie um novo vetor denominado C calculando $C = A − B$. Mostre na tela os dados do vetor C.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+51
+92
+99
+96
+25
+56
+49
+66
+27
+24
+```
+```c
+84
+23
+16
+97
+73
+98
+74
+26
+30
+54
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[-33, 69, 83, -1, -48, -42, -25, 40, -3, -30]
 ```
 ::::  
 
@@ -844,16 +960,39 @@ Elaborar um programa que receba do usuário dois vetores, A e B, com 10 números
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+```c
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[-10, -8, -6, -4, -2, 0, 2, 4, 6, 8]
 ```
 ::::  
 
@@ -865,16 +1004,39 @@ Elaborar um programa que receba do usuário dois vetores, A e B, com 10 números
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+```
+```c
+20
+18
+16
+14
+12
+10
+8
+6
+4
+2
 ```
 ::::  
 
 ::::{card} Saída
 ```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
 ::::  
 
@@ -890,30 +1052,42 @@ Elaborar um programa que receba do usuário dois vetores, A e B, com 10 números
 
 
 
-<!-- ::::{exercise}
-Ler dois conjuntos de números reais, armazenando-os em vetores e calcular o produto escalar entre eles. Os conjuntos tem 5 elementos cada. Imprimir os dois conjuntos e o produto escalar, sendo que o produto escalar e dado por: x1 ∗ y1 + x2 ∗ y2 + ... + xn ∗ yn.
-:::: -->
-
 ::::::::{exercise}
 :label: exex:label
 
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Ler dois conjuntos de números reais, armazenando-os em vetores e calcular o produto escalar entre eles. Os conjuntos tem 5 elementos cada. Imprimir os dois conjuntos e o produto escalar, sendo que o produto escalar e dado por: x1 ∗ y1 + x2 ∗ y2 + ... + xn ∗ yn.
+Ler dois conjuntos de números reais, armazenando-os em vetores e calcular o produto escalar entre eles. Os conjuntos tem 5 elementos cada. Imprimir os dois conjuntos e o produto escalar, sendo que o produto escalar e dado por: 
+
+$$
+x_1 \times y_1 + x_2 ∗ y_2 + ... + x_n \times y_n
+$$
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+0.0
+1.0
+2.0
+3.0
+4.0
+```
+```c
+1.0
+1.0
+1.0
+1.0
 ```
 ::::  
 
 ::::{card} Saída
 ```
+10.0
 ```
 ::::  
 
@@ -928,16 +1102,29 @@ Ler dois conjuntos de números reais, armazenando-os em vetores e calcular o pro
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+9.8
+3.44
+7.54
+8.86
+6.03
+```
+```c
+2.18
+7.1
+0.16
+4.02
+1.4
 ```
 ::::  
 
 ::::{card} Saída
 ```
+91.0536
 ```
 ::::  
 
@@ -949,16 +1136,29 @@ Ler dois conjuntos de números reais, armazenando-os em vetores e calcular o pro
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+4.32
+6.31
+7.08
+4.28
+6.69
+```
+```c
+0.0
+0.0
+0.0
+0.0
+0.0
 ```
 ::::  
 
 ::::{card} Saída
 ```
+0.0
 ```
 ::::  
 
@@ -967,37 +1167,88 @@ Ler dois conjuntos de números reais, armazenando-os em vetores e calcular o pro
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+4.32
+6.31
+7.08
+4.28
+6.69
+```
+```c
+0.0
+1.0
+0.0
+0.0
+0.0
+```
+::::  
+
+::::{card} Saída
+```
+6.31
+
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
 ::::::::  
 
 
+::::::::{exercise}
+:label: exex:label
 
-<!-- ::::{exercise}
+(ex:label)=
+:::::::{card} <!-- Título aqui -->
+
 Elaborar um programa que leia dez conjuntos de dois valores, o primeiro representando o número do aluno e o segundo representando a sua altura em metros. Encontre o aluno mais baixo e o mais alto. Mostre o número do aluno mais baixo e do mais alto, juntamente com suas alturas.
-:::: -->
-
-::::::::{exercise}
-:label: exex:label
-
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
-
-Elaborar um programa que leia dez conjuntos de dois valores, o primeiro representando o número do aluno e o segundo representando a sua altura em metros. Encontre o aluno mais baixo e o mais alto. Mostre o número do aluno mais baixo e do mais alto, juntamente com suas alturas.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+38
+1.87
+```
+```c
+20
+1.59
+```
+```c
+39
+1.91
+```
+```c
+51
+1.83
+```
+```c
+72
+1.77
 ```
 ::::  
 
 ::::{card} Saída
 ```
+O aluno 20 é o mais baixo da turma, com 1.59m de altura.
+O aluno 39 é o mais alto da turma, com 1.91m de altura.
 ```
 ::::  
 
@@ -1005,6 +1256,7 @@ Elaborar um programa que leia dez conjuntos de dois valores, o primeiro represen
 :::::  
 
 ::::{card} Explicação
+Cada par das entradas corresponde ao número do aluno e sua altura. O menor valor para altura é 1.59, e o maior 1.91. Logo, são mostrados esses valores e os números correspondentes a esses alunos.
 ::::  
 
 <!-- /example -->
@@ -1012,16 +1264,37 @@ Elaborar um programa que leia dez conjuntos de dois valores, o primeiro represen
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+68
+1.77
+```
+```c
+88
+1.89
+```
+```c
+28
+1.95
+```
+```c
+47
+1.95
+```
+```c
+46
+1.92
 ```
 ::::  
 
 ::::{card} Saída
 ```
+O aluno 68 é o mais baixo da turma, com 1.77m de altura.
+O aluno 28 é o mais alto da turma, com 1.95m de altura.
+O aluno 47 é o mais alto da turma, com 1.95m de altura.
 ```
 ::::  
 
@@ -1033,16 +1306,39 @@ Elaborar um programa que leia dez conjuntos de dois valores, o primeiro represen
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+14
+1.99
+```
+```c
+41
+1.99
+```
+```c
+90
+1.53
+```
+```c
+10
+1.99
+```
+```c
+27
+1.53
 ```
 ::::  
 
 ::::{card} Saída
 ```
+O aluno 90 é o mais baixo da turma, com 1.53m de altura.
+O aluno 27 é o mais baixo da turma, com 1.53m de altura.
+O aluno 14 é o mais alto da turma, com 1.99m de altura.
+O aluno 41 é o mais alto da turma, com 1.99m de altura.
+O aluno 10 é o mais alto da turma, com 1.99m de altura.
 ```
 ::::  
 
@@ -1056,11 +1352,148 @@ Elaborar um programa que leia dez conjuntos de dois valores, o primeiro represen
 <!-- /exercise -->
 ::::::::  
 
+::::::::{exercise}
+:label: exex:label
 
+(ex:label)=
+:::::::{card} <!-- Título aqui -->
 
-<!-- ::::{exercise}
-Ler as notas finais de uma turma de 10 alunos armazenando-as em um vetor N. A seguir calcule a média aritmética das notas dos alunos aprovados (nota >= 6,0). Armazene em um vetor P a posição (índice) que cada aluno ocupa no vetor N, dos alunos que obtiveram nota maior que a mádia calculada. Imprimir a média calculada, em ordem crescente e logo após o vetor P.
-:::: -->
+Elaborar um programa que leia dez conjuntos de dois valores, o primeiro representando o número do aluno e o segundo representando a sua altura em metros. Encontre o aluno mais baixo e o mais alto. Mostre o número do aluno mais baixo e do mais alto, juntamente com suas alturas. Caso haja empate na maior ou menor alturas, deve ser informado quantos alunos possuem a maior ou menor altura, caso haja empate.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+38
+1.87
+```
+```c
+20
+1.59
+```
+```c
+39
+1.91
+```
+```c
+51
+1.83
+```
+```c
+72
+1.77
+```
+::::  
+
+::::{card} Saída
+```
+O aluno 20 é o mais baixo da turma, com 1.59m de altura.
+O aluno 39 é o mais alto da turma, com 1.91m de altura.
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+68
+1.77
+```
+```c
+88
+1.89
+```
+```c
+28
+1.95
+```
+```c
+47
+1.95
+```
+```c
+46
+1.92
+```
+::::  
+
+::::{card} Saída
+```
+O aluno 68 é o mais baixo da turma, com 1.77m de altura.
+2 alunos empatam com a maior altura, de 1.95m. São eles:
+- aluno 28
+- aluno 47
+
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+14
+1.99
+```
+```c
+41
+1.99
+```
+```c
+90
+1.53
+```
+```c
+10
+1.99
+```
+```c
+27
+1.53
+```
+::::  
+
+::::{card} Saída
+```
+2 alunos empatam com a menor altura, de 1.53m. São eles:
+- aluno 90
+- aluno 27
+3 alunos empatam com a maior altura, de 1.99m. São eles:
+- aluno 14
+- aluno 41
+- aluno 10
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
 
 ::::::::{exercise}
 :label: exex:label
