@@ -3614,7 +3614,7 @@ Desenvolva um procedimento semelhante ao desenvolvido em [](#exex:vetores-saida_
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3649,7 +3649,7 @@ A cada $4$ elementos mostrados, uma quebra de linha é aplicada.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3684,7 +3684,7 @@ Perceba que ao final há uma única quebra de linha.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3717,7 +3717,7 @@ Como o vetor possui menos de $20$ elementos, todos foram mostrados em uma única
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
