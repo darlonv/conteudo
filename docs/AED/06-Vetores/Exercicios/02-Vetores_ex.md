@@ -2392,7 +2392,7 @@ Desenvolva uma função chamada `alocarCadeiasDeCaracteres`, que recebe como par
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Parâmetros
@@ -2418,7 +2418,7 @@ Desenvolva uma função chamada `alocarCadeiasDeCaracteres`, que recebe como par
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2441,7 +2441,7 @@ Desenvolva uma função chamada `alocarCadeiasDeCaracteres`, que recebe como par
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2489,7 +2489,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2522,7 +2522,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2551,7 +2551,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2580,7 +2580,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2609,7 +2609,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2638,7 +2638,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2667,7 +2667,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2715,7 +2715,7 @@ Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Man
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2739,7 +2739,7 @@ Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Man
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2774,76 +2774,16 @@ Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Man
 (ex:label)=
 :::::::{card} Leitura de valores inteiros
 
-Desenvolva uma função chamada `lerVetorInt`, que recebe como parâmetro um número inteiro `n`. A função deve solicitar ao usuário para que digite `n` valores. A função deve retornar um vetor contendo todos os valores digitados pelo usuário.
+Desenvolva uma função chamada `lerInteiros`, que recebe como parâmetro um número inteiro `n`. A função deve solicitar ao usuário para que digite `n` valores. A função deve retornar um vetor contendo todos os valores digitados pelo usuário. 
 
- a serem preenchidos no vetor, e em seguida retornar o vetor preenchido.
-- Implemente também as funções `vetorLeituraFloat` e `vetorLeituraString`, que operam com os tipos de dados real e caractere.
+ 
+- Implemente também as funções `lerReais`, `lerCaracteres` e `lerStrings`, que operam com os tipos de dados real, caractere e cadeias de caracteres.
 
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
+:::{tip} Dica
+Adicione a implementação destas funções na biblioteca `Entrada`. Desta forma, a leitura de diversos valores poderá ser digitado pelo usuário e obtidos de uma única vez.
+:::
 
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
 
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-::::{card} Explicação
-::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
-
-::::::{prf:example}
-:nonumber:
-<!-- :class: dropdown -->
-
-:::::{grid} 1 1 2 2
-::::{card} Entrada
-```c
-```
-::::  
-
-::::{card} Saída
-```
-```
-::::  
-
-<!-- /grid -->
-:::::  
-
-<!-- /example -->
-::::::  
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
