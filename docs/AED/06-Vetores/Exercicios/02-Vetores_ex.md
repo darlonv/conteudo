@@ -2768,6 +2768,12 @@ Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Man
 
 ### Leitura de valores
 
+
+:::{tip} Dica
+Na implementação destas funções, lembre-se de utilizar a biblioteca `Entrada`, aproveitando as funções já implementadas.
+:::
+
+
 ::::::::{exercise}
 :label: exex:label
 
@@ -2776,12 +2782,9 @@ Desenvolva funções para vetores com dados do tipo inteiro, lógico e real. Man
 
 Desenvolva uma função chamada `lerInteiros`, que recebe como parâmetro um número inteiro `n`. A função deve solicitar ao usuário para que digite `n` valores. A função deve retornar um vetor contendo todos os valores digitados pelo usuário. 
 
- 
 - Implemente também as funções `lerReais`, `lerCaracteres` e `lerStrings`, que operam com os tipos de dados real, caractere e cadeias de caracteres.
 
-:::{tip} Dica
-Adicione a implementação destas funções na biblioteca `Entrada`. Desta forma, a leitura de diversos valores poderá ser digitado pelo usuário e obtidos de uma única vez.
-:::
+
 
 
 <!-- /card exercicio -->
@@ -2806,7 +2809,7 @@ Em C, também deve ser passado um parâmetro adicional contendo o tamanho do vet
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2839,7 +2842,7 @@ Em C, também deve ser passado um parâmetro adicional contendo o tamanho do vet
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2868,7 +2871,7 @@ Em C, também deve ser passado um parâmetro adicional contendo o tamanho do vet
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2909,7 +2912,7 @@ Desenvolva a função chamada `obterPosicaoReal`, semelhante a [](#exex:vetores-
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2942,7 +2945,7 @@ Desenvolva a função chamada `obterPosicaoReal`, semelhante a [](#exex:vetores-
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -2971,7 +2974,7 @@ Desenvolva a função chamada `obterPosicaoReal`, semelhante a [](#exex:vetores-
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3013,15 +3016,15 @@ Desenvolva a função chamada `obterPosicaoLogico`, semelhante a [](#exex:vetore
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+[verdadeiro, falso, falso, verdadeiro, verdadeiro, verdadeiro, falso, falso, falso]
 ```
 ```c
-3.2
+verdadeiro
 ```
 ```c
 3
@@ -3031,7 +3034,7 @@ Desenvolva a função chamada `obterPosicaoLogico`, semelhante a [](#exex:vetore
 
 ::::{card} Retorno
 ```c
-6
+3
 ```
 ::::  
 
@@ -3046,18 +3049,18 @@ Desenvolva a função chamada `obterPosicaoLogico`, semelhante a [](#exex:vetore
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+[verdadeiro, falso, falso, verdadeiro, verdadeiro, verdadeiro, falso, falso, falso]
 ```
 ```c
-5.4
+verdadeiro
 ```
 ```c
-5
+6
 ```
 ::::  
 
@@ -3075,24 +3078,24 @@ Desenvolva a função chamada `obterPosicaoLogico`, semelhante a [](#exex:vetore
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+[verdadeiro, falso, falso, verdadeiro, verdadeiro, verdadeiro, falso, falso, falso]
 ```
 ```c
-3.2
+falso
 ```
 ```c
-0
+3
 ```
 ::::  
 
 ::::{card} Saída
 ```c
-2
+6
 ```
 ::::  
 
@@ -3117,15 +3120,15 @@ Desenvolva a função chamada `obterPosicaoCaractere`, semelhante a [](#exex:vet
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+['a', 'a', 'c', 'c', 'c', 'x', 'a', 'c', 'd']
 ```
 ```c
-3.2
+'c'
 ```
 ```c
 3
@@ -3135,7 +3138,7 @@ Desenvolva a função chamada `obterPosicaoCaractere`, semelhante a [](#exex:vet
 
 ::::{card} Retorno
 ```c
-6
+3
 ```
 ::::  
 
@@ -3150,18 +3153,18 @@ Desenvolva a função chamada `obterPosicaoCaractere`, semelhante a [](#exex:vet
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+['a', 'a', 'c', 'c', 'c', 'x', 'a', 'c', 'd']
 ```
 ```c
-5.4
+'y'
 ```
 ```c
-5
+0
 ```
 ::::  
 
@@ -3179,24 +3182,24 @@ Desenvolva a função chamada `obterPosicaoCaractere`, semelhante a [](#exex:vet
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+['a', 'a', 'c', 'c', 'c', 'x', 'a', 'c', 'd']
 ```
 ```c
-3.2
+'a'
 ```
 ```c
-0
+3
 ```
 ::::  
 
 ::::{card} Saída
 ```c
-2
+6
 ```
 ::::  
 
@@ -3220,18 +3223,18 @@ Desenvolva a função chamada `obterPosicaoCadeiaDeCaracteres`, semelhante a [](
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+['abacate', 'abacate', 'abacaxi', 'abacaxi', 'laranja', 'banana', 'abacate', 'laranja', 'banana']
 ```
 ```c
-3.2
+"abacate"
 ```
 ```c
-3
+2
 ```
 
 ::::  
@@ -3253,18 +3256,18 @@ Desenvolva a função chamada `obterPosicaoCadeiaDeCaracteres`, semelhante a [](
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+['abacate', 'abacate', 'abacaxi', 'abacaxi', 'laranja', 'banana', 'abacate', 'laranja', 'banana']
 ```
 ```c
-5.4
+"abacaxi"
 ```
 ```c
-5
+4
 ```
 ::::  
 
@@ -3282,15 +3285,15 @@ Desenvolva a função chamada `obterPosicaoCadeiaDeCaracteres`, semelhante a [](
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 1 1 1
 ::::{card} Entrada
 ```c
-[1.0, 2.1, 3.2, 4.3, 5.4, 4.3, 3.2, 2.1, 1.0]
+['abacate', 'abacate', 'abacaxi', 'abacaxi', 'laranja', 'banana', 'abacate', 'laranja', 'banana']
 ```
 ```c
-3.2
+"banana"
 ```
 ```c
 0
@@ -3299,7 +3302,7 @@ Desenvolva a função chamada `obterPosicaoCadeiaDeCaracteres`, semelhante a [](
 
 ::::{card} Saída
 ```c
-2
+5
 ```
 ::::  
 
@@ -3325,7 +3328,7 @@ Elaborar uma função que recebe como entrada um vetor. Retorne outro vetor que 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3352,7 +3355,7 @@ Os valores $1$ e $3$ têm elementos repetidos. Logo, estes aparecem uma única v
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3379,7 +3382,7 @@ Como não há elementos repetidos, todos os valores são retornados.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 1 1
 ::::{card} Entrada
@@ -3402,7 +3405,7 @@ Como não há elementos repetidos, todos os valores são retornados.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 1 1
 ::::{card} Entrada
@@ -3425,7 +3428,7 @@ Como não há elementos repetidos, todos os valores são retornados.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3455,6 +3458,10 @@ Como não há elementos repetidos, todos os valores são retornados.
 
 Inclua os algoritmos desenvolvidos como solução para os exercícios seguintes à biblioteca `Saida`.
 
+:::{tip} Dica
+Adicione a implementação destas funções na biblioteca `Saída`. Desta forma, a apresentação na tela de diversos valores poderá ser utilizada em outros algoritmos.
+:::
+
 ::::::::{exercise}
 :label: exex:vetores-saida_vetor_inteiros_separador
 
@@ -3465,7 +3472,7 @@ Desenvolva um procedimento chamado `mostrarInteiros` que recebe como entrada um 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3495,7 +3502,7 @@ Os elementos são mostrados em uma única linha, separados por `' '` (espaço).
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3525,7 +3532,7 @@ Perceba que o caractere `x` é mostrado apenas entre os elementos, não aparecen
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -3563,7 +3570,7 @@ O caractere `'\n'` aplica uma quebra de linha (Enter). Perceba que não há duas
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
