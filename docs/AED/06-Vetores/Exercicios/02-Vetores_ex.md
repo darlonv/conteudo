@@ -1501,7 +1501,7 @@ O aluno 68 é o mais baixo da turma, com 1.77m de altura.
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Considere uma turma que possui $n$ alunos. Sobre cada aluno tem-se 5 informações: o número do aluno (`id`), e 4 notas, que correspondem às notas do 1º ao 4º bimestre. Desenvolva uma aplicação em que o usuário entra com estas informações e ao final são apresentadas as notas, a média final e se o aluno foi aprovado ou reprobado. São aprovados alunos com média maior ou igual a $7.0$.
+Considere uma turma que possui $n$ alunos. Sobre cada aluno tem-se 5 informações: o número do aluno (`id`), e 4 notas, que correspondem às notas do 1º ao 4º bimestre. Desenvolva uma aplicação em que o usuário entra com estas informações e ao final são apresentadas as notas, a média final e se o aluno foi aprovado ou reprobado. São aprovados alunos com média maior ou igual a $7.0$. O primeiro valor digitado corresponde a $n$, com a quantidade de alunos na turma. 
 
 ::::::{prf:example}
 :nonumber:
@@ -1510,11 +1510,38 @@ Considere uma turma que possui $n$ alunos. Sobre cada aluno tem-se 5 informaçõ
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+3
+```
+```c
+1
+60
+70
+80
+80
+```
+```c
+2
+80
+80
+90
+90
+```
+```c
+3
+60
+70
+60
+70
 ```
 ::::  
 
 ::::{card} Saída
 ```
+id  média   status
+--------------------
+1   72.50   Aprovado
+2   85.00   Aprovado
+3   65.00   Reprovado
 ```
 ::::  
 
@@ -1534,11 +1561,61 @@ Considere uma turma que possui $n$ alunos. Sobre cada aluno tem-se 5 informaçõ
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+5
 ```
+
+```c
+16
+50
+99
+64
+87
+```
+
+```c
+18
+65
+64
+57
+94
+```
+
+```c
+9
+60
+78
+69
+63
+```
+
+```c
+20
+98
+94
+97
+61
+```
+
+```c
+20
+65
+53
+69
+81
+```
+
 ::::  
 
 ::::{card} Saída
+
 ```
+id  média   status
+--------------------
+16	75.0	Aprovado
+18	70.0	Aprovado
+9	67.5	Reprovado
+20	87.5	Reprovado
+20	67.0	Aprovado
 ```
 ::::  
 
@@ -1554,12 +1631,376 @@ Considere uma turma que possui $n$ alunos. Sobre cada aluno tem-se 5 informaçõ
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
+
 ```c
+40
+```
+
+```c
+20
+100
+67
+69
+79
+```
+
+```c
+14
+57
+89
+83
+58
+```
+
+```c
+14
+88
+98
+55
+99
+```
+
+```c
+13
+58
+73
+74
+64
+```
+
+```c
+4
+73
+95
+70
+73
+```
+
+```c
+17
+92
+67
+96
+55
+```
+
+```c
+2
+54
+98
+84
+63
+```
+
+```c
+20
+82
+54
+98
+87
+```
+
+```c
+3
+69
+94
+63
+61
+```
+
+```c
+4
+78
+62
+53
+93
+```
+
+```c
+17
+64
+97
+77
+84
+```
+
+```c
+11
+79
+66
+59
+98
+```
+
+```c
+13
+94
+70
+58
+74
+```
+
+```c
+14
+67
+98
+72
+89
+```
+
+```c
+8
+86
+79
+99
+68
+```
+
+```c
+15
+56
+84
+69
+94
+```
+
+```c
+14
+63
+51
+63
+62
+```
+
+```c
+20
+64
+89
+61
+90
+```
+
+```c
+5
+88
+70
+88
+98
+```
+
+```c
+5
+90
+79
+90
+61
+```
+
+```c
+7
+60
+80
+58
+75
+```
+
+```c
+3
+67
+90
+70
+62
+```
+
+```c
+20
+83
+80
+78
+74
+```
+
+```c
+14
+82
+89
+99
+62
+```
+
+```c
+20
+60
+92
+79
+59
+```
+
+```c
+8
+67
+90
+55
+75
+```
+
+```c
+17
+87
+75
+62
+67
+```
+
+```c
+6
+77
+98
+61
+79
+```
+
+```c
+14
+75
+76
+67
+85
+```
+
+```c
+9
+85
+78
+85
+86
+```
+
+```c
+12
+81
+78
+89
+51
+```
+
+```c
+19
+86
+51
+79
+98
+```
+
+```c
+3
+85
+59
+60
+57
+```
+
+```c
+16
+60
+96
+93
+88
+```
+
+```c
+13
+82
+51
+91
+69
+```
+
+```c
+16
+66
+77
+67
+51
+```
+
+```c
+19
+100
+74
+61
+62
+```
+
+```c
+12
+67
+91
+61
+64
+```
+
+```c
+18
+76
+53
+55
+57
+```
+
+```c
+10
+63
+94
+90
+98
 ```
 ::::  
 
 ::::{card} Saída
 ```
+id  média   status
+--------------------
+20	78.75	Aprovado
+14	71.75	Aprovado
+14	85.0	Aprovado
+13	67.25	Reprovado
+4	77.75	Aprovado
+17	77.5	Aprovado
+2	74.75	Aprovado
+20	80.25	Aprovado
+3	71.75	Aprovado
+4	71.5	Aprovado
+17	80.5	Aprovado
+11	75.5	Aprovado
+13	74.0	Aprovado
+14	81.5	Aprovado
+8	83.0	Aprovado
+15	75.75	Aprovado
+14	59.75	Reprovado
+20	76.0	Aprovado
+5	86.0	Aprovado
+5	80.0	Aprovado
+7	68.25	Reprovado
+3	72.25	Aprovado
+20	78.75	Aprovado
+14	83.0	Aprovado
+20	72.5	Aprovado
+8	71.75	Aprovado
+17	72.75	Aprovado
+6	78.75	Aprovado
+14	75.75	Aprovado
+9	83.5	Aprovado
+12	74.75	Aprovado
+19	78.5	Aprovado
+3	65.25	Reprovado
+16	84.25	Aprovado
+13	73.25	Aprovado
+16	65.25	Reprovado
+19	74.25	Aprovado
+12	70.75	Aprovado
+18	60.25	Reprovado
+10	86.25	Aprovado
 ```
 ::::  
 
