@@ -3755,28 +3755,235 @@ O caractere `'\t'` aplica uma tabulação (tab).
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetores-saida_vetor_outros_tipos
+
+(ex:vetores-saida_vetor_outros_tipos)=
+:::::::{card} Mostrar vetor de outros tipos
+
+Analogamente aos exercícios [](#exex:vetores-saida_vetor_inteiros_separador) e [](#exex:vetores-saida_vetor_inteiros_com_maximo_por_linha) desenvolva funções para os tipos de dados real, lógico, caractere e cadeia de caracteres.
+
+<!-- /card exercicio -->
+:::::::
+
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetores-filtrar_maiores
+
+(ex:vetores-filtrar_maiores)=
+:::::::{card} Filtrar valores maiores
+
+Desenvolva uma função chamada `filtrarMaiores`, que recebe como entrada um vetor e um valor. A função deve retornar um novo vetor contendo apenas os elementos maiores que o valor passado.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+5
+```
+::::  
+
+::::{card} Saída
+```c
+[6, 7, 8, 9, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+0
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+15
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
 ::::::::  
 
-TODO
-- mostrar real
-- mostrar real com max
-- mostrar logico
-- mostrar logico com max
-- mostrar caractere
-- mostrar caractere com max
-- mostrar cadeias de caracteres
-- mostrar cadeias de caracteres com max
+::::::::{exercise}
+:label: exex:vetores-filtrar_maiores_real
 
+(ex:vetores-filtrar_maiores_real)=
+:::::::{card} Filtrar valores maiores com vetor de reais
 
-::::{exercise}
-Desenvolva uma função chamada `filtrarMaiores`, que recebe como entrada um vetor e um valor. A função deve retornar um novo vetor contendo apenas os elementos maiores que o valor passado.
-::::
+Desenvolva uma função análoga à do exercício [](#exex:vetores-filtrar_maiores), porém utilizando vetores com dados do tipo real.
 
-::::{exercise}
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetores-filtrar_menores
+
+(ex:vetores-filtrar_menores)=
+:::::::{card} Filtrar valores menores
+
 Desenvolva uma função chamada `filtrarMenores`, que recebe como entrada um vetor e um valor. A função deve retornar um novo vetor contendo apenas os elementos menores que o valor passado.
-::::
 
-### Conversão de tipos de dados
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+5
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+0
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+15
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+::::::::{exercise}
+:label: exex:vetores-filtrar_menores_real
+
+(ex:vetores-filtrar_menores_real)=
+:::::::{card} Filtrar valores maiores com vetor de reais
+
+Desenvolva uma função chamada análoga à do exercício [](#exex:vetores-filtrar_menores), porém utilizando vetores com dados do tipo real.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+### Conversões de tipos de dados
 
 ::::::::{exercise}
 :label: exex:label
