@@ -4298,6 +4298,299 @@ Desenvolva funções análogas à do [](exex:vetores-iguais), porém para dados 
 
 Inclua na biblioteca `Matematica` o desenvolvimento das funções a seguir.
 
+#### Adição e multiplicação
+::::::::{exercise}
+:label: exex:vetor-adicao_escalar
+
+(ex:vetor-adicao_escalar)=
+:::::::{card} Adição de valor escalar
+
+Implemente uma função chamada `adicionar`, que recebe como parâmetro de entrada um vetor de inteiros $v$ e outro valor inteiro $e$. A função deve retornar um novo vetor, com o valor de $e$ somado a todos os elementos de $v$.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4]
+```
+```c
+5
+```
+::::  
+
+::::{card} Saída
+```c
+[6, 7, 8, 9]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1, 1]
+```
+```c
+10
+```
+::::  
+
+::::{card} Saída
+```c
+[9, 11]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+3
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1, -2, 100]
+```
+```c
+-5
+```
+::::  
+
+::::{card} Saída
+```c
+[-6, -7, 95]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+::::::::{exercise}
+:label: exex:vetor-adicao_escalar_reais
+
+(ex:vetor-adicao_escalar_reais)=
+:::::::{card} Adição de valor escalar com dados to tipo real
+
+Desenvolva uma função que implementa o [](#exex:vetor-adicao_escalar), porém com vetor e escalar utilizando dados do tipo real.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetor-multiplicacao_escalar
+
+(ex:vetor-multiplicacao_escalar)=
+:::::::{card} Multiplicação por valor escalar
+
+Desenvolva uma função chamada `multiplicar`, que recebe como parâmetro de entrada um vetor de inteiros $v$ e outro valor inteiro $e$. A função deve retornar um novo vetor, com o valor de $e$ multiplicado por cada elemento de $v$.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4]
+```
+```c
+5
+```
+::::  
+
+::::{card} Saída
+```c
+[5, 10, 15, 20]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1, 1]
+```
+```c
+10
+```
+::::  
+
+::::{card} Saída
+```c
+[-10, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+3
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1, -2, 100, 0]
+```
+```c
+-5
+```
+::::  
+
+::::{card} Saída
+```c
+[5, 10, -500, 0]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1, 0, 100]
+```
+```c
+0
+```
+::::  
+
+::::{card} Saída
+```c
+[0, 0, 0]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+::::::::{exercise}
+:label: exex:vetor-multiplicacao_escalar_reais
+
+(ex:vetor-multiplicacao_escalar_reais)=
+:::::::{card} Multiplicação de valor escalar com dados to tipo real
+
+Desenvolva uma função que implementa o [](#exex:vetor-multiplicacao_escalar), porém com vetor e escalar utilizando dados do tipo real.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
 ::::::::{exercise}
 :label: exex:vetor-somar
 
@@ -4716,6 +5009,7 @@ De forma análoga ao [](#exex:vetor-somar_vetores) desenvolva uma função que s
 <!-- /exercise -->
 ::::::::  
 
+#### Maior e menor
 
 ::::::::{exercise}
 :label: exex:vetor-menor_valor
@@ -4948,6 +5242,7 @@ Analogamente a [](#exex:vetor-menor_valor) e [](#exex:vetor-maior_valor) desenvo
 <!-- /exercise -->
 ::::::::  
 
+#### Conjuntos
 
 ::::::::{exercise}
 :label: exex:vetor-uniao
@@ -5483,6 +5778,7 @@ Implemente funções que implementam os conjuntos união, interseção e diferen
 <!-- /exercise -->
 ::::::::  
 
+#### Equações
 
 ::::::::{exercise}
 :label: exex:label
@@ -5494,7 +5790,7 @@ Desenvolva uma função que calcula uma equação de qualquer grau. Para ela dev
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -5507,7 +5803,7 @@ Desenvolva uma função que calcula uma equação de qualquer grau. Para ela dev
 ::::  
 
 ::::{card} Saída
-```
+```c
 18.0
 ```
 ::::  
@@ -5547,7 +5843,7 @@ $$
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -5560,7 +5856,7 @@ $$
 ::::  
 
 ::::{card} Saída
-```
+```c
 12345.0
 ```
 ::::  
@@ -5594,7 +5890,7 @@ $$
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -5607,7 +5903,7 @@ $$
 ::::  
 
 ::::{card} Saída
-```
+```c
 55.0
 ```
 ::::  
