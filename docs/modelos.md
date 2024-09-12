@@ -196,6 +196,7 @@ Definição aqui
 
 <!-- /example -->
 ::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
