@@ -4304,7 +4304,7 @@ Inclua na biblioteca `Matematica` o desenvolvimento das funções a seguir.
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Desenvolva uma função chamada `vetorSomaInt`, que recebe como parâmetro de entrada um vetor $V$ de valores inteiros. A função deve retornar a soma dos valores no vetor.
+Desenvolva uma função chamada `somarInteiros`, que recebe como parâmetro de entrada um vetor $V$ de valores inteiros. A função deve retornar a soma dos valores no vetor.
 - De maneira semelhante desenvolva a função `vetorSomaFloat`, em que $V$ é um vetor com dados do tipo real.
 
 ::::::{prf:example}
