@@ -4299,26 +4299,27 @@ Desenvolva funções análogas à do [](exex:vetores-iguais), porém para dados 
 Inclua na biblioteca `Matematica` o desenvolvimento das funções a seguir.
 
 ::::::::{exercise}
-:label: exex:label
+:label: exex:vetor-somar
 
-(ex:label)=
+(ex:vetor-somar)=
 :::::::{card} <!-- Título aqui -->
 
-Desenvolva uma função chamada `somarInteiros`, que recebe como parâmetro de entrada um vetor $V$ de valores inteiros. A função deve retornar a soma dos valores no vetor.
-- De maneira semelhante desenvolva a função `vetorSomaFloat`, em que $V$ é um vetor com dados do tipo real.
+Desenvolva uma função chamada `somar`, que recebe como parâmetro de entrada um vetor com valores inteiros. A função deve retornar a soma dos valores no vetor.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[1, 2, 3, 4]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+10
 ```
 ::::  
 
@@ -4333,16 +4334,18 @@ Desenvolva uma função chamada `somarInteiros`, que recebe como parâmetro de e
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[-1, 1]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+0
 ```
 ::::  
 
@@ -4354,16 +4357,18 @@ Desenvolva uma função chamada `somarInteiros`, que recebe como parâmetro de e
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+0
 ```
 ::::  
 
@@ -4372,11 +4377,48 @@ Desenvolva uma função chamada `somarInteiros`, que recebe como parâmetro de e
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1, -2]
+```
+::::  
+
+::::{card} Saída
+```c
+-3
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
 ::::::::  
 
+
+::::::::{exercise}
+:label: exex:vetor-somar_reais
+
+(ex:vetor-somar_reais)=
+:::::::{card} Soma de valores de um vetor de reais
+
+De forma análoga ao [](#exex:vetor-somar), implemente uma função que retorne a soma dos elementos de um vetor do tipo real.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
 
 
 ::::::::{exercise}
