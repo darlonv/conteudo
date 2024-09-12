@@ -3991,8 +3991,7 @@ Desenvolva uma função chamada análoga à do exercício [](#exex:vetores-filtr
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Desenvolva uma função chamada `vetorBooleanParaInt`, que recebe como parâmetro de entrada um vetor com elementos do tipo booleano, e retorna um vetor de inteiros. No vetor, valores falso devem ser convertidos para $0$ e valores verdadeiro para $1$.
-- Desenvolva também uma função que realiza a operação contrária, transformando inteiros em booleanos. Valores $0$ devem ser convertidos para falso e quaisquer outros valores devem ser convertidos para inteiro.
+Desenvolva uma função chamada `logicoParaInteiro`, que recebe como parâmetro de entrada um vetor com elementos do tipo booleano, e retorna um vetor de inteiros. No vetor, valores falso devem ser convertidos para $0$ e valores verdadeiro para $1$.
 
 ::::::{prf:example}
 :nonumber:
@@ -4001,11 +4000,13 @@ Desenvolva uma função chamada `vetorBooleanParaInt`, que recebe como parâmetr
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[verdadeiro, falso, verdadeiro, falso]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[1, 0, 1, 0]
 ```
 ::::  
 
@@ -4025,16 +4026,55 @@ Desenvolva uma função chamada `vetorBooleanParaInt`, que recebe como parâmetr
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[]
 ```
 ::::  
 
 <!-- /grid -->
 :::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+
+::::::::{exercise}
+:label: exex:label
+
+(ex:label)=
+:::::::{card} <!-- Título aqui -->
+
+Desenvolva uma função chamada `inteiroParaLogico`, que recebe como parâmetro de entrada um vetor com elementos do tipo inteiro, e retorna um vetor de lógicos. No vetor, valores $0$ devem ser convertidos para falso e valores diferentes de zero para $1$.
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 0, 5, 0, -10, 100]
+```
+::::  
+
+::::{card} Saída
+```c
+[verdadeiro, falso, verdadeiro, falso, verdadeiro, verdadeiro]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
 
 <!-- /example -->
 ::::::  
@@ -4046,24 +4086,23 @@ Desenvolva uma função chamada `vetorBooleanParaInt`, que recebe como parâmetr
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[]
 ```
 ::::  
 
 <!-- /grid -->
 :::::  
 
-<!-- /example -->
-::::::  
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
-::::::::  
-
+::::::::
 
 ### Comparação de vetores
 
