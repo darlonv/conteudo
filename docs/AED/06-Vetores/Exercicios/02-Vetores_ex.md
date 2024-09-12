@@ -2800,7 +2800,7 @@ Desenvolva uma função chamada `lerInteiros`, que recebe como parâmetro um nú
 (ex:vetores-obter_posicao_inteiro)=
 :::::::{card} Obter índice de valor inteiro
 
-Desenvolva uma função chamada `obterPosicaoInteiro`, que recebe como parâmetros um vetor de inteiros `vetor`, um valor inteiro `valor_buscar` e outro valor inteiro `pos_inicial`. A função deve procurar pelo valor de `valor_buscar` no vetor `vetor`, procurando a partir do índice `pos_inicial`. A função deve retornar o índice em que `valor` se encontra, e retornar `-1` caso o valor não seja encontrado.
+Desenvolva uma função chamada `obterPosicaoInteiro`, que recebe como parâmetros um vetor de inteiros `vetor` e um valor inteiro `valor_buscar` e outro valor inteiro `pos_inicial`. A função deve procurar pelo valor de `valor_buscar` no vetor `vetor`, procurando a partir do índice `pos_inicial`. A função deve retornar o índice em que `valor` se encontra, e retornar `-1` caso o valor não seja encontrado.
 
 <!-- :::{attention} C
 :class: dropdown
@@ -3316,6 +3316,222 @@ Desenvolva a função chamada `obterPosicaoCadeiaDeCaracteres`, semelhante a [](
 <!-- /exercise -->
 ::::::::  
 
+::::::::{exercise}
+:label: exex:vetores-obter_indices_de_valor
+
+(ex:vetores-obter_indices_de_valor)=
+:::::::{card} Obter índice de valor
+
+Desenvolva uma função chamada `obterIndices`, que recebe como parâmetros um vetor de inteiros $v$ e um valor inteiro `valor_buscar`. A função deve retornar um vetor de inteiros contendo os índices em que os valor `valor_buscar` aparece no vetor $v$.
+
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 4, 3, 2, 1]
+```
+```c
+3
+```
+
+::::  
+
+::::{card} Retorno
+```c
+[2, 6]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+O valor $3$ aparece 2 vezes no vetor $v$, nas posições de índice `2` e `6`. Logo, o retorno da função é um vetor de 2 posições, contendo os valores `2` e `6`.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50, 40, 30, 20, 10]
+```
+```c
+50
+```
+::::  
+
+::::{card} Saída
+```c
+[4]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 4, 3, 2, 1]
+```
+```c
+10
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[8, 8, 8, 8]
+```
+```c
+8
+```
+::::  
+
+::::{card} Saída
+```c
+[0, 1, 2, 3]
+```
+::::
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+:::::: 
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[3, 3, 3, 3, 3]
+```
+```c
+2
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+:::::: 
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[8, 8, 8, 8, 8, 3, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 3, 8, 8, 3, 3, 3, 3, 3, 3, 8, 8]
+```
+```c
+3
+```
+::::  
+
+::::{card} Saída
+```c
+[5, 17, 20, 21, 22, 23, 24, 25]
+```
+::::
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+:::::: 
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+2
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+:::::: 
+
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetores-obter_indices_de_valor_de_outros_tipos
+
+(ex:vetores-obter_indices_de_valor_de_outros_tipos)=
+:::::::{card} Obter índice de valor de outros tipos
+
+Implemente também a função `obterIndices`, do [](#exex:vetores-obter_indices_de_valor) tendo como entrada vetor e valor que utilizem dados dos tipos real, lógico, caractere e cadeia de caracteres.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+
 ### Operações em vetores
 
 ::::::::{exercise}
@@ -3771,6 +3987,8 @@ Analogamente aos exercícios [](#exex:vetores-saida_vetor_inteiros_separador) e 
 <!-- /exercise -->
 ::::::::
 
+### Filtros e máscaras
+
 ::::::::{exercise}
 :label: exex:vetores-filtrar_maiores
 
@@ -3977,6 +4195,329 @@ Desenvolva uma função chamada `filtrarMenores`, que recebe como entrada um vet
 :::::::{card} Filtrar valores maiores com vetor de reais
 
 Desenvolva uma função chamada análoga à do exercício [](#exex:vetores-filtrar_menores), porém utilizando vetores com dados do tipo real.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetores-aplicar_mascara
+
+(ex:vetores-aplicar_mascara)=
+:::::::{card} Aplicar máscara
+
+Desenvolva uma função chamada `aplicarMascara`, que recebe como entrada um vetor de inteiros $v$ e um vetor de lógicos `mascara`. Sua função deve observar as posições de `mascara` que possuem valor **verdadeiro**, e retornar um novo vetor contendo apenas os valores de $v$ que estão nessas posições.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+[verdadeiro, falso, verdadeiro, falso, verdadeiro, falso, falso, falso, falso, verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 3, 5, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+O vetor `mascara` possui valor verdadeiro para nas posições `0`, `2`, `4` e `9` (4 posições). Logo, é retornado um vetor com 4 posições, contendo os valores das posições `0`, `2`, `4` e `9` do vetor $v$.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+[falso, falso, falso, falso, verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[50]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 55, 66, 77, 88, 98, 1]
+```
+```c
+[verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4, 55, 66, 77, 88, 98, 1]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 55, 66, 77, 88, 98, 1]
+```
+```c
+[falso, falso, falso, falso, falso, falso, falso, falso, falso, falso]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 10, 11, 9, 8, 9, 10]
+```
+```c
+[falso, verdadeiro, falso, falso, falso, verdadeiro, verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[10, 9, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetores-aplicar_mascara_outros_tipos
+
+(ex:vetores-aplicar_mascara_outros_tipos)=
+:::::::{card} Aplicar máscara para outros tipos de dados
+
+Desenvolva funções `aplicarMascara`, como no [](#exex:vetores-aplicar_mascara), porém considerando para $v$ os tipos de dado real, caractere, lógico e cadeias de caracteres.
+
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+::::::::{exercise}
+:label: exex:vetores-definir_valor_com_base_em_mascara
+
+(ex:vetores-vetores-definir_valor_com_base_em_mascara)=
+:::::::{card} Definir valor com base em máscara
+
+Desenvolva uma função chamada `definirValorMascara`, que recebe como entrada um vetor de inteiros $v$, um vetor de lógicos `mascara` e um inteiro `valor`. A função deve alocar um novo vetor $w$ que possui os mesmos valores de $v$, porém com `valor` nas posições em que `mascara` possui valor `verdadeiro`. A função deve retornar o vetor $w$.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+```c
+[verdadeiro, falso, verdadeiro, falso, verdadeiro, falso, falso, falso, falso, verdadeiro]
+```
+```c
+0
+```
+::::  
+
+::::{card} Saída
+```c
+[0, 2, 0, 4, 0, 6, 7, 8, 9, 0]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+O vetor `mascara` possui valor `verdadeiro` nas posições `0`, `2`, `4` e `9` (4 posições). Logo, foi retornado uma cópia do vetor $v$ com o valor `0` nestas posições.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30, 40, 50]
+```
+```c
+[falso, falso, falso, falso, verdadeiro]
+```
+```c
+=1
+```
+::::  
+
+::::{card} Saída
+```c
+[10, 20, 30, 40, -1]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 55, 66, 77, 88, 98, 1]
+```
+```c
+[verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro, verdadeiro]
+```
+```c
+10
+```
+::::  
+
+::::{card} Saída
+```c
+[10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 55, 66, 77, 88, 98, 1]
+```
+```c
+[falso, falso, falso, falso, falso, falso, falso, falso, falso, falso]
+```
+```
+1000
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4, 55, 66, 77, 88, 98, 1]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 10, 11, 9, 8, 9, 10]
+```
+```c
+[falso, verdadeiro, falso, falso, falso, verdadeiro, verdadeiro]
+```
+```c
+50
+```
+::::  
+
+::::{card} Saída
+```c
+[10, 50, 11, 9, 8, 50, 50]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
 
 <!-- /card exercicio -->
 :::::::  
