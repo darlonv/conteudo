@@ -112,6 +112,13 @@ O conjunto intersecção $A \cap B$ é dado pelos elementos que simultaneamente 
 
 ::::
 
+::::{prf:definition} Diferença entre conjuntos
+:label: def:mat-conjunto_diferenca
+
+A diferença entre os conjuntos $A$ e $B$ é dado pelo conjunto que contém os elementos de $A$ que não pertencem a $B$. A diferença entre os conjuntos $A$ e $B$ é denotada como $A - B$.
+
+::::
+
 
 ### Sequências
 
