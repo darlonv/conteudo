@@ -4422,26 +4422,30 @@ De forma análoga ao [](#exex:vetor-somar), implemente uma função que retorne 
 
 
 ::::::::{exercise}
-:label: exex:label
+:label: exex:vetor-somar_vetores
 
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
+(ex:vetor-somar_vetores)=
+:::::::{card} Soma de vetores
 
-Desenvolva uma função chamada `vetorSomaVetoresInt`, que recebe como parâmetros de entrada dois vetores $V$ e $W$ de valores inteiros. A função deve retornar um novo vetor $Z$, resultante da soma dos valores de $V$ em $W$ em cada posição. Observe que aqui $V$, $W$ e $Z$ devem possuir sempre o mesmo tamanho.
-- De maneira semelhante desenvolva a função `vetorSomaVetoresFloat`, em que os vetores possuem dados do tipo real.
+Desenvolva uma função chamada `somar`, que recebe como parâmetros de entrada dois vetores $V$ e $W$ de valores inteiros. A função deve retornar um novo vetor $Z$, resultante da soma dos valores de $V$ em $W$ em cada posição. Caso os vetores tenham tamanhos diferentes, os elementos faltantes devem ser considerados como tendo valor $0$.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[1, 2, 3, 4, 5]
+```
+```c
+[1, 2, 3, 4, 5]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[2, 4, 6, 8, 10]
 ```
 ::::  
 
@@ -4456,16 +4460,21 @@ Desenvolva uma função chamada `vetorSomaVetoresInt`, que recebe como parâmetr
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[1, 2]
+```
+```c
+[1, 2, 3, 4]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[2, 4, 3, 4]
 ```
 ::::  
 
@@ -4477,16 +4486,21 @@ Desenvolva uma função chamada `vetorSomaVetoresInt`, que recebe como parâmetr
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[]
+```
+```c
+[]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[]
 ```
 ::::  
 
@@ -4495,6 +4509,59 @@ Desenvolva uma função chamada `vetorSomaVetoresInt`, que recebe como parâmetr
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1, -2, 0, 0]
+```
+```c
+[1, 2]
+```
+::::  
+
+::::{card} Saída
+```c
+[0, 0, 0, 0]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 5]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 5]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
@@ -4502,27 +4569,31 @@ Desenvolva uma função chamada `vetorSomaVetoresInt`, que recebe como parâmetr
 
 
 ::::::::{exercise}
-:label: exex:label
+:label: exex:vetor-somar_vetores_reais
 
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
+(ex:vetor-somar_vetores_reais)=
+:::::::{card} Soma de vetores
 
-Desenvolva uma função que retorna o menor valor em um vetor de inteiros. Chame sua função de `vetorMenorInt`, que recebe como entrada um vetor e retorna o menor valor.
-- Implemente também a função `vetorMenorFloat`, que opera com elementos do tipo real.
-- Desenvolva também funções que retornam o maior valor de um vetor. Chame suas funções de `vetorMaiorInt` e `vetorMaiorFloat`.
+De forma análoga ao [](#exex:vetor-somar_vetores) desenvolva uma função que soma vetores utilizando vetores com dados do tipo real.
+
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[1.0, 2.0, 3.0, 4.0, 5.0]
+```
+```c
+[1.0, 2.0, 3.0, 4.0, 5.0]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[2.0, 4.0, 6.0, 8.0, 10.0]
 ```
 ::::  
 
@@ -4537,16 +4608,21 @@ Desenvolva uma função que retorna o menor valor em um vetor de inteiros. Chame
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[1.0, 2.0]
+```
+```c
+[1.0, 2.0, 3.0, 4.0]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[2.0, 4.0, 3.0, 4.0]
 ```
 ::::  
 
@@ -4558,16 +4634,21 @@ Desenvolva uma função que retorna o menor valor em um vetor de inteiros. Chame
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[]
+```
+```c
+[]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+[]
 ```
 ::::  
 
@@ -4576,45 +4657,88 @@ Desenvolva uma função que retorna o menor valor em um vetor de inteiros. Chame
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-1.0, -2.0, 0.0, 0.0]
+```
+```c
+[1.0, 2.0]
+```
+::::  
+
+::::{card} Saída
+```c
+[0.0, 0.0, 0.0, 0.0]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1.0, 2.0, 3.0, 5.0]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[1.0, 2.0, 3.0, 5.0]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
 <!-- /card exercicio -->
 :::::::  
+
 <!-- /exercise -->
 ::::::::  
-
 
 
 ::::::::{exercise}
-:label: exex:label
+:label: exex:vetor-menor_valor
 
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
+(ex:vetor-menor_valor)=
+:::::::{card} Menor valor
 
-Desenvolva duas funções chamadas `vetoresConjuntoUniaoInt` e `vetoresConjuntoInterseccaoInt`, que possuam como parâmetros de entrada 2 vetores de números inteiros. As funções devem retornar um novo vetor de inteiros com os valores dos conjuntos união e intersecção, respectivamente, dos elementos de ambos os vetores das entradas das funções. Observe as definições de [{name}](#def:mat-conjunto_uniao) e [{name}](#def:mat-conjunto_intersecao)
-
-
-
-:::{note} Definição
-**Conjunto união**  
-
-O conjunto união $A\cup B$ é dado por todos os elementos pertencentes aos conjuntos $A$ e $B$, sem a repetição de elementos.
-
-**Conjunto intersecção**  
-
-O conjunto intersecção $A \cap B$ é dado pelos elementos que simultaneamente pertencem aos conjuntos $A$ e $B$, sem a repetição de elementos.
-:::
+Desenvolva uma função que retorna o menor valor em um vetor de inteiros. Chame sua função de `menor`, que recebe como entrada um vetor e retorna o elemento com o menor valor. Considere que o vetor da entrada sempre terá pelo menos um elemento.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[5, 4, 3, 2, 10, 20]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+2
 ```
 ::::  
 
@@ -4629,16 +4753,18 @@ O conjunto intersecção $A \cap B$ é dado pelos elementos que simultaneamente 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[10, 20, -10, 5, 7]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+-10
 ```
 ::::  
 
@@ -4650,16 +4776,18 @@ O conjunto intersecção $A \cap B$ é dado pelos elementos que simultaneamente 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[10, 10, 10, 10]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+10
 ```
 ::::  
 
@@ -4668,10 +4796,693 @@ O conjunto intersecção $A \cap B$ é dado pelos elementos que simultaneamente 
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-10, -10, -10, -10]
+```
+::::  
+
+::::{card} Saída
+```c
+-10
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
 ::::::::  
+
+::::::::{exercise}
+:label: exex:vetor-maior_valor
+
+(ex:vetor-maior_valor)=
+:::::::{card} Maior valor
+
+Desenvolva uma função que retorna o menor valor em um vetor de inteiros. Chame sua função de `maior`, que recebe como entrada um vetor e retorna o elemento com o maior valor. Considere que o vetor da entrada sempre terá pelo menos um elemento.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[5, 4, 3, 2, 10, 20]
+```
+::::  
+
+::::{card} Saída
+```c
+20
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, -10, 5, 7]
+```
+::::  
+
+::::{card} Saída
+```c
+20
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 10, 10, 10]
+```
+::::  
+
+::::{card} Saída
+```c
+10
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[-10, -10, -10, -10]
+```
+::::  
+
+::::{card} Saída
+```c
+-10
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+
+::::::::{exercise}
+:label: exex:vetor-menor_maior_valor_reais
+
+(ex:vetor-menor_maior_valor_reais)=
+:::::::{card} Menor e maior valor com vetor de reais
+
+Analogamente a [](#exex:vetor-menor_valor) e [](#exex:vetor-maior_valor) desenvolva funções que operam utilizando vetores com dados do tipo real.
+
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+
+::::::::{exercise}
+:label: exex:vetor-uniao
+
+(ex:vetor-uniao)=
+:::::::{card} União
+
+Desenvolva uma função que recebe como entrada dois vetores de inteiros. A função deve retornar outro vetor, contendo os elementos de ambos os vetores, sem repetição. Observe a definição de  [{name}](#def:mat-conjunto_uniao). A ordem dos elementos no vetor de saída não é importante.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4]
+```
+```c
+[6, 7, 8, 9]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4, 6, 7, 8, 9]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7]
+```
+```c
+[5, 6, 7, 8, 9, 10]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 1, 1]
+```
+```c
+[2, 2, 2, 2]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 1, 1]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[1]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+
+::::::::{exercise}
+:label: exex:vetor-intersecao
+
+(ex:vetor-intersecao)=
+:::::::{card} Interseção
+
+Desenvolva uma função que recebe como entrada dois vetores de inteiros. A função deve retornar outro vetor, contendo os elementos que são comuns a ambos os vetores, sem repetição. Observe a definição de  [{name}](#def:mat-conjunto_intersecao). A ordem dos elementos no vetor de saída não é importante.
+
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4]
+```
+```c
+[6, 7, 8, 9]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4, 5, 6, 7]
+```
+```c
+[5, 6, 7, 8, 9, 10]
+```
+::::  
+
+::::{card} Saída
+```c
+[5, 6, 7]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 1, 1]
+```
+```c
+[2, 2, 2, 2]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 1, 1]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 2, 2]
+```
+```c
+[3, 4, 5, 2, 7, 2]
+```
+::::  
+
+::::{card} Saída
+```c
+[2]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetor-diferenca
+
+(ex:vetor-diferenca)=
+:::::::{card} Diferença
+
+Desenvolva uma função que recebe como entrada dois vetores de inteiros $A$ e $B$. A função deve retornar outro vetor, contendo apenas os elementos de $A$ que não estão no vetor $B$. Observe a definição de  [{name}](#def:mat-conjunto_diferenca). A ordem dos elementos no vetor de saída não é importante.
+
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 2, 3, 4]
+```
+```c
+[6, 7, 8, 9]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 1, 7, 2, 3, 4, 5, 3, 6, 7]
+```
+```c
+[5, 6, 7, 8, 9, 10]
+```
+::::  
+
+::::{card} Saída
+```c
+[1, 2, 3, 4]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 1, 1]
+```
+```c
+[2, 2, 2, 2]
+```
+::::  
+
+::::{card} Saída
+```c
+[1]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 1, 1]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[1]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[1, 1, 2, 2]
+```
+```c
+[3, 4, 5, 2, 7, 2]
+```
+::::  
+
+::::{card} Saída
+```c
+[1]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+[1, 2, 3, 4]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetor-uniao_intersecao_diferenca_caracteres
+
+(ex:vetor-uniao_intersecao_diferenca_caracteres)=
+:::::::{card} União, interseção e diferença com vetores de caracteres
+
+Implemente funções que implementam os conjuntos união, interseção e diferença para vetores com elementos do tipo caractere, de forma análoga a [](#exex:vetor-uniao), [](#exex:vetor-intersecao) e [](#exex:vetor-diferenca).
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
 
 ::::::::{exercise}
 :label: exex:label
