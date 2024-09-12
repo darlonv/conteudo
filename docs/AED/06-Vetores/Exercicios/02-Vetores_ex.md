@@ -3995,7 +3995,7 @@ Desenvolva uma função chamada `logicoParaInteiro`, que recebe como parâmetro 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -4021,7 +4021,7 @@ Desenvolva uma função chamada `logicoParaInteiro`, que recebe como parâmetro 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -4055,7 +4055,7 @@ Desenvolva uma função chamada `inteiroParaLogico`, que recebe como parâmetro 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -4081,7 +4081,7 @@ Desenvolva uma função chamada `inteiroParaLogico`, que recebe como parâmetro 
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
@@ -4107,26 +4107,30 @@ Desenvolva uma função chamada `inteiroParaLogico`, que recebe como parâmetro 
 ### Comparação de vetores
 
 ::::::::{exercise}
-:label: exex:label
+:label: exex:vetores-iguais
 
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
+(ex:vetores-iguais)=
+:::::::{card} Valores iguais
 
-Implemente uma função chamada `vetorValoresIguaisInt`, que recebe como entrada um vetor de inteiros. A função deve retornar verdadeiro caso todos os elementos possuam o mesmo valor, e falso caso contrário.
-- Implemente também as funções `vetorValoresIguaisFloat`, `vetorValoresIguaisBoolean` e `vetorValoresIguaisString`, que operam com vetores com elementos dos tipos real, booleano e caractere, respectivamente.
+Implemente uma função chamada `valoresIguais`, que recebe como entrada um vetor de inteiros. A função deve retornar verdadeiro caso todos os elementos possuam os mesmo valores, nas mesmas posições. A função deve retornar falso para o caso contrário.
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[0, 1, 2, 3]
+```
+```c
+[0, 1, 2, 3]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+verdadeiro
 ```
 ::::  
 
@@ -4141,16 +4145,21 @@ Implemente uma função chamada `vetorValoresIguaisInt`, que recebe como entrada
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[0, 1, 2, 3, 4]
+```
+```c
+[0, 1, 2, 3]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+falso
 ```
 ::::  
 
@@ -4162,16 +4171,21 @@ Implemente uma função chamada `vetorValoresIguaisInt`, que recebe como entrada
 
 ::::::{prf:example}
 :nonumber:
-<!-- :class: dropdown -->
+:class: dropdown
 
 :::::{grid} 1 1 2 2
 ::::{card} Entrada
 ```c
+[0, 1, 2]
+```
+```c
+[0, 1, 2, 3]
 ```
 ::::  
 
 ::::{card} Saída
-```
+```c
+falso
 ```
 ::::  
 
@@ -4180,10 +4194,103 @@ Implemente uma função chamada `vetorValoresIguaisInt`, que recebe como entrada
 
 <!-- /example -->
 ::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+verdadeiro
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[0, 1]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+falso
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[10, 20, 30]
+```
+```c
+[0, 1, 2]
+```
+::::  
+
+::::{card} Saída
+```c
+falso
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
 <!-- /card exercicio -->
 :::::::  
 <!-- /exercise -->
 ::::::::  
+
+::::::::{exercise}
+:label: exex:vetores-iguais_outros_tipos
+
+(ex:vetores-iguais_outros_tipos)=
+:::::::{card} Vetores iguais de outros tipos de dados
+
+Desenvolva funções análogas à do [](exex:vetores-iguais), porém para dados dos tipos real, lógico, booleano e caracteres.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
 
 
 
