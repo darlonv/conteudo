@@ -125,8 +125,10 @@ A diferença entre os conjuntos $A$ e $B$ é dado pelo conjunto que contém os e
 ::::{prf:definition} Fibonacci
 :label: def:mat-fibonacci
 
-
-A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números na sequência são 1 e 1. Os primeiros números da sequência são 1, 1, 2, 3, 5, 8, 13, 21, 33, ...
+(def:mat-fibonacci-card)=
+:::{card} Fibonacci
+A sequência de Fibonacci é uma sequência de números em que a cada número da sequência é a soma dos dois números anteriores na sequência. Os primeiros números da sequência são definidos como 1 e 1. A partir deles, é realizada a soma dos anteriores. Desta forma, os números da sequência são 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+:::
 
 ::::
 
