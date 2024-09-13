@@ -122,6 +122,73 @@ $$
 ::::
 
 
+::::::::{exercise} Números perfeitos
+:label: ex:repeticao-numero_perfeito
+
+(ex:repeticao-numero_perfeito-card)=
+:::::::{card} [{name}](#ex:repeticao-numero_perfeito)
+
+Dado um número $n$, inteiro e positivo, dizemos que $n$ é perfeito se $n$ for igual à soma de seus divisores positivos e diferentes de $n$. Desenvolva uma função que verifica se determinado número é perfeito.  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+6
+```
+::::  
+
+::::{card} Saída
+```
+verdadeiro
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+$6$ é perfeito, pois $6=3+2+1$.
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+15
+```
+::::  
+
+::::{card} Saída
+```
+falso
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+$15$ não é perfeito, pois $15\neq5+3+1$.
+::::
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
 
 
 ::::::{exercise}
@@ -172,18 +239,90 @@ $15$ não é perfeito, pois $15\neq5+3+1$.
 Pergunte ao usuário dois números, $x$ e $y$, e mostre todos os números perfeitos no intervalo $[x,y]$.
 :::::
 
-::::{exercise}
-:label: ex:repeticao-fibonacci
-Calcule e mostre a sequência de Fibonacci $F$, de $1$ até $n$, tal que $n$ é digitado pelo usuário. Observe a definição de [{name}](#def:mat-fibonacci).
+::::::::{exercise}
+:label: exex:repeticao-fibonacci
 
-:::{note} Exemplo
+(ex:repeticao-fibonacci)=
+:::::::{card} Fibonacci
 
-Para `n=11`:
+Desenvolva um procedimento que mostra a sequência de Fibonacci $F$, de $1$ até $n$, tal que $n$ é o parâmetro de entrada do procedimento. Observe a definição de [{name}](#def:mat-fibonacci).
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+11
 ```
-1 1 2 3 5 8 13 21 34 55 89 
+::::  
+
+::::{card} Saída
 ```
-:::
-::::
+1 1 2 3 5 8 13 21 34 55 89
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+2
+```
+::::  
+
+::::{card} Saída
+```
+1 1
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+5
+```
+::::  
+
+::::{card} Saída
+```
+1 1 2 3 5
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
 
 ::::{exercise}
 :label: ex:repeticao-numero_primo
@@ -205,13 +344,26 @@ $$
 
 ## Padrões
 
-::::{exercise}
+::::::::{exercise}
 :label: ex:repeticao-linhas_padrao_1
-Faça um programa que pergunte $n$ ao usuário, tal que $n$ corresponde ao número de linhas, que devem ser impressas de acordo com o padrão mostrado no exemplo.
 
-:::{note} Exemplo
+(ex:repeticao-linhas_padrao_1-card)=
+:::::::{card} Padrão de linhas
 
-Para `n=5`: 
+Faça um programa que pergunte $n$ ao usuário, tal que $n$ corresponde ao número de linhas, que devem ser impressas de acordo com o padrão mostrado nos exemplos.
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+5
+```
+::::  
+
+::::{card} Saída
 ```
 *
 **
@@ -219,6 +371,70 @@ Para `n=5`:
 ****
 *****
 ```
-:::
+::::  
 
-::::
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+7
+```
+::::  
+
+::::{card} Saída
+```
+*
+**
+***
+****
+*****
+******
+*******
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+1
+```
+::::  
+
+::::{card} Saída
+```
+*
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
