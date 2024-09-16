@@ -189,9 +189,139 @@ $15$ não é perfeito, pois $15\neq5+3+1$.
 <!-- /exercise -->
 ::::::::  
 
+::::::::{exercise} Pŕóximo Número Perfeito
+:label: ex:repeticao-proximo-numero_perfeito
+
+(ex:repeticao-proxumo-numero_perfeito-card)=
+:::::::{card} [{name}](#ex:repeticao-proximo-numero_perfeito)
+
+Um número perfeito $p$ é aquele que possui valor igual à soma de seus divisores positivos e diferentes de $p$.
+
+O número $6$ **é perfeito**, dado que seus divisores menores que $6$ são $1$, $2$ e $3$. Logo, $1+2+3 = 6$.  
+O número $8$ não é perfeito, visto que $1+2+4 = 7$. Logo, como $7 \neq 8$, $8$ **não é perfeito**.
+
+Desenvolva uma função que recebe como entrada um valor inteiro $i$ não negativo. Seu algoritmo deve retornar com o próximo número perfeito, tal que $p$ seja **maior ou igual** a $i$.
 
 
-::::::{exercise}
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 2 2 2 2
+::::{card} Entrada
+```
+2
+```
+::::
+
+::::{card} Saída
+```c
+6
+```
+::::
+
+:::::
+
+::::{card} Explicação
+- $2$ não é perfeito
+- $3$ não é perfeito
+- $4$ não é perfeito
+- $5$ não é perfeito
+- $6$ é perfeito
+
+É retornado  o valor $6$, dado que é o próximo número perfeito a partir do valor $2$.
+
+::::
+
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 2 2 2 2
+::::{card} Entrada
+```
+4
+```
+::::
+
+::::{card} Saída
+```c
+6
+```
+::::
+
+:::::
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 2 2 2 2
+::::{card} Entrada
+```
+6
+```
+::::
+
+::::{card} Saída
+```c
+6
+```
+::::
+
+:::::
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 2 2 2 2
+::::{card} Entrada
+```
+7
+```
+::::
+
+::::{card} Saída
+```c
+28
+```
+::::
+
+:::::
+::::::
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 2 2 2 2
+::::{card} Entrada
+```
+10
+```
+::::
+
+::::{card} Saída
+```c
+28
+```
+::::
+
+:::::
+::::::
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
+<!-- ::::::{exercise}
 :label: ex:repeticao-numero_perfeito
 Dado um número $n$, inteiro e positivo, dizemos que $n$ é perfeito se $n$ for igual à soma de seus divisores positivos e diferentes de $n$. Desenvolva um algoritmo que verifica se determinado número é perfeito.  
 
@@ -232,7 +362,7 @@ $15$ não é perfeito, pois $15\neq5+3+1$.
 
 :::::
 
-::::::
+:::::: -->
 
 ::::{exercise}
 :label: ex:repeticao_numeros_perfeitos_intervalo
