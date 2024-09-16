@@ -556,7 +556,7 @@ Leia um vetor `va`, com $10$ elementos contendo valores do tipo inteiro. Em segu
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Aloque um vetor `valores`, com espaço para armazenar $10$ elementos com dados do tipo inteiro. Conforme os dados vão sendo lidos, coloque os valores pares a partir do início do vetor e os valor ímpares a partir do final do vetor.
+Aloque um vetor `valores`, com espaço para armazenar $10$ elementos com dados do tipo inteiro. Conforme os dados vão sendo lidos, coloque os valores pares a partir do início do vetor e os valores ímpares a partir do final do vetor.
 
  
 
@@ -3322,7 +3322,7 @@ Desenvolva a função chamada `obterPosicaoCadeiaDeCaracteres`, semelhante a [](
 (ex:vetores-obter_indices_de_valor)=
 :::::::{card} Obter índice de valor
 
-Desenvolva uma função chamada `obterIndices`, que recebe como parâmetros um vetor de inteiros $v$ e um valor inteiro `valor_buscar`. A função deve retornar um vetor de inteiros contendo os índices em que os valor `valor_buscar` aparece no vetor $v$.
+Desenvolva uma função chamada `obterIndices`, que recebe como parâmetros um vetor de inteiros $v$ e um valor inteiro `valor_buscar`. A função deve retornar um vetor de inteiros contendo os índices em que o valor `valor_buscar` aparece no vetor $v$.
 
 
 ::::::{prf:example}
