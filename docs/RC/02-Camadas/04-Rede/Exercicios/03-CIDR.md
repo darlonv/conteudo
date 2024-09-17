@@ -179,7 +179,7 @@ Sobre as máscaras de rede, responda:
 
 (B). Qual é o último endereço de *host* válido na sub-rede `172.23.36.0`, com máscara `255.255.254.0`?
 
-(C). Qual é o primeiro endereço de *host* válido na sub-rede em que a máquina com o ip
+(C). Qual é o primeiro endereço de *host* válido na sub-rede em que a máquina com o IP
 `10.232.151.102` e máscara `255.255.240.0` pertence?
 
 (D). Qual é a faixa de endereços IP válida para *hosts* onde a máquina `172.29.254.163` e máscara `255.255.255.128` pertence?
