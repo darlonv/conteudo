@@ -2568,7 +2568,7 @@ Inclua um parâmetro adicional, contendo o tamanho ocupado pelo tipo de dado dos
 
 ::::{card} Saída
 ```c
-[10, 20]
+[10, 20, 30]
 ```
 ::::  
 
@@ -3669,6 +3669,91 @@ Como não há elementos repetidos, todos os valores são retornados.
 :::::::  
 <!-- /exercise -->
 ::::::::  
+
+::::::::{exercise} Não
+:label: exex:vetor-not
+
+(ex:vetor-not)=
+:::::::{card} [{name}](#exex:vetor-not)
+
+Implementao uma função chamada `nao`, que recebe como entrada um vetor de valores do tipo lógico, e retorna um novo vetor contendo a negação desses valores.
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[falso]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+::::  
+
+::::{card} Saída
+```c
+[falso, verdadeiro, falso, verdadeiro]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+
 
 ### Mostrar valores
 
