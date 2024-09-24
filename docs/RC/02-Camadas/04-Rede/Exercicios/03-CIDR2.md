@@ -26,7 +26,7 @@ Fonte: KUROSE. Redes de computadores e a Internet: uma abordagem top-down. 6 ed.
 
 
 
-De acordo com a notação CIDR, o prefixo de rede /21 equivale à máscara de sub-rede
+De acordo com a notação CIDR, o prefixo de rede `/21` equivale à máscara de sub-rede
 
 1. [ ] `255.248.0.0`
 1. [ ] `255.255.240.0`
@@ -66,7 +66,7 @@ Fonte: FUNTEF-PR - 2023 - UTFPR - Técnico de Tecnologia da informação
 Julgue o item a seguir. 
 
 
-O sistema CIDR (Classless Inter-Domain Routing) introduziu o uso de máscaras de tamanho variável (VLSM - *Variable-Length Subnet Mask*), que oferece maior flexibilidade na criação de faixas de endereços. Por exemplo, para necessidades de apenas 1000 endereços, pode-se usar uma máscara /22, permitindo o uso de 1022 endereços, em vez de uma faixa de classe B inteira, como no sistema de alocação baseado em classes anteriores.
+O sistema CIDR (Classless Inter-Domain Routing) introduziu o uso de máscaras de tamanho variável (VLSM - *Variable-Length Subnet Mask*), que oferece maior flexibilidade na criação de faixas de endereços. Por exemplo, para necessidades de apenas 1000 endereços, pode-se usar uma máscara `/22`, permitindo o uso de 1022 endereços, em vez de uma faixa de classe B inteira, como no sistema de alocação baseado em classes anteriores.
 
 Certo
 Errado
@@ -79,11 +79,11 @@ Fonte: IGEDUC - 2024 - Câmara da Vitória de Santo Antão - PE - Analista em In
 
 Assinale a opção que apresenta a forma alternativa de representar a máscara de rede `255.255.255.192`.
 
-1. [ ] /29
-1. [ ] /28
-1. [ ] /26
-1. [ ] /25
-1. [ ] /22
+1. [ ] `/29`
+1. [ ] `/28`
+1. [ ] `/26`
+1. [ ] `/25`
+1. [ ] `/22`
 
 Fonte:  Marinha - 2020 - CAP - Cabo - Processamento de Dados
 :::
@@ -112,7 +112,7 @@ Fonte: CETAP - 2021 - JUCEPA - Técnico em Informática e Registro Mercantil
 
 :::{exercise}
 
-A máscara de sub rede de uma rede IPv4 foi definida como /21. O endereço de rede desta rede é `10.0.0.0`. Qual é o endereço de *broadcast*?
+A máscara de sub rede de uma rede IPv4 foi definida como `/21`. O endereço de rede desta rede é `10.0.0.0`. Qual é o endereço de *broadcast*?
 
 1. [ ] 10.0.0.255
 1. [ ] 10.0.0.21
