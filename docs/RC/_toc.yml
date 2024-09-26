@@ -24,11 +24,16 @@ chapters:
         - file: 02-Camadas/04-Rede/02-EnderecamentoIP.md
         - file: 02-Camadas/04-Rede/03-Classes.md
         - file: 02-Camadas/04-Rede/04-CIDR.md
+        - file: 02-Camadas/04-Rede/06-NAT.md
         - title: Exercícios
           sections:
             - file: 02-Camadas/04-Rede/Exercicios/02-EnderecamentoIP.md
             - file: 02-Camadas/04-Rede/Exercicios/03-CIDR.md
             - file: 02-Camadas/04-Rede/Exercicios/03-CIDR2.md
+            - file: 02-Camadas/04-Rede/Exercicios/06-NAT.md
+      - title: Enlace
+        sections:
+        - file: 02-Camadas/05-Enlace/01-Enlace.md
   - title: Trabalhos
     sections:
       - title: RC TINF
