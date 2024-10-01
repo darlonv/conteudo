@@ -10,7 +10,7 @@
 
 1. Explique como o NAT pode ajudar a melhorar a segurança de uma rede interna. Ele oferece uma solução completa de segurança? Justifique sua resposta.
 
-1. Por que o uso de NAT pode causar problemas com alguns protocolos, como FTP ou VoIP? Qual seria uma possível solução para esse problema?
+<!-- 1. Por que o uso de NAT pode causar problemas com alguns protocolos, como FTP ou VoIP? Qual seria uma possível solução para esse problema? -->
 
 <!-- 1. Compare o uso de NAT em redes IPv4 com o IPv6. O NAT é necessário em redes IPv6? Justifique. -->
 
