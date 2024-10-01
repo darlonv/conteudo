@@ -325,8 +325,8 @@ A rede suporta 16777216 hosts.
 
 ::::{card} Saída
 ```
-Rede      : 143.107.?.0
-Broadcast : 143.107.255.?
+Rede      : 143.107.10.0
+Broadcast : 143.107.10.15
 Hosts     : 143.107.10.1 - 143.107.10.14
 A rede suporta 14 hosts.
 ```
