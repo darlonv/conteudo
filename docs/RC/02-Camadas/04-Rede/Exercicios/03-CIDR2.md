@@ -246,3 +246,101 @@ Nesse caso, é correto afirmar que
 Fonte: FGV - 2023 - Câmara dos Deputados - Analista Legislativo - Informática Legislativa - Tarde
 
 :::
+
+::::::::{exercise}
+:label: exex:cidr_addresses_info
+
+(ex:cidr_addresses_info)=
+:::::::{card} Informações sobre a rede
+
+Desenvolva uma aplicação em que o usuário digita um endereço IP e uma máscara de rede, utilizando o formato `IP/Máscara`. Sua aplicação deve apresentar as seguintes informações:
+- o endereço da rede e de *broadcast*;
+- a faixa de possíveis endereços IP para *hosts*;
+- a quantidade máxima de *hosts* que a rede suporta.
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```
+192.168.0.100/24
+```
+::::      
+<!-- /card -->
+
+::::{card} Saída
+```
+Rede      : 192.168.0.0
+Broadcast : 192.168.0.255
+Hosts     : 192.168.0.1 - 192.168.0.254
+A rede suporta 254 hosts.
+```
+::::      
+
+:::::     
+::::::    
+
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```
+10.1.1.10/8
+```
+::::
+<!-- /card -->
+
+::::{card} Saída
+```
+Rede      : 10.0.0.0
+Broadcast : 10.255.255.255
+Hosts     : 10.0.0.1 - 10.255.255.254
+A rede suporta 16777216 hosts.
+```
+::::      
+<!-- /card -->
+
+:::::     
+<!-- /grid -->
+::::::    
+<!-- /example -->
+
+
+::::::{prf:example}
+:nonumber:
+<!-- :class: dropdown -->
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```
+143.107.10.15/28
+```
+::::      
+<!-- /card -->
+
+::::{card} Saída
+```
+Rede      : 143.107.?.0
+Broadcast : 143.107.255.?
+Hosts     : 143.107.10.1 - 143.107.10.14
+A rede suporta 14 hosts.
+```
+::::      
+<!-- /card -->
+
+:::::    
+ <!-- /grid -->
+::::::    
+<!-- /example -->
+
+
+:::::::   
+<!-- /card exercicio -->
+
+::::::::  
+<!-- /exercise -->
