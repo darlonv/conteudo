@@ -66,10 +66,10 @@ Fonte: FUNTEF-PR - 2023 - UTFPR - Técnico de Tecnologia da informação
 Julgue o item a seguir. 
 
 
-O sistema CIDR (Classless Inter-Domain Routing) introduziu o uso de máscaras de tamanho variável (VLSM - *Variable-Length Subnet Mask*), que oferece maior flexibilidade na criação de faixas de endereços. Por exemplo, para necessidades de apenas 1000 endereços, pode-se usar uma máscara `/22`, permitindo o uso de 1022 endereços, em vez de uma faixa de classe B inteira, como no sistema de alocação baseado em classes anteriores.
+O sistema CIDR (*Classless Inter-Domain Routing*) introduziu o uso de máscaras de tamanho variável (VLSM - *Variable-Length Subnet Mask*), que oferece maior flexibilidade na criação de faixas de endereços. Por exemplo, para necessidades de apenas 1000 endereços, pode-se usar uma máscara `/22`, permitindo o uso de 1022 endereços, em vez de uma faixa de classe B inteira, como no sistema de alocação baseado em classes anteriores.
 
-Certo
-Errado
+- [ ] Certo
+- [ ] Errado
 
 Fonte: IGEDUC - 2024 - Câmara da Vitória de Santo Antão - PE - Analista em Informática
 
