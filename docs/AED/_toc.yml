@@ -143,9 +143,10 @@ chapters:
       - title: LPI
         sections:
           - file: _trabalhos/LPI/LPIDP2024-2B.md
-          - file: _trabalhos/LPI/LPIDP2024-P2SubQ1.md
-          - file: _trabalhos/LPI/LPIDP2024-P2SubQ2.md
-          - file: _trabalhos/LPI/LPIDP2024-P2SubQ3.md
+          - file: _trabalhos/LPI/AED2024-T3.md
+          # - file: _trabalhos/LPI/LPIDP2024-P2SubQ1.md
+          # - file: _trabalhos/LPI/LPIDP2024-P2SubQ2.md
+          # - file: _trabalhos/LPI/LPIDP2024-P2SubQ3.md
       - title: AE
         sections:
           - title: LM
