@@ -137,6 +137,7 @@ chapters:
       - title: AED
         sections:
           - file: _trabalhos/AED/AED2024-2B.md
+          - file: _trabalhos/AED/AED2024-3B.md
           # - file: _trabalhos/AED/AED2024-P2Q1.md
           # - file: _trabalhos/AED/AED2024-P2Q2.md
           # - file: _trabalhos/AED/AED2024-P2Q3.md

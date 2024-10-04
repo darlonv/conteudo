@@ -216,6 +216,105 @@ Desenvolva uma função chamada `matrizPermutacaoLinhasInt`, que recebe como par
     :::
 ::::
 
+::::::::{exercise}
+:label: exex:matriz-triangulo_de_pascal
+
+(ex:matriz-triangulo_de_pascal)=
+:::::::{card} Triângulo de Pascal
+
+Escreva uma função recebe como entrada um número inteiro positivo $n$, e retorna uma matriz contendo os valores do Triângulo de Pascal.
+
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+6
+```
+::::  
+
+::::{card} Saída
+```
+1   0   0   0   0   0
+1   1   0   0   0   0
+1   2   1   0   0   0
+1   3   3   1   0   0
+1   4   6   4   1   0
+1   5   10  10  5   1
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 1 1
+::::{card} Entrada
+```c
+10
+```
+::::  
+
+::::{card} Saída
+```
+1   0   0   0   0   0   0   0   0   0
+1   1   0   0   0   0   0   0   0   0
+1   2   1   0   0   0   0   0   0   0
+1   3   3   1   0   0   0   0   0   0
+1   4   6   4   1   0   0   0   0   0
+1   5   10  10  5   1   0   0   0   0
+1   6   15  20  15  6   1   0   0   0
+1   7   21  35  35  21  7   1   0   0
+1   8   28  56  70  56  28  8   1   0
+1   9   36  84  126 126 84  36  9   1
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+1
+```
+::::  
+
+::::{card} Saída
+```
+1
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
  ### Testes
 
 ## Problemas

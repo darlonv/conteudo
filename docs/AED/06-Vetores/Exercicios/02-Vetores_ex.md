@@ -4434,6 +4434,298 @@ O vetor `mascara` possui valor verdadeiro para nas posições `0`, `2`, `4` e `9
 ::::::::
 
 ::::::::{exercise}
+:label: exex:vetores-aplicar_e_logico
+
+(ex:vetores-aplicar_e_logico)=
+:::::::{card} Aplicar e lógico
+
+Desenvolva uma função chamada `aplicarELogico`, que recebe como entrada dois vetores de lógicos $v$ e $w$, ambos com a mesma quantidade de elementos. Sua função deve aplicar a operação de **e** lógico entre os elementos de $v$ e $w$ na mesma posição, retornando um novo vetor com o resultado.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+::::  
+
+::::{card} Saída
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+```c
+[falso, verdadeiro, falso, verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[falso, falso, falso, falso]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[falso]
+```
+```c
+[verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[falso]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro, verdadeiro, verdadeiro]
+```
+```c
+[falso, verdadeiro, falso]
+```
+::::  
+
+::::{card} Saída
+```c
+[falso, verdadeiro, falso]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
+:label: exex:vetores-aplicar_ou_logico
+
+(ex:vetores-aplicar_ou_logico)=
+:::::::{card} Aplicar ou lógico
+
+Desenvolva uma função chamada `aplicarOuLogico`, que recebe como entrada dois vetores de lógicos $v$ e $w$, ambos com a mesma quantidade de elementos. Sua função deve aplicar a operação de **ou** lógico entre os elementos de $v$ e $w$ na mesma posição, retornando um novo vetor com o resultado.
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+::::  
+
+::::{card} Saída
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+::::{card} Explicação
+::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro, falso, verdadeiro, falso]
+```
+```c
+[falso, verdadeiro, falso, verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[verdadeiro, verdadeiro, verdadeiro, verdadeiro]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[]
+```
+```c
+[]
+```
+::::  
+
+::::{card} Saída
+```c
+[]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[falso]
+```
+```c
+[verdadeiro]
+```
+::::  
+
+::::{card} Saída
+```c
+[verdadeiro]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+::::::{prf:example}
+:nonumber:
+:class: dropdown
+
+:::::{grid} 1 1 2 2
+::::{card} Entrada
+```c
+[verdadeiro, verdadeiro, verdadeiro]
+```
+```c
+[falso, verdadeiro, falso]
+```
+::::  
+
+::::{card} Saída
+```c
+[verdadeiro, verdadeiro, verdadeiro]
+```
+::::  
+
+<!-- /grid -->
+:::::  
+
+<!-- /example -->
+::::::  
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::
+
+::::::::{exercise}
 :label: exex:vetores-aplicar_mascara_outros_tipos
 
 (ex:vetores-aplicar_mascara_outros_tipos)=
@@ -6717,10 +7009,10 @@ Se a pessoa digitar 1, seu programa deve fazer a reserva de um assento no setor 
 
 
 ::::::::{exercise}
-:label: exex:label
+:label: exex:vetor-triangulo_de_pascal
 
-(ex:label)=
-:::::::{card} <!-- Título aqui -->
+(ex:vetor-triangulo_de_pascal)=
+:::::::{card} Triângulo de Pascal
 
 Escreva um programa que leia um numero inteiro positivo n e em seguida imprima as n primeiras linhas do Triângulo de Pascal.
 
