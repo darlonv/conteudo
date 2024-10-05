@@ -3863,7 +3863,7 @@ Perceba que o caractere `x` é mostrado apenas entre os elementos, não aparecen
 ::::: 
 
 ::::{card} Explicação
-O caractere `'\n'` aplica uma quebra de linha (Enter). Perceba que não há duas quebras de linha o final, apenas uma.
+O caractere `'\n'` aplica uma quebra de linha (Enter). Perceba que não há duas quebras de linha no final, apenas uma.
 ::::
 
 <!-- /example -->
