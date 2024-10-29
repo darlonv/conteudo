@@ -153,6 +153,14 @@ chapters:
           - title: LM
             sections:
             - file: _trabalhos/AE/LM/Ativ_04.md
+  # - title: Provas
+  #   sections:
+  #     - title: P
+  #       sections:
+  #         - file: _trabalhos/LPI/LPIDP2024-P3Q1.md
+  #         - file: _trabalhos/LPI/LPIDP2024-P3Q2.md
+  #         - file: _trabalhos/LPI/LPIDP2024-P3Q3.md
+      
         
   
   
