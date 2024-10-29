@@ -61,12 +61,12 @@ chapters:
       - file: 06-Vetores/01-Variaveis_compostas.md
       - file: 06-Vetores/02-Vetores.md
       - file: 06-Vetores/03-Matrizes.md
-      # - file: 06-Vetores/04-Registros.md
+      - file: 06-Vetores/04-Registros.md
       - title: Exercícios
         sections:
           - file: 06-Vetores/Exercicios/02-Vetores_ex.md
           - file: 06-Vetores/Exercicios/03-Matrizes_ex.md
-          # - file: 06-Vetores/Exercicios/04-Registros_ex.md
+          - file: 06-Vetores/Exercicios/04-Registros_ex.md
   - title: Arquivos
     sections:
       - file: 07-Arquivos/01-Arquivos.md

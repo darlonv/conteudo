@@ -3,6 +3,12 @@
 
 Um registro é uma variável composta heterogênea, em que podemos observá-la como um conjunto de elementos que podem ser de tipos distintos (diferente dos vetores e matrizes). Dizemos que cada um destes elementos é um **campo**, e conjunto dos **campos** forma o **registro**.
 
+Os registros são úteis para organizar dados complexos de maneira lógica. Entre suas vantagens estão:
+
+- Agrupamento de Dados: Facilitar o manuseio de conjuntos de dados relacionados;
+- Clareza: Melhorar a legibilidade do código, tornando-o mais intuitivo;
+- Manutenção: Facilitar a atualização de informações, uma vez que todos os dados relevantes estão em uma mesma estrutura.
+
 **Problema** 
 
 Considere como exemplo a seguinte situação: é necessário armazenar informações sobre um produto determinado, que possui dados como descrição (caractere), lote (inteiro) e peso (real). Neste momento inicial apenas observaremos as variáveis necessárias e seus tipos, sem valores, processamento ou saída.
@@ -356,6 +362,13 @@ printf("Hello world!\n");
 
 **Exercícios**
 
+Resolva os seguintes exercícios:
 
+::::::::{embed} lista_telefonica
+::::::::
+
+
+::::::::{embed} pontor2
+::::::::
 
 
