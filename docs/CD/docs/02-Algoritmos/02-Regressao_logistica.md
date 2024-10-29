@@ -22,9 +22,9 @@ $$
 A regressão logística pode ser expandida para lidar com mais de duas classes, mas nesse caso, é chamada de regressão logística multinomial.
 
 
-## Atividade
+## Exemplo
 
-### Exemplo de Regressão Logística com `scikit-learn`
+### Regressão Logística com `scikit-learn`
 
 Podemos utilizar a biblioteca `scikit-learn` para treinar e avaliar um modelo de regressão logística no conjunto de dados "Breast Cancer Wisconsin". Este conjunto de dados é amplamente utilizado para problemas de classificação binária.
 
