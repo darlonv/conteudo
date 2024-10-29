@@ -48,11 +48,6 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from sklearn.datasets import load_breast_cancer
 ```
 
-1. 
-
-```python
-```
-
 2. Carregando e visualizando dados
 
 ```python
