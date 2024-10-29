@@ -31,9 +31,17 @@ chapters:
             - file: 02-Camadas/04-Rede/Exercicios/03-CIDR.md
             - file: 02-Camadas/04-Rede/Exercicios/03-CIDR2.md
             - file: 02-Camadas/04-Rede/Exercicios/06-NAT.md
-      # - title: Enlace
-      #   sections:
-      #   - file: 02-Camadas/05-Enlace/01-Enlace.md
+      - title: Enlace
+        sections:
+        - file: 02-Camadas/05-Enlace/01-Enlace.md
+        - title: Equipamentos
+          sections:
+          - file: 02-Camadas/05-Enlace/Equipamentos/01-Switches.md
+        - file: 02-Camadas/05-Enlace/Protocolos/01-Protocolos.md
+          sections:
+          - file: 02-Camadas/05-Enlace/Protocolos/02-ARP.md
+          - file: 02-Camadas/05-Enlace/Protocolos/03-Ethernet.md
+          - file: 02-Camadas/05-Enlace/Protocolos/04-Wifi.md
   - title: Trabalhos
     sections:
       - title: RC TINF
