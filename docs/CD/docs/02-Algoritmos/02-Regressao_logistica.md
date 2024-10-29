@@ -7,34 +7,113 @@ A **regressão logística** é um modelo estatístico utilizado para prever a pr
   
   A função sigmoide é dada por:
 
-  \[
-  P(y=1 | x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \dots + \beta_n x_n)}}
-  \]
+$$
+P(y=1 | x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \dots + \beta_n x_n)}}
+$$
 
-  Onde \( \beta_0 \) é o intercepto e \( \beta_1, \dots, \beta_n \) são os coeficientes das variáveis independentes \( x_1, \dots, x_n \).
+  Onde $\beta_0$ é o intercepto e $\beta_1, \dots, \beta_n$ são os coeficientes das variáveis independentes $x_1, \dots, x_n$.
 
 - **Classificação binária**: O modelo determina a probabilidade de um evento pertencer à classe 1 (sucesso) ou classe 0 (falha). A decisão de qual classe o evento pertence é feita com base em um limiar, geralmente 0.5.
 
 ## Exemplos de aplicação
-- **Detecção de fraude**: Prever se uma transação financeira é fraudulenta (sim/não).
-- **Diagnóstico médico**: Estimar a probabilidade de um paciente ter uma doença (doente/sadio).
+- Detecção de fraude: Prever se uma transação financeira é fraudulenta (sim/não);
+- Diagnóstico médico: Estimar a probabilidade de um paciente ter uma doença (doente/sadio).
 
-A regressão logística pode ser expandida para lidar com mais de duas classes, mas nesse caso, é chamada de **regressão logística multinomial**.
+A regressão logística pode ser expandida para lidar com mais de duas classes, mas nesse caso, é chamada de regressão logística multinomial.
 
 
-## Exemplo
+## Atividade
 
-# Exemplo de Regressão Logística com `scikit-learn`
+### Exemplo de Regressão Logística com `scikit-learn`
 
-Neste exemplo, utilizaremos a biblioteca **scikit-learn** para treinar e avaliar um modelo de **regressão logística** no conjunto de dados "Breast Cancer Wisconsin". Este conjunto de dados é amplamente utilizado para problemas de classificação binária.
+Podemos utilizar a biblioteca `scikit-learn` para treinar e avaliar um modelo de regressão logística no conjunto de dados "Breast Cancer Wisconsin". Este conjunto de dados é amplamente utilizado para problemas de classificação binária.
 
-## Passo a Passo:
-1. Carregar os dados.
-2. Dividir os dados em conjuntos de treino e teste.
-3. Treinar o modelo de regressão logística.
-4. Avaliar o modelo.
+Passos:
+1. Carregar os dados;
+2. Dividir os dados em conjuntos de treino e teste;
+3. Treinar o modelo de regressão logística;
+4. Avaliar o modelo;
 
-## Código em Python
+#### Código
+
+1. Importando bibliotecas
+
+```python
+# Importando as bibliotecas necessárias
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.datasets import load_breast_cancer
+```
+
+1. 
+
+```python
+```
+
+2. Carregando e visualizando dados
+
+```python
+# Carregando o dataset 'Breast Cancer Wisconsin'
+data = load_breast_cancer()
+
+# Transformando o dataset em um DataFrame para facilitar a manipulação
+df = pd.DataFrame(data.data, columns=data.feature_names)
+df['target'] = data.target
+
+# Visualizando as primeiras linhas dos dados
+df.head()
+```
+
+3. Dividindo o conjunto em treino e teste
+
+```python
+# Separando as features (X) e o target (y)
+X = df.drop('target', axis=1)
+y = df['target']
+
+# Dividindo os dados em treino e teste (80% treino e 20% teste)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+
+4. Criando e treinando o modelo
+
+```python
+# Criando o modelo de Regressão Logística
+model = LogisticRegression(max_iter=10000)  # Ajustando max_iter para garantir convergência
+
+# Treinando o modelo
+model.fit(X_train, y_train)
+```
+
+
+5. Fazendo previsões e avaliando
+
+```python
+# Fazendo previsões no conjunto de teste
+y_pred = model.predict(X_test)
+
+# Avaliando o modelo
+accuracy = accuracy_score(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
+class_report = classification_report(y_test, y_pred)
+```
+
+
+6. Mostrando os resultados
+
+```python
+# Exibindo os resultados
+print(f'Acurácia: {accuracy * 100:.2f}%')
+print('Matriz de confusão:')
+print(conf_matrix)
+print('Relatório de classificação:')
+print(class_report)
+```
+
+#### Código completo
 
 ```python
 # Importando as bibliotecas necessárias
@@ -53,7 +132,7 @@ df = pd.DataFrame(data.data, columns=data.feature_names)
 df['target'] = data.target
 
 # Visualizando as primeiras linhas dos dados
-print(df.head())
+df.head()
 
 # Separando as features (X) e o target (y)
 X = df.drop('target', axis=1)
@@ -86,8 +165,8 @@ print(class_report)
 ```
 
 
-## Explicação dos Passos:
 
+<!-- 
 1. **Carregando os dados**: Utilizamos o dataset `load_breast_cancer()` do `scikit-learn`. Esse conjunto de dados contém informações sobre características de células tumorais extraídas de imagens digitais de massas de mama.
    
 2. **Dividindo os dados**: Usamos `train_test_split` para separar os dados em dois subconjuntos — um para treinamento e outro para teste (80% treino, 20% teste).
@@ -127,7 +206,7 @@ weighted avg       0.96      0.96      0.96       114
 ## Sobre o Dataset
 
 O dataset "Breast Cancer Wisconsin" contém 569 amostras e 30 características que descrevem propriedades dos núcleos das células. O objetivo é prever se o tumor é **maligno** (câncer) ou **benigno** (não câncer).
-
+ -->
 
 
 
