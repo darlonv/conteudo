@@ -5,7 +5,7 @@ A **regressão logística** é um modelo estatístico utilizado para prever a pr
 ## Principais características
 - **Função logística (sigmoide)**: A regressão logística usa a função logística para transformar a saída linear do modelo em uma probabilidade. Essa função gera valores entre 0 e 1, permitindo que sejam interpretados como probabilidades.
   
-  A função sigmoide é dada por:
+A função sigmoide é dada por:
 
 $$
 P(y=1 | x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \dots + \beta_n x_n)}}
