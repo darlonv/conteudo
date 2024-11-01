@@ -12,7 +12,7 @@ Elaborar um programa que leia 8 números inteiros e informe quantos são maiores
 (ex:label)=
 :::::::{card} <!-- Título aqui -->
 
-Elaborar um programa que leia $5$ números inteiros e informe quantos valores são maiores ou iguals à média de todos os valores digitados.
+Elaborar um programa que leia $5$ números inteiros e informe quantos valores são maiores ou iguais à média de todos os valores digitados.
 
 ::::::{prf:example}
 :nonumber:
