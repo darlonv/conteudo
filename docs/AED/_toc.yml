@@ -79,10 +79,14 @@ chapters:
           - file: 07-Arquivos/Exercicios/02-Texto_ex.md
   #         - file: 07-Arquivos/Exercicios/03-Binario_ex.md
   #         - file: 07-Arquivos/Exercicios/04-Registro_ex.md
-  # - title: Busca
-  #   sections:
-  #     - file: 08-Busca/01-Sequencial.md
-  #     - file: 08-Busca/02-Binaria.md
+  - title: Busca
+    sections:
+      - file: 08-Busca/00-Busca.md
+      - file: 08-Busca/01-Sequencial.md
+      - file: 08-Busca/02-Binaria.md
+      - title: Exercícios
+        sections:
+          - file: 08-Busca/Exercicios/01-Sequencial_ex.md
   # - title: Listas, Filas e Pilhas
   #   sections:
   #     - file: 09-LFP/01-Fila.md
@@ -132,6 +136,7 @@ chapters:
       - file: Anexos/Equacoes.md
       - file: Anexos/Definicoes.md
       - file: Anexos/Tabelas.md
+      - file: Anexos/Codigos.md
   - title: Trabalhos
     sections:
       - title: AED
