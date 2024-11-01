@@ -1,3 +1,3 @@
-# Binária
+# Busca Binária
 
 
