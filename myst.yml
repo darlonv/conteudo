@@ -53,6 +53,8 @@ site:
       path: docs/RC
     - slug: CD
       path: docs/CD
+    - slug: SO
+      path: docs/SO
   # options:
   #   logo: site_logo.png
   # nav: []
