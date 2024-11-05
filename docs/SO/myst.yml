@@ -1,0 +1,27 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b92261d1-fb0c-4571-8803-3b5789f52ba8
+  title: Conteúdo
+  # description:
+  # keywords: []
+  authors:
+    - name: Darlon Vasata
+  # github: https://github.com/executablebooks/mystmd-quickstart
+  bibliography: /data/references.bib
+
+site:
+  template: book-theme
+  title: Materiais
+  # options:
+  #   downloads:
+  #     - file: mydoc.pdf
+  #       title: A PDF of this book
+  
+  # options:
+  #   logo: site_logo.png
+  # nav: []
+  actions:
+    - title: Myst
+      url: https://mystmd.org/guide
+  domains: []
