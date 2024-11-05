@@ -18,6 +18,7 @@ chapters:
     sections:
       - file: docs/02-Algoritmos/01-Regressao_linear.md
       - file: docs/02-Algoritmos/02-Regressao_logistica.md
+      - file: docs/02-Algoritmos/03-Arvores_de_decisao.md
   - title: Teste
     sections:
       - file: docs/99-Teste/01-Teste.md
