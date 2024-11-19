@@ -87,18 +87,18 @@ chapters:
       - title: Exercícios
         sections:
           - file: 08-Busca/Exercicios/01-Sequencial_ex.md
-  # - title: Listas, Filas e Pilhas
-  #   sections:
-  #     - file: 09-LFP/01-Fila.md
+  - title: Listas, Filas e Pilhas
+    sections:
+      - file: 09-LFP/01-Fila.md
   #     - file: 09-LFP/02-Pilha.md
-  #     - file: 09-LFP/03-Lista.md
+      - file: 09-LFP/03-Lista.md
   #     - file: 09-LFP/04-Tabela_dispersao.md
   #     - file: 09-LFP/05-Conjuntos.md
-  #     - title: Exercícios
-  #       sections:
-  #         - file: 09-LFP/Exercicios/01-Fila_ex.md
+      - title: Exercícios
+        sections:
+          - file: 09-LFP/Exercicios/01-Fila_ex.md
   #         - file: 09-LFP/Exercicios/02-Pilha_ex.md
-  #         - file: 09-LFP/Exercicios/03-Lista_ex.md
+          # - file: 09-LFP/Exercicios/03-Lista_ex.md
   #         - file: 09-LFP/Exercicios/04-Tabela_dispersao_ex.md
   #         - file: 09-LFP/Exercicios/05-Conjuntos_ex.md
   # - title: Árvores
@@ -109,16 +109,16 @@ chapters:
   #       sections:
   #         - file: 10-Arvores/Exercicios/01-Arvores_ex.md
   #         - file: 10-Arvores/Exercicios/02-Binaria_ex.md
-  # - title: Ordenação
-  #   sections:
-  #     - file: 11-Ordenacao/00-Ordenacao.md
-  #     - file: 11-Ordenacao/01-BubbleSort.md
-  #     - file: 11-Ordenacao/02-InsertionSort.md
-  #     - file: 11-Ordenacao/03-SelectionSort.md
-  #     - file: 11-Ordenacao/04-MergeSort.md
-  #     - file: 11-Ordenacao/05-QuickSort.md
-  #     - file: 11-Ordenacao/06-CountingSort.md
-  #     - file: 11-Ordenacao/07-RadixSort.md
+  - title: Ordenação
+    sections:
+      - file: 11-Ordenacao/00-Ordenacao.md
+      - file: 11-Ordenacao/01-BubbleSort.md
+      - file: 11-Ordenacao/02-InsertionSort.md
+      - file: 11-Ordenacao/03-SelectionSort.md
+      - file: 11-Ordenacao/04-MergeSort.md
+      - file: 11-Ordenacao/05-QuickSort.md
+      # - file: 11-Ordenacao/06-CountingSort.md
+      # - file: 11-Ordenacao/07-RadixSort.md
   #     - file: 11-Ordenacao/08-Comparacoes.md
   #     - title: Exercícios
   #       sections:
