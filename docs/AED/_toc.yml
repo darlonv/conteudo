@@ -153,6 +153,7 @@ chapters:
           # - file: _trabalhos/LPI/LPIDP2024-P2SubQ1.md
           # - file: _trabalhos/LPI/LPIDP2024-P2SubQ2.md
           # - file: _trabalhos/LPI/LPIDP2024-P2SubQ3.md
+          - file: _trabalhos/LPI/LPIDP2024-3B4BRec.md
       - title: AE
         sections:
           - title: LM
