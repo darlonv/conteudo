@@ -5,8 +5,8 @@ project:
   title: Conteúdo
   # description:
   # keywords: []
-  authors:
-    - name: Darlon Vasata
+  # authors:
+    # - name: Darlon Vasata
   # github: https://github.com/executablebooks/mystmd-quickstart
   bibliography: /data/references.bib
 
