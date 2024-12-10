@@ -8,6 +8,6 @@ chapters:
       - file: docs/01-Docker/02-Containers.md
       - file: docs/01-Docker/03-Imagens.md
       - file: docs/01-Docker/05-Compose.md
-      # - file: docs/01-Docker/Exercicios.md
+      - file: docs/01-Docker/Exercicios.md
   
   
