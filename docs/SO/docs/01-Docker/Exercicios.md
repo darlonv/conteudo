@@ -438,4 +438,33 @@ services:
 <!-- /exercise -->
 ::::::::  
 
+::::::::{exercise}
+:label: exex:label
+
+(ex:label)=
+:::::::{card} <!-- Título aqui -->
+
+Considere os seguintes arquivos `Dockerfile` e `compose.yaml`:
+
+```{code} dockerfile
+:filename: Dockerfile
+FROM ubuntu
+RUN echo "Olá Mundo"
+CMD ["echo", "abc 123"]
+```
+
+```{code} yaml
+:filename: compose.yaml
+services:
+  web:
+    build: .
+```
+
+Explique todo o processo que ocorrerá quando o comando `docker compose up` for executado.
+
+<!-- /card exercicio -->
+:::::::  
+<!-- /exercise -->
+::::::::  
+
 
